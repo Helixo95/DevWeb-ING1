@@ -1,22 +1,33 @@
 .bg-image {
-    /*background-image: url('/Exotik - new site/sources/img/background-main.jpg');*/
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../img/background-main.jpg");
-
     height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
+    color: white;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Couleur d'overlay semi-transparente */
+#main_title {
+    font-family: "Arial Rounded";
+    -webkit-text-stroke: 1px transparent;
+
+    font-size: 7rem;
+    line-height: 6rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(50, 50, 50, 1), rgba(255, 245, 240, 0.89)); /* Dégradé de gris foncé métallique en bas à blanc cassé en haut */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-top: 15rem;
+    padding-bottom: 0.5rem;
 }
 
+
+
+.main_comment{
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
 
 
 
@@ -31,26 +42,5 @@ section{
     margin-right: 1%;
 }
 
-.masthead {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 35rem;
-    padding: 15rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../img/background-main.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
 
-h1{
-    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 5rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.8rem;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
+
