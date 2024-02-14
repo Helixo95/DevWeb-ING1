@@ -5,21 +5,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exotik</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link href="sources/css/styles.css" rel="stylesheet"/>
-	<style>
 	
-	</style>
+	<!-- lien BootStrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	
+	<!-- liens utiles css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="sources/css/styles.css" rel="stylesheet"/>
+	
+	<!-- liens utiles javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="sources/js/scripts.js"></script>
 </head>
 <body>
 	<div class="bg-image">
 		<!-- navbar -->
-		<nav class="navbar navbar-expand-md navbar-light">
+		<nav id="mainNavbar" class="navbar navbar-expand-md navbar-light fixed-top">
 			<div class="container-xxl">
 				<!-- navbar brand / title -->
 				<a class="navbar-brand" href="#intro">
 					<img id="logo" src="sources/img/Logo.png" alt="...">
-					<span id="nav_title" class="text-secondary fw-bold text-light">
+					<span id="nav_title" class="text-truncate fw-bold">
 					  Exotik
 					</span>
 				</a>
@@ -30,21 +36,28 @@
 				</button>
 				<!-- navbar links -->
 				<div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-					<ul class="navbar-nav">
+					<ul class="navbar-nav text-black">
 						<li class="nav-item">
-							<a class="nav-link text-light" href="#topics">About The Book</a>
+							<a class="nav-link text-dark" href="#topics">À propos de nous</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light" href="#reviews">Reviews</a>
+							<a class="nav-link text-dark" href="#reviews">Boutique</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light" href="#contact">Get in Touch</a>
+							<a class="nav-link text-dark" href="#contact">Commentaires</a>
 						</li>
 						<li class="nav-item d-md-none">
-							<a class="nav-link text-light" href="#pricing">Pricing</a>
+							<a class="nav-link text-dark" href="#pricing">Pricing</a>
 						</li>
-						<li class="nav-item ms-2 d-none d-md-inline">
+						<li class="nav-item ms-2 d-none d-md-inline" style="padding-right: 5px">
 							<a class="btn btn-secondary" href="#pricing">Buy now</a>
+						</li>
+						
+						<li class="nav-item">
+							<i class="bi bi-person-circle" style="font-size: 1.5rem; margin: 10px;"></i>
+						</li>
+						<li class="nav-item">
+							<i class="bi bi-cart3" style="font-size: 1.5rem; margin: 10px;"></i>
 						</li>
 					</ul>
 				</div>
@@ -56,18 +69,20 @@
 			<h1 id="main_title" class="text-uppercase">
 				Exotik
 			</h1>
-			<p class="main_comment">
+			<p class="h3">
 				Soyez Audacieux ! Soyez Sauvage !
 			</p>
-			<p class="main_comment">
+			<p class="h3">
 				Soyez Exotique !
 			</p>
-			<a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+			<a href="#pricing" class="btn btn-secondary btn-lg" style="margin-top: 10px">
+				En savoir plus
+			</a>
 		</div>
 
 	</div>
 	
-	
+	<!-- à voir si on supprime -->
 	<!-- main image & intro text -->
 	<section>
 		<header class="masthead">
@@ -86,7 +101,6 @@
 				</div>
 			</div>
 		</header>
-		
 	</section>
 	
 	
