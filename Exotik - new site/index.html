@@ -30,7 +30,7 @@
 					</span>
 				</a>
 				<!-- toggle button for mobile nav -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+				<button id="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
 						aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -49,15 +49,25 @@
 						<li class="nav-item d-md-none">
 							<a class="nav-link text-dark" href="#pricing">Pricing</a>
 						</li>
-						<li class="nav-item ms-2 d-none d-md-inline" style="padding-right: 5px">
-							<a class="btn btn-secondary" href="#pricing">Buy now</a>
+						<li class="nav-item ms-2 d-none d-md-inline">
+							<a class="btn btn-secondary" href="#pricing">
+								Passer commande
+								<i class="bi bi-cart3" style="font-size: 1rem;"></i>
+							</a>
 						</li>
-						
 						<li class="nav-item">
-							<i class="bi bi-person-circle" style="font-size: 1.5rem; margin: 10px;"></i>
-						</li>
-						<li class="nav-item">
-							<i class="bi bi-cart3" style="font-size: 1.5rem; margin: 10px;"></i>
+							<div class="container">
+								<i class="bi bi-person-circle" style="font-size: 1.5rem; margin: 10px;"></i>
+								<div class="text">
+									<a href="#connexion" class="nav-link text-dark">
+										Se connecter
+									</a>
+									<div class="line"></div>
+									<a href="#connexion" class="nav-link text-dark">
+										S'inscrire
+									</a>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
