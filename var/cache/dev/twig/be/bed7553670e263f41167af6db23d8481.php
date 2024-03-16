@@ -333,6 +333,6 @@ class __TwigTemplate_dcdedf968be7a1c3dd82264541b371b0 extends Template
     <!-- MDB -->
     <script type=\"text/javascript\" src=\"{{ asset('login/mdb.umd.min.js') }}\"></script>
 </body>
-</html>", "home/login.html.twig", "C:\\laragon\\www\\EXOTIK\\templates\\home\\login.html.twig");
+</html>", "home/login.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\home\\login.html.twig");
     }
 }

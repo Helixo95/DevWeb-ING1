@@ -18,5 +18,7 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\HomeController::login'], [], [['text', '/login']], [], [], []],
     'app_signin' => [[], ['_controller' => 'App\\Controller\\HomeController::signin'], [], [['text', '/signin']], [], [], []],
+    'app_profile' => [[], ['_controller' => 'App\\Controller\\HomeController::profile'], [], [['text', '/profile']], [], [], []],
+    'app_modif_profile' => [[], ['_controller' => 'App\\Controller\\HomeController::modif_profile'], [], [['text', '/modif_profile']], [], [], []],
     'app_homepage' => [[], ['_controller' => 'App\\Controller\\HomeController::login'], [], [['text', '/']], [], [], []],
 ];
