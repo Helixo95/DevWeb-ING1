@@ -15,9 +15,9 @@ class ComposerStaticInita5216280f5a239129e477bc166edd208
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
-        '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
     );
 
@@ -557,6 +557,8 @@ class ComposerStaticInita5216280f5a239129e477bc166edd208
     );
 
     public static $classMap = array (
+        'App\\Controller\\HomeController' => __DIR__ . '/../..' . '/src/Controller/HomeController.php',
+        'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'Collator' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
@@ -681,6 +683,7 @@ class ComposerStaticInita5216280f5a239129e477bc166edd208
         'Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor' => __DIR__ . '/..' . '/doctrine/collections/src/Expr/ExpressionVisitor.php',
         'Doctrine\\Common\\Collections\\Expr\\Value' => __DIR__ . '/..' . '/doctrine/collections/src/Expr/Value.php',
         'Doctrine\\Common\\Collections\\ExpressionBuilder' => __DIR__ . '/..' . '/doctrine/collections/src/ExpressionBuilder.php',
+        'Doctrine\\Common\\Collections\\Order' => __DIR__ . '/..' . '/doctrine/collections/src/Order.php',
         'Doctrine\\Common\\Collections\\ReadableCollection' => __DIR__ . '/..' . '/doctrine/collections/src/ReadableCollection.php',
         'Doctrine\\Common\\Collections\\Selectable' => __DIR__ . '/..' . '/doctrine/collections/src/Selectable.php',
         'Doctrine\\Common\\EventArgs' => __DIR__ . '/..' . '/doctrine/event-manager/src/EventArgs.php',
@@ -1344,6 +1347,7 @@ class ComposerStaticInita5216280f5a239129e477bc166edd208
         'Doctrine\\ORM\\Internal\\Hydration\\ScalarHydrator' => __DIR__ . '/..' . '/doctrine/orm/src/Internal/Hydration/ScalarHydrator.php',
         'Doctrine\\ORM\\Internal\\Hydration\\SimpleObjectHydrator' => __DIR__ . '/..' . '/doctrine/orm/src/Internal/Hydration/SimpleObjectHydrator.php',
         'Doctrine\\ORM\\Internal\\Hydration\\SingleScalarHydrator' => __DIR__ . '/..' . '/doctrine/orm/src/Internal/Hydration/SingleScalarHydrator.php',
+        'Doctrine\\ORM\\Internal\\NoUnknownNamedArguments' => __DIR__ . '/..' . '/doctrine/orm/src/Internal/NoUnknownNamedArguments.php',
         'Doctrine\\ORM\\Internal\\QueryType' => __DIR__ . '/..' . '/doctrine/orm/src/Internal/QueryType.php',
         'Doctrine\\ORM\\Internal\\SQLResultCasing' => __DIR__ . '/..' . '/doctrine/orm/src/Internal/SQLResultCasing.php',
         'Doctrine\\ORM\\Internal\\StronglyConnectedComponents' => __DIR__ . '/..' . '/doctrine/orm/src/Internal/StronglyConnectedComponents.php',
@@ -2409,6 +2413,7 @@ class ComposerStaticInita5216280f5a239129e477bc166edd208
         'PharIo\\Manifest\\ManifestLoader' => __DIR__ . '/..' . '/phar-io/manifest/src/ManifestLoader.php',
         'PharIo\\Manifest\\ManifestLoaderException' => __DIR__ . '/..' . '/phar-io/manifest/src/exceptions/ManifestLoaderException.php',
         'PharIo\\Manifest\\ManifestSerializer' => __DIR__ . '/..' . '/phar-io/manifest/src/ManifestSerializer.php',
+        'PharIo\\Manifest\\NoEmailAddressException' => __DIR__ . '/..' . '/phar-io/manifest/src/exceptions/NoEmailAddressException.php',
         'PharIo\\Manifest\\PhpElement' => __DIR__ . '/..' . '/phar-io/manifest/src/xml/PhpElement.php',
         'PharIo\\Manifest\\PhpExtensionRequirement' => __DIR__ . '/..' . '/phar-io/manifest/src/values/PhpExtensionRequirement.php',
         'PharIo\\Manifest\\PhpVersionRequirement' => __DIR__ . '/..' . '/phar-io/manifest/src/values/PhpVersionRequirement.php',

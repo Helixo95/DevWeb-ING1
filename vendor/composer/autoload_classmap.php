@@ -6,6 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controller\\HomeController' => $baseDir . '/src/Controller/HomeController.php',
+    'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'Collator' => $vendorDir . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'DeepCopy\\DeepCopy' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
@@ -130,6 +132,7 @@ return array(
     'Doctrine\\Common\\Collections\\Expr\\ExpressionVisitor' => $vendorDir . '/doctrine/collections/src/Expr/ExpressionVisitor.php',
     'Doctrine\\Common\\Collections\\Expr\\Value' => $vendorDir . '/doctrine/collections/src/Expr/Value.php',
     'Doctrine\\Common\\Collections\\ExpressionBuilder' => $vendorDir . '/doctrine/collections/src/ExpressionBuilder.php',
+    'Doctrine\\Common\\Collections\\Order' => $vendorDir . '/doctrine/collections/src/Order.php',
     'Doctrine\\Common\\Collections\\ReadableCollection' => $vendorDir . '/doctrine/collections/src/ReadableCollection.php',
     'Doctrine\\Common\\Collections\\Selectable' => $vendorDir . '/doctrine/collections/src/Selectable.php',
     'Doctrine\\Common\\EventArgs' => $vendorDir . '/doctrine/event-manager/src/EventArgs.php',
@@ -793,6 +796,7 @@ return array(
     'Doctrine\\ORM\\Internal\\Hydration\\ScalarHydrator' => $vendorDir . '/doctrine/orm/src/Internal/Hydration/ScalarHydrator.php',
     'Doctrine\\ORM\\Internal\\Hydration\\SimpleObjectHydrator' => $vendorDir . '/doctrine/orm/src/Internal/Hydration/SimpleObjectHydrator.php',
     'Doctrine\\ORM\\Internal\\Hydration\\SingleScalarHydrator' => $vendorDir . '/doctrine/orm/src/Internal/Hydration/SingleScalarHydrator.php',
+    'Doctrine\\ORM\\Internal\\NoUnknownNamedArguments' => $vendorDir . '/doctrine/orm/src/Internal/NoUnknownNamedArguments.php',
     'Doctrine\\ORM\\Internal\\QueryType' => $vendorDir . '/doctrine/orm/src/Internal/QueryType.php',
     'Doctrine\\ORM\\Internal\\SQLResultCasing' => $vendorDir . '/doctrine/orm/src/Internal/SQLResultCasing.php',
     'Doctrine\\ORM\\Internal\\StronglyConnectedComponents' => $vendorDir . '/doctrine/orm/src/Internal/StronglyConnectedComponents.php',
@@ -1858,6 +1862,7 @@ return array(
     'PharIo\\Manifest\\ManifestLoader' => $vendorDir . '/phar-io/manifest/src/ManifestLoader.php',
     'PharIo\\Manifest\\ManifestLoaderException' => $vendorDir . '/phar-io/manifest/src/exceptions/ManifestLoaderException.php',
     'PharIo\\Manifest\\ManifestSerializer' => $vendorDir . '/phar-io/manifest/src/ManifestSerializer.php',
+    'PharIo\\Manifest\\NoEmailAddressException' => $vendorDir . '/phar-io/manifest/src/exceptions/NoEmailAddressException.php',
     'PharIo\\Manifest\\PhpElement' => $vendorDir . '/phar-io/manifest/src/xml/PhpElement.php',
     'PharIo\\Manifest\\PhpExtensionRequirement' => $vendorDir . '/phar-io/manifest/src/values/PhpExtensionRequirement.php',
     'PharIo\\Manifest\\PhpVersionRequirement' => $vendorDir . '/phar-io/manifest/src/values/PhpVersionRequirement.php',
