@@ -124,7 +124,7 @@ class __TwigTemplate_b32294ab8c0a8c6fde4b37e0f22941be extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "navbar"));
 
         // line 11
-        $this->loadTemplate("navbar.html.twig", "contact/contact.html.twig", 11)->display($context);
+        $this->loadTemplate("base.html.twig", "contact/contact.html.twig", 11)->display($context);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -275,7 +275,7 @@ class __TwigTemplate_b32294ab8c0a8c6fde4b37e0f22941be extends Template
 {% endblock %}
 
 {% block navbar %}
-{% include 'navbar.html.twig' %}
+{% include 'base.html.twig' %}
 {% endblock %}
 {% block body %}
     <section class=\"ftco-section\">
