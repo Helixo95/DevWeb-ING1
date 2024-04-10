@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
-
+    
     #[Route('/login', name: 'app_login')]
     public function  login(): Response
     {

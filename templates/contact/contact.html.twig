@@ -1,21 +1,15 @@
-{% extends 'base.html.twig' %}
 
 {% block title %}Hello ContactController!{% endblock %}
 
 {% block stylesheets %}
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="public/contact/style.css">
+            <link rel="stylesheet" href="{{ asset('contact/css/style.css') }}">
             <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 {% endblock %}
 
-{% block javascripts %}
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-{%  endblock %}
-
+{% block navbar %}
+{% include 'navbar.html.twig' %}
+{% endblock %}
 {% block body %}
     <section class="ftco-section">
         <div class="container">

@@ -40,8 +40,10 @@ class __TwigTemplate_5131ae11bf00debfcb2d6d20e6797713 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/login.html.twig"));
 
         // line 1
-        echo "<!DOCTYPE html>
+        echo "
+<!DOCTYPE html>
 <html lang=\"en\">
+
 <head>
     <meta charset=\"UTF-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />
@@ -53,7 +55,7 @@ class __TwigTemplate_5131ae11bf00debfcb2d6d20e6797713 extends Template
     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap\" />
     <!-- MDB -->
     <link rel=\"stylesheet\" href=\"";
-        // line 13
+        // line 15
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/mdb.min.css"), "html", null, true);
         echo "\" />
 </head>
@@ -63,7 +65,7 @@ class __TwigTemplate_5131ae11bf00debfcb2d6d20e6797713 extends Template
     <style>
       #intro {
         background-image: url(\"";
-        // line 20
+        // line 22
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/008.jpg"), "html", null, true);
         echo "\");
         height: 100vh;
@@ -145,7 +147,7 @@ class __TwigTemplate_5131ae11bf00debfcb2d6d20e6797713 extends Template
                 <!-- Submit button -->
                 <button type=\"submit\" class=\"btn btn-primary btn-block\" data-mdb-ripple-init>Log in</button>
                 <a href=\"";
-        // line 99
+        // line 101
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_signin");
         echo "\" class=\"lien-connexion\">Pas encore inscrit? Cliquez ici.</a>
               </form>
@@ -171,7 +173,7 @@ class __TwigTemplate_5131ae11bf00debfcb2d6d20e6797713 extends Template
   <!--Footer-->
     <!-- MDB -->
     <script type=\"text/javascript\" src=\"";
-        // line 122
+        // line 124
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/mdb.umd.min.js"), "html", null, true);
         echo "\"></script>
 </body>
@@ -205,13 +207,15 @@ class __TwigTemplate_5131ae11bf00debfcb2d6d20e6797713 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  175 => 122,  149 => 99,  67 => 20,  57 => 13,  43 => 1,);
+        return array (  177 => 124,  151 => 101,  69 => 22,  59 => 15,  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
+        return new Source("
+<!DOCTYPE html>
 <html lang=\"en\">
+
 <head>
     <meta charset=\"UTF-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />
@@ -333,6 +337,6 @@ class __TwigTemplate_5131ae11bf00debfcb2d6d20e6797713 extends Template
     <!-- MDB -->
     <script type=\"text/javascript\" src=\"{{ asset('login/mdb.umd.min.js') }}\"></script>
 </body>
-</html>", "home/login.html.twig", "H:\\Desktop\\DevWeb-ING1-Ahmed\\templates\\home\\login.html.twig");
+</html>", "home/login.html.twig", "H:\\Desktop\\DevWeb-ING1\\templates\\home\\login.html.twig");
     }
 }
