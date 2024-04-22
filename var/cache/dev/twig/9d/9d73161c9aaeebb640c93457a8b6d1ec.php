@@ -133,7 +133,7 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
 ";
         // line 72
         $this->displayBlock('body', $context, $blocks);
-        // line 73
+        // line 75
         echo "
 <footer class=\"hqtqfR\">
     <div class=\"container footerContent\">
@@ -258,9 +258,9 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
 <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"></script>
 <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
 ";
-        // line 196
+        // line 198
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 197
+        // line 199
         echo "</body>
 </html>
 ";
@@ -319,6 +319,9 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
+        // line 73
+        echo "
+";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -327,7 +330,7 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
 
     }
 
-    // line 196
+    // line 198
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -366,7 +369,7 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  331 => 196,  313 => 72,  295 => 14,  276 => 6,  264 => 197,  262 => 196,  137 => 73,  135 => 72,  76 => 15,  74 => 14,  66 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
+        return array (  334 => 198,  323 => 73,  313 => 72,  295 => 14,  276 => 6,  264 => 199,  262 => 198,  137 => 75,  135 => 72,  76 => 15,  74 => 14,  66 => 9,  62 => 8,  58 => 7,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -442,7 +445,9 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
     </div>
 </nav>
 
-{% block body %}{% endblock %}
+{% block body %}
+
+{% endblock %}
 
 <footer class=\"hqtqfR\">
     <div class=\"container footerContent\">

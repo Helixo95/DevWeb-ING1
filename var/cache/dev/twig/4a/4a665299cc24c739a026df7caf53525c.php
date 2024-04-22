@@ -138,11 +138,368 @@ class __TwigTemplate_cd70b3edbb74e83549d8e16d270c108e extends Template
         <div class=\"container py-4 \">
             <div class=\"row\">
                 <!-- Boucle sur vos produits -->
-                <div class=\"col-md-4 col-lg-4 mb-4 ml-0\">
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
                     <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
                         <div class=\"card h-100\">
                             <img src=\"";
         // line 61
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("product/img/sauvage.jpg"), "html", null, true);
+        echo "\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"";
+        // line 109
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("product/img/sauvage.jpg"), "html", null, true);
+        echo "\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"";
+        // line 157
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("product/img/sauvage.jpg"), "html", null, true);
+        echo "\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"";
+        // line 205
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("product/img/sauvage.jpg"), "html", null, true);
+        echo "\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"";
+        // line 253
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("product/img/sauvage.jpg"), "html", null, true);
+        echo "\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"";
+        // line 301
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("product/img/sauvage.jpg"), "html", null, true);
+        echo "\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"";
+        // line 349
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("product/img/sauvage.jpg"), "html", null, true);
+        echo "\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"";
+        // line 397
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("product/img/sauvage.jpg"), "html", null, true);
         echo "\" class=\"card-img-top\" alt=\"Nom du produit\">
                             <div class=\"card-body d-flex flex-column\">
@@ -229,7 +586,7 @@ class __TwigTemplate_cd70b3edbb74e83549d8e16d270c108e extends Template
      */
     public function getDebugInfo()
     {
-        return array (  146 => 61,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
+        return array (  503 => 397,  452 => 349,  401 => 301,  350 => 253,  299 => 205,  248 => 157,  197 => 109,  146 => 61,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -291,7 +648,343 @@ class __TwigTemplate_cd70b3edbb74e83549d8e16d270c108e extends Template
         <div class=\"container py-4 \">
             <div class=\"row\">
                 <!-- Boucle sur vos produits -->
-                <div class=\"col-md-4 col-lg-4 mb-4 ml-0\">
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"{{ asset('product/img/sauvage.jpg') }}\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"{{ asset('product/img/sauvage.jpg') }}\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"{{ asset('product/img/sauvage.jpg') }}\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"{{ asset('product/img/sauvage.jpg') }}\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"{{ asset('product/img/sauvage.jpg') }}\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"{{ asset('product/img/sauvage.jpg') }}\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
+                    <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
+                        <div class=\"card h-100\">
+                            <img src=\"{{ asset('product/img/sauvage.jpg') }}\" class=\"card-img-top\" alt=\"Nom du produit\">
+                            <div class=\"card-body d-flex flex-column\">
+                                <!-- Envelopper le titre et les étoiles dans un conteneur de flex -->
+                                <div class=\"d-flex align-items-center mb-2\">
+                                    <h5 class=\"card-title text-dark flex-grow-1 mb-0\">Sauvage</h5>
+                                    <!-- flex-grow-1 sur le titre pour pousser les étoiles vers la droite -->
+                                    <div class=\"star-ratings d-flex align-items-center\">
+                                        <!-- Répéter le SVG pour le nombre d'étoiles que vous voulez afficher -->
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <svg viewBox=\"0 0 51 48\" class=\"widget-svg\"
+                                             style=\"width:20px;height:20px;transition:transform .2s ease-in-out\">
+                                            <path class=\"star\" style=\"fill:#FFBE30;transition:fill .2s ease-in-out\"
+                                                  d=\"m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z\"></path>
+                                        </svg>
+                                        <!-- Ajouter plus de SVG ici si nécessaire pour plus d'étoiles -->
+                                    </div>
+                                </div>
+
+                                <div class=\"card-tags mb-2\">
+                                    <span class=\"tag floral \">floral</span>
+                                    <span class=\"tag woody \">woody</span>
+                                </div>
+
+                                <p class=\"card-text mt-auto\">
+                                    <small class=\"text-muted\">Inspiré par Christian Dior</small>
+                                </p>
+                                <!-- mt-auto pousse le contenu vers le bas de la carte -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=\"col-md-4 col-lg-4 mb-4 \">
                     <a href=\"/product/nom-du-produit\" class=\"text-decoration-none\">
                         <div class=\"card h-100\">
                             <img src=\"{{ asset('product/img/sauvage.jpg') }}\" class=\"card-img-top\" alt=\"Nom du produit\">

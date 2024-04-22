@@ -19,6 +19,8 @@ return [
     'app_contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\HomeController::login'], [], [['text', '/login']], [], [], []],
     'app_signin' => [[], ['_controller' => 'App\\Controller\\HomeController::signin'], [], [['text', '/signin']], [], [], []],
+    'app_modif_profile' => [[], ['_controller' => 'App\\Controller\\HomeController::modif_profile'], [], [['text', '/modif_profile']], [], [], []],
+    'app_profile' => [[], ['_controller' => 'App\\Controller\\HomeController::profile'], [], [['text', '/profile']], [], [], []],
     'app_product' => [[], ['_controller' => 'App\\Controller\\ProductController::index'], [], [['text', '/product']], [], [], []],
     'app_homepage' => [[], ['_controller' => 'App\\Controller\\HomeController::login'], [], [['text', '/']], [], [], []],
 ];
