@@ -431,6 +431,10 @@ ul {
     width: 264px;
     border: 1px solid;
 }
+.search_widget label {
+    width : 100%;
+    margin-bottom: 0;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .search_widget form {
         width: 225px;

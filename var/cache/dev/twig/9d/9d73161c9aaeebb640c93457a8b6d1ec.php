@@ -129,7 +129,7 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
                                 </div>
                                 <div class=\"cart_info\">
                                     <a href=\"#\">Hugo Boss</a>
-                                    <p><span>Rs. 3640</span> X 1</p>
+                                    <p><span>100 €</span> X 1</p>
                                 </div>
                                 <div class=\"cart_remove\">
                                     <a href=\"#\"><i class=\"fa fa-times\"></i></a>
@@ -144,7 +144,7 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
                                 </div>
                                 <div class=\"cart_info\">
                                     <a href=\"#\">Bvlgari</a>
-                                    <p><span>Rs. 8350</span> X 1</p>
+                                    <p><span>100 €</span> X 1</p>
                                 </div>
                                 <div class=\"cart_remove\">
                                     <a href=\"#\"><i class=\"fa fa-times\"></i></a>
@@ -155,12 +155,12 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
                             <div class=\"cart_table_border\">
                                 <div class=\"cart_total\">
                                     <span>Sub Total :</span>
-                                    <span class=\"price\">Rs. 11990</span>
+                                    <span class=\"price\">200€</span>
                                 </div>
 
                                 <div class=\"cart_total mt-10\">
                                     <span>Total :</span>
-                                    <span class=\"price\">Rs. 11990</span>
+                                    <span class=\"price\">200€</span>
                                 </div>
 
                             </div>
@@ -660,7 +660,7 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
                                 </div>
                                 <div class=\"cart_info\">
                                     <a href=\"#\">Hugo Boss</a>
-                                    <p><span>Rs. 3640</span> X 1</p>
+                                    <p><span>100 €</span> X 1</p>
                                 </div>
                                 <div class=\"cart_remove\">
                                     <a href=\"#\"><i class=\"fa fa-times\"></i></a>
@@ -672,7 +672,7 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
                                 </div>
                                 <div class=\"cart_info\">
                                     <a href=\"#\">Bvlgari</a>
-                                    <p><span>Rs. 8350</span> X 1</p>
+                                    <p><span>100 €</span> X 1</p>
                                 </div>
                                 <div class=\"cart_remove\">
                                     <a href=\"#\"><i class=\"fa fa-times\"></i></a>
@@ -683,12 +683,12 @@ class __TwigTemplate_0679a7e320a55c4cabca169aca36bb87 extends Template
                             <div class=\"cart_table_border\">
                                 <div class=\"cart_total\">
                                     <span>Sub Total :</span>
-                                    <span class=\"price\">Rs. 11990</span>
+                                    <span class=\"price\">200€</span>
                                 </div>
 
                                 <div class=\"cart_total mt-10\">
                                     <span>Total :</span>
-                                    <span class=\"price\">Rs. 11990</span>
+                                    <span class=\"price\">200€</span>
                                 </div>
 
                             </div>
