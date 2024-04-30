@@ -1,0 +1,10 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+
+app_homepage:
+    path: /
+    controller: App\Controller\HomeController::login
+
+
