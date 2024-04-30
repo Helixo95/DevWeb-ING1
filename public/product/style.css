@@ -1,0 +1,178 @@
+
+/*CSS Pour la page des produits */
+
+.products {
+    padding: 0px 76.8px;
+}
+.breadcrumb a {
+    color: rgb(16, 16, 16);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none!important;
+}
+nav[aria-label="breadcrumb"] {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    gap: 8px;
+    margin: 13px 0px 10px;
+
+
+
+}
+
+.input-group-text {
+    background-color: transparent !important; /* rend le fond transparent */
+    border: none !important; /* supprime toute bordure */
+
+}
+
+.form-control {
+    border: none; /* supprime toute bordure */
+    box-shadow: none; /* supprime les ombres qui pourraient ressembler à une bordure */
+
+}
+
+.form-control:focus {
+    color: #ff0f0f;
+    background-color: #fff;
+    border-color: #000;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.25)!important;
+}
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.productsSearch{
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(134, 134, 134);
+    gap: 6px;
+    width: 500px;
+}
+
+.productsSearch svg {
+    margin-right: 8px;
+}
+.productsSearch input {
+    width: 100%;
+    padding: 12px 0px;
+    border: medium;
+    background: transparent;
+}
+
+.container-fluid {
+    margin: 24px 0px;
+}
+/* Style pour les boutons de filtre */
+.filter-buttons .btn {
+    border: none; /* Supprimer la bordure par défaut */
+    background-color: transparent; /* Fond transparent */
+    color: black; /* Couleur de texte noire */
+    margin-right: 10px; /* Ajouter un peu d'espace entre les boutons */
+    transition: all 0.3s ease; /* Pour un effet de transition doux */
+    border-radius: 20px; /* Coins arrondis pour un effet de capsule */
+}
+.text-left .btn,
+.text-right .btn
+{
+    border: none; /* Supprimer la bordure par défaut */
+    background-color: transparent; /* Fond transparent */
+    color: black; /* Couleur de texte noire */
+    transition: all 0.3s ease; /* Pour un effet de transition doux */
+
+}
+
+/* Style pour le bouton actif et au survol */
+.filter-buttons .btn.active,
+.filter-buttons .btn:hover {
+    background-color: black; /* Fond noir pour le bouton actif ou au survol */
+    color: white; /* Texte blanc pour le bouton actif ou au survol */
+}
+
+
+/* Ajustements spécifiques pour les boutons */
+.filter-buttons .btn,
+.text-left .btn,
+.text-right .btn {
+    padding: 6px 12px; /* Ajustez pour obtenir la forme désirée */
+    font-size: 1rem; /* Taille de la police, ajustez selon besoin */
+    line-height: 1.5; /* Hauteur de ligne, ajustez selon besoin */
+    min-width: 80px; /* Largeur minimale pour garder le texte à l'intérieur de la forme de capsule */
+    text-align: center; /* Assure que le texte est centré */
+}
+.card {
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    transition: transform .3s ease;
+    position: relative; /* La carte est le conteneur de référence pour le positionnement absolu */
+
+}
+.card-img-top {
+    width: 100%; /* L'image couvre la largeur de la carte */
+    height: auto; /* Garder le ratio de l'image */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,.15);
+}
+
+/* Style pour les titres des produits */
+.card-title .text-dark{
+    min-height: 2em;
+    margin-bottom:0px;
+}
+
+/* Style pour les textes inspirés par */
+.card-text {
+    font-size: .9em;
+}
+.tag {
+    position: absolute; /* Positionnement absolu par rapport à la carte */
+    top: 10px; /* Espace par rapport au haut de la carte */
+    left: 10px; /* Espace par rapport au côté gauche de la carte */
+    background-color: #000; /* Couleur de fond pour la visibilité */
+    color: #fff; /* Couleur du texte */
+    padding: 1px 15px; /* Padding pour les étiquettes */
+    font-size: 0.75rem; /* Taille du texte réduite */
+    text-align: center; /* Centrage du texte */
+    z-index: 10; /* Assurez-vous que le tag est au-dessus de l'image */
+}
+
+.tag.floral {
+    top: 10px; /* Espace par rapport au haut de la carte */
+    left: 10px; /* Espace par rapport au côté gauche de la carte */
+    background-color: #ff69b4; /* Couleur de fond pour floral */
+}
+
+.tag.woody {
+    top: 35px; /* Espace par rapport au tag floral */
+    left: 10px; /* Aligné avec le tag floral */
+    background-color: #8b4513; /* Couleur de fond pour woody */
+}
+
+
+
+/* Styles pour les écrans de petite taille (ex. mobile) */
+@media (max-width: 991.98px) {
+    /* Vos styles personnalisés pour les écrans mobiles ici */
+}
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: .75rem 1rem; /* Pour éviter que le breadcrumb ne soit trop compact */
+        margin-bottom: 1rem; /* Espacement avant le titre */
+    }
+
+    .page-title {
+        font-size: 1.5rem; /* Taille de police plus petite pour les appareils mobiles */
+    }
+
+    .productsSearch {
+        margin-top: 1rem; /* Ajoutez un peu d'espace au-dessus de la recherche sur les mobiles */
+    }
+    
+}
