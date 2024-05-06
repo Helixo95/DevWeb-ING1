@@ -40,7 +40,7 @@ class Product
     private ?string $category = null;
 
 
-    public function getid_prod(): ?int
+    public function getId_prod(): ?int
     {
         return $this->id_prod;
     }

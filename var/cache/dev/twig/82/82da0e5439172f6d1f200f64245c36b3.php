@@ -212,7 +212,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                         <li class=\"quick_button\">
                                                             <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_";
                 // line 73
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 73), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 73), "html", null, true);
                 echo "\" title=\"Quick View\">
                                                                 <i class=\"fa fa-eye\"></i>
                                                             </a>
@@ -308,7 +308,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                         <li class=\"quick_button\">
                                                             <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_";
                 // line 127
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 127), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 127), "html", null, true);
                 echo "\" title=\"Quick View\">
                                                                 <i class=\"fa fa-eye\"></i>
                                                             </a>
@@ -404,7 +404,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                         <li class=\"quick_button\">
                                                             <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_";
                 // line 181
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 181), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 181), "html", null, true);
                 echo "\" title=\"Quick View\">
                                                                 <i class=\"fa fa-eye\"></i>
                                                             </a>
@@ -473,7 +473,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
             // line 217
             echo "        <div class=\"modal fade\" id=\"modal_box_";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 217), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 217), "html", null, true);
             echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
             <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">
                 <div class=\"modal-content\">
@@ -488,7 +488,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                         <div class=\"tab-content product-details-large\">
                                             <div class=\"tab-pane fade show active\" id=\"tab1_";
             // line 229
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 229), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 229), "html", null, true);
             echo "\" role=\"tabpanel\">
                                                 <div class=\"modal_tab_img\">
                                                     <a href=\"#\"><img src=\"";
@@ -499,7 +499,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                             </div>
                                             <div class=\"tab-pane fade\" id=\"tab2_";
             // line 234
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 234), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 234), "html", null, true);
             echo "\" role=\"tabpanel\">
                                                 <div class=\"modal_tab_img\">
                                                     <a href=\"#\"><img src=\"";
@@ -514,11 +514,11 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                 <li>
                                                     <a href=\"#tab1_";
             // line 243
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 243), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 243), "html", null, true);
             echo "\" class=\"nav-link active\" data-toggle=\"tab\" role=\"tab\"
                                                        aria-controls=\"tab1_";
             // line 244
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 244), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 244), "html", null, true);
             echo "\" aria-selected=\"false\">
                                                         <img src=\"";
             // line 245
@@ -529,7 +529,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                 <li>
                                                     <a href=\"#tab2_";
             // line 249
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 249), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 249), "html", null, true);
             echo "\" class=\"nav-link\" data-toggle=\"tab\" role=\"tab\"
                                                        aria-controls=\"tab2_";
             // line 250
@@ -582,29 +582,22 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                             </div>
                                             <div class=\"modal_add_to_cart\">
                                                 <form action=\"#\">
-                                                    <div class=\"quantity-selector \">
-                                                        <button type=\"button\" class=\"quantity-btn\" onclick=\"changeQuantity(-1, '";
-            // line 284
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 284), "html", null, true);
-            echo "')\">−</button>
+                                                    <div class=\"quantity-selector\">
+                                                        <button type=\"button\" class=\"quantity-btn decrease\">−</button>
                                                         <input type=\"number\" id=\"quantity_";
             // line 285
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 285), "html", null, true);
-            echo "\" class=\"quantity-input\" value=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getQuantity", [], "any", false, false, false, 285), "html", null, true);
-            echo "\"
-                                                               min=\"0\" max=\"100\">
-                                                        <button type=\"button\" class=\"quantity-btn\" onclick=\"changeQuantity(1, '";
-            // line 287
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getId_prod", [], "any", false, false, false, 287), "html", null, true);
-            echo "')\">+</button>
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 285), "html", null, true);
+            echo "\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"100\">
+                                                        <button type=\"button\" class=\"quantity-btn increase\">+</button>
                                                     </div>
                                                     <button type=\"button\" class=\"stock-btn\">Stock : ";
-            // line 289
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getQuantity", [], "any", false, false, false, 289), "html", null, true);
+            // line 288
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getQuantity", [], "any", false, false, false, 288), "html", null, true);
             echo "</button>
                                                     <button type=\"submit\">Add to cart</button>
                                                 </form>
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -620,7 +613,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 303
+        // line 304
         echo "
 
 ";
@@ -632,7 +625,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
 
     }
 
-    // line 307
+    // line 308
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -642,7 +635,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 308
+        // line 309
         echo "    ";
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
@@ -676,7 +669,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
      */
     public function getDebugInfo()
     {
-        return array (  646 => 308,  636 => 307,  624 => 303,  604 => 289,  599 => 287,  592 => 285,  588 => 284,  569 => 268,  563 => 265,  559 => 264,  553 => 261,  540 => 251,  536 => 250,  532 => 249,  525 => 245,  521 => 244,  517 => 243,  507 => 236,  502 => 234,  496 => 231,  491 => 229,  475 => 217,  471 => 216,  462 => 209,  456 => 208,  447 => 201,  440 => 199,  436 => 198,  429 => 194,  425 => 193,  419 => 190,  407 => 181,  394 => 171,  388 => 168,  381 => 163,  378 => 162,  374 => 161,  366 => 155,  360 => 154,  351 => 147,  344 => 145,  340 => 144,  333 => 140,  329 => 139,  323 => 136,  311 => 127,  298 => 117,  292 => 114,  285 => 109,  282 => 108,  278 => 107,  270 => 101,  264 => 100,  255 => 93,  248 => 91,  244 => 90,  237 => 86,  233 => 85,  227 => 82,  215 => 73,  202 => 63,  196 => 60,  189 => 55,  186 => 54,  182 => 53,  144 => 17,  134 => 16,  121 => 13,  111 => 12,  96 => 6,  91 => 5,  81 => 4,  62 => 2,  39 => 1,);
+        return array (  639 => 309,  629 => 308,  617 => 304,  595 => 288,  589 => 285,  569 => 268,  563 => 265,  559 => 264,  553 => 261,  540 => 251,  536 => 250,  532 => 249,  525 => 245,  521 => 244,  517 => 243,  507 => 236,  502 => 234,  496 => 231,  491 => 229,  475 => 217,  471 => 216,  462 => 209,  456 => 208,  447 => 201,  440 => 199,  436 => 198,  429 => 194,  425 => 193,  419 => 190,  407 => 181,  394 => 171,  388 => 168,  381 => 163,  378 => 162,  374 => 161,  366 => 155,  360 => 154,  351 => 147,  344 => 145,  340 => 144,  333 => 140,  329 => 139,  323 => 136,  311 => 127,  298 => 117,  292 => 114,  285 => 109,  282 => 108,  278 => 107,  270 => 101,  264 => 100,  255 => 93,  248 => 91,  244 => 90,  237 => 86,  233 => 85,  227 => 82,  215 => 73,  202 => 63,  196 => 60,  189 => 55,  186 => 54,  182 => 53,  144 => 17,  134 => 16,  121 => 13,  111 => 12,  96 => 6,  91 => 5,  81 => 4,  62 => 2,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -753,7 +746,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                             </a>
                                                         </li>
                                                         <li class=\"quick_button\">
-                                                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_{{ product.getId_prod }}\" title=\"Quick View\">
+                                                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_{{ product.id_prod }}\" title=\"Quick View\">
                                                                 <i class=\"fa fa-eye\"></i>
                                                             </a>
                                                         </li>
@@ -807,7 +800,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                             </a>
                                                         </li>
                                                         <li class=\"quick_button\">
-                                                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_{{ product.getId_prod }}\" title=\"Quick View\">
+                                                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_{{ product.id_prod }}\" title=\"Quick View\">
                                                                 <i class=\"fa fa-eye\"></i>
                                                             </a>
                                                         </li>
@@ -861,7 +854,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                             </a>
                                                         </li>
                                                         <li class=\"quick_button\">
-                                                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_{{ product.getId_prod }}\" title=\"Quick View\">
+                                                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_{{ product.id_prod }}\" title=\"Quick View\">
                                                                 <i class=\"fa fa-eye\"></i>
                                                             </a>
                                                         </li>
@@ -897,7 +890,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         </div>
     </div>
     {% for product in products %}
-        <div class=\"modal fade\" id=\"modal_box_{{ product.getId_prod }}\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
+        <div class=\"modal fade\" id=\"modal_box_{{ product.id_prod }}\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
             <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">
                 <div class=\"modal-content\">
                     <button type=\"button\" data-dismiss=\"modal\" aria-label=\"close\" class=\"close\">
@@ -909,12 +902,12 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                 <div class=\"col-lg-5 col-md-5 col-sm-12\">
                                     <div class=\"modal_tab\">
                                         <div class=\"tab-content product-details-large\">
-                                            <div class=\"tab-pane fade show active\" id=\"tab1_{{ product.getId_prod }}\" role=\"tabpanel\">
+                                            <div class=\"tab-pane fade show active\" id=\"tab1_{{ product.id_prod }}\" role=\"tabpanel\">
                                                 <div class=\"modal_tab_img\">
                                                     <a href=\"#\"><img src=\"{{ product.getprimaryImageUrl }}\" alt=\"\"></a>
                                                 </div>
                                             </div>
-                                            <div class=\"tab-pane fade\" id=\"tab2_{{ product.getId_prod }}\" role=\"tabpanel\">
+                                            <div class=\"tab-pane fade\" id=\"tab2_{{ product.id_prod }}\" role=\"tabpanel\">
                                                 <div class=\"modal_tab_img\">
                                                     <a href=\"#\"><img src=\"{{ product.getsecondaryImageUrl }}\" alt=\"\"></a>
                                                 </div>
@@ -923,13 +916,13 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                         <div class=\"modal_tab_button\">
                                             <ul class=\"nav product_navactive owl-carousel\" role=\"tablist\">
                                                 <li>
-                                                    <a href=\"#tab1_{{ product.getId_prod }}\" class=\"nav-link active\" data-toggle=\"tab\" role=\"tab\"
-                                                       aria-controls=\"tab1_{{ product.getId_prod }}\" aria-selected=\"false\">
+                                                    <a href=\"#tab1_{{ product.id_prod }}\" class=\"nav-link active\" data-toggle=\"tab\" role=\"tab\"
+                                                       aria-controls=\"tab1_{{ product.id_prod }}\" aria-selected=\"false\">
                                                         <img src=\"{{ product.getprimaryImageUrl }}\" alt=\"\">
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href=\"#tab2_{{ product.getId_prod }}\" class=\"nav-link\" data-toggle=\"tab\" role=\"tab\"
+                                                    <a href=\"#tab2_{{ product.id_prod }}\" class=\"nav-link\" data-toggle=\"tab\" role=\"tab\"
                                                        aria-controls=\"tab2_{{ product.id_prod }}\" aria-selected=\"false\">
                                                         <img src=\"{{ product.getsecondaryImageUrl }}\" alt=\"\">
                                                     </a>
@@ -963,15 +956,16 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                             </div>
                                             <div class=\"modal_add_to_cart\">
                                                 <form action=\"#\">
-                                                    <div class=\"quantity-selector \">
-                                                        <button type=\"button\" class=\"quantity-btn\" onclick=\"changeQuantity(-1, '{{ product.getId_prod }}')\">−</button>
-                                                        <input type=\"number\" id=\"quantity_{{ product.getId_prod }}\" class=\"quantity-input\" value=\"{{ product.getQuantity }}\"
-                                                               min=\"0\" max=\"100\">
-                                                        <button type=\"button\" class=\"quantity-btn\" onclick=\"changeQuantity(1, '{{ product.getId_prod }}')\">+</button>
+                                                    <div class=\"quantity-selector\">
+                                                        <button type=\"button\" class=\"quantity-btn decrease\">−</button>
+                                                        <input type=\"number\" id=\"quantity_{{ product.id_prod }}\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"100\">
+                                                        <button type=\"button\" class=\"quantity-btn increase\">+</button>
                                                     </div>
                                                     <button type=\"button\" class=\"stock-btn\">Stock : {{ product.getQuantity }}</button>
                                                     <button type=\"submit\">Add to cart</button>
                                                 </form>
+
+
                                             </div>
                                         </div>
                                     </div>

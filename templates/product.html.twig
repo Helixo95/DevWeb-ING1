@@ -70,7 +70,7 @@
                                                             </a>
                                                         </li>
                                                         <li class="quick_button">
-                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.getId_prod }}" title="Quick View">
+                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
                                                                 <i class="fa fa-eye"></i>
                                                             </a>
                                                         </li>
@@ -124,7 +124,7 @@
                                                             </a>
                                                         </li>
                                                         <li class="quick_button">
-                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.getId_prod }}" title="Quick View">
+                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
                                                                 <i class="fa fa-eye"></i>
                                                             </a>
                                                         </li>
@@ -178,7 +178,7 @@
                                                             </a>
                                                         </li>
                                                         <li class="quick_button">
-                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.getId_prod }}" title="Quick View">
+                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
                                                                 <i class="fa fa-eye"></i>
                                                             </a>
                                                         </li>
@@ -214,7 +214,7 @@
         </div>
     </div>
     {% for product in products %}
-        <div class="modal fade" id="modal_box_{{ product.getId_prod }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade" id="modal_box_{{ product.id_prod }}" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <button type="button" data-dismiss="modal" aria-label="close" class="close">
@@ -226,12 +226,12 @@
                                 <div class="col-lg-5 col-md-5 col-sm-12">
                                     <div class="modal_tab">
                                         <div class="tab-content product-details-large">
-                                            <div class="tab-pane fade show active" id="tab1_{{ product.getId_prod }}" role="tabpanel">
+                                            <div class="tab-pane fade show active" id="tab1_{{ product.id_prod }}" role="tabpanel">
                                                 <div class="modal_tab_img">
                                                     <a href="#"><img src="{{ product.getprimaryImageUrl }}" alt=""></a>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="tab2_{{ product.getId_prod }}" role="tabpanel">
+                                            <div class="tab-pane fade" id="tab2_{{ product.id_prod }}" role="tabpanel">
                                                 <div class="modal_tab_img">
                                                     <a href="#"><img src="{{ product.getsecondaryImageUrl }}" alt=""></a>
                                                 </div>
@@ -240,13 +240,13 @@
                                         <div class="modal_tab_button">
                                             <ul class="nav product_navactive owl-carousel" role="tablist">
                                                 <li>
-                                                    <a href="#tab1_{{ product.getId_prod }}" class="nav-link active" data-toggle="tab" role="tab"
-                                                       aria-controls="tab1_{{ product.getId_prod }}" aria-selected="false">
+                                                    <a href="#tab1_{{ product.id_prod }}" class="nav-link active" data-toggle="tab" role="tab"
+                                                       aria-controls="tab1_{{ product.id_prod }}" aria-selected="false">
                                                         <img src="{{ product.getprimaryImageUrl }}" alt="">
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#tab2_{{ product.getId_prod }}" class="nav-link" data-toggle="tab" role="tab"
+                                                    <a href="#tab2_{{ product.id_prod }}" class="nav-link" data-toggle="tab" role="tab"
                                                        aria-controls="tab2_{{ product.id_prod }}" aria-selected="false">
                                                         <img src="{{ product.getsecondaryImageUrl }}" alt="">
                                                     </a>
@@ -280,15 +280,16 @@
                                             </div>
                                             <div class="modal_add_to_cart">
                                                 <form action="#">
-                                                    <div class="quantity-selector ">
-                                                        <button type="button" class="quantity-btn" onclick="changeQuantity(-1, '{{ product.getId_prod }}')">−</button>
-                                                        <input type="number" id="quantity_{{ product.getId_prod }}" class="quantity-input" value="{{ product.getQuantity }}"
-                                                               min="0" max="100">
-                                                        <button type="button" class="quantity-btn" onclick="changeQuantity(1, '{{ product.getId_prod }}')">+</button>
+                                                    <div class="quantity-selector">
+                                                        <button type="button" class="quantity-btn decrease">−</button>
+                                                        <input type="number" id="quantity_{{ product.id_prod }}" class="quantity-input" value="0" min="0" max="100">
+                                                        <button type="button" class="quantity-btn increase">+</button>
                                                     </div>
                                                     <button type="button" class="stock-btn">Stock : {{ product.getQuantity }}</button>
                                                     <button type="submit">Add to cart</button>
                                                 </form>
+
+
                                             </div>
                                         </div>
                                     </div>

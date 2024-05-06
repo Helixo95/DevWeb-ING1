@@ -77,17 +77,17 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 ";
         // line 17
         $this->displayBlock('header', $context, $blocks);
-        // line 335
+        // line 333
         echo "
 ";
-        // line 336
+        // line 334
         $this->displayBlock('content', $context, $blocks);
-        // line 339
+        // line 337
         echo "
 ";
-        // line 340
+        // line 338
         $this->displayBlock('footer', $context, $blocks);
-        // line 714
+        // line 400
         echo "
 
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
@@ -96,17 +96,17 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js\"></script>
 <script src=\"";
-        // line 721
+        // line 407
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/countdown.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 722
+        // line 408
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/main.js"), "html", null, true);
         echo "\"></script>
 ";
-        // line 723
+        // line 409
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 724
+        // line 410
         echo "</body>
 </html>
 ";
@@ -303,9 +303,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\">My Account</a>
                     </li>
-                    <li class=\"menu-item-has-children\">
-                        <a href=\"#\">About Us</a>
-                    </li>
+
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\">User</a>
                         <ul class=\"sub-menu\">
@@ -379,7 +377,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li><a href=\"#\">About Us</a></li>
+
                                         <li><a href=\"#\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\">User <i class=\"fa fa-angle-down\"></i></a>
@@ -423,7 +421,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 268
+        // line 266
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini1.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -438,7 +436,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 280
+        // line 278
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini2.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -503,7 +501,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
     }
 
-    // line 336
+    // line 334
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -513,7 +511,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 337
+        // line 335
         echo "    <!-- Contenu spécifique à chaque page -->
 ";
         
@@ -524,7 +522,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
     }
 
-    // line 340
+    // line 338
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -534,7 +532,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 341
+        // line 339
         echo "    <footer class=\"footer_widgets color_two\">
         <div class=\"footer_top\">
             <div class=\"container\">
@@ -559,396 +557,12 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                             <h3>Information</h3>
                             <div class=\"footer_menu\">
                                 <ul>
-                                    <li><a href=\"#\">About Us</a></li>
                                     <li><a href=\"#\">New Products</a></li>
                                     <li><a href=\"#\">Terms & Conditions</a></li>
-                                    <li><a href=\"#\">My Account</a></li>
-                                    <li><a href=\"#\">Wish List</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class=\"col-lg-3 col-md-6\">
-                        <div class=\"widgets_container widgets_p_product\">
-                            <h3>Featured Products</h3>
-                            <div class=\"small_product_container small_product_column1 owl-carousel\">
-                                <div class=\"small_product_list\">
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 383
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 386
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Bvlgari Women Goldea</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">€3999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">3700€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 407
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 410
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Illicit Flower
-                                                    </a>
-                                                </h4>
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">4999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">
-                                                        4200€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 432
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 435
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Women Fever</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">7499€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">7200€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                                <div class=\"small_product_list\">
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 457
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 460
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Mugler Aura Women</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">7999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">7550€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 481
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 484
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Paco Rabbane Pure XS for her
-                                                    </a>
-                                                </h4>
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">6550€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">
-                                                        4250€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 506
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 509
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Kenzo Women World</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">5999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">5900€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-lg-3 col-md-6\">
-                        <div class=\"widgets_container widgets_p_product\">
-                            <h3>Most Viewed Products</h3>
-                            <div class=\"small_product_container small_product_column1 owl-carousel\">
-                                <div class=\"small_product_list\">
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 539
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 542
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Bvlgari Women Goldea</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">3999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">3700€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 563
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 566
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Illicit Flower
-                                                    </a>
-                                                </h4>
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">4999 €</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">
-                                                        4200 €</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 588
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 591
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Women Fever</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">799</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">500</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                                <div class=\"small_product_list\">
-                                    <article class=\"single_product\">
-
-
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"primary_img\">
-                                                    <img src=\"";
-        // line 615
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B4-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\"><img
-                                                            src=\"";
-        // line 618
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B4-2.png"), "html", null, true);
-        echo "\" alt=\"\"></a>
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Mugler Aura Women</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">99</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">50</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-
-
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"primary_img\">
-                                                    <img src=\"";
-        // line 638
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\"><img
-                                                            src=\"";
-        // line 641
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
-        echo "\" alt=\"\"></a>
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Women Fever</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">69</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">50</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-
-
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"primary_img\">
-                                                    <img src=\"";
-        // line 661
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B6-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"";
-        // line 664
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B6-2.png"), "html", null, true);
-        echo "\" alt=\"\"></a>
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Dloce & Gabbana Women </a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">99</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">56</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -967,27 +581,27 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                         <div class=\"footer_payment text-right\">
                             <ul>
                                 <li><a href=\"#\"><img src=\"";
-        // line 700
+        // line 386
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 701
+        // line 387
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal1.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 702
+        // line 388
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal2.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 703
+        // line 389
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal3.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 704
+        // line 390
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal4.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 705
+        // line 391
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal5.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                             </ul>
@@ -1006,7 +620,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
     }
 
-    // line 723
+    // line 409
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -1045,7 +659,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  1010 => 723,  991 => 705,  987 => 704,  983 => 703,  979 => 702,  975 => 701,  971 => 700,  932 => 664,  926 => 661,  903 => 641,  897 => 638,  874 => 618,  868 => 615,  841 => 591,  835 => 588,  810 => 566,  804 => 563,  780 => 542,  774 => 539,  741 => 509,  735 => 506,  710 => 484,  704 => 481,  680 => 460,  674 => 457,  649 => 435,  643 => 432,  618 => 410,  612 => 407,  588 => 386,  582 => 383,  538 => 341,  528 => 340,  517 => 337,  507 => 336,  442 => 280,  427 => 268,  222 => 66,  207 => 54,  169 => 18,  159 => 17,  141 => 14,  122 => 6,  110 => 724,  108 => 723,  104 => 722,  100 => 721,  91 => 714,  89 => 340,  86 => 339,  84 => 336,  81 => 335,  79 => 17,  75 => 15,  73 => 14,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
+        return array (  624 => 409,  605 => 391,  601 => 390,  597 => 389,  593 => 388,  589 => 387,  585 => 386,  536 => 339,  526 => 338,  515 => 335,  505 => 334,  440 => 278,  425 => 266,  222 => 66,  207 => 54,  169 => 18,  159 => 17,  141 => 14,  122 => 6,  110 => 410,  108 => 409,  104 => 408,  100 => 407,  91 => 400,  89 => 338,  86 => 337,  84 => 334,  81 => 333,  79 => 17,  75 => 15,  73 => 14,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -1198,9 +812,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\">My Account</a>
                     </li>
-                    <li class=\"menu-item-has-children\">
-                        <a href=\"#\">About Us</a>
-                    </li>
+
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\">User</a>
                         <ul class=\"sub-menu\">
@@ -1274,7 +886,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li><a href=\"#\">About Us</a></li>
+
                                         <li><a href=\"#\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\">User <i class=\"fa fa-angle-down\"></i></a>
@@ -1414,324 +1026,12 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                             <h3>Information</h3>
                             <div class=\"footer_menu\">
                                 <ul>
-                                    <li><a href=\"#\">About Us</a></li>
                                     <li><a href=\"#\">New Products</a></li>
                                     <li><a href=\"#\">Terms & Conditions</a></li>
-                                    <li><a href=\"#\">My Account</a></li>
-                                    <li><a href=\"#\">Wish List</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class=\"col-lg-3 col-md-6\">
-                        <div class=\"widgets_container widgets_p_product\">
-                            <h3>Featured Products</h3>
-                            <div class=\"small_product_container small_product_column1 owl-carousel\">
-                                <div class=\"small_product_list\">
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Bvlgari Women Goldea</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">€3999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">3700€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Illicit Flower
-                                                    </a>
-                                                </h4>
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">4999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">
-                                                        4200€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Women Fever</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">7499€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">7200€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                                <div class=\"small_product_list\">
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Mugler Aura Women</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">7999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">7550€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Paco Rabbane Pure XS for her
-                                                    </a>
-                                                </h4>
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">6550€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">
-                                                        4250€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Kenzo Women World</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">5999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">5900€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-lg-3 col-md-6\">
-                        <div class=\"widgets_container widgets_p_product\">
-                            <h3>Most Viewed Products</h3>
-                            <div class=\"small_product_container small_product_column1 owl-carousel\">
-                                <div class=\"small_product_list\">
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Bvlgari Women Goldea</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">3999€</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">3700€</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Illicit Flower
-                                                    </a>
-                                                </h4>
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">4999 €</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">
-                                                        4200 €</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\">
-                                                </a>
-
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Women Fever</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">799</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">500</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                                <div class=\"small_product_list\">
-                                    <article class=\"single_product\">
-
-
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"primary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B4-1.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\"><img
-                                                            src=\"{{ asset('base/best-product/B4-2.png') }}\" alt=\"\"></a>
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Mugler Aura Women</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">99</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">50</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-
-
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"primary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B5-1.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\"><img
-                                                            src=\"{{ asset('base/best-product/B5-2.png') }}\" alt=\"\"></a>
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Jimmy Choo Women Fever</a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">69</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">50</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                    <article class=\"single_product\">
-
-
-                                        <figure>
-                                            <div class=\"product_thumb\">
-                                                <a href=\"#\" class=\"primary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B6-1.png') }}\" alt=\"\">
-                                                </a>
-                                                <a href=\"#\" class=\"secondary_img\">
-                                                    <img src=\"{{ asset('base/best-product/B6-2.png') }}\" alt=\"\"></a>
-                                            </div>
-                                            <figcaption class=\"product_content\">
-                                                <h4 class=\"product_name\">
-                                                    <a href=\"#\" style=\"color: white;\">Dloce & Gabbana Women </a>
-                                                </h4>
-
-                                                <div class=\"price_box\">
-                                                    <span class=\"old_price\">99</span>
-                                                    <span class=\"current_price\" style=\"color: white;\">56</span>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
