@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* Styles de base pour tous les écrans */
+
+.all-page{
+    margin: 230px;
+}
+.container2 {
+    margin-top:19%;
+    padding-bottom: 170px;
+    margin-left: 0;
+}
+
+h1 {
+
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 100%;
+    font-style: normal;
+}
+
+h4, p {
+    padding-top: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Media Query pour les écrans moyens (481px à 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    all-block {
+        margin: 50px; /* Marges réduites pour un meilleur usage de l'espace */
+    }
+
+    .container2 {
+        padding-bottom: 80px; /* Padding réduit pour éviter le gaspillage d'espace vertical */
+    }
+
+    h1 {
+        font-size: 40px; /* Taille de police ajustée pour une meilleure visibilité sans surcharger */
+    }
+
+    h4, p {
+        padding-top: 15px; /* Padding réduit pour une meilleure cohérence visuelle */
+        font-size: 16px; /* Ajustement de la taille de police pour optimiser la lisibilité */
+    }
+}
+
+/* Media Query pour les petits écrans (jusqu'à 480px) */
+@media (max-width: 480px) {
+    all-block {
+        margin: 10px; /* Marges encore plus réduites pour les très petits écrans */
+    }
+
+    h1 {
+        font-size: 28px; /* Taille de police plus petite pour les titres */
+    }
+
+    h4, p {
+        padding-top: 10px; /* Réduction du padding pour une lecture plus compacte */
+    }
+}

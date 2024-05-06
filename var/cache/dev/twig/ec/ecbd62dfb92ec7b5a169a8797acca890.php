@@ -128,7 +128,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo " PERFUME CHEZ EXOTIK";
+        echo " PERFUME CHEZ EXOTIK ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -669,7 +669,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 <head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>{% block title %} PERFUME CHEZ EXOTIK{% endblock %}</title>
+    <title>{% block title %} PERFUME CHEZ EXOTIK {% endblock %}</title>
     <link rel=\"icon\" type=\"image/png\" href=\"{{ asset('base/logoicon.png') }}\">
     <link rel=\"stylesheet \" href=\"{{ asset('base/style.css') }}\">
     <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">
