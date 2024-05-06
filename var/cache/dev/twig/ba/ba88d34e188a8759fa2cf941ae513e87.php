@@ -385,6 +385,6 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
 </div>
 
 {% endblock %}
-", "registration/register.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\registration\\register.html.twig");
     }
 }

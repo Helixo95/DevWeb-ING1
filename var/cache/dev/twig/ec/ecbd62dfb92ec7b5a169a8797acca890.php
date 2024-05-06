@@ -77,17 +77,17 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 ";
         // line 17
         $this->displayBlock('header', $context, $blocks);
-        // line 383
+        // line 335
         echo "
 ";
-        // line 384
+        // line 336
         $this->displayBlock('content', $context, $blocks);
-        // line 387
+        // line 339
         echo "
 ";
-        // line 388
+        // line 340
         $this->displayBlock('footer', $context, $blocks);
-        // line 762
+        // line 714
         echo "
 
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
@@ -96,17 +96,17 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js\"></script>
 <script src=\"";
-        // line 769
+        // line 721
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/countdown.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 770
+        // line 722
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/main.js"), "html", null, true);
         echo "\"></script>
 ";
-        // line 771
+        // line 723
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 772
+        // line 724
         echo "</body>
 </html>
 ";
@@ -178,14 +178,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                 <ul>
                     <li class=\"top_links\">
                         <a href=\"#\">My Account <i class=\"fa fa-angle-down\"></i></a>
-                        <ul class=\"dropdown_links\">
-                            <li><a href=\"#\">Checkout</a></li>
-                            <li><a href=\"#\">My Account</a></li>
-                            <li><a href=\"#\">Shopping Cart</a></li>
-                            <li><a href=\"#\">Wishlist</a></li>
-                        </ul>
                     </li>
-
                 </ul>
             </div>
 
@@ -200,11 +193,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                             </form>
                         </div>
                     </li>
-                    <li class=\"header_wishlist\">
-                        <a href=\"#\"><i class=\"fa fa-heart-o\"></i>
-                            <span class=\"item_count\">4</span>
-                        </a>
-                    </li>
                     <li class=\"mini_cart_wrapper\">
                         <a href=\"javascript:void(0)\">
                             <i class=\"fa fa-shopping-cart\"></i>
@@ -215,7 +203,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                 <div class=\"cart_item\">
                                     <div class=\"cart_img\">
                                         <a href=\"#\"><img src=\"";
-        // line 66
+        // line 54
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini1.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                     </div>
@@ -230,7 +218,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                 <div class=\"cart_item\">
                                     <div class=\"cart_img\">
                                         <a href=\"#\"><img src=\"";
-        // line 78
+        // line 66
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini2.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                     </div>
@@ -274,12 +262,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
             <div id=\"menu\" class=\"text-left\">
                 <ul class=\"offcanvas_main_menu\">
                     <li class=\"menu-item-has-children active\">
-                        <a href=\"#\">Home</a>
-                        <ul class=\"sub-menu\">
-                            <li><a href=\"#\">Men</a></li>
-                            <li><a href=\"#\">Women</a></li>
-                            <li><a href=\"#\">Unisex</a></li>
-                        </ul>
+                        <a href=\"contact\">Home</a>
                     </li>
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\">Brands</a>
@@ -316,13 +299,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                             </li>
                         </ul>
                     </li>
-                    <li class=\"menu-item-has-children\">
-                        <a href=\"#\">Blog</a>
-                        <ul class=\"sub-menu\">
-                            <li><a href=\"#\">Newsletter</a></li>
-                            <li><a href=\"#\">Social Media</a></li>
-                        </ul>
-                    </li>
+
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\">My Account</a>
                     </li>
@@ -358,13 +335,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href=\"base.html.twig\" class=\"active\">Home <i class=\"fa fa-angle-down\"></i></a>
-                                            <ul class=\"sub_menu\">
-                                                <li><a href=\"#\">Men</a></li>
-                                                <li><a href=\"#\">Women</a></li>
-                                                <li><a href=\"#\">Unisex</a></li>
-                                                <li><a href=\"#\">Kids</a></li>
-                                            </ul>
+                                            <a href=\"contact\" class=\"active\">Home </a>
 
                                         </li>
 
@@ -408,13 +379,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li>
-                                            <a href=\"#\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                                            <ul class=\"sub_menu pages\">
-                                                <li><a href=\"#\">Newsletter</a></li>
-                                                <li><a href=\"#\">Social Media</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href=\"#\">About Us</a></li>
                                         <li><a href=\"#\">Contact Us</a></li>
                                         <li>
@@ -447,12 +411,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                 </form>
                                             </div>
                                         </li>
-                                        <li class=\"header_wishlist\">
-                                            <a href=\"#\">
-                                                <i class=\"fa fa-heart-o\"></i>
-                                                <span class=\"item_count\">4</span>
-                                            </a>
-                                        </li>
                                         <li class=\"mini_cart_wrapper\">
                                             <a href=\"javascript:void(0)\">
                                                 <i class=\"fa fa-shopping-cart\"></i>
@@ -465,7 +423,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 310
+        // line 268
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini1.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -480,7 +438,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 322
+        // line 280
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini2.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -526,12 +484,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <a href=\"#\">
                                                 <i class=\"fa fa-cog\"></i>
                                             </a>
-                                            <ul class=\"dropdown_links\">
-                                                <li><a href=\"#\">Checkout</a></li>
-                                                <li><a href=\"#\">My Account</a></li>
-                                                <li><a href=\"#\">Shopping cart</a></li>
-                                                <li><a href=\"#\">Wishlist</a></li>
-                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -551,7 +503,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
     }
 
-    // line 384
+    // line 336
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -561,7 +513,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 385
+        // line 337
         echo "    <!-- Contenu spécifique à chaque page -->
 ";
         
@@ -572,7 +524,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
     }
 
-    // line 388
+    // line 340
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -582,7 +534,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 389
+        // line 341
         echo "    <footer class=\"footer_widgets color_two\">
         <div class=\"footer_top\">
             <div class=\"container\">
@@ -626,13 +578,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 431
+        // line 383
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 434
+        // line 386
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -656,13 +608,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 455
+        // line 407
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 458
+        // line 410
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -687,13 +639,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 480
+        // line 432
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 483
+        // line 435
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -718,13 +670,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 505
+        // line 457
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 508
+        // line 460
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -748,13 +700,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 529
+        // line 481
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 532
+        // line 484
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -779,13 +731,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 554
+        // line 506
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 557
+        // line 509
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -818,13 +770,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 587
+        // line 539
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 590
+        // line 542
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -848,13 +800,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 611
+        // line 563
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 614
+        // line 566
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -879,13 +831,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 636
+        // line 588
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 639
+        // line 591
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -912,13 +864,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"primary_img\">
                                                     <img src=\"";
-        // line 663
+        // line 615
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B4-1.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\"><img
                                                             src=\"";
-        // line 666
+        // line 618
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B4-2.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                                             </div>
@@ -941,13 +893,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"primary_img\">
                                                     <img src=\"";
-        // line 686
+        // line 638
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-1.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\"><img
                                                             src=\"";
-        // line 689
+        // line 641
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B5-2.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                                             </div>
@@ -970,13 +922,13 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"product_thumb\">
                                                 <a href=\"#\" class=\"primary_img\">
                                                     <img src=\"";
-        // line 709
+        // line 661
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B6-1.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                                 <a href=\"#\" class=\"secondary_img\">
                                                     <img src=\"";
-        // line 712
+        // line 664
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/best-product/B6-2.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                                             </div>
@@ -1015,27 +967,27 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                         <div class=\"footer_payment text-right\">
                             <ul>
                                 <li><a href=\"#\"><img src=\"";
-        // line 748
+        // line 700
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 749
+        // line 701
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal1.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 750
+        // line 702
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal2.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 751
+        // line 703
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal3.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 752
+        // line 704
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal4.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 753
+        // line 705
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal5.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                             </ul>
@@ -1054,7 +1006,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
     }
 
-    // line 771
+    // line 723
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -1093,7 +1045,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  1058 => 771,  1039 => 753,  1035 => 752,  1031 => 751,  1027 => 750,  1023 => 749,  1019 => 748,  980 => 712,  974 => 709,  951 => 689,  945 => 686,  922 => 666,  916 => 663,  889 => 639,  883 => 636,  858 => 614,  852 => 611,  828 => 590,  822 => 587,  789 => 557,  783 => 554,  758 => 532,  752 => 529,  728 => 508,  722 => 505,  697 => 483,  691 => 480,  666 => 458,  660 => 455,  636 => 434,  630 => 431,  586 => 389,  576 => 388,  565 => 385,  555 => 384,  484 => 322,  469 => 310,  234 => 78,  219 => 66,  169 => 18,  159 => 17,  141 => 14,  122 => 6,  110 => 772,  108 => 771,  104 => 770,  100 => 769,  91 => 762,  89 => 388,  86 => 387,  84 => 384,  81 => 383,  79 => 17,  75 => 15,  73 => 14,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
+        return array (  1010 => 723,  991 => 705,  987 => 704,  983 => 703,  979 => 702,  975 => 701,  971 => 700,  932 => 664,  926 => 661,  903 => 641,  897 => 638,  874 => 618,  868 => 615,  841 => 591,  835 => 588,  810 => 566,  804 => 563,  780 => 542,  774 => 539,  741 => 509,  735 => 506,  710 => 484,  704 => 481,  680 => 460,  674 => 457,  649 => 435,  643 => 432,  618 => 410,  612 => 407,  588 => 386,  582 => 383,  538 => 341,  528 => 340,  517 => 337,  507 => 336,  442 => 280,  427 => 268,  222 => 66,  207 => 54,  169 => 18,  159 => 17,  141 => 14,  122 => 6,  110 => 724,  108 => 723,  104 => 722,  100 => 721,  91 => 714,  89 => 340,  86 => 339,  84 => 336,  81 => 335,  79 => 17,  75 => 15,  73 => 14,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -1127,14 +1079,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                 <ul>
                     <li class=\"top_links\">
                         <a href=\"#\">My Account <i class=\"fa fa-angle-down\"></i></a>
-                        <ul class=\"dropdown_links\">
-                            <li><a href=\"#\">Checkout</a></li>
-                            <li><a href=\"#\">My Account</a></li>
-                            <li><a href=\"#\">Shopping Cart</a></li>
-                            <li><a href=\"#\">Wishlist</a></li>
-                        </ul>
                     </li>
-
                 </ul>
             </div>
 
@@ -1148,11 +1093,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                 <button type=\"submit\"><i class=\"fa fa-search\"></i></button>
                             </form>
                         </div>
-                    </li>
-                    <li class=\"header_wishlist\">
-                        <a href=\"#\"><i class=\"fa fa-heart-o\"></i>
-                            <span class=\"item_count\">4</span>
-                        </a>
                     </li>
                     <li class=\"mini_cart_wrapper\">
                         <a href=\"javascript:void(0)\">
@@ -1217,12 +1157,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
             <div id=\"menu\" class=\"text-left\">
                 <ul class=\"offcanvas_main_menu\">
                     <li class=\"menu-item-has-children active\">
-                        <a href=\"#\">Home</a>
-                        <ul class=\"sub-menu\">
-                            <li><a href=\"#\">Men</a></li>
-                            <li><a href=\"#\">Women</a></li>
-                            <li><a href=\"#\">Unisex</a></li>
-                        </ul>
+                        <a href=\"contact\">Home</a>
                     </li>
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\">Brands</a>
@@ -1259,13 +1194,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                             </li>
                         </ul>
                     </li>
-                    <li class=\"menu-item-has-children\">
-                        <a href=\"#\">Blog</a>
-                        <ul class=\"sub-menu\">
-                            <li><a href=\"#\">Newsletter</a></li>
-                            <li><a href=\"#\">Social Media</a></li>
-                        </ul>
-                    </li>
+
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\">My Account</a>
                     </li>
@@ -1301,13 +1230,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href=\"base.html.twig\" class=\"active\">Home <i class=\"fa fa-angle-down\"></i></a>
-                                            <ul class=\"sub_menu\">
-                                                <li><a href=\"#\">Men</a></li>
-                                                <li><a href=\"#\">Women</a></li>
-                                                <li><a href=\"#\">Unisex</a></li>
-                                                <li><a href=\"#\">Kids</a></li>
-                                            </ul>
+                                            <a href=\"contact\" class=\"active\">Home </a>
 
                                         </li>
 
@@ -1351,13 +1274,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li>
-                                            <a href=\"#\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                                            <ul class=\"sub_menu pages\">
-                                                <li><a href=\"#\">Newsletter</a></li>
-                                                <li><a href=\"#\">Social Media</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href=\"#\">About Us</a></li>
                                         <li><a href=\"#\">Contact Us</a></li>
                                         <li>
@@ -1389,12 +1305,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                                     <button type=\"submit\"><i class=\"fa fa-search\"></i></button>
                                                 </form>
                                             </div>
-                                        </li>
-                                        <li class=\"header_wishlist\">
-                                            <a href=\"#\">
-                                                <i class=\"fa fa-heart-o\"></i>
-                                                <span class=\"item_count\">4</span>
-                                            </a>
                                         </li>
                                         <li class=\"mini_cart_wrapper\">
                                             <a href=\"javascript:void(0)\">
@@ -1463,12 +1373,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <a href=\"#\">
                                                 <i class=\"fa fa-cog\"></i>
                                             </a>
-                                            <ul class=\"dropdown_links\">
-                                                <li><a href=\"#\">Checkout</a></li>
-                                                <li><a href=\"#\">My Account</a></li>
-                                                <li><a href=\"#\">Shopping cart</a></li>
-                                                <li><a href=\"#\">Wishlist</a></li>
-                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -1871,6 +1775,6 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 {% block javascripts %}{% endblock %}
 </body>
 </html>
-", "base.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\base.html.twig");
+", "base.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\base.html.twig");
     }
 }

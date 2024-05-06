@@ -1,75 +1,22 @@
-/* CSS de la barre de navigation */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFFFFF;
-    padding: 0 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.stock-btn {
+    width: auto;  /* Auto width based on content */
+    height: 25px; /* Match height of quantity buttons */
+    line-height: 25px;
+    padding: 0 10px; /* Padding for text inside button */
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    cursor: default; /* Default cursor indicates it's not clickable */
+    margin-left: 20px; /* Space from quantity selector */
+    font-size: 14px; /* Adjust font size as needed */
 }
-
-.logo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+/* For Chrome, Safari, Edge, Opera */
+.quantity-selector .quantity-input::-webkit-inner-spin-button,
+.quantity-selector .quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
     margin: 0;
-    padding: 0;
 }
 
-.nav-links a {
-    text-decoration: none;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #555;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 10px;
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-    color: #000;
-}
-
-.nav-icons {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-icons a {
-    text-decoration: none;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #555;
-    padding: 10px;
-}
-
-.nav-icons a:hover,
-.nav-icons a:focus {
-    color: #000;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .nav-icons {
-        order: -1;
-        margin-bottom: 10px;
-    }
+/* For Firefox */
+.quantity-selector .quantity-input[type=number] {
+    -moz-appearance: textfield;
 }
