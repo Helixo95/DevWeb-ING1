@@ -342,7 +342,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"mega_menu\">
                                                 <ul class=\"mega_menu_inner\">
                                                     <li>
-                                                        <a href=\"#\">Men</a>
+                                                        <a href=\"/product/men\">Men</a>
                                                         <ul>
                                                             <li><a href=\"#\">Versace</a></li>
                                                             <li><a href=\"#\">Hugo Boss</a></li>
@@ -354,7 +354,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
                                                     </li>
                                                     <li>
-                                                        <a href=\"#\">Women</a>
+                                                        <a href=\"/product/women\">Women</a>
                                                         <ul>
                                                             <li><a href=\"#\">Bvlgari</a></li>
                                                             <li><a href=\"#\">Coach</a></li>
@@ -365,7 +365,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
                                                     </li>
                                                     <li>
-                                                        <a href=\"#\">Unisex</a>
+                                                        <a href=\"/product/unisex\">Unisex</a>
                                                         <ul>
                                                             <li><a href=\"#\">Ajmal</a></li>
                                                             <li><a href=\"#\">Calvin Klein</a></li>
@@ -851,7 +851,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                             <div class=\"mega_menu\">
                                                 <ul class=\"mega_menu_inner\">
                                                     <li>
-                                                        <a href=\"#\">Men</a>
+                                                        <a href=\"/product/men\">Men</a>
                                                         <ul>
                                                             <li><a href=\"#\">Versace</a></li>
                                                             <li><a href=\"#\">Hugo Boss</a></li>
@@ -863,7 +863,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
                                                     </li>
                                                     <li>
-                                                        <a href=\"#\">Women</a>
+                                                        <a href=\"/product/women\">Women</a>
                                                         <ul>
                                                             <li><a href=\"#\">Bvlgari</a></li>
                                                             <li><a href=\"#\">Coach</a></li>
@@ -874,7 +874,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
                                                     </li>
                                                     <li>
-                                                        <a href=\"#\">Unisex</a>
+                                                        <a href=\"/product/unisex\">Unisex</a>
                                                         <ul>
                                                             <li><a href=\"#\">Ajmal</a></li>
                                                             <li><a href=\"#\">Calvin Klein</a></li>
