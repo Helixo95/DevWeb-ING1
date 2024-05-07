@@ -10,35 +10,39 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProductController extends AbstractController
 {
-//    #[Route('/product', name: 'app_product')]
-//    public function index(EntityManagerInterface $entityManager): Response
-//    {
-//        // Récupérer tous les produits de la base de données
-//        $products = $entityManager->getRepository(product::class)->findAll();
-//
-//        // Passer les produits au template Twig
-//        return $this->render('product.html.twig', [
-//            'products' => $products
-//        ]);
-//    }
-// src/Controller/ProductController.php
-
-    #[Route('/product/{category}', name: 'app_product_category')]
-    public function category(string $category, EntityManagerInterface $entityManager): Response
+    #[Route('/product/{category}/{brand?}', name: 'app_product_category_brand')]
+    public function categoryBrand(string $category, ?string $brand, EntityManagerInterface $entityManager): Response
     {
-        // Récupérer les produits en fonction de la catégorie
+        $repository = $entityManager->getRepository(Product::class);
+        $brands = $repository->findBrandsByCategory($category);
 
-        $products = $entityManager->getRepository(Product::class)->findBy(['category' => $category]);
+        $categories = ['Men', 'Women', 'Unisex']; // Les catégories disponibles
 
+        // Récupérer les marques pour chaque catégorie à partir de la base de données
+        $brandLists = [];
+        foreach ($categories as $cat) {
+            $brandLists[$cat] = $entityManager->getRepository(Product::class)->findBrandsByCategory($cat);
+        }
 
-        $categories = ['Men', 'Women', 'Unisex'];
+        $products = [];
+        if ($brand) {
+            $products = $entityManager->getRepository(Product::class)->findBy([
+                'category' => $category,
+                'brand' => str_replace('-', ' ', $brand)  // Convertir les tirets en espaces
+            ]);
+        } else {
+            $products = $entityManager->getRepository(Product::class)->findBy(['category' => $category]);
+        }
 
-        // Passer les produits filtrés au template Twig
         return $this->render('product.html.twig', [
             'category' => $category,
+            'brand' => $brand,
             'categories' => $categories,
+            'brandLists' => $brandLists,
             'products' => $products
         ]);
-
     }
+
+
+
 }

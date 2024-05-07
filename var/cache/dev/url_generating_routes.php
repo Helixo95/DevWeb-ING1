@@ -22,7 +22,7 @@ return [
     'app_signin' => [[], ['_controller' => 'App\\Controller\\HomeController::signin'], [], [['text', '/signin']], [], [], []],
     'app_modif_profile' => [[], ['_controller' => 'App\\Controller\\HomeController::modif_profile'], [], [['text', '/modif_profile']], [], [], []],
     'app_profile' => [[], ['_controller' => 'App\\Controller\\HomeController::profile'], [], [['text', '/profile']], [], [], []],
-    'app_product_category' => [['category'], ['_controller' => 'App\\Controller\\ProductController::category'], [], [['variable', '/', '[^/]++', 'category', true], ['text', '/product']], [], [], []],
+    'app_product_category_brand' => [['category', 'brand'], ['brand' => null, '_controller' => 'App\\Controller\\ProductController::categoryBrand'], [], [['variable', '/', '[^/]++', 'brand', true], ['variable', '/', '[^/]++', 'category', true], ['text', '/product']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
