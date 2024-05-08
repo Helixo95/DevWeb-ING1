@@ -1,7 +1,11 @@
 <?php
 
+<<<<<<<< HEAD:var/cache/dev/ContainerTKvOi1f/getErrorHandler_ErrorRenderer_HtmlService.php
 namespace ContainerTKvOi1f;
 
+========
+namespace ContainerEUG0bel;
+>>>>>>>> f9e4ba75 (Modification des coordonnées User réussi + Ajout du JS pour les erreurs):var/cache/dev/ContainerEUG0bel/getErrorHandler_ErrorRenderer_HtmlService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;

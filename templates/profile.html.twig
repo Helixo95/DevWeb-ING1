@@ -1,8 +1,6 @@
 {% extends 'base.html.twig' %}
-{% block body %}
 
-<!DOCTYPE html>
-<html lang="fr">
+{% block content %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,28 +46,35 @@
         }
     </style>
 </head>
-<body>
+<br>
+<br>
+<br>
     <section class="h-100 gradient-custom-2">
-        <div class="container py-5 h-100">
+        <div class="container py-2 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-lg-12 col-xl-10">
                     <div class="card">
                         <div class="rounded-top text-white d-flex flex-row" style="background-color: #0c0d25; height:200px;" >
                             <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px;">
-                                <img src="{{asset('login/img/profil.png')}}"
-                                    alt="User Profile Picture" class="img-fluid img-thumbnail mt-4 mb-2"
-                                    style="width: 150px; z-index: 1">
-                                    <a class="btn btn-outline-dark" data-mdb-ripple-color="dark" href="{{ path('app_modif_profile') }}"
-                                    style="z-index: 1;">
-                                     Modifier le profil
-                                 </a>                                 
+                                {% if app.user.picture %}
+                                    <img src="{{ asset('img_profil/'~app.user.picture) }}"
+                                        alt="User Profile Picture" class="img-fluid img-thumbnail user-profile-picture mt-4 mb-2">
+                                {% else %}
+                                    <img src="{{ asset('login/img/profil.png') }}"
+                                        alt="User Profile Picture" class="img-fluid img-thumbnail user-profile-picture mt-4 mb-2">
+                                {% endif %}
+                                <br>
+                                <a class="btn btn-outline-dark btn-sm" data-mdb-ripple-color="dark" href="{{ path('profile_edit') }}" style="z-index: 1; margin-top=20px">
+                                    <i class="fas fa-user-edit me-1"></i> Modifier le profil
+                                </a>
+                                                             
                             </div>
                             <div class="ms-3" style="margin-top: 130px;">
-                                <h5>MAAOUIA Ahmed</h5>
-                                <p>Cergy</p>
+                                <h5>{{app.user.nom}} {{app.user.prenom}}</h5>
+                                <p>{{app.user.address}}</p>
                             </div>
                         </div>
-                        <div class="p-4 text-black" style="background-color: #e9edf0d1;">
+                        <div class="p-4 text-black" style="background-color: #e9edf0d1; height: 100px;">
                             <div class="d-flex justify-content-end text-center py-1">
                                 <div>
                                     <p class="mb-1 h5">10</p>
@@ -78,67 +83,11 @@
                             </div>
                         </div>
                         <div class="card-body p-4 text-black">
-                            <div class="mb-5">
+                            <div class="mb-2">
                                 <p class="lead fw-normal mb-1">Mes coordonnées</p>
                                 <div class="p-4" style="background-color: #e9edf0d1;">
-                                    <p class="font-italic mb-1">Numéro de telephone : 123-456-7890</p>
-                                    <p class="font-italic mb-1">Adresse : 1234 Street Name, City, Country</p>
-                                </div>
-                            </div>
-                            <div class="mb-5">
-                                <p class="lead fw-normal mb-1">À propos</p>
-                                <div class="p-4" style="background-color: #e9edf0d1;">
-                                    <p class="font-italic mb-1">Développeur Web</p>
-                                    <p class="font-italic mb-1">Vit à New York</p>
-                                    <p class="font-italic mb-0">Photographe</p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <p class="lead fw-normal mb-0">Produits récents</p>
-                                <p class="mb-0"><a href="#!" class="text-muted">Voir tout</a></p>
-                            </div>
-                            <div class="row g-2">
-                                <div class="col-md-6 mb-2">
-                                    <div class="card small-product-card">
-                                        <img src="{{asset('login/img/product1.jpg')}}"
-                                            alt="Product 1" class="card-img-top product-img rounded-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center product-name">Nom du Produit 1</h5>
-                                            <p class="card-text text-center product-category">Catégorie: Catégorie 1</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-2">
-                                    <div class="card small-product-card">
-                                        <img src="{{asset('login/img/product2.jpg')}}"
-                                            alt="Product 2" class="card-img-top product-img rounded-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center product-name">Nom du Produit 2</h5>
-                                            <p class="card-text text-center product-category">Catégorie: Catégorie 2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row g-2">
-                                <div class="col-md-6 mb-2">
-                                    <div class="card small-product-card">
-                                        <img src="{{asset('login/img/product3.jpg')}}"
-                                            alt="Product 3" class="card-img-top product-img rounded-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center product-name">Nom du Produit 3</h5>
-                                            <p class="card-text text-center product-category">Catégorie: Catégorie 3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-2">
-                                    <div class="card small-product-card">
-                                        <img src="{{asset('login/img/product4.jpg')}}"
-                                            alt="Product 4" class="card-img-top product-img rounded-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center product-name">Nom du Produit 4</h5>
-                                            <p class="card-text text-center product-category">Catégorie: Catégorie 4</p>
-                                        </div>
-                                    </div>
+                                    <p class="font-italic mb-1">Numéro de telephone : {{app.user.phoneNumber}}</p>
+                                    <p class="font-italic mb-1">Adresse : {{app.user.address}}</p>
                                 </div>
                             </div>
                         </div>
@@ -146,10 +95,11 @@
                 </div>
             </div>
         </div>
+        
     </section>
+
 
     <!-- Bootstrap JS -->
     <script type="text/javascript" src="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js') }}"></script>
-</body>
-</html>
+
 {% endblock %}

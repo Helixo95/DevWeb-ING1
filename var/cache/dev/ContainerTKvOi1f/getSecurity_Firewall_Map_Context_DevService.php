@@ -1,7 +1,11 @@
 <?php
 
+<<<<<<<< HEAD:var/cache/dev/ContainerTKvOi1f/getSecurity_Firewall_Map_Context_DevService.php
 namespace ContainerTKvOi1f;
 
+========
+namespace ContainerEUG0bel;
+>>>>>>>> f9e4ba75 (Modification des coordonnées User réussi + Ajout du JS pour les erreurs):var/cache/dev/ContainerEUG0bel/getSecurity_Firewall_Map_Context_DevService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;

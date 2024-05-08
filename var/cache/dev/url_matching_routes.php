@@ -18,12 +18,12 @@ return [
         '/guidlines' => [[['_route' => 'app_guidlines', '_controller' => 'App\\Controller\\HomeController::guidlines'], null, null, null, false, false, null]],
         '/home' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::home'], null, null, null, false, false, null]],
         '/signin' => [[['_route' => 'app_signin', '_controller' => 'App\\Controller\\HomeController::signin'], null, null, null, false, false, null]],
-        '/modif_profile' => [[['_route' => 'app_modif_profile', '_controller' => 'App\\Controller\\HomeController::modif_profile'], null, null, null, false, false, null]],
         '/profile' => [[['_route' => 'app_profile', '_controller' => 'App\\Controller\\HomeController::profile'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'app_homepage', '_controller' => 'App\\Controller\\HomeController::login'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'app_homepage', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
+        '/modif_profile' => [[['_route' => 'profile_edit', '_controller' => 'App\\Controller\\ProfileModifController::edit'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
@@ -42,7 +42,7 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
-                .'|/product/([^/]++)(?:/([^/]++))?(*:200)'
+                .'|/product(?:/([^/]++)(?:/([^/]++))?)?(*:205)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -53,8 +53,8 @@ return [
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        200 => [
-            [['_route' => 'app_product_category_brand', 'brand' => null, '_controller' => 'App\\Controller\\ProductController::categoryBrand'], ['category', 'brand'], null, null, false, true, null],
+        205 => [
+            [['_route' => 'app_product_category_brand', 'category' => null, 'brand' => null, '_controller' => 'App\\Controller\\ProductController::categoryBrand'], ['category', 'brand'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

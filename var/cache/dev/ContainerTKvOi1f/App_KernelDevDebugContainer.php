@@ -1,7 +1,11 @@
 <?php
 
+<<<<<<<< HEAD:var/cache/dev/ContainerTKvOi1f/App_KernelDevDebugContainer.php
 namespace ContainerTKvOi1f;
 
+========
+namespace ContainerEUG0bel;
+>>>>>>>> f9e4ba75 (Modification des coordonnées User réussi + Ajout du JS pour les erreurs):var/cache/dev/ContainerEUG0bel/App_KernelDevDebugContainer.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -58,6 +62,7 @@ class App_KernelDevDebugContainer extends Container
             'App\\Controller\\ContactController' => 'getContactControllerService',
             'App\\Controller\\HomeController' => 'getHomeControllerService',
             'App\\Controller\\ProductController' => 'getProductControllerService',
+            'App\\Controller\\ProfileModifController' => 'getProfileModifControllerService',
             'App\\Controller\\RegistrationController' => 'getRegistrationControllerService',
             'App\\Controller\\SecurityController' => 'getSecurityControllerService',
             'Doctrine\\Bundle\\DoctrineBundle\\Controller\\ProfilerController' => 'getProfilerControllerService',

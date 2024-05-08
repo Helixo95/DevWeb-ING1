@@ -10,8 +10,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProductController extends AbstractController
 {
-    #[Route('/product/{category}/{brand?}', name: 'app_product_category_brand')]
-    public function categoryBrand(string $category, ?string $brand, EntityManagerInterface $entityManager): Response
+    #[Route('/product/{category?}/{brand?}', name: 'app_product_category_brand')]
+    public function categoryBrand(?string $category, ?string $brand, EntityManagerInterface $entityManager): Response
     {
         $products = $entityManager->getRepository(product::class)->findAll();
         $repository = $entityManager->getRepository(Product::class);
