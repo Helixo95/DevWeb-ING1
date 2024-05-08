@@ -29,27 +29,31 @@
       }
     }
 
-    .navbar .nav-link {
-      color: #fff !important;
-    }
-
     .error-message {
         color: red;
         font-weight: bold;
     }
+    #intro {
+        margin-top: 20px;
+    }
+
+    .error-message {
+        color: white;
+        font-size: 12px;
+        margin-top: 5px;
+        padding: 5px;
+        border: 1px solid red;
+        border-radius: 4px;
+        background-color: rgba(255, 0, 0, 0.2); /* Rouge avec une opacité de 20% */
+        font-weight: normal; /* Texte non gras */
+    }
+    
     
 </style>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 
   
-<div id="intro" class="bg-image shadow-2-strong">
+<div id="intro" class="bg-image shadow-2-strong" >
     <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
       <div class="container">
         <div class="row justify-content-center">
@@ -60,6 +64,17 @@
             
             {{ form_start(registrationForm, {'attr': {'class': 'form bg-white rounded shadow-5-strong p-5'}}) }}
             
+                <div class="form-group row">
+                    <div class="col">
+                        {{ form_label(registrationForm.nom, 'Nom', {'label_attr': {'class': 'col-form-label'}}) }}
+                        {{ form_widget(registrationForm.nom, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="col">
+                        {{ form_label(registrationForm.prenom, 'Prénom', {'label_attr': {'class': 'col-form-label'}}) }}
+                        {{ form_widget(registrationForm.prenom, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
                 <div class="form-group">
                     {{ form_label(registrationForm.email, 'Email') }}
                     {{ form_widget(registrationForm.email, {'attr': {'class': 'form-control'}}) }}
@@ -84,7 +99,12 @@
 
                 <div class="form-group">
                     {{ form_label(registrationForm.phoneNumber, 'Numéro de téléphone') }}
-                    {{ form_widget(registrationForm.phoneNumber, {'attr': {'class': 'form-control'}}) }}
+                    <div id="phone-number-field">
+                        {{ form_widget(registrationForm.phoneNumber, {'attr': {'class': 'form-control'}}) }}
+                        <div class="error-message" id="phone-error-message">
+                            {{ form_errors(registrationForm.phoneNumber) }}
+                        </div>
+                    </div>
                 </div>
 
                 <div class="form-group form-check">
@@ -100,11 +120,12 @@
         </div>
         </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
+
     </div>
+   
 </div>
+<script src="{{ asset('profil/script.js') }}"></script>
+<br><br>
+<br><br><br>
 
 {% endblock %}

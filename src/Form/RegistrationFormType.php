@@ -41,6 +41,8 @@ class RegistrationFormType extends AbstractType
                 'placeholder' => 'Genre',
             ])
             ->add('address', TextType::class)
+            ->add('nom', TextType::class)
+            ->add('prenom', TextType::class)
             ->add('phoneNumber', TextType::class, [
                 'constraints' => [
                     new Regex([

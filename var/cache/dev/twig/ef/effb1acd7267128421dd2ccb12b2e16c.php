@@ -25,7 +25,7 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
-            'body' => [$this, 'block_body'],
+            'content' => [$this, 'block_content'],
         ];
     }
 
@@ -54,27 +54,24 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
 
     }
 
-    // line 2
-    public function block_body($context, array $blocks = [])
+    // line 3
+    public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 3
-        echo "
-<!DOCTYPE html>
-<html lang=\"fr\">
-<head>
+        // line 4
+        echo "<head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <title>Exotik - Profile</title>
     <!-- Bootstrap CSS -->
     <link rel=\"stylesheet\" href=\"";
-        // line 11
+        // line 9
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"), "html", null, true);
         echo "\" />
     <style>
@@ -116,34 +113,57 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
         }
     </style>
 </head>
-<body>
+<br>
+<br>
+<br>
     <section class=\"h-100 gradient-custom-2\">
-        <div class=\"container py-5 h-100\">
+        <div class=\"container py-2 h-100\">
             <div class=\"row d-flex justify-content-center align-items-center h-100\">
                 <div class=\"col col-lg-12 col-xl-10\">
                     <div class=\"card\">
                         <div class=\"rounded-top text-white d-flex flex-row\" style=\"background-color: #0c0d25; height:200px;\" >
                             <div class=\"ms-4 mt-5 d-flex flex-column\" style=\"width: 150px;\">
-                                <img src=\"";
+                                ";
         // line 59
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/profil.png"), "html", null, true);
-        echo "\"
-                                    alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail mt-4 mb-2\"
-                                    style=\"width: 150px; z-index: 1\">
-                                    <a class=\"btn btn-outline-dark\" data-mdb-ripple-color=\"dark\" href=\"";
-        // line 62
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_modif_profile");
-        echo "\"
-                                    style=\"z-index: 1;\">
-                                     Modifier le profil
-                                 </a>                                 
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 59, $this->source); })()), "user", [], "any", false, false, false, 59), "picture", [], "any", false, false, false, 59)) {
+            // line 60
+            echo "                                    <img src=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("img_profil/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 60, $this->source); })()), "user", [], "any", false, false, false, 60), "picture", [], "any", false, false, false, 60))), "html", null, true);
+            echo "\"
+                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                ";
+        } else {
+            // line 63
+            echo "                                    <img src=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/profil.png"), "html", null, true);
+            echo "\"
+                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                ";
+        }
+        // line 66
+        echo "                                <br>
+                                <a class=\"btn btn-outline-dark btn-sm\" data-mdb-ripple-color=\"dark\" href=\"";
+        // line 67
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("profile_edit");
+        echo "\" style=\"z-index: 1; margin-top=20px\">
+                                    <i class=\"fas fa-user-edit me-1\"></i> Modifier le profil
+                                </a>
+                                                             
                             </div>
                             <div class=\"ms-3\" style=\"margin-top: 130px;\">
-                                <h5>MAAOUIA Ahmed</h5>
-                                <p>Cergy</p>
+                                <h5>";
+        // line 73
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 73, $this->source); })()), "user", [], "any", false, false, false, 73), "nom", [], "any", false, false, false, 73), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 73, $this->source); })()), "user", [], "any", false, false, false, 73), "prenom", [], "any", false, false, false, 73), "html", null, true);
+        echo "</h5>
+                                <p>";
+        // line 74
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 74, $this->source); })()), "user", [], "any", false, false, false, 74), "address", [], "any", false, false, false, 74), "html", null, true);
+        echo "</p>
                             </div>
                         </div>
-                        <div class=\"p-4 text-black\" style=\"background-color: #e9edf0d1;\">
+                        <div class=\"p-4 text-black\" style=\"background-color: #e9edf0d1; height: 100px;\">
                             <div class=\"d-flex justify-content-end text-center py-1\">
                                 <div>
                                     <p class=\"mb-1 h5\">10</p>
@@ -152,79 +172,17 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
                             </div>
                         </div>
                         <div class=\"card-body p-4 text-black\">
-                            <div class=\"mb-5\">
+                            <div class=\"mb-2\">
                                 <p class=\"lead fw-normal mb-1\">Mes coordonnées</p>
                                 <div class=\"p-4\" style=\"background-color: #e9edf0d1;\">
-                                    <p class=\"font-italic mb-1\">Numéro de telephone : 123-456-7890</p>
-                                    <p class=\"font-italic mb-1\">Adresse : 1234 Street Name, City, Country</p>
-                                </div>
-                            </div>
-                            <div class=\"mb-5\">
-                                <p class=\"lead fw-normal mb-1\">À propos</p>
-                                <div class=\"p-4\" style=\"background-color: #e9edf0d1;\">
-                                    <p class=\"font-italic mb-1\">Développeur Web</p>
-                                    <p class=\"font-italic mb-1\">Vit à New York</p>
-                                    <p class=\"font-italic mb-0\">Photographe</p>
-                                </div>
-                            </div>
-                            <div class=\"d-flex justify-content-between align-items-center mb-4\">
-                                <p class=\"lead fw-normal mb-0\">Produits récents</p>
-                                <p class=\"mb-0\"><a href=\"#!\" class=\"text-muted\">Voir tout</a></p>
-                            </div>
-                            <div class=\"row g-2\">
-                                <div class=\"col-md-6 mb-2\">
-                                    <div class=\"card small-product-card\">
-                                        <img src=\"";
-        // line 103
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/product1.jpg"), "html", null, true);
-        echo "\"
-                                            alt=\"Product 1\" class=\"card-img-top product-img rounded-3\">
-                                        <div class=\"card-body\">
-                                            <h5 class=\"card-title text-center product-name\">Nom du Produit 1</h5>
-                                            <p class=\"card-text text-center product-category\">Catégorie: Catégorie 1</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=\"col-md-6 mb-2\">
-                                    <div class=\"card small-product-card\">
-                                        <img src=\"";
-        // line 113
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/product2.jpg"), "html", null, true);
-        echo "\"
-                                            alt=\"Product 2\" class=\"card-img-top product-img rounded-3\">
-                                        <div class=\"card-body\">
-                                            <h5 class=\"card-title text-center product-name\">Nom du Produit 2</h5>
-                                            <p class=\"card-text text-center product-category\">Catégorie: Catégorie 2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=\"row g-2\">
-                                <div class=\"col-md-6 mb-2\">
-                                    <div class=\"card small-product-card\">
-                                        <img src=\"";
-        // line 125
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/product3.jpg"), "html", null, true);
-        echo "\"
-                                            alt=\"Product 3\" class=\"card-img-top product-img rounded-3\">
-                                        <div class=\"card-body\">
-                                            <h5 class=\"card-title text-center product-name\">Nom du Produit 3</h5>
-                                            <p class=\"card-text text-center product-category\">Catégorie: Catégorie 3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=\"col-md-6 mb-2\">
-                                    <div class=\"card small-product-card\">
-                                        <img src=\"";
-        // line 135
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/product4.jpg"), "html", null, true);
-        echo "\"
-                                            alt=\"Product 4\" class=\"card-img-top product-img rounded-3\">
-                                        <div class=\"card-body\">
-                                            <h5 class=\"card-title text-center product-name\">Nom du Produit 4</h5>
-                                            <p class=\"card-text text-center product-category\">Catégorie: Catégorie 4</p>
-                                        </div>
-                                    </div>
+                                    <p class=\"font-italic mb-1\">Numéro de telephone : ";
+        // line 89
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 89, $this->source); })()), "user", [], "any", false, false, false, 89), "phoneNumber", [], "any", false, false, false, 89), "html", null, true);
+        echo "</p>
+                                    <p class=\"font-italic mb-1\">Adresse : ";
+        // line 90
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 90, $this->source); })()), "user", [], "any", false, false, false, 90), "address", [], "any", false, false, false, 90), "html", null, true);
+        echo "</p>
                                 </div>
                             </div>
                         </div>
@@ -232,15 +190,16 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
                 </div>
             </div>
         </div>
+        
     </section>
+
 
     <!-- Bootstrap JS -->
     <script type=\"text/javascript\" src=\"";
-        // line 152
+        // line 103
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
-</body>
-</html>
+
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -271,16 +230,14 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
      */
     public function getDebugInfo()
     {
-        return array (  240 => 152,  220 => 135,  207 => 125,  192 => 113,  179 => 103,  135 => 62,  129 => 59,  78 => 11,  68 => 3,  58 => 2,  35 => 1,);
+        return array (  200 => 103,  184 => 90,  180 => 89,  162 => 74,  156 => 73,  147 => 67,  144 => 66,  137 => 63,  130 => 60,  128 => 59,  75 => 9,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
-{% block body %}
 
-<!DOCTYPE html>
-<html lang=\"fr\">
+{% block content %}
 <head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -326,28 +283,35 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
         }
     </style>
 </head>
-<body>
+<br>
+<br>
+<br>
     <section class=\"h-100 gradient-custom-2\">
-        <div class=\"container py-5 h-100\">
+        <div class=\"container py-2 h-100\">
             <div class=\"row d-flex justify-content-center align-items-center h-100\">
                 <div class=\"col col-lg-12 col-xl-10\">
                     <div class=\"card\">
                         <div class=\"rounded-top text-white d-flex flex-row\" style=\"background-color: #0c0d25; height:200px;\" >
                             <div class=\"ms-4 mt-5 d-flex flex-column\" style=\"width: 150px;\">
-                                <img src=\"{{asset('login/img/profil.png')}}\"
-                                    alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail mt-4 mb-2\"
-                                    style=\"width: 150px; z-index: 1\">
-                                    <a class=\"btn btn-outline-dark\" data-mdb-ripple-color=\"dark\" href=\"{{ path('app_modif_profile') }}\"
-                                    style=\"z-index: 1;\">
-                                     Modifier le profil
-                                 </a>                                 
+                                {% if app.user.picture %}
+                                    <img src=\"{{ asset('img_profil/'~app.user.picture) }}\"
+                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                {% else %}
+                                    <img src=\"{{ asset('login/img/profil.png') }}\"
+                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                {% endif %}
+                                <br>
+                                <a class=\"btn btn-outline-dark btn-sm\" data-mdb-ripple-color=\"dark\" href=\"{{ path('profile_edit') }}\" style=\"z-index: 1; margin-top=20px\">
+                                    <i class=\"fas fa-user-edit me-1\"></i> Modifier le profil
+                                </a>
+                                                             
                             </div>
                             <div class=\"ms-3\" style=\"margin-top: 130px;\">
-                                <h5>MAAOUIA Ahmed</h5>
-                                <p>Cergy</p>
+                                <h5>{{app.user.nom}} {{app.user.prenom}}</h5>
+                                <p>{{app.user.address}}</p>
                             </div>
                         </div>
-                        <div class=\"p-4 text-black\" style=\"background-color: #e9edf0d1;\">
+                        <div class=\"p-4 text-black\" style=\"background-color: #e9edf0d1; height: 100px;\">
                             <div class=\"d-flex justify-content-end text-center py-1\">
                                 <div>
                                     <p class=\"mb-1 h5\">10</p>
@@ -356,67 +320,11 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
                             </div>
                         </div>
                         <div class=\"card-body p-4 text-black\">
-                            <div class=\"mb-5\">
+                            <div class=\"mb-2\">
                                 <p class=\"lead fw-normal mb-1\">Mes coordonnées</p>
                                 <div class=\"p-4\" style=\"background-color: #e9edf0d1;\">
-                                    <p class=\"font-italic mb-1\">Numéro de telephone : 123-456-7890</p>
-                                    <p class=\"font-italic mb-1\">Adresse : 1234 Street Name, City, Country</p>
-                                </div>
-                            </div>
-                            <div class=\"mb-5\">
-                                <p class=\"lead fw-normal mb-1\">À propos</p>
-                                <div class=\"p-4\" style=\"background-color: #e9edf0d1;\">
-                                    <p class=\"font-italic mb-1\">Développeur Web</p>
-                                    <p class=\"font-italic mb-1\">Vit à New York</p>
-                                    <p class=\"font-italic mb-0\">Photographe</p>
-                                </div>
-                            </div>
-                            <div class=\"d-flex justify-content-between align-items-center mb-4\">
-                                <p class=\"lead fw-normal mb-0\">Produits récents</p>
-                                <p class=\"mb-0\"><a href=\"#!\" class=\"text-muted\">Voir tout</a></p>
-                            </div>
-                            <div class=\"row g-2\">
-                                <div class=\"col-md-6 mb-2\">
-                                    <div class=\"card small-product-card\">
-                                        <img src=\"{{asset('login/img/product1.jpg')}}\"
-                                            alt=\"Product 1\" class=\"card-img-top product-img rounded-3\">
-                                        <div class=\"card-body\">
-                                            <h5 class=\"card-title text-center product-name\">Nom du Produit 1</h5>
-                                            <p class=\"card-text text-center product-category\">Catégorie: Catégorie 1</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=\"col-md-6 mb-2\">
-                                    <div class=\"card small-product-card\">
-                                        <img src=\"{{asset('login/img/product2.jpg')}}\"
-                                            alt=\"Product 2\" class=\"card-img-top product-img rounded-3\">
-                                        <div class=\"card-body\">
-                                            <h5 class=\"card-title text-center product-name\">Nom du Produit 2</h5>
-                                            <p class=\"card-text text-center product-category\">Catégorie: Catégorie 2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=\"row g-2\">
-                                <div class=\"col-md-6 mb-2\">
-                                    <div class=\"card small-product-card\">
-                                        <img src=\"{{asset('login/img/product3.jpg')}}\"
-                                            alt=\"Product 3\" class=\"card-img-top product-img rounded-3\">
-                                        <div class=\"card-body\">
-                                            <h5 class=\"card-title text-center product-name\">Nom du Produit 3</h5>
-                                            <p class=\"card-text text-center product-category\">Catégorie: Catégorie 3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=\"col-md-6 mb-2\">
-                                    <div class=\"card small-product-card\">
-                                        <img src=\"{{asset('login/img/product4.jpg')}}\"
-                                            alt=\"Product 4\" class=\"card-img-top product-img rounded-3\">
-                                        <div class=\"card-body\">
-                                            <h5 class=\"card-title text-center product-name\">Nom du Produit 4</h5>
-                                            <p class=\"card-text text-center product-category\">Catégorie: Catégorie 4</p>
-                                        </div>
-                                    </div>
+                                    <p class=\"font-italic mb-1\">Numéro de telephone : {{app.user.phoneNumber}}</p>
+                                    <p class=\"font-italic mb-1\">Adresse : {{app.user.address}}</p>
                                 </div>
                             </div>
                         </div>
@@ -424,12 +332,14 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
                 </div>
             </div>
         </div>
+        
     </section>
+
 
     <!-- Bootstrap JS -->
     <script type=\"text/javascript\" src=\"{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js') }}\"></script>
-</body>
-</html>
-{% endblock %}", "profile.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\profile.html.twig");
+
+{% endblock %}
+", "profile.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\profile.html.twig");
     }
 }

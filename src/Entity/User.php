@@ -47,14 +47,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $picture = null;
 
-    #[ORM\OneToMany(targetEntity: Contact::class, mappedBy: 'relation_user', orphanRemoval: true)]
-    private Collection $contacts;
+    #[ORM\Column(length: 20)]
+    private ?string $nom = null;
+
+    #[ORM\Column(length: 20)]
+    private ?string $prenom = null;
 
 
     public function __construct()
     {
         $this->created_at = new \DateTimeImmutable();
-        $this->contacts = new ArrayCollection();
+        
+    }
+
+    public function __toString()
+    {
+        return $this->email;
     }
 
     public function getId(): ?int
@@ -178,39 +186,33 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->picture;
     }
 
-    public function setPicture(?string $picture): static
+    public function setPicture(?string $picture): self
     {
         $this->picture = $picture;
 
         return $this;
     }
 
-    /**
-     * @return Collection<int, Contact>
-     */
-    public function getContacts(): Collection
+    public function getNom(): ?string
     {
-        return $this->contacts;
+        return $this->nom;
     }
 
-    public function addContact(Contact $contact): static
+    public function setNom(string $nom): static
     {
-        if (!$this->contacts->contains($contact)) {
-            $this->contacts->add($contact);
-            $contact->setRelationUser($this);
-        }
+        $this->nom = $nom;
 
         return $this;
     }
 
-    public function removeContact(Contact $contact): static
+    public function getPrenom(): ?string
     {
-        if ($this->contacts->removeElement($contact)) {
-            // set the owning side to null (unless already changed)
-            if ($contact->getRelationUser() === $this) {
-                $contact->setRelationUser(null);
-            }
-        }
+        return $this->prenom;
+    }
+
+    public function setPrenom(string $prenom): static
+    {
+        $this->prenom = $prenom;
 
         return $this;
     }
