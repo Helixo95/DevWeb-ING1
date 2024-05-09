@@ -8,39 +8,41 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface; //ajoutée par PHPStorm pour send, à vérifier
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
-use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Contracts\Translation\TranslatorInterface;
 
 class ContactController extends AbstractController
 {
+    /** ajouté également automatiquement
+     * @throws TransportExceptionInterface
+     */
     #[Route('/contact', name: 'app_contact')]
-    public function contact(Request $request, UserPasswordHasherInterface $userPasswordHasher, EntityManagerInterface $entityManager, MailerInterface $mailer): Response
+    public function contact(Request $request, EntityManagerInterface $entityManager, MailerInterface $mailer): Response
     {
         $user = new User();
         $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // encode the plain password
-            $user->setPassword(
-                $userPasswordHasher->hashPassword(
-                    $user,
-                    $form->get('plainPassword')->getData()
-                )
-            );
 
             $entityManager->persist($user);
             $entityManager->flush();
 
             // send email to the user
             $email = (new Email())
-                ->from('your_email@example.com')
+                ->from('contact.exotik95@gmail.com')
+                /**
                 ->to($form->get('email')->getData())
                 ->subject('Welcome to our website')
                 ->text($form->get('message')->getData());
+                 */
+                //->to($user->getEmail());
+                ->to('ruppeaurel@cy-tech.fr')
+                ->bcc('aurel.ruppe@gmail.com')
+                ->subject('Hello')
+                ->text('Hello');
 
             $mailer->send($email);
 
