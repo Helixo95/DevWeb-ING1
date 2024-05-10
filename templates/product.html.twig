@@ -23,194 +23,73 @@
                         <h2>OUR Products</h2>
                         <div class="product_tab_btn">
                             <ul class="nav" role="tablist">
-                                <li>
-                                    <a href="#Men" class="active" data-toggle="tab" role="tab" aria-controls="Men"
-                                       aria-selected="true">
-                                        Men
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#Women" data-toggle="tab" role="tab" aria-controls="Women"
-                                       aria-selected="false">
-                                        Women
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#Unisex" data-toggle="tab" role="tab" aria-controls="Unisex"
-                                       aria-selected="false">
-                                        Unisex
-                                    </a>
-                                </li>
+                                <li class="nav-item"><a href="/product/men" class="nav-link {% if category == 'men' %}active{% endif %}">Men</a></li>
+                                <li class="nav-item"><a href="/product/women" class="nav-link {% if category == 'women' %}active{% endif %}">Women</a></li>
+                                <li class="nav-item"><a href="/product/unisex" class="nav-link {% if category == 'unisex' %}active{% endif %}">Unisex</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+
             </div>
             <div class="tab-content">
-                <div class="tab-pane fade show active" id="Men" role="tabpanel">
-                    <div class="row">
-                        <div class="product_grid">
-                            {% for product in products %}
-                                {% if product.category == 'Men' %}
-                                <div class="col-md-3 col-sm-6">
-                                    <article class="single_product">
-                                        <figure>
-                                            <div class="product_thumb">
-                                                <a href="#" class="primary_img">
-                                                    <img src="{{ asset(product.primaryImageUrl) }}" alt="product.image_alt">
-                                                </a>
-                                                <a href="#" class="secondary_img">
-                                                    <img src="{{ asset(product.secondaryImageUrl) }}" alt="product.image_alt">
-                                                </a>
-                                                <div class="action_links">
-                                                    <ul>
-                                                        <li class="add_to_cart">
-                                                            <a href="#" title="Add to Cart">
-                                                                <i class="fa fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li class="quick_button">
-                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
-                                                                <i class="fa fa-eye"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <figcaption class="product_content">
-                                                <h4 class="product_name">
-                                                    <a href="#">{{ product.name }}</a>
-                                                </h4>
-                                                <div class="price_box">
-                                                    <span class="old_price">{{ product.getOldPrice }}€</span>
-                                                    <span class="current_price">{{ product.getCurrentPrice }}€</span>
-                                                </div>
-                                                <div class="product_rating">
-                                                    <ul>
-                                                        {% for i in 1..product.rating %}
-                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                                                        {% endfor %}
-                                                    </ul>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                                {% endif %}
-                            {% endfor %}
+                {% for category in categories %}
+                    <div class="tab-pane fade show active" id="{{ category }}" role="tabpanel">
+                        <div class="row">
+                            <div class="product_grid">
+                                {% for product in products %}
+                                    {% if product.category == category %}
+                                        <div class="col-md-3 col-sm-6">
+                                            <article class="single_product">
+                                                <figure>
+                                                    <div class="product_thumb">
+                                                        <a href="#" class="primary_img">
+                                                            <img src="{{ asset(product.primaryImageUrl) }}" >
+                                                        </a>
+                                                        <a href="#" class="secondary_img">
+                                                            <img src="{{ asset(product.secondaryImageUrl) }}" >
+                                                        </a>
+                                                        <div class="action_links">
+                                                            <ul>
+                                                                <li class="add_to_cart">
+                                                                    <a href="#" title="Add to Cart">
+                                                                        <i class="fa fa-shopping-cart"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="quick_button">
+                                                                    <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
+                                                                        <i class="fa fa-eye"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <figcaption class="product_content">
+                                                        <h4 class="product_name"><a href="#">{{ product.name }}</a></h4>
+                                                        <div class="price_box">
+                                                            <span class="old_price">{{ product.getOldPrice }}€</span>
+                                                            <span class="current_price">{{ product.getCurrentPrice }}€</span>
+                                                        </div>
+                                                        <div class="product_rating">
+                                                            <ul>
+                                                                {% for i in 1..product.rating %}
+                                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </article>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="Women" role="tabpanel">
-                    <div class="row">
-                        <div class="product_grid">
-                            {% for product in products %}
-                                {% if product.category == 'Women' %}
-                                <div class="col-md-3 col-sm-6">
-                                    <article class="single_product">
-                                        <figure>
-                                            <div class="product_thumb">
-                                                <a href="#" class="primary_img">
-                                                    <img src="{{ asset(product.primaryImageUrl) }}" alt="product.image_alt">
-                                                </a>
-                                                <a href="#" class="secondary_img">
-                                                    <img src="{{ asset(product.secondaryImageUrl) }}" alt="product.image_alt">
-                                                </a>
-                                                <div class="action_links">
-                                                    <ul>
-                                                        <li class="add_to_cart">
-                                                            <a href="#" title="Add to Cart">
-                                                                <i class="fa fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li class="quick_button">
-                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
-                                                                <i class="fa fa-eye"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <figcaption class="product_content">
-                                                <h4 class="product_name">
-                                                    <a href="#">{{ product.getName() }}</a>
-                                                </h4>
-                                                <div class="price_box">
-                                                    <span class="old_price">{{ product.getOldPrice }}€</span>
-                                                    <span class="current_price">{{ product.getCurrentPrice }}€</span>
-                                                </div>
-                                                <div class="product_rating">
-                                                    <ul>
-                                                        {% for i in 1..product.rating %}
-                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                                                        {% endfor %}
-                                                    </ul>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="Unisex" role="tabpanel">
-                    <div class="row">
-                        <div class="product_grid">
-                            {% for product in products %}
-                                {% if product.category == 'Unisex' %}
-                                <div class="col-md-3 col-sm-6">
-                                    <article class="single_product">
-                                        <figure>
-                                            <div class="product_thumb">
-                                                <a href="#" class="primary_img">
-                                                    <img src="{{ asset(product.primaryImageUrl) }}" alt="product.image_alt">
-                                                </a>
-                                                <a href="#" class="secondary_img">
-                                                    <img src="{{ asset(product.secondaryImageUrl) }}" alt="product.image_alt">
-                                                </a>
-                                                <div class="action_links">
-                                                    <ul>
-                                                        <li class="add_to_cart">
-                                                            <a href="#" title="Add to Cart">
-                                                                <i class="fa fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li class="quick_button">
-                                                            <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
-                                                                <i class="fa fa-eye"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <figcaption class="product_content">
-                                                <h4 class="product_name">
-                                                    <a href="#">{{ product.getName() }}</a>
-                                                </h4>
-                                                <div class="price_box">
-                                                    <span class="old_price">{{ product.getOldPrice }}€</span>
-                                                    <span class="current_price">{{ product.getCurrentPrice }}€</span>
-                                                </div>
-                                                <div class="product_rating">
-                                                    <ul>
-                                                        {% for i in 1..product.rating %}
-                                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                                                        {% endfor %}
-                                                    </ul>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </article>
-                                </div>
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                </div>
+                {% endfor %}
             </div>
+
         </div>
     </div>
     {% for product in products %}
@@ -228,12 +107,12 @@
                                         <div class="tab-content product-details-large">
                                             <div class="tab-pane fade show active" id="tab1_{{ product.id_prod }}" role="tabpanel">
                                                 <div class="modal_tab_img">
-                                                    <a href="#"><img src="{{ product.getprimaryImageUrl }}" alt=""></a>
+                                                    <a href="#"><img src="{{ asset(product.primaryImageUrl) }}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="tab2_{{ product.id_prod }}" role="tabpanel">
                                                 <div class="modal_tab_img">
-                                                    <a href="#"><img src="{{ product.getsecondaryImageUrl }}" alt=""></a>
+                                                    <a href="#"><img src="{{ asset(product.secondaryImageUrl) }}" alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -242,13 +121,13 @@
                                                 <li>
                                                     <a href="#tab1_{{ product.id_prod }}" class="nav-link active" data-toggle="tab" role="tab"
                                                        aria-controls="tab1_{{ product.id_prod }}" aria-selected="false">
-                                                        <img src="{{ product.getprimaryImageUrl }}" alt="">
+                                                        <img src="{{ asset(product.primaryImageUrl) }}" alt="">
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#tab2_{{ product.id_prod }}" class="nav-link" data-toggle="tab" role="tab"
                                                        aria-controls="tab2_{{ product.id_prod }}" aria-selected="false">
-                                                        <img src="{{ product.getsecondaryImageUrl }}" alt="">
+                                                        <img src="{{ asset(product.secondaryImageUrl) }}" alt="">
                                                     </a>
                                                 </li>
                                             </ul>

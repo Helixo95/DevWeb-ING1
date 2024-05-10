@@ -39,12 +39,24 @@ class Product
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $category = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $brand = null;
 
     public function getId_prod(): ?int
     {
         return $this->id_prod;
     }
+    public function getBrand(): ?string
+    {
+        return $this->brand;
+    }
 
+    public function setBrand(string $brand): self
+    {
+        $this->brand = $brand;
+
+        return $this;
+    }
     public function getPrimaryImageUrl(): ?string
     {
         return $this->primaryImageUrl;
