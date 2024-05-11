@@ -48,11 +48,9 @@ class ProductController extends AbstractController
     public function add_cart($id, Request $request, EntityManagerInterface $entityManager): \Symfony\Component\HttpFoundation\RedirectResponse
     {
         $product = $entityManager->getRepository(Product::class)->find($id);
-        if($product->getQuantity() >0){
-
-
         $session = $request->getSession();
         $cart = $session->get('cart', []);
+        if(empty($cart[$id]) or $product->getQuantity() >= $cart[$id]){
 
         if(!empty($cart[$id])){
             $cart[$id]++;
@@ -61,8 +59,6 @@ class ProductController extends AbstractController
             $cart[$id] = 1;
         }
         $session->set('cart', $cart);
-        $product->setQuantity(($product->getQuantity())-1);
-        $entityManager->flush();
     }
 
 
@@ -78,10 +74,11 @@ class ProductController extends AbstractController
         {
             $product = $entityManager->getRepository(Product::class)->find($id);
             $qty=$request->get('qty');
-            if($product->getQuantity() >$qty){
+            $session = $request->getSession();
+            $cart = $session->get('cart', []);
+            if((empty(($cart[$id])) and $product->getQuantity() >= $qty)or $product->getQuantity() >= $qty+$cart[$id]){
 
-                $session = $request->getSession();
-                $cart = $session->get('cart', []);
+
                 if(!empty($cart[$id])){
                     $cart[$id]+=$qty;
                 }
