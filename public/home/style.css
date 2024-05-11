@@ -1,0 +1,22 @@
+.stock-btn {
+    width: auto;  /* Auto width based on content */
+    height: 25px; /* Match height of quantity buttons */
+    line-height: 25px;
+    padding: 0 10px; /* Padding for text inside button */
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    cursor: default; /* Default cursor indicates it's not clickable */
+    margin-left: 20px; /* Space from quantity selector */
+    font-size: 14px; /* Adjust font size as needed */
+}
+/* For Chrome, Safari, Edge, Opera */
+.quantity-selector .quantity-input::-webkit-inner-spin-button,
+.quantity-selector .quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+.quantity-selector .quantity-input[type=number] {
+    -moz-appearance: textfield;
+}
