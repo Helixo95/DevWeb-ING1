@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `categorie`;
 CREATE TABLE IF NOT EXISTS `categorie` (
-  `id_cat` int NOT NULL AUTO_INCREMENT,
-  `nom_cat` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  PRIMARY KEY (`id_cat`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+                                           `id_cat` int NOT NULL AUTO_INCREMENT,
+                                           `nom_cat` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    PRIMARY KEY (`id_cat`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -42,12 +42,12 @@ CREATE TABLE IF NOT EXISTS `categorie` (
 
 DROP TABLE IF EXISTS `contact_form`;
 CREATE TABLE IF NOT EXISTS `contact_form` (
-  `id_contact` int NOT NULL AUTO_INCREMENT,
-  `nom` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `sujet` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id_contact`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+                                              `id_contact` int NOT NULL AUTO_INCREMENT,
+                                              `nom` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `sujet` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    PRIMARY KEY (`id_contact`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -57,10 +57,10 @@ CREATE TABLE IF NOT EXISTS `contact_form` (
 
 DROP TABLE IF EXISTS `panier`;
 CREATE TABLE IF NOT EXISTS `panier` (
-  `id_panier` int NOT NULL AUTO_INCREMENT,
-  `quantite` int DEFAULT NULL,
-  PRIMARY KEY (`id_panier`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+                                        `id_panier` int NOT NULL AUTO_INCREMENT,
+                                        `quantite` int DEFAULT NULL,
+                                        PRIMARY KEY (`id_panier`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -70,28 +70,28 @@ CREATE TABLE IF NOT EXISTS `panier` (
 
 DROP TABLE IF EXISTS `product`;
 CREATE TABLE IF NOT EXISTS `product` (
-  `id_prod` int NOT NULL AUTO_INCREMENT,
-  `description` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `old_price` decimal(5,2) DEFAULT NULL,
-  `current_price` decimal(5,2) DEFAULT NULL,
-  `quantity` int DEFAULT NULL,
-  `rating` int DEFAULT NULL,
-  `category` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `primary_image_url` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `secondary_image_url` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  PRIMARY KEY (`id_prod`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+                                         `id_prod` int NOT NULL AUTO_INCREMENT,
+                                         `description` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+                                         `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `old_price` decimal(5,2) DEFAULT NULL,
+    `current_price` decimal(5,2) DEFAULT NULL,
+    `quantity` int DEFAULT NULL,
+    `rating` int DEFAULT NULL,
+    `category` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `primary_image_url` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    `secondary_image_url` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    PRIMARY KEY (`id_prod`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `product`
 --
 
 INSERT INTO `product` (`id_prod`, `description`, `name`, `old_price`, `current_price`, `quantity`, `rating`, `category`, `primary_image_url`, `secondary_image_url`) VALUES
-(1, 'Un très bon produit', 'Versace', 22.55, 66.55, 20, 2, 'Men', 'base/products/Men/1-1.png', 'base/products/Men/1-2.png'),
-(2, NULL, 'Versace', 22.55, 66.55, 6, 2, 'Men', 'base\\products\\Men\\5-1.png', 'base\\products\\Men\\5-2.png'),
-(3, NULL, 'Invictus', 65.95, 98.56, 4, 5, 'Men', 'base\\products\\Men\\3-1.png', 'base\\products\\Men\\3-2.png'),
-(4, NULL, 'Bvlgari', 55.67, 98.65, 65, 5, 'Men', 'base\\products\\Men\\6-1.png', 'base\\products\\Men\\6-2.png');
+                                                                                                                                                                         (1, 'Un très bon produit', 'Versace', 22.55, 66.55, 20, 2, 'Men', 'base/products/Men/1-1.png', 'base/products/Men/1-2.png'),
+                                                                                                                                                                         (2, NULL, 'Versace', 22.55, 66.55, 6, 2, 'Men', 'base\\products\\Men\\5-1.png', 'base\\products\\Men\\5-2.png'),
+                                                                                                                                                                         (3, NULL, 'Invictus', 65.95, 98.56, 4, 5, 'Men', 'base\\products\\Men\\3-1.png', 'base\\products\\Men\\3-2.png'),
+                                                                                                                                                                         (4, NULL, 'Bvlgari', 55.67, 98.65, 65, 5, 'Men', 'base\\products\\Men\\6-1.png', 'base\\products\\Men\\6-2.png');
 
 -- --------------------------------------------------------
 
@@ -101,16 +101,16 @@ INSERT INTO `product` (`id_prod`, `description`, `name`, `old_price`, `current_p
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
-  `id_user` int NOT NULL AUTO_INCREMENT,
-  `nom` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `prenom` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `genre` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `adresse` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `num_tel` int NOT NULL,
-  `admin` tinyint(1) DEFAULT '0',
-  `photo` blob NOT NULL,
-  PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+                                      `id_user` int NOT NULL AUTO_INCREMENT,
+                                      `nom` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    `prenom` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    `genre` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `adresse` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `num_tel` int NOT NULL,
+    `admin` tinyint(1) DEFAULT '0',
+    `photo` blob NOT NULL,
+    PRIMARY KEY (`id_user`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
