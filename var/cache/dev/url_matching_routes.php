@@ -15,6 +15,7 @@ return [
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/cart' => [[['_route' => 'app_cart', '_controller' => 'App\\Controller\\CartController::index'], null, null, null, false, false, null]],
+        '/cart/register' => [[['_route' => 'cart_register', '_controller' => 'App\\Controller\\CartController::cart_register'], null, ['POST' => 0], null, false, false, null]],
         '/contact' => [[['_route' => 'app_contact', '_controller' => 'App\\Controller\\ContactController::index'], null, null, null, false, false, null]],
         '/guidlines' => [[['_route' => 'app_guidlines', '_controller' => 'App\\Controller\\HomeController::guidlines'], null, null, null, false, false, null]],
         '/home' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::home'], null, null, null, false, false, null]],
@@ -46,12 +47,13 @@ return [
                 .'|/cart/(?'
                     .'|add/([^/]++)(*:190)'
                     .'|min/([^/]++)(*:210)'
+                    .'|remove/([^/]++)(*:233)'
                 .')'
                 .'|/product/(?'
-                    .'|([^/]++)(*:239)'
+                    .'|([^/]++)(*:262)'
                     .'|add(?'
-                        .'|/([^/]++)(*:262)'
-                        .'|2/([^/]++)(*:280)'
+                        .'|/([^/]++)(*:285)'
+                        .'|2/([^/]++)(*:303)'
                     .')'
                 .')'
             .')/?$}sDu',
@@ -65,10 +67,11 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         190 => [[['_route' => 'cart_Add', '_controller' => 'App\\Controller\\CartController::cart_Add'], ['id'], null, null, false, true, null]],
-        210 => [[['_route' => 'cart_Min', '_controller' => 'App\\Controller\\CartController::c4rt_Min'], ['id'], null, null, false, true, null]],
-        239 => [[['_route' => 'app_product_category_brand', '_controller' => 'App\\Controller\\ProductController::categoryBrand'], ['category'], null, null, false, true, null]],
-        262 => [[['_route' => 'add_cart', '_controller' => 'App\\Controller\\ProductController::add_cart'], ['id'], null, null, false, true, null]],
-        280 => [
+        210 => [[['_route' => 'cart_Min', '_controller' => 'App\\Controller\\CartController::cart_Min'], ['id'], null, null, false, true, null]],
+        233 => [[['_route' => 'cart_remove', '_controller' => 'App\\Controller\\CartController::cart_remove'], ['id'], null, null, false, true, null]],
+        262 => [[['_route' => 'app_product_category_brand', '_controller' => 'App\\Controller\\ProductController::categoryBrand'], ['category'], null, null, false, true, null]],
+        285 => [[['_route' => 'add_cart', '_controller' => 'App\\Controller\\ProductController::add_cart'], ['id'], null, null, false, true, null]],
+        303 => [
             [['_route' => 'add_cart2', '_controller' => 'App\\Controller\\ProductController::add_cart2'], ['id'], ['POST' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

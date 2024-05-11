@@ -86,8 +86,6 @@ class ProductController extends AbstractController
                     $cart[$id] =$qty;
                 }
                 $session->set('cart', $cart);
-                $product->setQuantity(($product->getQuantity())-$qty);
-                $entityManager->flush();
             }
 
 
