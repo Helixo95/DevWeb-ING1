@@ -8,3 +8,6 @@ app_homepage:
     controller: App\Controller\HomeController::login
 
 
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::index

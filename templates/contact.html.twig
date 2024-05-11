@@ -108,6 +108,19 @@
     </section>
 {% endblock %}
 
+{% block body %}
+    <div class="container">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success mt-4">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+
+        {{ form(form) }}
+    </div>
+{% endblock %}
+
 {% block footer %}
     {{ parent() }}
 {% endblock %}
