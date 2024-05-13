@@ -6977,6 +6977,13 @@
         <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
       </argument>
     </service>
+    <service id=".service_locator.OW8jEgK" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+        <argument key="mailer" type="service_closure" id="mailer.mailer"/>
+      </argument>
+    </service>
     <service id=".service_locator.YU8H6ve" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -6990,12 +6997,12 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.K3qEi24" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.P28YwWN" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\CartController::cart_Add" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\CartController::cart_Min" type="service_closure" id=".service_locator.aKM6MDa"/>
-        <argument key="App\Controller\CartController::cart_register" type="service_closure" id=".service_locator.aKM6MDa"/>
+        <argument key="App\Controller\CartController::cart_register" type="service_closure" id=".service_locator.OW8jEgK"/>
         <argument key="App\Controller\CartController::cart_remove" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\CartController::index" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProductController::add_cart" type="service_closure" id=".service_locator.aKM6MDa"/>
@@ -7009,7 +7016,7 @@
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="App\Controller\CartController:cart_Add" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\CartController:cart_Min" type="service_closure" id=".service_locator.aKM6MDa"/>
-        <argument key="App\Controller\CartController:cart_register" type="service_closure" id=".service_locator.aKM6MDa"/>
+        <argument key="App\Controller\CartController:cart_register" type="service_closure" id=".service_locator.OW8jEgK"/>
         <argument key="App\Controller\CartController:cart_remove" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\CartController:index" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProductController:add_cart" type="service_closure" id=".service_locator.aKM6MDa"/>
@@ -7888,12 +7895,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.K3qEi24"/>
+      <argument type="service" id=".service_locator.P28YwWN"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.K3qEi24"/>
+      <argument type="service" id=".service_locator.P28YwWN"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -8949,7 +8956,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Contracts\Orm\EntityPaginatorInterface" alias="EasyCorp\Bundle\EasyAdminBundle\Orm\EntityPaginator"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.K3qEi24"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.P28YwWN"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
@@ -8972,7 +8979,7 @@
     <service id=".service_locator.Mo0FXEU" alias="service_locator_EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
     <service id=".service_locator.riGN6sa" alias=".service_locator.YU8H6ve"/>
-    <service id=".service_locator.7N3_Ve4" alias=".service_locator.K3qEi24"/>
+    <service id=".service_locator.r5l3sx2" alias=".service_locator.P28YwWN"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.zOEDDkY" alias=".service_locator.aF0VNrt"/>
     <service id=".service_locator.uwh6Rke" alias=".service_locator.cgfzwmn"/>
@@ -9027,6 +9034,7 @@
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
     <service id=".service_locator.uo5c0SP" alias=".service_locator.xUrKPVU"/>
     <service id=".service_locator.bInR.ll" alias=".service_locator.aKM6MDa"/>
+    <service id=".service_locator.T.WKonT" alias=".service_locator.OW8jEgK"/>
     <service id=".service_locator.DoCD.2o" alias=".service_locator.YU8H6ve"/>
     <service id=".service_locator.URfgn8g" alias=".service_locator.zFcJjKU"/>
     <service id=".service_locator.eAaUVIw" alias=".service_locator.jIxfAsi"/>
