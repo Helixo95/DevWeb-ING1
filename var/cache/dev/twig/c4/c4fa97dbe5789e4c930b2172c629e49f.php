@@ -29,6 +29,7 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
             'stylesheets' => [$this, 'block_stylesheets'],
             'header' => [$this, 'block_header'],
             'content' => [$this, 'block_content'],
+            'body' => [$this, 'block_body'],
             'footer' => [$this, 'block_footer'],
         ];
     }
@@ -151,7 +152,9 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
                             <div class=\"col-md-6 d-flex align-items-stretch\">
                                 <div class=\"contact-wrap w-100 p-md-5 p-4 py-5\">
                                     <h3 class=\"mb-4\">Write us</h3>
-                                    <div id=\"form-message-warning\" class=\"mb-4\"></div>
+                                    <div id=\"form-message-warning\" class=\"mb-4\">
+                                        There is a problem with your message, please try again later.
+                                    </div>
                                     <div id=\"form-message-success\" class=\"mb-4\">
                                         Your message was sent, thank you!
                                     </div>
@@ -240,7 +243,53 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
 
     }
 
-    // line 111
+    // line 113
+    public function block_body($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        // line 114
+        echo "    <div class=\"container\">
+        ";
+        // line 115
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 115, $this->source); })()), "flashes", ["success"], "method", false, false, false, 115));
+        foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+            // line 116
+            echo "            <div class=\"alert alert-success mt-4\">
+                ";
+            // line 117
+            echo twig_escape_filter($this->env, $context["message"], "html", null, true);
+            echo "
+            </div>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 120
+        echo "
+
+        ";
+        // line 122
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 122, $this->source); })()), 'form');
+        echo "
+    </div>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 126
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -250,7 +299,7 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 112
+        // line 127
         echo "    ";
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
@@ -284,7 +333,7 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
      */
     public function getDebugInfo()
     {
-        return array (  254 => 112,  244 => 111,  141 => 16,  131 => 15,  118 => 12,  108 => 11,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+        return array (  303 => 127,  293 => 126,  280 => 122,  276 => 120,  267 => 117,  264 => 116,  260 => 115,  257 => 114,  247 => 113,  142 => 16,  132 => 15,  119 => 12,  109 => 11,  97 => 7,  92 => 6,  82 => 5,  63 => 3,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -317,7 +366,9 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
                             <div class=\"col-md-6 d-flex align-items-stretch\">
                                 <div class=\"contact-wrap w-100 p-md-5 p-4 py-5\">
                                     <h3 class=\"mb-4\">Write us</h3>
-                                    <div id=\"form-message-warning\" class=\"mb-4\"></div>
+                                    <div id=\"form-message-warning\" class=\"mb-4\">
+                                        There is a problem with your message, please try again later.
+                                    </div>
                                     <div id=\"form-message-success\" class=\"mb-4\">
                                         Your message was sent, thank you!
                                     </div>
@@ -397,6 +448,19 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
             </div>
         </div>
     </section>
+{% endblock %}
+
+{% block body %}
+    <div class=\"container\">
+        {% for message in app.flashes('success') %}
+            <div class=\"alert alert-success mt-4\">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+
+        {{ form(form) }}
+    </div>
 {% endblock %}
 
 {% block footer %}
