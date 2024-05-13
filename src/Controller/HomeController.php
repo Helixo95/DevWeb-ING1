@@ -6,7 +6,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeController extends AbstractController
+class {% block body %}
+    <div class="container">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success mt-4">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+
+        {{ form(form) }}
+    </div>
+{% endblock %}HomeController extends AbstractController
 {
     #[Route('/guidlines', name: 'app_guidlines')]
     public function  guidlines(): Response
