@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Entity\Panier;
 use App\Entity\Product;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -34,12 +33,15 @@ class CartController extends AbstractController
             $total_item= $items['product']->getCurrentPrice() * $items['quantity'];
             $total +=$total_item;
         }
+        $success = $session->get('success', '');
+        $session->remove('success');
 
 
         // Passer le cart au template Twig
         return $this->render('cart.html.twig', [
                 'items' => $productCart,
-                'total' => $total
+                'total' => $total,
+                'messages' => $success
             ]
         );
     }
@@ -94,11 +96,12 @@ class CartController extends AbstractController
         }
         $session->remove('cart');
         //confirm message
-        $this->AddFlash(
+       /* $this->AddFlash(
             'success',
             'merci pour vos achat!'
-        );
-
+        );*/
+        $session->set('success', ['merci pour vos achat!']);
+/*
         $email = (new Email())
             ->from('hello@example.com')
             ->to('david.mitsakis@gmail.com')
@@ -111,7 +114,7 @@ class CartController extends AbstractController
             ->html('<p>See Twig integration for better HTML integration!</p>');
 
         $mailer->send($email);
-
+*/
         return $this->redirectToRoute("app_cart");
 
     }

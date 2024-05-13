@@ -21,6 +21,7 @@
 
 {% block content %}
 
+
 <section class="h-100 h-custom" >
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -32,6 +33,9 @@
                                 <div class="p-5" id="shopping cart">
                                     <div class="d-flex justify-content-between align-items-center mb-5">
                                         <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                                        {% for message in messages %}
+                                            <div class=" dt text-success">{{ message }}</div>
+                                        {% endfor %}
                                     </div>
                                     {% for item in items %}
                                     <hr class="my-4">
