@@ -3,7 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Contact;
-use Doctrine\DBAL\Types\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -69,17 +69,17 @@ class ContactFormType extends AbstractType
                 ],
                 'label' => 'Soumettre ma demande'
             ])
-            ->add('fullName', TextType::class, [
+            /*->add('fullName', TextType::class, [
                 'attr' => [
                     'class' => 'form-control',
-                    'minlenght' => '2',
-                    'maxlenght' => '50',
+                    'minlenght' => '1',
+                    'maxlenght' => '255',
                 ],
                 'label' => 'Nom / Prénom',
                 'label_attr' => [
                     'class' => 'form-label  mt-4'
                 ]
-            ])
+            ])*/
 
             ->add('relation_user')
         ;

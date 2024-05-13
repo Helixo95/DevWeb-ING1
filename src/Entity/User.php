@@ -50,6 +50,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(targetEntity: Contact::class, mappedBy: 'relation_user', orphanRemoval: true)]
     private Collection $contacts;
 
+    #[ORM\Column(length: 255)]
+    private ?string $fullName = null;
+
 
     public function __construct()
     {
@@ -211,6 +214,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
                 $contact->setRelationUser(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getFullName(): ?string
+    {
+        return $this->fullName;
+    }
+
+    public function setFullName(string $fullName): static
+    {
+        $this->fullName = $fullName;
 
         return $this;
     }
