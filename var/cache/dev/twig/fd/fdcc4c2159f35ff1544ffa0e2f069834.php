@@ -224,9 +224,18 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
             echo "</span>
                                 </div>
                             </td>
-";
-            // line 145
-            echo "                            <td class=\"cell-role\">
+                            <td class=\"cell-status\">
+                                        <span class=\"status\" data-status=\"";
+            // line 141
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 141), "html", null, true);
+            echo "\">
+                                            ";
+            // line 142
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 142), "html", null, true);
+            echo "
+                                        </span>
+                            </td>
+                            <td class=\"cell-role\">
                                 <span>";
             // line 146
             echo twig_escape_filter($this->env, twig_join_filter(twig_get_attribute($this->env, $this->source, $context["user"], "roles", [], "any", false, false, false, 146), ", "), "html", null, true);
@@ -300,7 +309,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "method", false, false, false, 190), "html", null, true);
             echo " €</span>
                             </td>
-                            </td>
+
                             <td class=\"cell-quantity\">
                                 <span>";
             // line 194
@@ -356,7 +365,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
         echo "\"></script>
 <script src=\"";
         // line 222
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/javascript/product.js"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/Javascript/recruiter-request.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
         // line 223
@@ -395,7 +404,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  363 => 223,  359 => 222,  355 => 221,  351 => 220,  335 => 206,  328 => 204,  319 => 200,  313 => 197,  307 => 194,  300 => 190,  293 => 186,  287 => 182,  282 => 181,  254 => 155,  247 => 153,  238 => 149,  232 => 146,  229 => 145,  223 => 137,  219 => 136,  208 => 130,  202 => 126,  197 => 125,  166 => 97,  152 => 86,  132 => 68,  115 => 53,  102 => 43,  93 => 37,  84 => 31,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
+        return array (  372 => 223,  368 => 222,  364 => 221,  360 => 220,  344 => 206,  337 => 204,  328 => 200,  322 => 197,  316 => 194,  309 => 190,  302 => 186,  296 => 182,  291 => 181,  263 => 155,  256 => 153,  247 => 149,  241 => 146,  234 => 142,  230 => 141,  223 => 137,  219 => 136,  208 => 130,  202 => 126,  197 => 125,  166 => 97,  152 => 86,  132 => 68,  115 => 53,  102 => 43,  93 => 37,  84 => 31,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -539,11 +548,11 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                                     <span>{{ user.email }}</span>
                                 </div>
                             </td>
-{#                            <td class=\"cell-status\">#}
-{#                                        <span class=\"status\" data-status=\"{{ user.status }}\">#}
-{#                                            {{ user.status|get_status_name }}#}
-{#                                        </span>#}
-{#                            </td>#}
+                            <td class=\"cell-status\">
+                                        <span class=\"status\" data-status=\"{{ user.status }}\">
+                                            {{ user.status }}
+                                        </span>
+                            </td>
                             <td class=\"cell-role\">
                                 <span>{{ user.roles|join(', ') }}</span>
                             </td>
@@ -591,7 +600,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                             <td class=\"cell-price\">
                                 <span>{{ product.getCurrentPrice() }} €</span>
                             </td>
-                            </td>
+
                             <td class=\"cell-quantity\">
                                 <span>{{ product.quantity }}</span>
                             </td>
@@ -621,7 +630,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"{{ asset('admin/javascript/admin.js') }}\"></script>
 <script src=\"{{ asset('admin/javascript/dashboard.js') }}\"></script>
-<script src=\"{{ asset('admin/javascript/product.js') }}\"></script>
+<script src=\"{{ asset('admin/Javascript/recruiter-request.js') }}\"></script>
 <script src=\"{{ asset('admin/javascript/toast.js') }}\"></script>
 </body>
 

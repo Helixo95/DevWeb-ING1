@@ -2,19 +2,24 @@
 
 namespace App\Controller\Admin;
 
-use App\Entity\User;
-use App\Entity\Product;
 use App\Repository\UserRepository;
 use App\Repository\ProductRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Service\BrandService;
 
 class AdminController extends AbstractController
 {
+    private BrandService $brandService;
+    public function __construct(BrandService $brandService) {
+        $this->brandService = $brandService;
+    }
     #[Route('/admin', name: 'admin_dashboard')]
     public function dashboard(UserRepository $userRepository, ProductRepository $productRepository): Response
     {
+        $brandLists = $this->brandService->getBrandLists();
+
         $users = $userRepository->findAll();
         $products = $productRepository->findAll();
         $counts = [
