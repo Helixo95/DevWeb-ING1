@@ -26,6 +26,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $genre;
 
     #[ORM\Column(nullable: true)]
+    private ?string $status;
+
+    #[ORM\Column(nullable: true)]
     private ?string $address;
 
     #[ORM\Column(nullable: true)]
@@ -136,6 +139,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->genre = $genre;
         return $this;
     }
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
+
+    public function setStatus(?string $status): static
+    {
+        $this->status = $status;
+        return $this;
+    }
 
     public function getAddress(): ?string
     {
@@ -216,4 +229,5 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+
 }

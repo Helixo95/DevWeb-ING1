@@ -145,10 +145,15 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
         }
 
         .error-message {
-            color: red;
+            color: white;
             font-size: 14px;
             margin-top: 5px;
+            padding: 5px;
+            border: 1px solid red;
+            border-radius: 4px;
+            background-color: rgba(255, 0, 0, 0.2); /* Rouge avec une opacité de 20% */
         }
+        
     </style>
 
 </head>
@@ -162,77 +167,77 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
                         <div class=\"rounded-top text-white d-flex flex-row\" style=\"background-color: #14153c; height:200px;\">
                             <div class=\"ms-4 mt-5 d-flex flex-column position-relative\">
                                 ";
-        // line 79
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 79, $this->source); })()), "user", [], "any", false, false, false, 79), "picture", [], "any", false, false, false, 79)) {
-            // line 80
+        // line 84
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 84, $this->source); })()), "user", [], "any", false, false, false, 84), "picture", [], "any", false, false, false, 84)) {
+            // line 85
             echo "                                    <img src=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("img_profil/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 80, $this->source); })()), "user", [], "any", false, false, false, 80), "picture", [], "any", false, false, false, 80))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("img_profil/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 85, $this->source); })()), "user", [], "any", false, false, false, 85), "picture", [], "any", false, false, false, 85))), "html", null, true);
             echo "\"
                                         alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
                                 ";
         } else {
-            // line 83
+            // line 88
             echo "                                    <img src=\"";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/profil.png"), "html", null, true);
             echo "\"
                                         alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
                                 ";
         }
-        // line 86
+        // line 91
         echo "                                <label for=\"profileImage\" class=\"btn btn-outline-dark btn-edit-profile\">Modifier</label>
                                 <input type=\"file\" class=\"form-control-file mt-2\" id=\"profileImage\" style=\"display: none;\">
                             </div>
                             <div class=\"ms-3\" style=\"margin-top: 130px;\">
                                 <h5>";
-        // line 90
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 90, $this->source); })()), "user", [], "any", false, false, false, 90), "nom", [], "any", false, false, false, 90), "html", null, true);
+        // line 95
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 95, $this->source); })()), "user", [], "any", false, false, false, 95), "nom", [], "any", false, false, false, 95), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 90, $this->source); })()), "user", [], "any", false, false, false, 90), "prenom", [], "any", false, false, false, 90), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 95, $this->source); })()), "user", [], "any", false, false, false, 95), "prenom", [], "any", false, false, false, 95), "html", null, true);
         echo "</h5>
                                 <p>Cergy</p>
                             </div>
                         </div>
                         <div class=\"card-body p-4 text-black\">
                                 ";
-        // line 95
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 95, $this->source); })()), 'form_start', ["attr" => ["enctype" => "multipart/form-data"]]);
+        // line 100
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 100, $this->source); })()), 'form_start', ["attr" => ["enctype" => "multipart/form-data"]]);
         echo "
                                 <div class=\"form-group row\">
                                     <div class=\"col\">
                                         ";
-        // line 98
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 98, $this->source); })()), "nom", [], "any", false, false, false, 98), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Nom"]);
+        // line 103
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 103, $this->source); })()), "nom", [], "any", false, false, false, 103), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Nom"]);
         echo "
                                         ";
-        // line 99
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 99, $this->source); })()), "nom", [], "any", false, false, false, 99), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 99, $this->source); })()), "user", [], "any", false, false, false, 99), "nom", [], "any", false, false, false, 99)]]);
+        // line 104
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 104, $this->source); })()), "nom", [], "any", false, false, false, 104), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 104, $this->source); })()), "user", [], "any", false, false, false, 104), "nom", [], "any", false, false, false, 104)]]);
         echo "
                                     </div>
                                     <div class=\"col\">
                                         ";
-        // line 102
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 102, $this->source); })()), "prenom", [], "any", false, false, false, 102), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Prénom"]);
+        // line 107
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 107, $this->source); })()), "prenom", [], "any", false, false, false, 107), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Prénom"]);
         echo "
                                         ";
-        // line 103
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 103, $this->source); })()), "prenom", [], "any", false, false, false, 103), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 103, $this->source); })()), "user", [], "any", false, false, false, 103), "prenom", [], "any", false, false, false, 103)]]);
+        // line 108
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 108, $this->source); })()), "prenom", [], "any", false, false, false, 108), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 108, $this->source); })()), "user", [], "any", false, false, false, 108), "prenom", [], "any", false, false, false, 108)]]);
         echo "
                                     </div>
                                 </div>
                                 <div class=\"form-group\">
                                     ";
-        // line 107
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 107, $this->source); })()), "phoneNumber", [], "any", false, false, false, 107), 'label', ["label" => "Numéro de téléphone"]);
+        // line 112
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 112, $this->source); })()), "phoneNumber", [], "any", false, false, false, 112), 'label', ["label" => "Numéro de téléphone"]);
         echo "
                                     <div id=\"phone-number-field\">
                                         ";
-        // line 109
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 109, $this->source); })()), "phoneNumber", [], "any", false, false, false, 109), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 109, $this->source); })()), "user", [], "any", false, false, false, 109), "phoneNumber", [], "any", false, false, false, 109)]]);
+        // line 114
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 114, $this->source); })()), "phoneNumber", [], "any", false, false, false, 114), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 114, $this->source); })()), "user", [], "any", false, false, false, 114), "phoneNumber", [], "any", false, false, false, 114)]]);
         echo "
                                         <div class=\"error-message\" id=\"phone-error-message\">
                                             ";
-        // line 111
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 111, $this->source); })()), "phoneNumber", [], "any", false, false, false, 111), 'errors');
+        // line 116
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 116, $this->source); })()), "phoneNumber", [], "any", false, false, false, 116), 'errors');
         echo "
                                         </div>
                                     </div>
@@ -240,36 +245,36 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
                                                           
                                 <div class=\"form-group\">
                                     ";
-        // line 117
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 117, $this->source); })()), "address", [], "any", false, false, false, 117), 'label', ["label" => "Adresse"]);
+        // line 122
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 122, $this->source); })()), "address", [], "any", false, false, false, 122), 'label', ["label" => "Adresse"]);
         echo "
                                     ";
-        // line 118
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 118, $this->source); })()), "address", [], "any", false, false, false, 118), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 118, $this->source); })()), "user", [], "any", false, false, false, 118), "address", [], "any", false, false, false, 118)]]);
+        // line 123
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 123, $this->source); })()), "address", [], "any", false, false, false, 123), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 123, $this->source); })()), "user", [], "any", false, false, false, 123), "address", [], "any", false, false, false, 123)]]);
         echo "
                                 </div>
                                 
                                 <div class=\"form-group\">
                                     ";
-        // line 122
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 122, $this->source); })()), "picture", [], "any", false, false, false, 122), 'label', ["label" => "Image de profil"]);
+        // line 127
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 127, $this->source); })()), "picture", [], "any", false, false, false, 127), 'label', ["label" => "Image de profil"]);
         echo "
                                     ";
-        // line 123
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 123, $this->source); })()), "picture", [], "any", false, false, false, 123), 'widget', ["attr" => ["class" => "form-control-file"]]);
+        // line 128
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 128, $this->source); })()), "picture", [], "any", false, false, false, 128), 'widget', ["attr" => ["class" => "form-control-file"]]);
         echo "
                                 </div>
                                 
                                 <div class=\"form-buttons\">
                                     <button type=\"submit\" class=\"btn btn-primary\">Enregistrer</button>
                                     <a href=\"";
-        // line 128
+        // line 133
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_profile");
         echo "\" class=\"btn btn-secondary\">Annuler</a>
                                 </div>
                             ";
-        // line 130
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 130, $this->source); })()), 'form_end');
+        // line 135
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 135, $this->source); })()), 'form_end');
         echo "
                         </div>
                     </div>
@@ -278,7 +283,7 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
         </div>
     </section>
     <script src=\"";
-        // line 137
+        // line 142
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("profil/script.js"), "html", null, true);
         echo "\"></script>
 </body>
@@ -314,7 +319,7 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  282 => 137,  272 => 130,  267 => 128,  259 => 123,  255 => 122,  248 => 118,  244 => 117,  235 => 111,  230 => 109,  225 => 107,  218 => 103,  214 => 102,  208 => 99,  204 => 98,  198 => 95,  188 => 90,  182 => 86,  175 => 83,  168 => 80,  166 => 79,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  287 => 142,  277 => 135,  272 => 133,  264 => 128,  260 => 127,  253 => 123,  249 => 122,  240 => 116,  235 => 114,  230 => 112,  223 => 108,  219 => 107,  213 => 104,  209 => 103,  203 => 100,  193 => 95,  187 => 91,  180 => 88,  173 => 85,  171 => 84,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -381,10 +386,15 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
         }
 
         .error-message {
-            color: red;
+            color: white;
             font-size: 14px;
             margin-top: 5px;
+            padding: 5px;
+            border: 1px solid red;
+            border-radius: 4px;
+            background-color: rgba(255, 0, 0, 0.2); /* Rouge avec une opacité de 20% */
         }
+        
     </style>
 
 </head>
