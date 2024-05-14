@@ -256,22 +256,6 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
         // line 114
         echo "    <div class=\"container\">
         ";
-        // line 115
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 115, $this->source); })()), "flashes", ["success"], "method", false, false, false, 115));
-        foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 116
-            echo "            <div class=\"alert alert-success mt-4\">
-                ";
-            // line 117
-            echo twig_escape_filter($this->env, $context["message"], "html", null, true);
-            echo "
-            </div>
-        ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
         // line 120
         echo "
 
@@ -333,7 +317,7 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
      */
     public function getDebugInfo()
     {
-        return array (  303 => 127,  293 => 126,  280 => 122,  276 => 120,  267 => 117,  264 => 116,  260 => 115,  257 => 114,  247 => 113,  142 => 16,  132 => 15,  119 => 12,  109 => 11,  97 => 7,  92 => 6,  82 => 5,  63 => 3,  40 => 1,);
+        return array (  287 => 127,  277 => 126,  264 => 122,  260 => 120,  257 => 114,  247 => 113,  142 => 16,  132 => 15,  119 => 12,  109 => 11,  97 => 7,  92 => 6,  82 => 5,  63 => 3,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -452,11 +436,11 @@ class __TwigTemplate_a0ea1a4edb46c5dc7952413cd64589ca extends Template
 
 {% block body %}
     <div class=\"container\">
-        {% for message in app.flashes('success') %}
+        {#  {% for message in app.flashes('success') %}
             <div class=\"alert alert-success mt-4\">
                 {{ message }}
             </div>
-        {% endfor %}
+        {% endfor %} #}
 
 
         {{ form(form) }}
