@@ -26,7 +26,9 @@
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="contact-wrap w-100 p-md-5 p-4 py-5">
                                     <h3 class="mb-4">Write us</h3>
-                                    <div id="form-message-warning" class="mb-4"></div>
+                                    <div id="form-message-warning" class="mb-4">
+                                        There is a problem with your message, please try again later.
+                                    </div>
                                     <div id="form-message-success" class="mb-4">
                                         Your message was sent, thank you!
                                     </div>
@@ -106,6 +108,19 @@
             </div>
         </div>
     </section>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success mt-4">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+
+        {{ form(form) }}
+    </div>
 {% endblock %}
 
 {% block footer %}

@@ -184,6 +184,7 @@
                                             <a href="#">Brands <i class="fa fa-angle-down"></i></a>
                                             <div class="mega_menu">
                                                 <ul class="mega_menu_inner">
+                                                    {#
                                                     {% for cat, brands in brandLists %}
                                                         <li>
                                                             <a href="/product/{{ cat|lower }}">{{ cat|capitalize }}</a>
@@ -196,6 +197,7 @@
                                                             {% endif %}
                                                         </li>
                                                     {% endfor %}
+                                                    #}
                                                 </ul>
                                             </div>
 
