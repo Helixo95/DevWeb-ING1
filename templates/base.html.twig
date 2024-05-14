@@ -235,12 +235,13 @@
                                             </div>
                                         </li>
                                         <li class="mini_cart_wrapper">
-                                            <a href="javascript:void(0)">
+                                            <a href="{{ path("app_cart") }}">
                                                 <i class="fa fa-shopping-cart"></i>
-                                                <span class="item_count">2</span>
+                                                <!-- mini cart <span class="item_count">2</span> -->
                                             </a>
 
                                             <!-- mini cart  -->
+                                            {#
                                             <div class="mini_cart mini_cart2">
                                                 <div class="cart_gallery">
                                                     <div class="cart_item">
@@ -291,6 +292,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            #}
                                             <!-- mini cart ends -->
                                         </li>
                                     </ul>
