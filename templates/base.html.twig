@@ -180,10 +180,13 @@
 
                                         </li>
 
-                                        <li class="mega_items">
+                                        <li>
                                             <a href="#">Brands <i class="fa fa-angle-down"></i></a>
-                                            <div class="mega_menu">
-                                                <ul class="mega_menu_inner">
+                                                <ul class="sub_menu pages">
+                                                    <li><a href="{{ path('app_login') }}">Men</a></li>
+                                                    <li><a href="{{ path('app_signin') }}">Women</a></li>
+                                                    <li><a href="{{ path('app_signin') }}">Unisex</a></li>
+
                                                     {#
                                                     {% for cat, brands in brandLists %}
                                                         <li>
@@ -199,16 +202,14 @@
                                                     {% endfor %}
                                                     #}
                                                 </ul>
-                                            </div>
-
                                         </li>
 
                                         <li><a href="{{ path('app_contact') }}">Contact Us</a></li>
                                         <li>
                                             <a href="#">User <i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu pages">
-                                                <li><a href="#">Login In</a></li>
-                                                <li><a href="#">Sign Up</a></li>
+                                                <li><a href="{{ path('app_login') }}">Login In</a></li>
+                                                <li><a href="{{ path('app_signin') }}">Sign Up</a></li>
                                             </ul>
                                         </li>
                                     </ul>

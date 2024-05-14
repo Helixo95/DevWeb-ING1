@@ -77,17 +77,17 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 ";
         // line 17
         $this->displayBlock('header', $context, $blocks);
-        // line 315
-        echo "
-";
         // line 316
-        $this->displayBlock('content', $context, $blocks);
-        // line 319
         echo "
 ";
+        // line 317
+        $this->displayBlock('content', $context, $blocks);
         // line 320
+        echo "
+";
+        // line 321
         $this->displayBlock('footer', $context, $blocks);
-        // line 382
+        // line 383
         echo "
 
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
@@ -96,17 +96,17 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js\"></script>
 <script src=\"";
-        // line 389
+        // line 390
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/countdown.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 390
+        // line 391
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/main.js"), "html", null, true);
         echo "\"></script>
 ";
-        // line 391
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 392
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 393
         echo "</body>
 </html>
 ";
@@ -340,26 +340,42 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
                                         </li>
 
-                                        <li class=\"mega_items\">
+                                        <li>
                                             <a href=\"#\">Brands <i class=\"fa fa-angle-down\"></i></a>
-                                            <div class=\"mega_menu\">
-                                                <ul class=\"mega_menu_inner\">
-                                                    ";
-        // line 201
-        echo "                                                </ul>
-                                            </div>
+                                                <ul class=\"sub_menu pages\">
+                                                    <li><a href=\"";
+        // line 186
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        echo "\">Men</a></li>
+                                                    <li><a href=\"";
+        // line 187
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_signin");
+        echo "\">Women</a></li>
+                                                    <li><a href=\"";
+        // line 188
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_signin");
+        echo "\">Unisex</a></li>
 
+                                                    ";
+        // line 204
+        echo "                                                </ul>
                                         </li>
 
                                         <li><a href=\"";
-        // line 206
+        // line 207
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
         echo "\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\">User <i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
-                                                <li><a href=\"#\">Login In</a></li>
-                                                <li><a href=\"#\">Sign Up</a></li>
+                                                <li><a href=\"";
+        // line 211
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        echo "\">Login In</a></li>
+                                                <li><a href=\"";
+        // line 212
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_signin");
+        echo "\">Sign Up</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -397,7 +413,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 248
+        // line 249
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini1.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -412,7 +428,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 260
+        // line 261
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini2.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -477,7 +493,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 316
+    // line 317
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -487,7 +503,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 317
+        // line 318
         echo "    <!-- Contenu spécifique à chaque page -->
 ";
         
@@ -498,7 +514,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 320
+    // line 321
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -508,7 +524,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 321
+        // line 322
         echo "    <footer class=\"footer_widgets color_two\">
         <div class=\"footer_top\">
             <div class=\"container\">
@@ -535,7 +551,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                 <ul>
                                     <li><a href=\"#\">New Products</a></li>
                                     <li><a href=\"";
-        // line 346
+        // line 347
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_guidlines");
         echo "\">Terms & Conditions</a></li>
                                 </ul>
@@ -560,27 +576,27 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                         <div class=\"footer_payment text-right\">
                             <ul>
                                 <li><a href=\"#\"><img src=\"";
-        // line 368
+        // line 369
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 369
+        // line 370
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal1.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 370
+        // line 371
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal2.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 371
+        // line 372
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal3.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 372
+        // line 373
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal4.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 373
+        // line 374
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal5.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                             </ul>
@@ -599,7 +615,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 391
+    // line 392
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -638,7 +654,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  603 => 391,  584 => 373,  580 => 372,  576 => 371,  572 => 370,  568 => 369,  564 => 368,  539 => 346,  512 => 321,  502 => 320,  491 => 317,  481 => 316,  416 => 260,  401 => 248,  356 => 206,  349 => 201,  338 => 179,  222 => 66,  207 => 54,  159 => 17,  141 => 14,  122 => 6,  110 => 392,  108 => 391,  104 => 390,  100 => 389,  91 => 382,  89 => 320,  86 => 319,  84 => 316,  81 => 315,  79 => 17,  75 => 15,  73 => 14,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
+        return array (  619 => 392,  600 => 374,  596 => 373,  592 => 372,  588 => 371,  584 => 370,  580 => 369,  555 => 347,  528 => 322,  518 => 321,  507 => 318,  497 => 317,  432 => 261,  417 => 249,  377 => 212,  373 => 211,  366 => 207,  361 => 204,  356 => 188,  352 => 187,  348 => 186,  338 => 179,  222 => 66,  207 => 54,  159 => 17,  141 => 14,  122 => 6,  110 => 393,  108 => 392,  104 => 391,  100 => 390,  91 => 383,  89 => 321,  86 => 320,  84 => 317,  81 => 316,  79 => 17,  75 => 15,  73 => 14,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -825,10 +841,13 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
                                         </li>
 
-                                        <li class=\"mega_items\">
+                                        <li>
                                             <a href=\"#\">Brands <i class=\"fa fa-angle-down\"></i></a>
-                                            <div class=\"mega_menu\">
-                                                <ul class=\"mega_menu_inner\">
+                                                <ul class=\"sub_menu pages\">
+                                                    <li><a href=\"{{ path('app_login') }}\">Men</a></li>
+                                                    <li><a href=\"{{ path('app_signin') }}\">Women</a></li>
+                                                    <li><a href=\"{{ path('app_signin') }}\">Unisex</a></li>
+
                                                     {#
                                                     {% for cat, brands in brandLists %}
                                                         <li>
@@ -844,16 +863,14 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                     {% endfor %}
                                                     #}
                                                 </ul>
-                                            </div>
-
                                         </li>
 
                                         <li><a href=\"{{ path('app_contact') }}\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\">User <i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
-                                                <li><a href=\"#\">Login In</a></li>
-                                                <li><a href=\"#\">Sign Up</a></li>
+                                                <li><a href=\"{{ path('app_login') }}\">Login In</a></li>
+                                                <li><a href=\"{{ path('app_signin') }}\">Sign Up</a></li>
                                             </ul>
                                         </li>
                                     </ul>
