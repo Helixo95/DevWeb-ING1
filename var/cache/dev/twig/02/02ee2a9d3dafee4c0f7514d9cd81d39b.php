@@ -1,0 +1,406 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* terms.html.twig */
+class __TwigTemplate_10bc433d1b864e7c13ce31a09ea11198 extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'stylesheets' => [$this, 'block_stylesheets'],
+            'header' => [$this, 'block_header'],
+            'content' => [$this, 'block_content'],
+            'footer' => [$this, 'block_footer'],
+        ];
+    }
+
+    protected function doGetParent(array $context)
+    {
+        // line 1
+        return "base.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "terms.html.twig"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "terms.html.twig"));
+
+        $this->parent = $this->loadTemplate("base.html.twig", "terms.html.twig", 1);
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+    }
+
+    // line 4
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Termes et Conditions";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 6
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 7
+        echo "<link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("terms/terms.css"), "html", null, true);
+        echo "\">
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 10
+    public function block_header($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+
+        // line 11
+        echo "    ";
+        $this->displayParentBlock("header", $context, $blocks);
+        echo "
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 14
+    public function block_content($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        // line 15
+        echo "<body>
+<div class=\"all-page\">
+    <div class=\"container2\">
+        <h1>Charte d'Utilisation du magazin Exotik</h1>
+        <div class=\"rich-terms w-richtext\">
+            <h4>Date d'entrée en vigueur&nbsp;: 15&nbsp;avril&nbsp;2024</h4>
+            <h4>Dernière mise à jour&nbsp;: 15&nbsp;mars&nbsp;2024</h4>
+        </div>
+
+    </div>
+
+
+<div id=\"1\" class=\"rich-guidelines-negative _1 w-richtext\">
+    <p>Bienvenue sur Exotik, votre destination privilégiée pour découvrir et acheter des parfums de qualité. Notre
+        engagement est de fournir une expérience exceptionnelle à tous nos clients, tout en respectant les principes
+        éthiques et légaux qui nous guident. Ces termes et conditions visent à assurer une utilisation sûre et
+        agréable de notre site pour chacun.<br></p>
+    <p>Nous valorisons le respect mutuel entre les membres de notre communauté. Tout comportement ou contenu
+        inapproprié, tel que le harcèlement, les menaces, ou le partage non consenti d'informations personnelles,
+        est strictement interdit. Nous encourageons chacun à interagir avec courtoisie et respect.</p>
+    <p>Tous les contenus publiés, qu'ils soient visuels ou textuels, doivent être appropriés et respectueux. Il est
+        interdit de publier des contenus offensants, haineux ou qui encouragent la violence. Cela inclut
+        l'utilisation d'images ou de descriptions qui pourraient être perçues comme irrespectueuses ou offensives.
+    </p>
+    <p>Le respect de la propriété intellectuelle est crucial sur notre plateforme. Ne partagez pas de contenus
+        protégés par des droits d'auteur sans autorisation. Cela inclut les photographies, les descriptions de
+        produits, ou tout autre matériel soumis à des droits d'auteur.</p>
+    <p>Nous nous engageons à fournir un environnement sécurisé pour toutes vos transactions. La fraude, la
+        contrefaçon et les pratiques commerciales déloyales ou trompeuses sont formellement interdites.</p>
+    <p>Le respect des lois est fondamental. Il est interdit d'utiliser notre site pour des activités illégales, y
+        compris mais sans s'y limiter, la vente de produits contrefaits ou non autorisés.</p>
+    <p>Si vous observez des comportements ou des contenus inappropriés, nous vous encourageons à nous le signaler
+        immédiatement. Notre équipe prendra les mesures nécessaires pour enquêter et, si nécessaire, intervenir.</p>
+    <p>Nous nous réservons le droit de modifier ces termes et conditions à tout moment. Les changements entreront en
+        vigueur dès leur publication sur le site. Nous vous encourageons à consulter régulièrement cette page pour
+        rester informé des mises à jour.</p>
+    <p>Tout en nous efforçant de maintenir l'exactitude et la fiabilité des informations sur notre site, nous ne
+        pouvons garantir que toutes les informations soient toujours complètes, précises ou à jour. Nous déclinons
+        toute responsabilité pour les erreurs ou omissions dans le contenu de notre site.</p>
+    <p>Nous espérons que vous apprécierez votre expérience sur Exotik et nous vous remercions de respecter ces
+        principes pour maintenir notre communauté sûre et accueillante pour tous.</p>
+    <h2>Respectez autrui</h2>
+    <p><strong>1. N'encouragez pas le harcèlement, ne l'organisez pas, et n'y prenez pas part.</strong> Nous ne
+        tolérons aucun type de harcèlement, que ce soit l'intimidation continue, le harcèlement sexuel, ou tout
+        autre comportement nuisible. Nous attendons de nos utilisateurs qu'ils interagissent de manière respectueuse
+        et professionnelle.</p>
+    <p><strong>2. Ne menacez pas de vous en prendre à un autre individu ou à un groupe de personnes.</strong> Cela
+        inclut les menaces directes, indirectes ou suggérées. Nous prenons ces menaces très au sérieux et agirons en
+        conséquence.</p>
+    <p><strong>3. Ne partagez pas ou ne menacez pas de partager les informations personnelles identifiables (PII)
+            d'un autre utilisateur sans son accord.</strong> Cela inclut le fait de faciliter le doxxing, comme
+        l'achat ou la vente de données personnelles.</p>
+    <p><strong>4. Ne tenez pas des propos haineux et ne prenez pas part à d'autres types de comportements
+            haineux.</strong> Cela inclut l'utilisation de symboles ou d'images de haine et la négation des
+        massacres humains de masse de l'histoire.</p>
+    <p><strong>5. N'organisez pas, n'encouragez pas et ne soutenez pas l'extrémisme violent.</strong> Cela inclut
+        également la glorification d'événements violents ou des auteurs d'actes violents, ainsi que la promotion de
+        théories du complot qui pourraient encourager ou inciter à la violence contre d'autres personnes.</p>
+    <p><strong>6. Ne sollicitez pas, ne partagez pas et ne tentez pas de distribuer du contenu qui représente,
+            encourage ou tente de normaliser les abus sexuels sur les enfants.</strong> Nous avons une politique
+        stricte contre de tels comportements et matériaux.</p>
+    <p><strong>7. Si vous avez moins de 18 ans, ne vous livrez pas à un comportement sexuel ou à tout autre
+            comportement menaçant votre sécurité en ligne ou physique.</strong> Nous encourageons les jeunes
+        utilisateurs à interagir de manière sûre et respectueuse.</p>
+    <p><strong>8. Ne vous livrez pas à un comportement sexuel avec des personnes âgées de moins de 18 ans, et ne
+            sollicitez pas de contenu sexuel de leur part.</strong> Nous nous engageons à protéger les mineurs sur
+        notre plateforme.</p>
+    <p><strong>9. Ne mettez pas de contenu sexuellement explicite à la disposition de personnes âgées de moins de 18
+            ans.</strong> Vous devez être âgé de 18 ans ou plus pour accéder ou participer à des contenus pour
+        adultes sur notre site.</p>
+    <p><strong>10. Ne partagez pas, ne distribuez pas et ne créez pas de contenu sexuellement explicite ou suggestif
+            appartenant à d'autres personnes sans leur consentement.</strong> Le respect de la vie privée et du
+        consentement est essentiel sur notre site.</p>
+    <p><strong>11. Ne partagez pas de contenu qui glorifie, encourage ou normalise le suicide ou d'autres actes
+            d'automutilation.</strong> Si vous ou quelqu'un que vous connaissez est en crise, nous vous encourageons
+        à chercher de l'aide auprès de professionnels qualifiés.</p>
+    <p><strong>12. Ne partagez pas de contenu média représentant des images réelles de blessures graves, de violence
+            extrême ou de souffrance animale, en particulier si votre intention est de harceler ou de choquer
+            d'autres personnes.</strong> Nous visons à maintenir un environnement respectueux et sûr pour tous nos
+        utilisateurs.</p>
+    <h2>Respectez la loi</h2>
+    <p><strong>13. Ne partagez pas de contenu qui viole la propriété intellectuelle ou d'autres droits
+            d'autrui.</strong> Cela inclut le partage ou la vente d'outils de triche ou de hacks pour les jeux. Nous
+        respectons les droits de propriété intellectuelle et attendons de même de nos utilisateurs.</p>
+    <p><strong>14. N'organisez pas ou n'encouragez pas la vente ou la facilitation des ventes de produits
+            réglementés ou potentiellement dangereux, et n'y prenez pas part.</strong> Les produits réglementés sont
+        ceux dont l'achat, la vente, l'échange ou la propriété sont soumis à des lois spécifiques.</p>
+    <p><strong>15. N'organisez pas de paris illégaux et n'y participez pas.</strong> Les utilisateurs sont tenus de
+        respecter les lois et régulations en vigueur en matière de paris et autres jeux d'argent.</p>
+    <p><strong>16. N'organisez pas et n'encouragez pas d'activité illégale, et n'y prenez pas part.</strong> Cela
+        inclut la traite d'êtres humains et les sollicitations sexuelles. Nous prenons ces infractions très au
+        sérieux et coopérons avec les autorités compétentes pour assurer le respect de la loi.</p>
+    </div>
+</div>
+</body>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 112
+    public function block_footer($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        // line 113
+        echo "    ";
+        $this->displayParentBlock("footer", $context, $blocks);
+        echo "
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName()
+    {
+        return "terms.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo()
+    {
+        return array (  252 => 113,  242 => 112,  137 => 15,  127 => 14,  114 => 11,  104 => 10,  91 => 7,  81 => 6,  62 => 4,  39 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("{% extends 'base.html.twig' %}
+
+
+{% block title %}Termes et Conditions{% endblock %}
+
+{% block stylesheets %}
+<link rel=\"stylesheet\" href=\"{{ asset('terms/terms.css') }}\">
+{% endblock %}
+
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+<body>
+<div class=\"all-page\">
+    <div class=\"container2\">
+        <h1>Charte d'Utilisation du magazin Exotik</h1>
+        <div class=\"rich-terms w-richtext\">
+            <h4>Date d'entrée en vigueur&nbsp;: 15&nbsp;avril&nbsp;2024</h4>
+            <h4>Dernière mise à jour&nbsp;: 15&nbsp;mars&nbsp;2024</h4>
+        </div>
+
+    </div>
+
+
+<div id=\"1\" class=\"rich-guidelines-negative _1 w-richtext\">
+    <p>Bienvenue sur Exotik, votre destination privilégiée pour découvrir et acheter des parfums de qualité. Notre
+        engagement est de fournir une expérience exceptionnelle à tous nos clients, tout en respectant les principes
+        éthiques et légaux qui nous guident. Ces termes et conditions visent à assurer une utilisation sûre et
+        agréable de notre site pour chacun.<br></p>
+    <p>Nous valorisons le respect mutuel entre les membres de notre communauté. Tout comportement ou contenu
+        inapproprié, tel que le harcèlement, les menaces, ou le partage non consenti d'informations personnelles,
+        est strictement interdit. Nous encourageons chacun à interagir avec courtoisie et respect.</p>
+    <p>Tous les contenus publiés, qu'ils soient visuels ou textuels, doivent être appropriés et respectueux. Il est
+        interdit de publier des contenus offensants, haineux ou qui encouragent la violence. Cela inclut
+        l'utilisation d'images ou de descriptions qui pourraient être perçues comme irrespectueuses ou offensives.
+    </p>
+    <p>Le respect de la propriété intellectuelle est crucial sur notre plateforme. Ne partagez pas de contenus
+        protégés par des droits d'auteur sans autorisation. Cela inclut les photographies, les descriptions de
+        produits, ou tout autre matériel soumis à des droits d'auteur.</p>
+    <p>Nous nous engageons à fournir un environnement sécurisé pour toutes vos transactions. La fraude, la
+        contrefaçon et les pratiques commerciales déloyales ou trompeuses sont formellement interdites.</p>
+    <p>Le respect des lois est fondamental. Il est interdit d'utiliser notre site pour des activités illégales, y
+        compris mais sans s'y limiter, la vente de produits contrefaits ou non autorisés.</p>
+    <p>Si vous observez des comportements ou des contenus inappropriés, nous vous encourageons à nous le signaler
+        immédiatement. Notre équipe prendra les mesures nécessaires pour enquêter et, si nécessaire, intervenir.</p>
+    <p>Nous nous réservons le droit de modifier ces termes et conditions à tout moment. Les changements entreront en
+        vigueur dès leur publication sur le site. Nous vous encourageons à consulter régulièrement cette page pour
+        rester informé des mises à jour.</p>
+    <p>Tout en nous efforçant de maintenir l'exactitude et la fiabilité des informations sur notre site, nous ne
+        pouvons garantir que toutes les informations soient toujours complètes, précises ou à jour. Nous déclinons
+        toute responsabilité pour les erreurs ou omissions dans le contenu de notre site.</p>
+    <p>Nous espérons que vous apprécierez votre expérience sur Exotik et nous vous remercions de respecter ces
+        principes pour maintenir notre communauté sûre et accueillante pour tous.</p>
+    <h2>Respectez autrui</h2>
+    <p><strong>1. N'encouragez pas le harcèlement, ne l'organisez pas, et n'y prenez pas part.</strong> Nous ne
+        tolérons aucun type de harcèlement, que ce soit l'intimidation continue, le harcèlement sexuel, ou tout
+        autre comportement nuisible. Nous attendons de nos utilisateurs qu'ils interagissent de manière respectueuse
+        et professionnelle.</p>
+    <p><strong>2. Ne menacez pas de vous en prendre à un autre individu ou à un groupe de personnes.</strong> Cela
+        inclut les menaces directes, indirectes ou suggérées. Nous prenons ces menaces très au sérieux et agirons en
+        conséquence.</p>
+    <p><strong>3. Ne partagez pas ou ne menacez pas de partager les informations personnelles identifiables (PII)
+            d'un autre utilisateur sans son accord.</strong> Cela inclut le fait de faciliter le doxxing, comme
+        l'achat ou la vente de données personnelles.</p>
+    <p><strong>4. Ne tenez pas des propos haineux et ne prenez pas part à d'autres types de comportements
+            haineux.</strong> Cela inclut l'utilisation de symboles ou d'images de haine et la négation des
+        massacres humains de masse de l'histoire.</p>
+    <p><strong>5. N'organisez pas, n'encouragez pas et ne soutenez pas l'extrémisme violent.</strong> Cela inclut
+        également la glorification d'événements violents ou des auteurs d'actes violents, ainsi que la promotion de
+        théories du complot qui pourraient encourager ou inciter à la violence contre d'autres personnes.</p>
+    <p><strong>6. Ne sollicitez pas, ne partagez pas et ne tentez pas de distribuer du contenu qui représente,
+            encourage ou tente de normaliser les abus sexuels sur les enfants.</strong> Nous avons une politique
+        stricte contre de tels comportements et matériaux.</p>
+    <p><strong>7. Si vous avez moins de 18 ans, ne vous livrez pas à un comportement sexuel ou à tout autre
+            comportement menaçant votre sécurité en ligne ou physique.</strong> Nous encourageons les jeunes
+        utilisateurs à interagir de manière sûre et respectueuse.</p>
+    <p><strong>8. Ne vous livrez pas à un comportement sexuel avec des personnes âgées de moins de 18 ans, et ne
+            sollicitez pas de contenu sexuel de leur part.</strong> Nous nous engageons à protéger les mineurs sur
+        notre plateforme.</p>
+    <p><strong>9. Ne mettez pas de contenu sexuellement explicite à la disposition de personnes âgées de moins de 18
+            ans.</strong> Vous devez être âgé de 18 ans ou plus pour accéder ou participer à des contenus pour
+        adultes sur notre site.</p>
+    <p><strong>10. Ne partagez pas, ne distribuez pas et ne créez pas de contenu sexuellement explicite ou suggestif
+            appartenant à d'autres personnes sans leur consentement.</strong> Le respect de la vie privée et du
+        consentement est essentiel sur notre site.</p>
+    <p><strong>11. Ne partagez pas de contenu qui glorifie, encourage ou normalise le suicide ou d'autres actes
+            d'automutilation.</strong> Si vous ou quelqu'un que vous connaissez est en crise, nous vous encourageons
+        à chercher de l'aide auprès de professionnels qualifiés.</p>
+    <p><strong>12. Ne partagez pas de contenu média représentant des images réelles de blessures graves, de violence
+            extrême ou de souffrance animale, en particulier si votre intention est de harceler ou de choquer
+            d'autres personnes.</strong> Nous visons à maintenir un environnement respectueux et sûr pour tous nos
+        utilisateurs.</p>
+    <h2>Respectez la loi</h2>
+    <p><strong>13. Ne partagez pas de contenu qui viole la propriété intellectuelle ou d'autres droits
+            d'autrui.</strong> Cela inclut le partage ou la vente d'outils de triche ou de hacks pour les jeux. Nous
+        respectons les droits de propriété intellectuelle et attendons de même de nos utilisateurs.</p>
+    <p><strong>14. N'organisez pas ou n'encouragez pas la vente ou la facilitation des ventes de produits
+            réglementés ou potentiellement dangereux, et n'y prenez pas part.</strong> Les produits réglementés sont
+        ceux dont l'achat, la vente, l'échange ou la propriété sont soumis à des lois spécifiques.</p>
+    <p><strong>15. N'organisez pas de paris illégaux et n'y participez pas.</strong> Les utilisateurs sont tenus de
+        respecter les lois et régulations en vigueur en matière de paris et autres jeux d'argent.</p>
+    <p><strong>16. N'organisez pas et n'encouragez pas d'activité illégale, et n'y prenez pas part.</strong> Cela
+        inclut la traite d'êtres humains et les sollicitations sexuelles. Nous prenons ces infractions très au
+        sérieux et coopérons avec les autorités compétentes pour assurer le respect de la loi.</p>
+    </div>
+</div>
+</body>
+{% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+{% endblock %}
+", "terms.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\terms.html.twig");
+    }
+}

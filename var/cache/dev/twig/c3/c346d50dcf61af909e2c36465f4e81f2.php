@@ -47,7 +47,11 @@ class __TwigTemplate_20b5067e134de5711eaf2b740791f9a9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/page/login_minimal.html.twig"));
 
         // line 3
+<<<<<<< HEAD
         $context["__internal_6eb361e5e8824312ea71212fc21dfa69394f14205e9445d63de8363cb7f143f7"] = (($context["translation_domain"]) ?? ("messages"));
+=======
+        $context["__internal_049c446e5ed88184a1c9a661317b48826689ded524e692cace0441c4bd4983b9"] = (($context["translation_domain"]) ?? ("messages"));
+>>>>>>> cc8f0c6d68d4b871fc6d9a4b6768ecbe7ed3a645
         // line 4
         echo "<!DOCTYPE html>
 <html>
@@ -305,6 +309,6 @@ class __TwigTemplate_20b5067e134de5711eaf2b740791f9a9 extends Template
     </body>
 </html>
 
-", "@EasyAdmin/page/login_minimal.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\login_minimal.html.twig");
+", "@EasyAdmin/page/login_minimal.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\login_minimal.html.twig");
     }
 }

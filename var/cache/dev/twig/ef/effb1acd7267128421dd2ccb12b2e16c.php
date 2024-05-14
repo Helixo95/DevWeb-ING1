@@ -338,8 +338,14 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
 
     <!-- Bootstrap JS -->
     <script type=\"text/javascript\" src=\"{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js') }}\"></script>
+<<<<<<< HEAD
 
 {% endblock %}
 ", "profile.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\profile.html.twig");
+=======
+</body>
+</html>
+{% endblock %}", "profile.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\profile.html.twig");
+>>>>>>> cc8f0c6d68d4b871fc6d9a4b6768ecbe7ed3a645
     }
 }
