@@ -3364,3 +3364,9 @@ figure {
     height: 30px;
     line-height: 29px;
 }
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+}
