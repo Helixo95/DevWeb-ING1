@@ -16,6 +16,6 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerGIVIQAA\App_KernelDevDebugContainer([
     'container.build_hash' => 'GIVIQAA',
-    'container.build_id' => 'a756bc13',
-    'container.build_time' => 1715765018,
+    'container.build_id' => '5b06e728',
+    'container.build_time' => 1715774591,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerGIVIQAA');

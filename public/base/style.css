@@ -3378,15 +3378,22 @@ figure {
 .dropdown-item:hover{
     background-color: lightsalmon;
 }
-.dropdown .dropdown-menu{
+.dropdown .dropdown-menu {
     display: none;
 }
 .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
     display: block;
     margin-top: -.125em;
     margin-left: .125em;
-
 }
+
+.dropdown-menu-right {
+    display: none;
+}
+.dropdown-menu-right:hover{
+    display: block;
+}
+
 @media screen and (min-width:992px) {
     .dropend:hover > .dropdown-menu{
         position: absolute;

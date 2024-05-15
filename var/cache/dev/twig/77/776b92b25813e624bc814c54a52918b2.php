@@ -79,17 +79,17 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 ";
         // line 19
         $this->displayBlock('header', $context, $blocks);
-        // line 226
+        // line 232
         echo "
 ";
-        // line 227
+        // line 233
         $this->displayBlock('content', $context, $blocks);
-        // line 230
+        // line 236
         echo "
 ";
-        // line 231
+        // line 237
         $this->displayBlock('footer', $context, $blocks);
-        // line 293
+        // line 299
         echo "
 
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
@@ -98,17 +98,17 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js\"></script>
 <script src=\"";
-        // line 300
+        // line 306
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/countdown.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 301
+        // line 307
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/main.js"), "html", null, true);
         echo "\"></script>
 ";
-        // line 302
+        // line 308
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 303
+        // line 309
         echo "</body>
 </html>
 ";
@@ -221,6 +221,10 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
 
 
+
+
+
+
                                         <li class=\"nav-item dropdown\">
                                             <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                                 Brands
@@ -259,25 +263,27 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                         <li><a class=\"dropdown-item\" href=\"#\">Prada</a></li>
                                                     </ul>
                                                 </li>
+
                                             </ul>
                                         </li>
 
 
 
 
+
                                         <li><a href=\"";
-        // line 117
+        // line 123
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
         echo "\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\">User <i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
                                                 <li><a href=\"";
-        // line 121
+        // line 127
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">Login In</a></li>
                                                 <li><a href=\"";
-        // line 122
+        // line 128
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         echo "\">Sign Up</a></li>
                                             </ul>
@@ -317,7 +323,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 159
+        // line 165
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini1.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -332,7 +338,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 171
+        // line 177
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini2.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -397,7 +403,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 227
+    // line 233
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -407,7 +413,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 228
+        // line 234
         echo "    <!-- Contenu spécifique à chaque page -->
 ";
         
@@ -418,7 +424,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 231
+    // line 237
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -428,7 +434,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 232
+        // line 238
         echo "    <footer class=\"footer_widgets color_two\">
         <div class=\"footer_top\">
             <div class=\"container\">
@@ -455,7 +461,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                 <ul>
                                     <li><a href=\"#\">New Products</a></li>
                                     <li><a href=\"";
-        // line 257
+        // line 263
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_guidlines");
         echo "\">Terms & Conditions</a></li>
                                 </ul>
@@ -480,27 +486,27 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                         <div class=\"footer_payment text-right\">
                             <ul>
                                 <li><a href=\"#\"><img src=\"";
-        // line 279
+        // line 285
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 280
+        // line 286
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal1.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 281
+        // line 287
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal2.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 282
+        // line 288
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal3.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 283
+        // line 289
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal4.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 284
+        // line 290
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal5.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                             </ul>
@@ -519,7 +525,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 302
+    // line 308
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -558,7 +564,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  523 => 302,  504 => 284,  500 => 283,  496 => 282,  492 => 281,  488 => 280,  484 => 279,  459 => 257,  432 => 232,  422 => 231,  411 => 228,  401 => 227,  336 => 171,  321 => 159,  281 => 122,  277 => 121,  270 => 117,  219 => 68,  214 => 52,  210 => 51,  199 => 43,  190 => 37,  171 => 20,  161 => 19,  143 => 16,  124 => 6,  112 => 303,  110 => 302,  106 => 301,  102 => 300,  93 => 293,  91 => 231,  88 => 230,  86 => 227,  83 => 226,  81 => 19,  77 => 17,  75 => 16,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
+        return array (  529 => 308,  510 => 290,  506 => 289,  502 => 288,  498 => 287,  494 => 286,  490 => 285,  465 => 263,  438 => 238,  428 => 237,  417 => 234,  407 => 233,  342 => 177,  327 => 165,  287 => 128,  283 => 127,  276 => 123,  219 => 68,  214 => 52,  210 => 51,  199 => 43,  190 => 37,  171 => 20,  161 => 19,  143 => 16,  124 => 6,  112 => 309,  110 => 308,  106 => 307,  102 => 306,  93 => 299,  91 => 237,  88 => 236,  86 => 233,  83 => 232,  81 => 19,  77 => 17,  75 => 16,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -635,6 +641,10 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
 
 
+
+
+
+
                                         <li class=\"nav-item dropdown\">
                                             <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                                 Brands
@@ -673,8 +683,10 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                         <li><a class=\"dropdown-item\" href=\"#\">Prada</a></li>
                                                     </ul>
                                                 </li>
+
                                             </ul>
                                         </li>
+
 
 
 
