@@ -79,17 +79,17 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 ";
         // line 19
         $this->displayBlock('header', $context, $blocks);
-        // line 216
+        // line 269
         echo "
 ";
-        // line 217
+        // line 270
         $this->displayBlock('content', $context, $blocks);
-        // line 220
+        // line 273
         echo "
 ";
-        // line 221
+        // line 274
         $this->displayBlock('footer', $context, $blocks);
-        // line 283
+        // line 336
         echo "
 
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
@@ -98,17 +98,17 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js\"></script>
 <script src=\"";
-        // line 290
+        // line 343
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/countdown.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 291
+        // line 344
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/main.js"), "html", null, true);
         echo "\"></script>
 ";
-        // line 292
+        // line 345
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 293
+        // line 346
         echo "</body>
 </html>
 ";
@@ -233,7 +233,6 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                         <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
                                                         <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
                                                     </ul>
-                                                    <li><hr class=\"dropdown-divider\"></li>
                                                     <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                                         Women
                                                     </a>
@@ -241,7 +240,6 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                         <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
                                                         <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
                                                     </ul>
-                                                    <li><hr class=\"dropdown-divider\"></li>
                                                     <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                                         Unisex
                                                     </a>
@@ -255,19 +253,74 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                             </ul>
                                         </li>
 
+
+
+                                        <li class=\"nav-item dropdown\">
+                                            <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                                Dropdown
+                                            </a>
+                                            <ul class=\"dropdown-menu\">
+                                                <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+                                                <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+                                                <li>
+                                                    <hr class=\"dropdown-divider\">
+                                                </li>
+                                                <li class=\"nav-item dropend\">
+                                                    <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                                        Dropdown
+                                                    </a>
+                                                    <ul class=\"dropdown-menu\">
+                                                        <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+                                                        <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+                                                        <li>
+                                                            <hr class=\"dropdown-divider\">
+                                                        </li>
+                                                        <li class=\"nav-item dropend\">
+                                                            <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                                                Dropdown
+                                                            </a>
+                                                            <ul class=\"dropdown-menu\">
+                                                                <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+                                                                <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+                                                                <li>
+                                                                    <hr class=\"dropdown-divider\">
+                                                                </li>
+                                                                <li class=\"nav-item dropend\">
+                                                                    <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                                                        Dropdown
+                                                                    </a>
+                                                                    <ul class=\"dropdown-menu\">
+                                                                        <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+                                                                        <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+                                                                        <li>
+                                                                            <hr class=\"dropdown-divider\">
+                                                                        </li>
+                                                                        <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+
+
                                         <li><a href=\"";
-        // line 107
+        // line 160
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
         echo "\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\">User <i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
                                                 <li><a href=\"";
-        // line 111
+        // line 164
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">Login In</a></li>
                                                 <li><a href=\"";
-        // line 112
+        // line 165
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         echo "\">Sign Up</a></li>
                                             </ul>
@@ -307,7 +360,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 149
+        // line 202
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini1.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -322,7 +375,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                     <div class=\"cart_item\">
                                                         <div class=\"cart_img\">
                                                             <a href=\"#\"><img src=\"";
-        // line 161
+        // line 214
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/small-product/mini2.png"), "html", null, true);
         echo "\" alt=\"Perfume\"></a>
                                                         </div>
@@ -387,7 +440,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 217
+    // line 270
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -397,7 +450,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 218
+        // line 271
         echo "    <!-- Contenu spécifique à chaque page -->
 ";
         
@@ -408,7 +461,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 221
+    // line 274
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -418,7 +471,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 222
+        // line 275
         echo "    <footer class=\"footer_widgets color_two\">
         <div class=\"footer_top\">
             <div class=\"container\">
@@ -445,7 +498,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                 <ul>
                                     <li><a href=\"#\">New Products</a></li>
                                     <li><a href=\"";
-        // line 247
+        // line 300
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_guidlines");
         echo "\">Terms & Conditions</a></li>
                                 </ul>
@@ -470,27 +523,27 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                         <div class=\"footer_payment text-right\">
                             <ul>
                                 <li><a href=\"#\"><img src=\"";
-        // line 269
+        // line 322
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 270
+        // line 323
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal1.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 271
+        // line 324
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal2.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 272
+        // line 325
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal3.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 273
+        // line 326
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal4.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 274
+        // line 327
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal5.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                             </ul>
@@ -509,7 +562,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 292
+    // line 345
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -548,7 +601,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  513 => 292,  494 => 274,  490 => 273,  486 => 272,  482 => 271,  478 => 270,  474 => 269,  449 => 247,  422 => 222,  412 => 221,  401 => 218,  391 => 217,  326 => 161,  311 => 149,  271 => 112,  267 => 111,  260 => 107,  219 => 68,  214 => 52,  210 => 51,  199 => 43,  190 => 37,  171 => 20,  161 => 19,  143 => 16,  124 => 6,  112 => 293,  110 => 292,  106 => 291,  102 => 290,  93 => 283,  91 => 221,  88 => 220,  86 => 217,  83 => 216,  81 => 19,  77 => 17,  75 => 16,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
+        return array (  566 => 345,  547 => 327,  543 => 326,  539 => 325,  535 => 324,  531 => 323,  527 => 322,  502 => 300,  475 => 275,  465 => 274,  454 => 271,  444 => 270,  379 => 214,  364 => 202,  324 => 165,  320 => 164,  313 => 160,  219 => 68,  214 => 52,  210 => 51,  199 => 43,  190 => 37,  171 => 20,  161 => 19,  143 => 16,  124 => 6,  112 => 346,  110 => 345,  106 => 344,  102 => 343,  93 => 336,  91 => 274,  88 => 273,  86 => 270,  83 => 269,  81 => 19,  77 => 17,  75 => 16,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -637,7 +690,6 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                         <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
                                                         <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
                                                     </ul>
-                                                    <li><hr class=\"dropdown-divider\"></li>
                                                     <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                                         Women
                                                     </a>
@@ -645,7 +697,6 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                         <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
                                                         <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
                                                     </ul>
-                                                    <li><hr class=\"dropdown-divider\"></li>
                                                     <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                                         Unisex
                                                     </a>
@@ -658,6 +709,61 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
                                             </ul>
                                         </li>
+
+
+
+                                        <li class=\"nav-item dropdown\">
+                                            <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                                Dropdown
+                                            </a>
+                                            <ul class=\"dropdown-menu\">
+                                                <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+                                                <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+                                                <li>
+                                                    <hr class=\"dropdown-divider\">
+                                                </li>
+                                                <li class=\"nav-item dropend\">
+                                                    <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                                        Dropdown
+                                                    </a>
+                                                    <ul class=\"dropdown-menu\">
+                                                        <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+                                                        <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+                                                        <li>
+                                                            <hr class=\"dropdown-divider\">
+                                                        </li>
+                                                        <li class=\"nav-item dropend\">
+                                                            <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                                                Dropdown
+                                                            </a>
+                                                            <ul class=\"dropdown-menu\">
+                                                                <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+                                                                <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+                                                                <li>
+                                                                    <hr class=\"dropdown-divider\">
+                                                                </li>
+                                                                <li class=\"nav-item dropend\">
+                                                                    <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                                                        Dropdown
+                                                                    </a>
+                                                                    <ul class=\"dropdown-menu\">
+                                                                        <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+                                                                        <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+                                                                        <li>
+                                                                            <hr class=\"dropdown-divider\">
+                                                                        </li>
+                                                                        <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+
 
                                         <li><a href=\"{{ path('app_contact') }}\">Contact Us</a></li>
                                         <li>
