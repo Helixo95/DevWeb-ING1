@@ -13,6 +13,15 @@
 {% endblock %}
 
 {% block content %}
+    <style>
+        .form-group input[type="radio"] {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .mon_text{
+            color: white;
+        }
+    </style>
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -36,27 +45,47 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                                    {{ form_widget(contactForm.fullName) }}
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                    {{ form_widget(contactForm.email) }}
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                    <a class="mon_text">Genre</a>
+                                                    <hr class="divider-horizontal border-white">
+                                                    {{ form_widget(contactForm.genre) }}
+
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                                                    {{ form_widget(contactForm.job) }}
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="submit" value="Send Message" class="btn btn-primary">
+                                                    <a>Birth Date</a>
+                                                    {{ form_widget(contactForm.BirthDate) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    {{ form_widget(contactForm.subject) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    {{ form_widget(contactForm.message) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    {{ form_widget(contactForm.submit) }}
+                                                    {# <input type="submit" value="Send Message" class="btn btn-primary"> #}
                                                     <div class="submitting"></div>
                                                 </div>
                                             </div>
@@ -108,21 +137,6 @@
             </div>
         </div>
     </section>
-{% endblock %}
-
-{% block body %}
-    <div class="container">
-        {#  {% for message in app.flashes('success') %}
-            <div class="alert alert-success mt-4">
-                {{ message }}
-            </div>
-        {% endfor %} #}
-
-        <h1>Formulaire de contact</h1>
-
-
-        {{ form(form) }}
-    </div>
 {% endblock %}
 
 {% block footer %}

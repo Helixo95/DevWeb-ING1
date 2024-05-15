@@ -22,11 +22,9 @@ class RegistrationFormType extends AbstractType
     {
         $builder
             ->add('fullName', TextType::class, [
-                'attr' => [
-                    'class' => 'form-control',
-                    'minlenght' => '1',
-                    'maxlenght' => '255',
-                ],
+                'constraints' => [
+                    new NotBlank()
+                ]
             ])
             ->add('email', TextType::class, [
                 'constraints' => [
@@ -46,8 +44,9 @@ class RegistrationFormType extends AbstractType
                     'Autre' => 'Autre',
                 ],
                 'placeholder' => 'Genre',
+                'expanded' => true,
             ])
-            ->add('profession', ChoiceType::class, [
+            ->add('job', ChoiceType::class, [
                 'choices' => [
                     'Ingénieur' => 'ingenieur',
                     'Cadre supérieur' => 'cadre superieur',

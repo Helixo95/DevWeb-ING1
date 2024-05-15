@@ -19,6 +19,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?int $id = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $fullName = null;
+
     #[ORM\Column(length: 180, unique: true)]
     private ?string $email = null;
 
@@ -50,8 +53,10 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(targetEntity: Contact::class, mappedBy: 'relation_user', orphanRemoval: true)]
     private Collection $contacts;
 
+
+
     #[ORM\Column(length: 255)]
-    private ?string $fullName = null;
+    private ?string $Job = null;
 
 
     public function __construct()
@@ -226,6 +231,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setFullName(string $fullName): static
     {
         $this->fullName = $fullName;
+
+        return $this;
+    }
+
+    public function getJob(): ?string
+    {
+        return $this->Job;
+    }
+
+    public function setJob(string $Job): static
+    {
+        $this->Job = $Job;
 
         return $this;
     }

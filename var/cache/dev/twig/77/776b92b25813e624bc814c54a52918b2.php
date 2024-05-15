@@ -227,7 +227,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                 <li class=\"nav-item dropend\">
                                                     <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                                         Men
-                                                    </a> app_product_category_brand
+                                                    </a>
                                                     <ul class=\"dropdown-menu\">
                                                         <li><a class=\"dropdown-item\" href=\"";
         // line 81
@@ -665,7 +665,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                 <li class=\"nav-item dropend\">
                                                     <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                                                         Men
-                                                    </a> app_product_category_brand
+                                                    </a>
                                                     <ul class=\"dropdown-menu\">
                                                         <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_men_brand') }} #}\">Versace Men</a></li>
                                                         <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_men_brand') }} #}\">Hugo Boss</a></li>

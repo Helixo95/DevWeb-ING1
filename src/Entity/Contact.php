@@ -47,6 +47,9 @@ class Contact
     #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTimeInterface $BirthDate = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $fullName = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -156,6 +159,18 @@ class Contact
     public function setBirthDate(\DateTimeInterface $BirthDate): static
     {
         $this->BirthDate = $BirthDate;
+
+        return $this;
+    }
+
+    public function getFullName(): ?string
+    {
+        return $this->fullName;
+    }
+
+    public function setFullName(string $fullName): static
+    {
+        $this->fullName = $fullName;
 
         return $this;
     }
