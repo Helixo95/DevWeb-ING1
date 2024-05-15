@@ -3366,7 +3366,7 @@ figure {
 }
 
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu:hover {
     display: block;
     margin-top: 0.125em;
 }
