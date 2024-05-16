@@ -29,7 +29,7 @@ class ContactFormType extends AbstractType
                 ],
                 'label' => 'fullName',
                 'label_attr' => [
-                    'class' => 'form-label  mt-4'
+                    'class' => 'form-label  mt-4 text-white'
                 ],
                 'constraints' => [
                     new Assert\NotBlank(),
@@ -44,7 +44,7 @@ class ContactFormType extends AbstractType
                 ],
                 'label' => 'email',
                 'label_attr' => [
-                    'class' => 'form-label  mt-4'
+                    'class' => 'form-label  mt-4 text-white'
                 ],
                 'constraints' => [
                     new Assert\NotBlank(),
@@ -60,6 +60,10 @@ class ContactFormType extends AbstractType
                 ],
                 'placeholder' => 'Genre',
                 'expanded' => true,
+                'label' => 'Genre :',
+                'label_attr' => [
+                    'class' => 'form-label  mt-4 text-white'
+                ]
             ])
             ->add('job', ChoiceType::class, [
                 'choices' => [
@@ -67,19 +71,26 @@ class ContactFormType extends AbstractType
                     'Cadre supérieur' => 'cadre superieur',
                     'Autre' => 'Autre',
                 ],
+                'label' => 'Job :',
+                'label_attr' => [
+                    'class' => 'form-label  mt-4 text-white'
+                ],
                 'placeholder' => 'Profession',
             ])
-            ->add('BirthDate', DateType::class, [ /** si erreur mettre DateTimeType */
-                'widget' => 'single_text', // Affiche le champ sous forme de texte simple
-                'label' => 'BirthDate',
+            ->add('BirthDate', DateType::class, [
+                'widget' => 'single_text',
+                'label' => 'Date de naissance :',
                 'html5' => false, // Désactive le rendu HTML5 pour la compatibilité avec les navigateurs plus anciens
-                'format' => 'dd-MM-yyyy', /** si erreur mettre dd-MM-yyyy HH:mm:ss */
+                'format' => 'dd-MM-yyyy', // Format de la date à afficher
                 'required' => true,
-                'placeholder' => 'Birth Date (dd-mm-yyyy)',
+                'label_attr' => [
+                    'class' => 'form-label  mt-4 text-white'
+                ],
+                'placeholder' => 'Date de naissance (jj-mm-aaaa)',
             ])
             ->add('subject', TextType::class, [
                 'attr' => [
-                    'class' => 'form-control',
+                    'class' => 'form-control text-white',
                     'minlenght' => '2',
                     'maxlenght' => '100',
                     'placeholder' => 'Subject',

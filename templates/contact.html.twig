@@ -18,7 +18,7 @@
             margin-left: 10px;
             margin-right: 10px;
         }
-        .mon_text{
+        ::placeholder{
             color: white;
         }
     </style>
@@ -55,20 +55,19 @@
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <a class="mon_text">Genre</a>
-                                                    <hr class="divider-horizontal border-white">
+                                                    {{ form_label(contactForm.genre) }}
                                                     {{ form_widget(contactForm.genre) }}
-
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
+                                                    {{ form_label(contactForm.job) }}
                                                     {{ form_widget(contactForm.job) }}
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <a>Birth Date</a>
+                                                    {{ form_label(contactForm.BirthDate) }}
                                                     {{ form_widget(contactForm.BirthDate) }}
                                                 </div>
                                             </div>
