@@ -54,20 +54,31 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
     <link rel=\"stylesheet\" href='https://fonts.googleapis.com/css?family=Poppins'>
     <link rel=\"stylesheet\" href=\"";
         // line 13
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/dashboard.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/stylesheets/style.css"), "html", null, true);
         echo "\">
     <link rel=\"stylesheet\" href=\"";
         // line 14
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/card.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/stylesheets/dashboard.css"), "html", null, true);
         echo "\">
     <link rel=\"stylesheet\" href=\"";
         // line 15
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/table.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/stylesheets/card.css"), "html", null, true);
         echo "\">
+    <link rel=\"stylesheet\" href=\"";
+        // line 16
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/stylesheets/table.css"), "html", null, true);
+        echo "\">
+
+
 </head>
 
 <body>
-<!-- sidebar -->
+
+";
+        // line 23
+        if (twig_in_filter("admin", twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 23, $this->source); })()), "roles", [], "any", false, false, false, 23))) {
+            // line 24
+            echo "<!-- sidebar -->
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
@@ -80,27 +91,27 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
         <div class=\"top\">
             <li class=\"nav-link link-active\">
                 <a href=\"";
-        // line 31
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_dashboard");
-        echo "\" class=\"text-decoration-none d-block\">
+            // line 36
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_dashboard");
+            echo "\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-gauge text-center\"></i>
                     <span>Tableau de bord</span>
                 </a>
             </li>
             <li class=\"nav-link\">
                 <a href=\"";
-        // line 37
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_dashboard");
-        echo "\" class=\"text-decoration-none d-block\">
+            // line 42
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_users");
+            echo "\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-users text-center\"></i>
                     <span>Comptes</span>
                 </a>
             </li>
             <li class=\"nav-link\">
                 <a href=\"";
-        // line 43
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_dashboard");
-        echo "\" class=\"text-decoration-none d-block\">
+            // line 48
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_products");
+            echo "\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-boxes text-center\"></i>
                     <span>Produits</span>
                 </a>
@@ -111,9 +122,9 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
         <div class=\"bottom\">
             <li class=\"nav-link\">
                 <a href=\"";
-        // line 53
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-        echo "\" class=\"text-decoration-none d-block\">
+            // line 58
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-right-from-bracket text-center\"></i>
                     <span>Déconnexion</span>
                 </a>
@@ -127,9 +138,13 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
     <div id=\"top-navbar-content\" class=\"d-flex flex-row align-items-center justify-content-between\">
         <i id=\"toggler\" class=\"fa-solid fa-bars fa-xl clickable\"></i>
         <div class=\"account d-flex flex-row align-items-center\">
-";
-        // line 68
-        echo "            <i class=\"fa-solid fa-user fa-xl clickable\"></i>
+                <span>";
+            // line 72
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 72, $this->source); })()), "user", [], "any", false, false, false, 72), "nom", [], "any", false, false, false, 72), "html", null, true);
+            echo " ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 72, $this->source); })()), "user", [], "any", false, false, false, 72), "prenom", [], "any", false, false, false, 72), "html", null, true);
+            echo "</span>
+            <i class=\"fa-solid fa-user fa-xl clickable\"></i>
         </div>
     </div>
 </nav>
@@ -148,9 +163,9 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                 </div>
                 <div class=\"card-value d-flex flex-column\">
                     <span class=\"card-value-nbr\">";
-        // line 86
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["counts"]) || array_key_exists("counts", $context) ? $context["counts"] : (function () { throw new RuntimeError('Variable "counts" does not exist.', 86, $this->source); })()), "users", [], "any", false, false, false, 86), "html", null, true);
-        echo "</span>
+            // line 91
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["counts"]) || array_key_exists("counts", $context) ? $context["counts"] : (function () { throw new RuntimeError('Variable "counts" does not exist.', 91, $this->source); })()), "users", [], "any", false, false, false, 91), "html", null, true);
+            echo "</span>
                     <span class=\"card-value-text\">Utilisateurs inscrits</span>
                 </div>
             </div>
@@ -162,9 +177,9 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                 </div>
                 <div class=\"card-value d-flex flex-column\">
                     <span class=\"card-value-nbr\">";
-        // line 97
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["counts"]) || array_key_exists("counts", $context) ? $context["counts"] : (function () { throw new RuntimeError('Variable "counts" does not exist.', 97, $this->source); })()), "products", [], "any", false, false, false, 97), "html", null, true);
-        echo "</span>
+            // line 102
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["counts"]) || array_key_exists("counts", $context) ? $context["counts"] : (function () { throw new RuntimeError('Variable "counts" does not exist.', 102, $this->source); })()), "products", [], "any", false, false, false, 102), "html", null, true);
+            echo "</span>
                     <span class=\"card-value-text\">Produits</span>
                 </div>
             </div>
@@ -176,7 +191,10 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
             <!-- table header -->
             <div class=\"table-header d-flex flew-row justify-content-between align-items-center\">
                 <h2 class=\"table-title\">Derniers utilisateurs</h2>
-                <button><a href=\"\" class=\"text-decoration-none\">Voir plus</a></button>
+                <button><a href=\"";
+            // line 114
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_users");
+            echo "\" class=\"text-decoration-none\">Voir plus</a></button>
             </div>
 
             <div class=\"overview-table\">
@@ -193,74 +211,74 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                     </thead>
                     <tbody>
                     ";
-        // line 125
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["users"]) || array_key_exists("users", $context) ? $context["users"] : (function () { throw new RuntimeError('Variable "users" does not exist.', 125, $this->source); })()));
-        $context['_iterated'] = false;
-        foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
-            // line 126
-            echo "                        <tr scope=\"row\">
+            // line 130
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["users"]) || array_key_exists("users", $context) ? $context["users"] : (function () { throw new RuntimeError('Variable "users" does not exist.', 130, $this->source); })()));
+            $context['_iterated'] = false;
+            foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
+                // line 131
+                echo "                        <tr scope=\"row\">
                             <td class=\"cell-name d-flex flex-row align-items-center\">
                                 <div><i class=\"fa-solid fa-user\"></i></div>
                                 <div class=\"info d-flex flex-column\">
                                     <span>";
-            // line 130
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "nom", [], "any", false, false, false, 130), "html", null, true);
-            echo " ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "prenom", [], "any", false, false, false, 130), "html", null, true);
-            echo "</span>
+                // line 135
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "nom", [], "any", false, false, false, 135), "html", null, true);
+                echo " ";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "prenom", [], "any", false, false, false, 135), "html", null, true);
+                echo "</span>
 
                                 </div>
                             </td>
                             <td class=\"cell-phone\">
                                 <div class=\"d-flex flex-column\">
                                     <span>";
-            // line 136
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "phoneNumber", [], "any", false, false, false, 136), "html", null, true);
-            echo "</span>
+                // line 141
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "phoneNumber", [], "any", false, false, false, 141), "html", null, true);
+                echo "</span>
                                     <span>";
-            // line 137
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "email", [], "any", false, false, false, 137), "html", null, true);
-            echo "</span>
+                // line 142
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "email", [], "any", false, false, false, 142), "html", null, true);
+                echo "</span>
                                 </div>
                             </td>
                             <td class=\"cell-status\">
                                         <span class=\"status\" data-status=\"";
-            // line 141
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 141), "html", null, true);
-            echo "\">
+                // line 146
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 146), "html", null, true);
+                echo "\">
                                             ";
-            // line 142
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 142), "html", null, true);
-            echo "
+                // line 147
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 147), "html", null, true);
+                echo "
                                         </span>
                             </td>
                             <td class=\"cell-role\">
                                 <span>";
-            // line 146
-            echo twig_escape_filter($this->env, twig_join_filter(twig_get_attribute($this->env, $this->source, $context["user"], "roles", [], "any", false, false, false, 146), ", "), "html", null, true);
-            echo "</span>
+                // line 151
+                echo twig_escape_filter($this->env, twig_join_filter(twig_get_attribute($this->env, $this->source, $context["user"], "roles", [], "any", false, false, false, 151), ", "), "html", null, true);
+                echo "</span>
                             </td>
                             <td class=\"cell-edit\">
                                 <a href=\"";
-            // line 149
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_profile", ["id" => twig_get_attribute($this->env, $this->source, $context["user"], "id", [], "any", false, false, false, 149)]), "html", null, true);
-            echo "\"><i class=\"fa-solid fa-pen-to-square\"></i></a>
+                // line 154
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_user", ["id" => twig_get_attribute($this->env, $this->source, $context["user"], "id", [], "any", false, false, false, 154)]), "html", null, true);
+                echo "\"><i class=\"fa-solid fa-pen-to-square\"></i></a>
                             </td>
                         </tr>
                     ";
-            $context['_iterated'] = true;
-        }
-        if (!$context['_iterated']) {
-            // line 153
-            echo "                        <tr><td colspan=\"10\" class=\"text-center\">Aucun utilisateur trouvé.</td></tr>
+                $context['_iterated'] = true;
+            }
+            if (!$context['_iterated']) {
+                // line 158
+                echo "                        <tr><td colspan=\"10\" class=\"text-center\">Aucun utilisateur trouvé.</td></tr>
                     ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 155
-        echo "                    </tbody>
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 160
+            echo "                    </tbody>
                 </table>
             </div>
         </div>
@@ -287,68 +305,76 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                     </thead>
                     <tbody>
                     ";
-        // line 181
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 181, $this->source); })()));
-        $context['_iterated'] = false;
-        foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 182
-            echo "                        <tr scope=\"row\">
+            // line 186
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 186, $this->source); })()));
+            $context['_iterated'] = false;
+            foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
+                // line 187
+                echo "                        <tr scope=\"row\">
                             <td class=\"cell-name d-flex flex-row align-items-center\">
                                 <div><i class=\"fa-solid fa-box\"></i></div>
                                 <div class=\"info d-flex flex-column\">
                                     <span>";
-            // line 186
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 186), "html", null, true);
-            echo "</span>
+                // line 191
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 191), "html", null, true);
+                echo "</span>
                                 </div>
                             </td>
                             <td class=\"cell-price\">
                                 <span>";
-            // line 190
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "method", false, false, false, 190), "html", null, true);
-            echo " €</span>
+                // line 195
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "method", false, false, false, 195), "html", null, true);
+                echo " €</span>
                             </td>
 
                             <td class=\"cell-quantity\">
                                 <span>";
-            // line 194
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 194), "html", null, true);
-            echo "</span>
+                // line 199
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 199), "html", null, true);
+                echo "</span>
                             </td>
                             <td class=\"cell-category\">
                                 <span>";
-            // line 197
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 197), "html", null, true);
-            echo "</span>
+                // line 202
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 202), "html", null, true);
+                echo "</span>
                             </td>
                             <td class=\"cell-edit\">
                                 <a href=\"";
-            // line 200
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 200)]), "html", null, true);
-            echo "\"><i class=\"fa-solid fa-pen-to-square\"></i></a>
+                // line 205
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 205)]), "html", null, true);
+                echo "\"><i class=\"fa-solid fa-pen-to-square\"></i></a>
                             </td>
                         </tr>
                     ";
-            $context['_iterated'] = true;
-        }
-        if (!$context['_iterated']) {
-            // line 204
-            echo "                        <tr><td colspan=\"10\" class=\"text-center\">Aucun produit trouvé.</td></tr>
+                $context['_iterated'] = true;
+            }
+            if (!$context['_iterated']) {
+                // line 209
+                echo "                        <tr><td colspan=\"10\" class=\"text-center\">Aucun produit trouvé.</td></tr>
                     ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 206
-        echo "                    </tbody>
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 211
+            echo "                    </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
-
-<!-- toasts -->
+";
+        } else {
+            // line 218
+            echo "    <div class=\"alert alert-danger\" role=\"alert\">
+        Vous n'avez pas l'autorisation d'accéder à cette page.
+    </div>
+";
+        }
+        // line 222
+        echo "<!-- toasts -->
 <div id=\"toast-container\" class=\"toast-container position-fixed\"></div>
 
 <!-- JavaScript -->
@@ -356,19 +382,11 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
 <script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 220
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/javascript/admin.js"), "html", null, true);
-        echo "\"></script>
-<script src=\"";
-        // line 221
+        // line 229
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/javascript/dashboard.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 222
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/Javascript/recruiter-request.js"), "html", null, true);
-        echo "\"></script>
-<script src=\"";
-        // line 223
+        // line 230
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/javascript/toast.js"), "html", null, true);
         echo "\"></script>
 </body>
@@ -404,7 +422,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  372 => 223,  368 => 222,  364 => 221,  360 => 220,  344 => 206,  337 => 204,  328 => 200,  322 => 197,  316 => 194,  309 => 190,  302 => 186,  296 => 182,  291 => 181,  263 => 155,  256 => 153,  247 => 149,  241 => 146,  234 => 142,  230 => 141,  223 => 137,  219 => 136,  208 => 130,  202 => 126,  197 => 125,  166 => 97,  152 => 86,  132 => 68,  115 => 53,  102 => 43,  93 => 37,  84 => 31,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
+        return array (  390 => 230,  386 => 229,  377 => 222,  371 => 218,  362 => 211,  355 => 209,  346 => 205,  340 => 202,  334 => 199,  327 => 195,  320 => 191,  314 => 187,  309 => 186,  281 => 160,  274 => 158,  265 => 154,  259 => 151,  252 => 147,  248 => 146,  241 => 142,  237 => 141,  226 => 135,  220 => 131,  215 => 130,  196 => 114,  181 => 102,  167 => 91,  143 => 72,  126 => 58,  113 => 48,  104 => 42,  95 => 36,  81 => 24,  79 => 23,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -421,12 +439,17 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
     <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">
     <link rel=\"stylesheet\" href='https://fonts.googleapis.com/css?family=Poppins'>
-    <link rel=\"stylesheet\" href=\"{{ asset('admin/dashboard.css') }}\">
-    <link rel=\"stylesheet\" href=\"{{ asset('admin/card.css') }}\">
-    <link rel=\"stylesheet\" href=\"{{ asset('admin/table.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('admin/stylesheets/style.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('admin/stylesheets/dashboard.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('admin/stylesheets/card.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('admin/stylesheets/table.css') }}\">
+
+
 </head>
 
 <body>
+
+{% if 'admin' in user.roles %}
 <!-- sidebar -->
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
@@ -445,13 +468,13 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                 </a>
             </li>
             <li class=\"nav-link\">
-                <a href=\"{{ path('admin_dashboard') }}\" class=\"text-decoration-none d-block\">
+                <a href=\"{{ path('app_admin_users') }}\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-users text-center\"></i>
                     <span>Comptes</span>
                 </a>
             </li>
             <li class=\"nav-link\">
-                <a href=\"{{ path('admin_dashboard') }}\" class=\"text-decoration-none d-block\">
+                <a href=\"{{ path('app_admin_products') }}\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-boxes text-center\"></i>
                     <span>Produits</span>
                 </a>
@@ -475,7 +498,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
     <div id=\"top-navbar-content\" class=\"d-flex flex-row align-items-center justify-content-between\">
         <i id=\"toggler\" class=\"fa-solid fa-bars fa-xl clickable\"></i>
         <div class=\"account d-flex flex-row align-items-center\">
-{#            <span>{{ user.nom }} {{ user.prenom }}</span>#}
+                <span>{{ app.user.nom }} {{ app.user.prenom }}</span>
             <i class=\"fa-solid fa-user fa-xl clickable\"></i>
         </div>
     </div>
@@ -517,7 +540,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
             <!-- table header -->
             <div class=\"table-header d-flex flew-row justify-content-between align-items-center\">
                 <h2 class=\"table-title\">Derniers utilisateurs</h2>
-                <button><a href=\"\" class=\"text-decoration-none\">Voir plus</a></button>
+                <button><a href=\"{{ path('app_admin_users') }}\" class=\"text-decoration-none\">Voir plus</a></button>
             </div>
 
             <div class=\"overview-table\">
@@ -557,7 +580,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                                 <span>{{ user.roles|join(', ') }}</span>
                             </td>
                             <td class=\"cell-edit\">
-                                <a href=\"{{ path('app_profile', {'id': user.id}) }}\"><i class=\"fa-solid fa-pen-to-square\"></i></a>
+                                <a href=\"{{ path('app_admin_user', {'id': user.id}) }}\"><i class=\"fa-solid fa-pen-to-square\"></i></a>
                             </td>
                         </tr>
                     {% else %}
@@ -620,7 +643,11 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
         </div>
     </div>
 </div>
-
+{% else %}
+    <div class=\"alert alert-danger\" role=\"alert\">
+        Vous n'avez pas l'autorisation d'accéder à cette page.
+    </div>
+{% endif %}
 <!-- toasts -->
 <div id=\"toast-container\" class=\"toast-container position-fixed\"></div>
 
@@ -628,9 +655,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
 <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js\"></script>
 <script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
-<script src=\"{{ asset('admin/javascript/admin.js') }}\"></script>
 <script src=\"{{ asset('admin/javascript/dashboard.js') }}\"></script>
-<script src=\"{{ asset('admin/Javascript/recruiter-request.js') }}\"></script>
 <script src=\"{{ asset('admin/javascript/toast.js') }}\"></script>
 </body>
 

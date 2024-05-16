@@ -358,8 +358,44 @@
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
       <argument type="service" id="App\Service\BrandService"/>
+      <argument type="service" id="security.helper"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.jIxfAsi.App\Controller\Admin\AdminController"/>
+      </call>
+    </service>
+    <service id="App\Controller\Admin\AdminCreateController" class="App\Controller\Admin\AdminCreateController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.jIxfAsi.App\Controller\Admin\AdminCreateController"/>
+      </call>
+    </service>
+    <service id="App\Controller\Admin\AdminProductController" class="App\Controller\Admin\AdminProductController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.jIxfAsi.App\Controller\Admin\AdminProductController"/>
+      </call>
+    </service>
+    <service id="App\Controller\Admin\AdminProductsController" class="App\Controller\Admin\AdminProductsController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.jIxfAsi.App\Controller\Admin\AdminProductsController"/>
+      </call>
+    </service>
+    <service id="App\Controller\Admin\AdminUserController" class="App\Controller\Admin\AdminUserController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.jIxfAsi.App\Controller\Admin\AdminUserController"/>
+      </call>
+    </service>
+    <service id="App\Controller\Admin\AdminUsersController" class="App\Controller\Admin\AdminUsersController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.jIxfAsi.App\Controller\Admin\AdminUsersController"/>
       </call>
     </service>
     <service id="App\Controller\ContactController" class="App\Controller\ContactController" public="true" autowire="true" autoconfigure="true">
@@ -6519,6 +6555,21 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminController" class="App\Controller\Admin\AdminController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminController" class="App\Controller\Admin\AdminController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Admin\AdminController" class="App\Controller\Admin\AdminController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminCreateController" class="App\Controller\Admin\AdminCreateController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminCreateController" class="App\Controller\Admin\AdminCreateController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\AdminCreateController" class="App\Controller\Admin\AdminCreateController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminProductController" class="App\Controller\Admin\AdminProductController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminProductController" class="App\Controller\Admin\AdminProductController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\AdminProductController" class="App\Controller\Admin\AdminProductController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminProductsController" class="App\Controller\Admin\AdminProductsController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminProductsController" class="App\Controller\Admin\AdminProductsController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\AdminProductsController" class="App\Controller\Admin\AdminProductsController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminUserController" class="App\Controller\Admin\AdminUserController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminUserController" class="App\Controller\Admin\AdminUserController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\AdminUserController" class="App\Controller\Admin\AdminUserController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminUsersController" class="App\Controller\Admin\AdminUsersController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminUsersController" class="App\Controller\Admin\AdminUsersController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\AdminUsersController" class="App\Controller\Admin\AdminUsersController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ContactController" class="App\Controller\ContactController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ContactController" class="App\Controller\ContactController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\ContactController" class="App\Controller\ContactController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -7002,6 +7053,32 @@
         <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
       </argument>
     </service>
+    <service id=".service_locator.0Fb1YCW" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="productRepository" type="service_closure" id="App\Repository\ProductRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.ooXb._G" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="security" type="service_closure" id="security.helper"/>
+        <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.S.D1AES" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+        <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.Q1F27w5" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
     <service id=".service_locator.YU8H6ve" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -7015,10 +7092,17 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.guI4k1M" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.KNDpd8P" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Admin\AdminController::dashboard" type="service_closure" id=".service_locator.HIhw834"/>
+        <argument key="App\Controller\Admin\AdminCreateController::createProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
+        <argument key="App\Controller\Admin\AdminProductController::editProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
+        <argument key="App\Controller\Admin\AdminProductsController::index" type="service_closure" id=".service_locator.0Fb1YCW"/>
+        <argument key="App\Controller\Admin\AdminUserController::changeRole" type="service_closure" id=".service_locator.S.D1AES"/>
+        <argument key="App\Controller\Admin\AdminUserController::changeStatus" type="service_closure" id=".service_locator.S.D1AES"/>
+        <argument key="App\Controller\Admin\AdminUserController::index" type="service_closure" id=".service_locator.ooXb._G"/>
+        <argument key="App\Controller\Admin\AdminUsersController::index" type="service_closure" id=".service_locator.Q1F27w5"/>
         <argument key="App\Controller\ProductController::categoryBrand" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProfileModifController::edit" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.YU8H6ve"/>
@@ -7028,6 +7112,13 @@
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="App\Controller\Admin\AdminController:dashboard" type="service_closure" id=".service_locator.HIhw834"/>
+        <argument key="App\Controller\Admin\AdminCreateController:createProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
+        <argument key="App\Controller\Admin\AdminProductController:editProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
+        <argument key="App\Controller\Admin\AdminProductsController:index" type="service_closure" id=".service_locator.0Fb1YCW"/>
+        <argument key="App\Controller\Admin\AdminUserController:changeRole" type="service_closure" id=".service_locator.S.D1AES"/>
+        <argument key="App\Controller\Admin\AdminUserController:changeStatus" type="service_closure" id=".service_locator.S.D1AES"/>
+        <argument key="App\Controller\Admin\AdminUserController:index" type="service_closure" id=".service_locator.ooXb._G"/>
+        <argument key="App\Controller\Admin\AdminUsersController:index" type="service_closure" id=".service_locator.Q1F27w5"/>
         <argument key="App\Controller\ProductController:categoryBrand" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProfileModifController:edit" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.YU8H6ve"/>
@@ -7598,6 +7689,36 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.jIxfAsi" method="withContext"/>
     </service>
+    <service id=".service_locator.jIxfAsi.App\Controller\Admin\AdminCreateController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\AdminCreateController"/>
+      <argument>App\Controller\Admin\AdminCreateController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.jIxfAsi" method="withContext"/>
+    </service>
+    <service id=".service_locator.jIxfAsi.App\Controller\Admin\AdminProductController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\AdminProductController"/>
+      <argument>App\Controller\Admin\AdminProductController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.jIxfAsi" method="withContext"/>
+    </service>
+    <service id=".service_locator.jIxfAsi.App\Controller\Admin\AdminProductsController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\AdminProductsController"/>
+      <argument>App\Controller\Admin\AdminProductsController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.jIxfAsi" method="withContext"/>
+    </service>
+    <service id=".service_locator.jIxfAsi.App\Controller\Admin\AdminUserController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\AdminUserController"/>
+      <argument>App\Controller\Admin\AdminUserController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.jIxfAsi" method="withContext"/>
+    </service>
+    <service id=".service_locator.jIxfAsi.App\Controller\Admin\AdminUsersController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\AdminUsersController"/>
+      <argument>App\Controller\Admin\AdminUsersController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.jIxfAsi" method="withContext"/>
+    </service>
     <service id=".service_locator.jIxfAsi.App\Controller\ContactController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\ContactController"/>
       <argument>App\Controller\ContactController</argument>
@@ -7909,12 +8030,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.guI4k1M"/>
+      <argument type="service" id=".service_locator.KNDpd8P"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.guI4k1M"/>
+      <argument type="service" id=".service_locator.KNDpd8P"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -8970,7 +9091,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Contracts\Orm\EntityPaginatorInterface" alias="EasyCorp\Bundle\EasyAdminBundle\Orm\EntityPaginator"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.guI4k1M"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.KNDpd8P"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
@@ -8993,8 +9114,10 @@
     <service id=".service_locator.Mo0FXEU" alias="service_locator_EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
     <service id=".service_locator.oVM_0WA" alias=".service_locator.HIhw834"/>
+    <service id=".service_locator.zNuGC5_" alias=".service_locator.ooXb._G"/>
+    <service id=".service_locator.4UFIY6Q" alias=".service_locator.S.D1AES"/>
     <service id=".service_locator.riGN6sa" alias=".service_locator.YU8H6ve"/>
-    <service id=".service_locator.stazMeN" alias=".service_locator.guI4k1M"/>
+    <service id=".service_locator.5LIuWQM" alias=".service_locator.KNDpd8P"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.8BwA2x9" alias=".service_locator._XgaZqV"/>
     <service id=".service_locator.uwh6Rke" alias=".service_locator.cgfzwmn"/>
@@ -9050,6 +9173,10 @@
     <service id=".service_locator.uo5c0SP" alias=".service_locator.xUrKPVU"/>
     <service id=".service_locator.7e0hmM2" alias=".service_locator.HIhw834"/>
     <service id=".service_locator.bInR.ll" alias=".service_locator.aKM6MDa"/>
+    <service id=".service_locator.sa.k_vl" alias=".service_locator.0Fb1YCW"/>
+    <service id=".service_locator.UY0Pj2n" alias=".service_locator.ooXb._G"/>
+    <service id=".service_locator.PrRgmaQ" alias=".service_locator.S.D1AES"/>
+    <service id=".service_locator.HO7.gFw" alias=".service_locator.Q1F27w5"/>
     <service id=".service_locator.DoCD.2o" alias=".service_locator.YU8H6ve"/>
     <service id=".service_locator.URfgn8g" alias=".service_locator.zFcJjKU"/>
     <service id=".service_locator.eAaUVIw" alias=".service_locator.jIxfAsi"/>
