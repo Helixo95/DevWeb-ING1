@@ -276,7 +276,7 @@ class __TwigTemplate_bf5ef16d239f82f40b948c8ffb9a550e extends Template
                                             <span class=\"fa fa-paper-plane\"></span>
                                         </div>
                                         <div class=\"text pl-3\">
-                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">info@yoursite.com</a></p>
+                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">contact.exotik95@gmail.com</a></p>
                                         </div>
                                     </div>
                                     <div class=\"dbox w-100 d-flex align-items-center\">
@@ -284,7 +284,10 @@ class __TwigTemplate_bf5ef16d239f82f40b948c8ffb9a550e extends Template
                                             <span class=\"fa fa-globe\"></span>
                                         </div>
                                         <div class=\"text pl-3\">
-                                            <p><span>Website</span> <a href=\"#\">yoursite.com</a></p>
+                                            <p><span>Website</span> <a href=\"";
+        // line 128
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
+        echo "\">exotik.com</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -348,7 +351,7 @@ class __TwigTemplate_bf5ef16d239f82f40b948c8ffb9a550e extends Template
      */
     public function getDebugInfo()
     {
-        return array (  318 => 142,  308 => 141,  247 => 88,  243 => 86,  235 => 81,  227 => 76,  219 => 71,  215 => 70,  207 => 65,  203 => 64,  195 => 59,  191 => 58,  183 => 53,  175 => 48,  141 => 16,  131 => 15,  118 => 12,  108 => 11,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+        return array (  321 => 142,  311 => 141,  289 => 128,  247 => 88,  243 => 86,  235 => 81,  227 => 76,  219 => 71,  215 => 70,  207 => 65,  203 => 64,  195 => 59,  191 => 58,  183 => 53,  175 => 48,  141 => 16,  131 => 15,  118 => 12,  108 => 11,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -472,7 +475,7 @@ class __TwigTemplate_bf5ef16d239f82f40b948c8ffb9a550e extends Template
                                             <span class=\"fa fa-paper-plane\"></span>
                                         </div>
                                         <div class=\"text pl-3\">
-                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">info@yoursite.com</a></p>
+                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">contact.exotik95@gmail.com</a></p>
                                         </div>
                                     </div>
                                     <div class=\"dbox w-100 d-flex align-items-center\">
@@ -480,7 +483,7 @@ class __TwigTemplate_bf5ef16d239f82f40b948c8ffb9a550e extends Template
                                             <span class=\"fa fa-globe\"></span>
                                         </div>
                                         <div class=\"text pl-3\">
-                                            <p><span>Website</span> <a href=\"#\">yoursite.com</a></p>
+                                            <p><span>Website</span> <a href=\"{{ path('app_home') }}\">exotik.com</a></p>
                                         </div>
                                     </div>
                                 </div>
