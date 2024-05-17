@@ -16,6 +16,6 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerFanK94P\App_KernelDevDebugContainer([
     'container.build_hash' => 'FanK94P',
-    'container.build_id' => '57b9b35c',
-    'container.build_time' => 1715958225,
+    'container.build_id' => '8a133348',
+    'container.build_time' => 1715965375,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerFanK94P');
