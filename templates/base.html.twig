@@ -26,7 +26,7 @@
             <div class="header_account">
                 <ul>
                     <li class="top_links">
-                        <a href="#">My Account <i class="fa fa-angle-down"></i></a>
+                        <a href="#" style="text-decoration: none;">My Account <i class="fa fa-angle-down"></i></a>
                     </li>
                 </ul>
             </div>
@@ -51,10 +51,10 @@
                             <div class="cart_gallery">
                                 <div class="cart_item">
                                     <div class="cart_img">
-                                        <a href="#"><img src="{{ asset('base/small-product/mini1.png') }}" alt="Perfume"></a>
+                                        <a href="#" style="text-decoration: none;"><img src="{{ asset('base/small-product/mini1.png') }}" alt="Perfume"></a>
                                     </div>
                                     <div class="cart_info">
-                                        <a href="#">Hugo Boss</a>
+                                        <a href="#" style="text-decoration: none;">Hugo Boss</a>
                                         <p><span>100 €</span> X 1</p>
                                     </div>
                                     <div class="cart_remove">
@@ -105,53 +105,60 @@
             <div id="menu" class="text-left">
                 <ul class="offcanvas_main_menu">
                     <li class="menu-item-has-children active">
-                        <a href="contact">Home</a>
+                        <a href="contact" style="text-decoration: none;">Home</a>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="#">Brands</a>
+                        <a href="#" style="text-decoration: none;">Brands</a>
                         <ul class="sub-menu">
                             <li class="menu-item-has-children">
-                                <a href="#">Men</a>
+                                <a href="#" style="text-decoration: none;">Men</a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Versace</a></li>
-                                    <li><a href="#">Hugo Boss</a></li>
-                                    <li><a href="#">Jaguar</a></li>
-                                    <li><a href="#">Armani</a></li>
-                                    <li><a href="#">Paco Rabbane</a></li>
-                                    <li><a href="#">Ralph Lauren</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Versace</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Hugo Boss</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Jaguar</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Armani</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Paco Rabbane</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Ralph Lauren</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Women</a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Bvlgari</a></li>
-                                    <li><a href="#">Coach</a></li>
-                                    <li><a href="#">Kenzo</a></li>
-                                    <li><a href="#">D&G</a></li>
-                                    <li><a href="#">Jean Paul Gaultier</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Bvlgari</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Coach</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Kenzo</a></li>
+                                    <li><a href="#" style="text-decoration: none;">D&G</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Jean Paul Gaultier</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="#">Unisex</a>
+                                <a href="#" style="text-decoration: none;">Unisex</a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Ajmal</a></li>
-                                    <li><a href="#">Calvin Klein</a></li>
-                                    <li><a href="#">The Body Shop</a></li>
-                                    <li><a href="#">Lattafa</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Ajmal</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Calvin Klein</a></li>
+                                    <li><a href="#" style="text-decoration: none;">The Body Shop</a></li>
+                                    <li><a href="#" style="text-decoration: none;">Lattafa</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children">
-                        <a href="#">My Account</a>
+                        <a href="#" style="text-decoration: none;">My Account</a>
                     </li>
 
                     <li class="menu-item-has-children">
-                        <a href="#">User</a>
+                        <a href="#" style="text-decoration: none;">User</a>
                         <ul class="sub-menu">
-                            <li><a href="#">Login In</a></li>
-                            <li><a href="#">Sign up</a></li>
+                            {% if app.user %}
+                            <li><a href="{{ path('app_profile') }}" style="text-decoration: none;">Profil</a></li>
+                            <li><a href="{{ path('app_logout') }}" style="text-decoration: none;">Log out</a></li>
+                            {% else %}
+                            <li><a href="{{ path('app_login') }}" style="text-decoration: none;">Log In</a></li>
+                            <li><a href="{{ path('app_register') }}" style="text-decoration: none;">Sign up</a></li>
+                            {% endif %}
+
+                            
                         </ul>
                     </li>
                 </ul>
@@ -166,7 +173,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-2">
                             <div class="logo">
-                                <a href="base.html.twig"><img src="" alt=""></a>
+                                <a href="{{ path('app_product_category_brand') }}"><img src="{{ asset('base/logo.png') }}" style="max-height: 50px;"  alt=""></a>
                             </div>
                         </div>
 
@@ -176,12 +183,12 @@
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href="{{ path('app_home') }}" class="active">Home </a>
+                                            <a href="{{ path('app_home') }}" class="active" style="text-decoration: none;">Home </a>
 
                                         </li>
 
                                         <li class="mega_items">
-                                            <a href="#">Brands <i class="fa fa-angle-down"></i></a>
+                                            <a href="#" style="text-decoration: none;">Brands <i class="fa fa-angle-down"></i></a>
                                             <div class="mega_menu">
                                                 <ul class="mega_menu_inner">
                                                     {% for cat, brands in brandLists %}
@@ -201,12 +208,17 @@
 
                                         </li>
 
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#" style="text-decoration: none;">Contact Us</a></li>
                                         <li>
-                                            <a href="#">User <i class="fa fa-angle-down"></i></a>
+                                            <a href="#" style="text-decoration: none;">User <i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu pages">
-                                                <li><a href="#">Login In</a></li>
-                                                <li><a href="#">Sign Up</a></li>
+                                                {% if app.user %}
+                                                <li><a href="{{ path('app_profile') }}">Profil</a></li>
+                                                <li><a href="{{ path('app_logout') }}">Log out</a></li>
+                                                {% else %}
+                                                <li><a href="{{ path('app_login') }}">Log In</a></li>
+                                                <li><a href="{{ path('app_register') }}">Sign up</a></li>
+                                                {% endif %}
                                             </ul>
                                         </li>
                                     </ul>
@@ -246,7 +258,7 @@
                                                             <a href="#"><img src="{{ asset('base/small-product/mini1.png') }}" alt="Perfume"></a>
                                                         </div>
                                                         <div class="cart_info">
-                                                            <a href="#">Hugo Boss</a>
+                                                            <a href="#" style="text-decoration: none;">Hugo Boss</a>
                                                             <p><span>100 €</span> X 1</p>
                                                         </div>
                                                         <div class="cart_remove">
@@ -258,7 +270,7 @@
                                                             <a href="#"><img src="{{ asset('base/small-product/mini2.png') }}" alt="Perfume"></a>
                                                         </div>
                                                         <div class="cart_info">
-                                                            <a href="#">Bvlgari</a>
+                                                            <a href="#" style="text-decoration: none;">Bvlgari</a>
                                                             <p><span>100 €</span> X 1</p>
                                                         </div>
                                                         <div class="cart_remove">
@@ -282,10 +294,10 @@
                                                 </div>
                                                 <div class="mini_cart_footer">
                                                     <div class="cart_button">
-                                                        <a href="#">View Cart</a>
+                                                        <a href="#" style="text-decoration: none;">View Cart</a>
                                                     </div>
                                                     <div class="cart_button">
-                                                        <a href="#">Checkout</a>
+                                                        <a href="#" style="text-decoration: none;">Checkout</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -293,15 +305,18 @@
                                         </li>
                                     </ul>
                                 </div>
+                                {% if app.user %}
                                 <div class="header_account">
                                     <ul>
                                         <li class="top_links">
-                                            <a href="#">
+                                            <a href="{{ path('profile_edit') }}">
                                                 <i class="fa fa-cog"></i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
+                                {% endif %}
+                                
                             </div>
                         </div>
                     </div>

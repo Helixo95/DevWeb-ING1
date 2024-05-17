@@ -654,6 +654,6 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
 
 {% block footer %}
     {{ parent() }}
-{% endblock footer %}", "product.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\product.html.twig");
+{% endblock footer %}", "product.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\product.html.twig");
     }
 }

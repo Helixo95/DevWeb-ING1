@@ -554,6 +554,6 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"{{ asset('admin/Javascript/dashboard.js') }}\"></script>
 <script src=\"{{ asset('admin/Javascript/form-sender.js') }}\"></script>
-</body>", "admin/product.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\product.html.twig");
+</body>", "admin/product.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\product.html.twig");
     }
 }

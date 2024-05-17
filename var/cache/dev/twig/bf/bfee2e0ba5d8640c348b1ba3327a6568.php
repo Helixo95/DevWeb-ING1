@@ -76,7 +76,12 @@ class __TwigTemplate_94eb502bfeba409a9e56b93f9e024d92 extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"#\"><img class=\"navbar-brand\" src=\"\" alt=\"logo\"></a>
+        <a href=\"";
+        // line 25
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/logo.png"), "html", null, true);
+        echo "\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -362,7 +367,7 @@ class __TwigTemplate_94eb502bfeba409a9e56b93f9e024d92 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  330 => 180,  326 => 179,  322 => 178,  299 => 158,  292 => 154,  285 => 150,  276 => 144,  267 => 138,  254 => 127,  251 => 126,  245 => 124,  239 => 122,  236 => 121,  234 => 120,  228 => 116,  222 => 113,  219 => 112,  215 => 110,  209 => 108,  206 => 107,  200 => 105,  198 => 104,  192 => 101,  189 => 100,  187 => 99,  177 => 92,  169 => 87,  165 => 86,  160 => 84,  156 => 83,  137 => 69,  120 => 55,  107 => 45,  98 => 39,  89 => 33,  70 => 17,  66 => 16,  62 => 15,  53 => 9,  43 => 1,);
+        return array (  335 => 180,  331 => 179,  327 => 178,  304 => 158,  297 => 154,  290 => 150,  281 => 144,  272 => 138,  259 => 127,  256 => 126,  250 => 124,  244 => 122,  241 => 121,  239 => 120,  233 => 116,  227 => 113,  224 => 112,  220 => 110,  214 => 108,  211 => 107,  205 => 105,  203 => 104,  197 => 101,  194 => 100,  192 => 99,  182 => 92,  174 => 87,  170 => 86,  165 => 84,  161 => 83,  142 => 69,  125 => 55,  112 => 45,  103 => 39,  94 => 33,  81 => 25,  70 => 17,  66 => 16,  62 => 15,  53 => 9,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -391,7 +396,7 @@ class __TwigTemplate_94eb502bfeba409a9e56b93f9e024d92 extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"#\"><img class=\"navbar-brand\" src=\"\" alt=\"logo\"></a>
+        <a href=\"{{ path('app_product_category_brand') }}\"><img src=\"{{ asset('base/logo.png') }}\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -550,6 +555,6 @@ class __TwigTemplate_94eb502bfeba409a9e56b93f9e024d92 extends Template
 </body>
 
 </html>
-", "admin/user_account.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\user_account.html.twig");
+", "admin/user_account.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\user_account.html.twig");
     }
 }

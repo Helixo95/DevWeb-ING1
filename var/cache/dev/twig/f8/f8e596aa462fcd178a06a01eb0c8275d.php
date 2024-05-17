@@ -80,7 +80,12 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"#\"><img class=\"navbar-brand\" src=\"\" alt=\"logo\"></a>
+        <a href=\"";
+        // line 26
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/logo.png"), "html", null, true);
+        echo "\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -142,7 +147,10 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
         echo " ";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 70, $this->source); })()), "user", [], "any", false, false, false, 70), "prenom", [], "any", false, false, false, 70), "html", null, true);
         echo "</span>
-            <i class=\"fa-solid fa-user fa-xl clickable\"></i>
+            <a href=\"";
+        // line 71
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_profile");
+        echo "\"><i class=\"fa-solid fa-user fa-xl clickable\" style=\"color: #333;\"></i></a>
         </div>
     </div>
 </nav>
@@ -360,7 +368,7 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
      */
     public function getDebugInfo()
     {
-        return array (  329 => 176,  320 => 169,  308 => 160,  303 => 159,  300 => 157,  290 => 153,  284 => 152,  281 => 151,  276 => 150,  268 => 144,  263 => 143,  258 => 139,  255 => 138,  248 => 132,  241 => 130,  239 => 129,  228 => 123,  221 => 119,  217 => 118,  211 => 115,  205 => 112,  199 => 109,  195 => 107,  190 => 106,  177 => 95,  169 => 89,  164 => 86,  160 => 83,  157 => 81,  151 => 76,  141 => 70,  124 => 56,  111 => 46,  102 => 40,  93 => 34,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
+        return array (  337 => 176,  328 => 169,  316 => 160,  311 => 159,  308 => 157,  298 => 153,  292 => 152,  289 => 151,  284 => 150,  276 => 144,  271 => 143,  266 => 139,  263 => 138,  256 => 132,  249 => 130,  247 => 129,  236 => 123,  229 => 119,  225 => 118,  219 => 115,  213 => 112,  207 => 109,  203 => 107,  198 => 106,  185 => 95,  177 => 89,  172 => 86,  168 => 83,  165 => 81,  159 => 76,  152 => 71,  146 => 70,  129 => 56,  116 => 46,  107 => 40,  98 => 34,  85 => 26,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -390,7 +398,7 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"#\"><img class=\"navbar-brand\" src=\"\" alt=\"logo\"></a>
+        <a href=\"{{ path('app_product_category_brand') }}\"><img src=\"{{ asset('base/logo.png') }}\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -435,7 +443,7 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
         <i id=\"toggler\" class=\"fa-solid fa-bars fa-xl clickable\"></i>
         <div class=\"account d-flex flex-row align-items-center\">
             <span>{{ app.user.nom }} {{ app.user.prenom }}</span>
-            <i class=\"fa-solid fa-user fa-xl clickable\"></i>
+            <a href=\"{{ path('app_profile') }}\"><i class=\"fa-solid fa-user fa-xl clickable\" style=\"color: #333;\"></i></a>
         </div>
     </div>
 </nav>
@@ -543,6 +551,6 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
 <script src=\"{{asset('/admin/Javascript/dashboard.js') }}\"></script>
 </body>
 
-</html>", "admin/products.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\products.html.twig");
+</html>", "admin/products.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\products.html.twig");
     }
 }

@@ -79,7 +79,12 @@ class __TwigTemplate_18a39a04a02c8e2306e67e8de13982ca extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"#\"><img class=\"navbar-brand\" src=\"\" alt=\"logo\"></a>
+        <a href=\"";
+        // line 25
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/logo.png"), "html", null, true);
+        echo "\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -307,7 +312,7 @@ class __TwigTemplate_18a39a04a02c8e2306e67e8de13982ca extends Template
      */
     public function getDebugInfo()
     {
-        return array (  276 => 189,  272 => 188,  160 => 81,  154 => 78,  140 => 69,  123 => 55,  110 => 45,  101 => 39,  92 => 33,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
+        return array (  281 => 189,  277 => 188,  165 => 81,  159 => 78,  145 => 69,  128 => 55,  115 => 45,  106 => 39,  97 => 33,  84 => 25,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -336,7 +341,7 @@ class __TwigTemplate_18a39a04a02c8e2306e67e8de13982ca extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"#\"><img class=\"navbar-brand\" src=\"\" alt=\"logo\"></a>
+        <a href=\"{{ path('app_product_category_brand') }}\"><img src=\"{{ asset('base/logo.png') }}\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -503,6 +508,6 @@ class __TwigTemplate_18a39a04a02c8e2306e67e8de13982ca extends Template
 <script src=\"{{ asset('admin/Javascript/form-sender.js') }}\"></script>
 </body>
 </html>
-", "admin/create_product.hmtl.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\create_product.hmtl.twig");
+", "admin/create_product.hmtl.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\create_product.hmtl.twig");
     }
 }

@@ -75,10 +75,12 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"/\"><img class=\"navbar-brand\" src=\"";
+        <a href=\"";
         // line 24
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/images/logo.png"), "html", null, true);
-        echo "\" alt=\"logo\"></a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/logo.png"), "html", null, true);
+        echo "\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -357,7 +359,7 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
      */
     public function getDebugInfo()
     {
-        return array (  327 => 175,  318 => 168,  307 => 160,  303 => 159,  299 => 157,  289 => 153,  283 => 152,  280 => 151,  276 => 150,  267 => 144,  263 => 143,  257 => 139,  255 => 138,  247 => 132,  240 => 130,  231 => 126,  224 => 122,  216 => 117,  212 => 116,  205 => 112,  201 => 111,  193 => 106,  187 => 105,  181 => 101,  176 => 100,  139 => 68,  122 => 54,  109 => 44,  100 => 38,  91 => 32,  80 => 24,  67 => 14,  63 => 13,  59 => 12,  55 => 11,  43 => 1,);
+        return array (  329 => 175,  320 => 168,  309 => 160,  305 => 159,  301 => 157,  291 => 153,  285 => 152,  282 => 151,  278 => 150,  269 => 144,  265 => 143,  259 => 139,  257 => 138,  249 => 132,  242 => 130,  233 => 126,  226 => 122,  218 => 117,  214 => 116,  207 => 112,  203 => 111,  195 => 106,  189 => 105,  183 => 101,  178 => 100,  141 => 68,  124 => 54,  111 => 44,  102 => 38,  93 => 32,  80 => 24,  67 => 14,  63 => 13,  59 => 12,  55 => 11,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -385,7 +387,7 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"/\"><img class=\"navbar-brand\" src=\"{{ asset('admin/images/logo.png') }}\" alt=\"logo\"></a>
+        <a href=\"{{ path('app_product_category_brand') }}\"><img src=\"{{ asset('base/logo.png') }}\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -538,6 +540,6 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"{{asset('/admin/Javascript/dashboard.js') }}\"></script>
 
-", "admin/users.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\users.html.twig");
+", "admin/users.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\users.html.twig");
     }
 }

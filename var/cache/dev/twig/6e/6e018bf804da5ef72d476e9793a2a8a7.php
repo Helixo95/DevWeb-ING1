@@ -983,6 +983,6 @@ class __TwigTemplate_89f61ecac83f2651face689816950b4c extends Template
         </td>
     </tr>
 {% endmacro %}
-", "@DoctrineMigrations/Collector/migrations.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\vendor\\doctrine\\doctrine-migrations-bundle\\Resources\\views\\Collector\\migrations.html.twig");
+", "@DoctrineMigrations/Collector/migrations.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\vendor\\doctrine\\doctrine-migrations-bundle\\Resources\\views\\Collector\\migrations.html.twig");
     }
 }

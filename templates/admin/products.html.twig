@@ -23,7 +23,7 @@
 <div id="l-sidebar" class="sidebar-active no-transition">
     <!-- header -->
     <div id="sidebar-header" class="d-flex align-items-center">
-        <a href="#"><img class="navbar-brand" src="" alt="logo"></a>
+        <a href="{{ path('app_product_category_brand') }}"><img src="{{ asset('base/logo.png') }}" style="max-height: 50px;"  alt=""></a>
     </div>
 
     <!-- navigation links -->
@@ -68,7 +68,7 @@
         <i id="toggler" class="fa-solid fa-bars fa-xl clickable"></i>
         <div class="account d-flex flex-row align-items-center">
             <span>{{ app.user.nom }} {{ app.user.prenom }}</span>
-            <i class="fa-solid fa-user fa-xl clickable"></i>
+            <a href="{{ path('app_profile') }}"><i class="fa-solid fa-user fa-xl clickable" style="color: #333;"></i></a>
         </div>
     </div>
 </nav>

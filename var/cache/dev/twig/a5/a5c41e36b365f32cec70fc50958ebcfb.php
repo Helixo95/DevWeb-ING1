@@ -111,6 +111,6 @@ class __TwigTemplate_8d4cf2b530cf5e697d4291f7b2858d20 extends Template
         {{ field.formattedValue }}
     {% endif %}
 {% endif %}
-", "@EasyAdmin/crud/field/association.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\association.html.twig");
+", "@EasyAdmin/crud/field/association.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\association.html.twig");
     }
 }
