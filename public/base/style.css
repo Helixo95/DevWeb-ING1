@@ -3366,7 +3366,41 @@ figure {
 }
 
 
-.dropdown:hover .dropdown-menu {
+
+
+
+
+
+.dropend .dropdown-toggle{
+    color: #000000;
+    margin-left: 1em;
+}
+.dropdown-item:hover{
+    background-color: lightsalmon;
+}
+.dropdown .dropdown-menu {
+    display: none;
+}
+.dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
     display: block;
-    margin-top: 0.125em;
+    margin-top: -.125em;
+    margin-left: .125em;
+}
+
+.dropdown-menu-right {
+    display: none;
+}
+.dropdown-menu-right:hover{
+    display: block;
+}
+
+@media screen and (min-width:992px) {
+    .dropend:hover > .dropdown-menu{
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+    .dropend .dropdown-toggle{
+        margin-left: .5em;
+    }
 }

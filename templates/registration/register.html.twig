@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>Exotik - Register</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
     <!-- Google Fonts Roboto -->
@@ -40,6 +40,11 @@
     #intro {
         margin-top: 20px;
     }
+    .form-group input[type="radio"] {
+        margin-left: 10px;
+        margin-right: 3px;
+    }
+
 </style>
   
 <div id="intro" class="bg-image shadow-2-strong" >
@@ -52,8 +57,13 @@
             {{ form_errors(registrationForm, {'attr': {'class': 'error-message'}}) }}
             
             {{ form_start(registrationForm, {'attr': {'class': 'form bg-white rounded shadow-5-strong p-5'}}) }}
-            
-                <div class="form-group">
+
+               <div class="form-group">
+                  {{ form_label(registrationForm.fullName, 'fullName') }}
+                  {{ form_widget(registrationForm.fullName, {'attr': {'class': 'form-control'}}) }}
+              </div>
+
+              <div class="form-group">
                     {{ form_label(registrationForm.email, 'Email') }}
                     {{ form_widget(registrationForm.email, {'attr': {'class': 'form-control'}}) }}
                 </div>
@@ -69,6 +79,11 @@
                     {{ form_label(registrationForm.genre, 'Genre') }}
                     {{ form_widget(registrationForm.genre, {'attr': {'class': 'form-control'}}) }}
                 </div>
+
+              <div class="form-group">
+                  {{ form_label(registrationForm.job, 'Profession') }}
+                  {{ form_widget(registrationForm.job, {'attr': {'class': 'form-control'}}) }}
+              </div>
 
                 <div class="form-group">
                     {{ form_label(registrationForm.address, 'Adresse') }}

@@ -20,7 +20,10 @@ class ContactController extends AbstractController
         $contact = new Contact();
 
         if($this->getUser()){
-            $contact->setEmail($this->getUser()->getEmail());
+            $contact->setEmail($this->getUser()->getEmail())
+            ->setGenre($this->getUser()->getGenre())
+            ->setJob($this->getUser()->getJob())
+            ->setFullName($this->getUser()->getFullName());
         }
 
         $form = $this->createForm(ContactFormType::class, $contact);
@@ -32,7 +35,7 @@ class ContactController extends AbstractController
             $manager->persist($contact);
             $manager->flush();
 
-            $email = (new Email())
+            /*$email = (new Email())
                 ->from($contact->getEmail())
                 ->to('contact.exotik95@gmail.com')
                 //->cc('cc@example.com')
@@ -42,19 +45,19 @@ class ContactController extends AbstractController
                 ->subject($contact->getSubject())
                 ->html($contact->getMessage());
 
-            $mailer->send($email);
+            $mailer->send($email);*/
 
             $this->addFlash(
                 'success',
                 'Votre demande a été soumise avec succès !'
             );
 
-            return $this->redirectToRoute('contact.index');
+            return $this->redirectToRoute('app_contact');
         }
 
         return $this->render('contact.html.twig', [
-            'controller_name' => 'ContactController',
-            'form' => $form->createView(),
+            //'controller_name' => 'ContactController',
+            'contactForm' => $form->createView(),
 
         ]);
     }

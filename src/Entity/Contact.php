@@ -32,6 +32,24 @@ class Contact
     #[Assert\NotBlank()]
     private ?string $message = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $LastName = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $FirstName = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $Genre = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $Job = null;
+
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    private ?\DateTimeInterface $BirthDate = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $fullName = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -81,6 +99,78 @@ class Contact
     public function setMessage(string $message): static
     {
         $this->message = $message;
+
+        return $this;
+    }
+
+    public function getLastName(): ?string
+    {
+        return $this->LastName;
+    }
+
+    public function setLastName(string $LastName): static
+    {
+        $this->LastName = $LastName;
+
+        return $this;
+    }
+
+    public function getFirstName(): ?string
+    {
+        return $this->FirstName;
+    }
+
+    public function setFirstName(string $FirstName): static
+    {
+        $this->FirstName = $FirstName;
+
+        return $this;
+    }
+
+    public function getGenre(): ?string
+    {
+        return $this->Genre;
+    }
+
+    public function setGenre(string $Genre): static
+    {
+        $this->Genre = $Genre;
+
+        return $this;
+    }
+
+    public function getJob(): ?string
+    {
+        return $this->Job;
+    }
+
+    public function setJob(string $Job): static
+    {
+        $this->Job = $Job;
+
+        return $this;
+    }
+
+    public function getBirthDate(): ?\DateTimeInterface
+    {
+        return $this->BirthDate;
+    }
+
+    public function setBirthDate(\DateTimeInterface $BirthDate): static
+    {
+        $this->BirthDate = $BirthDate;
+
+        return $this;
+    }
+
+    public function getFullName(): ?string
+    {
+        return $this->fullName;
+    }
+
+    public function setFullName(string $fullName): static
+    {
+        $this->fullName = $fullName;
 
         return $this;
     }
