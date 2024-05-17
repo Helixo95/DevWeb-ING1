@@ -25,6 +25,9 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'stylesheets' => [$this, 'block_stylesheets'],
+            'javascripts' => [$this, 'block_javascripts'],
             'content' => [$this, 'block_content'],
         ];
     }
@@ -55,6 +58,79 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
     }
 
     // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Profile";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 5
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 6
+        echo "    <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/profile.css"), "html", null, true);
+        echo "\" />
+    <link rel=\"stylesheet\" href=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"), "html", null, true);
+        echo "\" />
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 10
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 11
+        echo "    <script src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("profil/script.js"), "html", null, true);
+        echo "\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"), "html", null, true);
+        echo "\"></script>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 15
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -64,142 +140,86 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 4
-        echo "<head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Exotik - Profile</title>
-    <!-- Bootstrap CSS -->
-    <link rel=\"stylesheet\" href=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"), "html", null, true);
-        echo "\" />
-    <style>
-        .gradient-custom-2 {
-            /* fallback for old browsers */
-            background: #1a2a50;
-
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: -webkit-linear-gradient(to right, rgb(7, 7, 56), rgb(57, 68, 87));
-
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            background: linear-gradient(to right, rgb(3, 17, 29), rgb(57, 68, 87));
-        }
-
-        /* Set image height to 100% */
-        .product-img {
-            height: 100%;
-            object-fit: cover; /* Scale the image, while preserving its intrinsic aspect ratio (if any) */
-        }
-
-        /* Style for product name */
-        .product-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Style for product category */
-        .product-category {
-            font-size: 0.9rem;
-            color: #6c757d; /* Gray color */
-            text-align: center;
-        }
-        
-        /* Style for smaller product card */
-        .small-product-card {
-            height: 100%;
-        }
-    </style>
-</head>
-<br>
-<br>
-<br>
-    <section class=\"h-100 gradient-custom-2\">
-        <div class=\"container py-2 h-100\">
-            <div class=\"row d-flex justify-content-center align-items-center h-100\">
-                <div class=\"col col-lg-12 col-xl-10\">
-                    <div class=\"card\">
-                        <div class=\"rounded-top text-white d-flex flex-row\" style=\"background-color: #0c0d25; height:200px;\" >
-                            <div class=\"ms-4 mt-5 d-flex flex-column\" style=\"width: 150px;\">
+        // line 16
+        echo "
+<section class=\"h-100 gradient-custom-2\">
+    <div class=\"container py-5 h-100\">
+        <div class=\"row d-flex justify-content-center align-items-center h-100\">
+            <div class=\"col col-lg-12 col-xl-10\">
+                <div class=\"card\">
+                    <div class=\"rounded-top text-white d-flex flex-row align-items-center justify-content-between\" style=\"background-color: #0c0d25; height:200px;\">
+                        <div class=\"d-flex flex-row align-items-center\" style=\"margin-left: 20px;\">
+                            <div class=\"d-flex flex-column align-items-center\" style=\"width: 150px;\">
                                 ";
-        // line 59
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 59, $this->source); })()), "user", [], "any", false, false, false, 59), "picture", [], "any", false, false, false, 59)) {
-            // line 60
+        // line 25
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 25, $this->source); })()), "user", [], "any", false, false, false, 25), "picture", [], "any", false, false, false, 25)) {
+            // line 26
             echo "                                    <img src=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("img_profil/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 60, $this->source); })()), "user", [], "any", false, false, false, 60), "picture", [], "any", false, false, false, 60))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("img_profil/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26), "picture", [], "any", false, false, false, 26))), "html", null, true);
             echo "\"
-                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                         alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mb-2\">
                                 ";
         } else {
-            // line 63
+            // line 29
             echo "                                    <img src=\"";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/profil.png"), "html", null, true);
             echo "\"
-                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                         alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mb-2\">
                                 ";
         }
-        // line 66
-        echo "                                <br>
-                                <a class=\"btn btn-outline-dark btn-sm\" data-mdb-ripple-color=\"dark\" href=\"";
-        // line 67
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("profile_edit");
-        echo "\" style=\"z-index: 1; margin-top=20px\">
-                                    <i class=\"fas fa-user-edit me-1\"></i> Modifier le profil
-                                </a>
-                                                             
-                            </div>
-                            <div class=\"ms-3\" style=\"margin-top: 130px;\">
+        // line 32
+        echo "                            </div>
+                            <div class=\"ms-3 user-info\">
                                 <h5>";
-        // line 73
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 73, $this->source); })()), "user", [], "any", false, false, false, 73), "nom", [], "any", false, false, false, 73), "html", null, true);
+        // line 34
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 34, $this->source); })()), "user", [], "any", false, false, false, 34), "nom", [], "any", false, false, false, 34), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 73, $this->source); })()), "user", [], "any", false, false, false, 73), "prenom", [], "any", false, false, false, 73), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 34, $this->source); })()), "user", [], "any", false, false, false, 34), "prenom", [], "any", false, false, false, 34), "html", null, true);
         echo "</h5>
                                 <p>";
-        // line 74
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 74, $this->source); })()), "user", [], "any", false, false, false, 74), "address", [], "any", false, false, false, 74), "html", null, true);
+        // line 35
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 35, $this->source); })()), "user", [], "any", false, false, false, 35), "address", [], "any", false, false, false, 35), "html", null, true);
         echo "</p>
                             </div>
                         </div>
-                        <div class=\"p-4 text-black\" style=\"background-color: #e9edf0d1; height: 100px;\">
-                            <div class=\"d-flex justify-content-end text-center py-1\">
-                                <div>
-                                    <p class=\"mb-1 h5\">10</p>
-                                    <p class=\"small text-muted mb-0\">Produits achetés</p>
-                                </div>
+                    </div>
+                    <div class=\"p-4 text-black\" style=\"background-color: #e9edf0;\">
+                        <div class=\"d-flex justify-content-between text-center py-1\">
+                            <a class=\"btn btn-outline-dark btn-sm me-3\" href=\"";
+        // line 41
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("profile_edit");
+        echo "\">
+                                <i class=\"fas fa-user-edit me-1\"></i> Modifier le profil
+                            </a>
+                            <div>
+                                <p class=\"text-muted fas fa-user-edit me-1 mb-0\" style=\"margin-top: 12px;\">Statut : ";
+        // line 45
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 45, $this->source); })()), "user", [], "any", false, false, false, 45), "status", [], "any", false, false, false, 45), "html", null, true);
+        echo "</p>
+                                
                             </div>
                         </div>
-                        <div class=\"card-body p-4 text-black\">
-                            <div class=\"mb-2\">
-                                <p class=\"lead fw-normal mb-1\">Mes coordonnées</p>
-                                <div class=\"p-4\" style=\"background-color: #e9edf0d1;\">
-                                    <p class=\"font-italic mb-1\">Numéro de telephone : ";
-        // line 89
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 89, $this->source); })()), "user", [], "any", false, false, false, 89), "phoneNumber", [], "any", false, false, false, 89), "html", null, true);
+                    </div>
+                    <div class=\"card-body p-4 text-black\">
+                        <div class=\"mb-2\">
+                            <p class=\"lead fw-normal mb-1\">Mes coordonnées</p>
+                            <div class=\"p-4 bg-light rounded-3\">
+                                <p class=\"fas fa-user-edit mb-1\">Numéro de téléphone : ";
+        // line 54
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 54, $this->source); })()), "user", [], "any", false, false, false, 54), "phoneNumber", [], "any", false, false, false, 54), "html", null, true);
         echo "</p>
-                                    <p class=\"font-italic mb-1\">Adresse : ";
-        // line 90
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 90, $this->source); })()), "user", [], "any", false, false, false, 90), "address", [], "any", false, false, false, 90), "html", null, true);
+                                <p class=\"fas fa-user-edit mb-1\">Adresse : ";
+        // line 55
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 55, $this->source); })()), "user", [], "any", false, false, false, 55), "address", [], "any", false, false, false, 55), "html", null, true);
         echo "</p>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-    </section>
-
-
-    <!-- Bootstrap JS -->
-    <script type=\"text/javascript\" src=\"";
-        // line 103
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"), "html", null, true);
-        echo "\"></script>
-
+    </div>
+</section>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -230,116 +250,75 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
      */
     public function getDebugInfo()
     {
-        return array (  200 => 103,  184 => 90,  180 => 89,  162 => 74,  156 => 73,  147 => 67,  144 => 66,  137 => 63,  130 => 60,  128 => 59,  75 => 9,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  213 => 55,  209 => 54,  197 => 45,  190 => 41,  181 => 35,  175 => 34,  171 => 32,  164 => 29,  157 => 26,  155 => 25,  144 => 16,  134 => 15,  122 => 12,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
+{% block title %}Profile{% endblock %}
+
+{% block stylesheets %}
+    <link rel=\"stylesheet\" href=\"{{ asset('login/profile.css') }}\" />
+    <link rel=\"stylesheet\" href=\"{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css') }}\" />
+{% endblock %}
+
+{% block javascripts %}
+    <script src=\"{{ asset('profil/script.js') }}\"></script>
+    <script type=\"text/javascript\" src=\"{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js') }}\"></script>
+{% endblock %}
+
 {% block content %}
-<head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Exotik - Profile</title>
-    <!-- Bootstrap CSS -->
-    <link rel=\"stylesheet\" href=\"{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css')}}\" />
-    <style>
-        .gradient-custom-2 {
-            /* fallback for old browsers */
-            background: #1a2a50;
 
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: -webkit-linear-gradient(to right, rgb(7, 7, 56), rgb(57, 68, 87));
-
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            background: linear-gradient(to right, rgb(3, 17, 29), rgb(57, 68, 87));
-        }
-
-        /* Set image height to 100% */
-        .product-img {
-            height: 100%;
-            object-fit: cover; /* Scale the image, while preserving its intrinsic aspect ratio (if any) */
-        }
-
-        /* Style for product name */
-        .product-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Style for product category */
-        .product-category {
-            font-size: 0.9rem;
-            color: #6c757d; /* Gray color */
-            text-align: center;
-        }
-        
-        /* Style for smaller product card */
-        .small-product-card {
-            height: 100%;
-        }
-    </style>
-</head>
-<br>
-<br>
-<br>
-    <section class=\"h-100 gradient-custom-2\">
-        <div class=\"container py-2 h-100\">
-            <div class=\"row d-flex justify-content-center align-items-center h-100\">
-                <div class=\"col col-lg-12 col-xl-10\">
-                    <div class=\"card\">
-                        <div class=\"rounded-top text-white d-flex flex-row\" style=\"background-color: #0c0d25; height:200px;\" >
-                            <div class=\"ms-4 mt-5 d-flex flex-column\" style=\"width: 150px;\">
+<section class=\"h-100 gradient-custom-2\">
+    <div class=\"container py-5 h-100\">
+        <div class=\"row d-flex justify-content-center align-items-center h-100\">
+            <div class=\"col col-lg-12 col-xl-10\">
+                <div class=\"card\">
+                    <div class=\"rounded-top text-white d-flex flex-row align-items-center justify-content-between\" style=\"background-color: #0c0d25; height:200px;\">
+                        <div class=\"d-flex flex-row align-items-center\" style=\"margin-left: 20px;\">
+                            <div class=\"d-flex flex-column align-items-center\" style=\"width: 150px;\">
                                 {% if app.user.picture %}
                                     <img src=\"{{ asset('img_profil/'~app.user.picture) }}\"
-                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                         alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mb-2\">
                                 {% else %}
                                     <img src=\"{{ asset('login/img/profil.png') }}\"
-                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                         alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mb-2\">
                                 {% endif %}
-                                <br>
-                                <a class=\"btn btn-outline-dark btn-sm\" data-mdb-ripple-color=\"dark\" href=\"{{ path('profile_edit') }}\" style=\"z-index: 1; margin-top=20px\">
-                                    <i class=\"fas fa-user-edit me-1\"></i> Modifier le profil
-                                </a>
-                                                             
                             </div>
-                            <div class=\"ms-3\" style=\"margin-top: 130px;\">
-                                <h5>{{app.user.nom}} {{app.user.prenom}}</h5>
-                                <p>{{app.user.address}}</p>
+                            <div class=\"ms-3 user-info\">
+                                <h5>{{ app.user.nom }} {{ app.user.prenom }}</h5>
+                                <p>{{ app.user.address }}</p>
                             </div>
                         </div>
-                        <div class=\"p-4 text-black\" style=\"background-color: #e9edf0d1; height: 100px;\">
-                            <div class=\"d-flex justify-content-end text-center py-1\">
-                                <div>
-                                    <p class=\"mb-1 h5\">10</p>
-                                    <p class=\"small text-muted mb-0\">Produits achetés</p>
-                                </div>
+                    </div>
+                    <div class=\"p-4 text-black\" style=\"background-color: #e9edf0;\">
+                        <div class=\"d-flex justify-content-between text-center py-1\">
+                            <a class=\"btn btn-outline-dark btn-sm me-3\" href=\"{{ path('profile_edit') }}\">
+                                <i class=\"fas fa-user-edit me-1\"></i> Modifier le profil
+                            </a>
+                            <div>
+                                <p class=\"text-muted fas fa-user-edit me-1 mb-0\" style=\"margin-top: 12px;\">Statut : {{ app.user.status }}</p>
+                                
                             </div>
                         </div>
-                        <div class=\"card-body p-4 text-black\">
-                            <div class=\"mb-2\">
-                                <p class=\"lead fw-normal mb-1\">Mes coordonnées</p>
-                                <div class=\"p-4\" style=\"background-color: #e9edf0d1;\">
-                                    <p class=\"font-italic mb-1\">Numéro de telephone : {{app.user.phoneNumber}}</p>
-                                    <p class=\"font-italic mb-1\">Adresse : {{app.user.address}}</p>
-                                </div>
+                    </div>
+                    <div class=\"card-body p-4 text-black\">
+                        <div class=\"mb-2\">
+                            <p class=\"lead fw-normal mb-1\">Mes coordonnées</p>
+                            <div class=\"p-4 bg-light rounded-3\">
+                                <p class=\"fas fa-user-edit mb-1\">Numéro de téléphone : {{ app.user.phoneNumber }}</p>
+                                <p class=\"fas fa-user-edit mb-1\">Adresse : {{ app.user.address }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-    </section>
-
-
-    <!-- Bootstrap JS -->
-    <script type=\"text/javascript\" src=\"{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js') }}\"></script>
-
+    </div>
+</section>
 {% endblock %}
-", "profile.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\profile.html.twig");
+", "profile.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\profile.html.twig");
     }
 }

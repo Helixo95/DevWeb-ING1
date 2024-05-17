@@ -35,7 +35,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column]
     private array $roles = [];
-
     /**
      * @var string The hashed password
      */
@@ -58,7 +57,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function __construct()
     {
         $this->created_at = new \DateTimeImmutable();
-        
+
     }
 
     public function __toString()
@@ -96,11 +95,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @see UserInterface
      */
+
+
+
     public function getRoles(): array
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'user';
+        if (in_array('', $roles)) {
+            $roles[]= 'user';
+        }
+
 
         return array_unique($roles);
     }
@@ -108,9 +113,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setRoles(array $roles): static
     {
         $this->roles = $roles;
-
         return $this;
     }
+
 
     /**
      * @see PasswordAuthenticatedUserInterface

@@ -1,7 +1,7 @@
 <?php
 // src/Controller/HomeController.php
 namespace App\Controller;
-
+use App\Service\BrandService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -32,11 +32,21 @@ class HomeController extends AbstractController
         return $this->render('register.html.twig');
     }
 
+    private BrandService $brandService;
+
+    public function __construct(BrandService $brandService) {
+        $this->brandService = $brandService;
+    }
     
     #[Route('/profile', name: 'app_profile')]
     public function profile(): Response
     {
-        return $this->render('profile.html.twig');
+
+        $brandLists = $this->brandService->getBrandLists();
+        
+        return $this->render('profile.html.twig', [
+            'brandLists' => $brandLists
+        ]);
     }
 }
 

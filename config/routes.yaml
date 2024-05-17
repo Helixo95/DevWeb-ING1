@@ -5,7 +5,7 @@ controllers:
 
 app_homepage:
     path: /
-    controller: App\Controller\SecurityController::login
+    controller: App\Controller\ProductController::categoryBrand
 
 profile_edit:
     path: /modif_profile

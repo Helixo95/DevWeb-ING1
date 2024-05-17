@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\Common\Collections\Criteria;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -38,6 +39,38 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $this->getEntityManager()->persist($user);
         $this->getEntityManager()->flush();
     }
+
+    public function findByFilters(array $filters)
+    {
+        $criteria = Criteria::create();
+
+        foreach ($filters as $key => $value) {
+            if (preg_match('/(\w+)\[:(contains|ge|le|eq)\]/', $key, $matches)) {
+                $field = $matches[1];
+                $operation = $matches[2];
+
+                switch ($operation) {
+                    case 'contains':
+                        $criteria->andWhere(Criteria::expr()->contains($field, $value));
+                        break;
+                    case 'ge':
+                        $criteria->andWhere(Criteria::expr()->gte($field, $value));
+                        break;
+                    case 'le':
+                        $criteria->andWhere(Criteria::expr()->lte($field, $value));
+                        break;
+                    case 'eq':
+                        $criteria->andWhere(Criteria::expr()->eq($field, $value));
+                        break;
+                }
+            }
+        }
+
+        return $this->matching($criteria)->toArray();
+    }
+
+
+
 
 //    /**
 //     * @return User[] Returns an array of User objects
