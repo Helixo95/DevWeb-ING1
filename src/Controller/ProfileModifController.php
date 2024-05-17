@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\BrandService;
 use App\Entity\User;
 use App\Form\ProfileModifType;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
@@ -14,12 +15,20 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class ProfileModifController extends AbstractController
 {
+    private BrandService $brandService;
+
+    public function __construct(BrandService $brandService) {
+        $this->brandService = $brandService;
+    }
+
     #[Route('/modif_profile', name: 'profile_edit')]
     public function edit(Request $request, EntityManagerInterface $entityManager): Response
     {
         $user = $this->getUser();
         $form = $this->createForm(ProfileModifType::class, $user);
         $form->handleRequest($request);
+
+        $brandLists = $this->brandService->getBrandLists();
 
         if ($form->isSubmitted() && $form->isValid()) {
 
@@ -50,8 +59,11 @@ class ProfileModifController extends AbstractController
             return $this->redirectToRoute('app_profile');
         }
 
+        
+
         return $this->render('modif_profile.html.twig', [
             'profileModif' => $form->createView(),
+            'brandLists' => $brandLists
         ]);
     }
 

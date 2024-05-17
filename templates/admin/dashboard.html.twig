@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Poppins'>
-    <link rel="stylesheet" href="{{ asset('admin/dashboard.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin/card.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin/table.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/stylesheets/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/stylesheets/dashboard.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/stylesheets/card.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/stylesheets/table.css') }}">
+
+
 </head>
 
 <body>
+
+{% if 'admin' in user.roles %}
 <!-- sidebar -->
 <div id="l-sidebar" class="sidebar-active no-transition">
     <!-- header -->
@@ -34,13 +39,13 @@
                 </a>
             </li>
             <li class="nav-link">
-                <a href="{{ path('admin_dashboard') }}" class="text-decoration-none d-block">
+                <a href="{{ path('app_admin_users') }}" class="text-decoration-none d-block">
                     <i class="fa-solid fa-users text-center"></i>
                     <span>Comptes</span>
                 </a>
             </li>
             <li class="nav-link">
-                <a href="{{ path('admin_dashboard') }}" class="text-decoration-none d-block">
+                <a href="{{ path('app_admin_products') }}" class="text-decoration-none d-block">
                     <i class="fa-solid fa-boxes text-center"></i>
                     <span>Produits</span>
                 </a>
@@ -64,7 +69,7 @@
     <div id="top-navbar-content" class="d-flex flex-row align-items-center justify-content-between">
         <i id="toggler" class="fa-solid fa-bars fa-xl clickable"></i>
         <div class="account d-flex flex-row align-items-center">
-{#            <span>{{ user.nom }} {{ user.prenom }}</span>#}
+                <span>{{ app.user.nom }} {{ app.user.prenom }}</span>
             <i class="fa-solid fa-user fa-xl clickable"></i>
         </div>
     </div>
@@ -106,7 +111,7 @@
             <!-- table header -->
             <div class="table-header d-flex flew-row justify-content-between align-items-center">
                 <h2 class="table-title">Derniers utilisateurs</h2>
-                <button><a href="" class="text-decoration-none">Voir plus</a></button>
+                <button><a href="{{ path('app_admin_users') }}" class="text-decoration-none">Voir plus</a></button>
             </div>
 
             <div class="overview-table">
@@ -146,7 +151,7 @@
                                 <span>{{ user.roles|join(', ') }}</span>
                             </td>
                             <td class="cell-edit">
-                                <a href="{{ path('app_profile', {'id': user.id}) }}"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a href="{{ path('app_admin_user', {'id': user.id}) }}"><i class="fa-solid fa-pen-to-square"></i></a>
                             </td>
                         </tr>
                     {% else %}
@@ -209,7 +214,11 @@
         </div>
     </div>
 </div>
-
+{% else %}
+    <div class="alert alert-danger" role="alert">
+        Vous n'avez pas l'autorisation d'accéder à cette page.
+    </div>
+{% endif %}
 <!-- toasts -->
 <div id="toast-container" class="toast-container position-fixed"></div>
 
@@ -217,9 +226,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
-<script src="{{ asset('admin/javascript/admin.js') }}"></script>
 <script src="{{ asset('admin/javascript/dashboard.js') }}"></script>
-<script src="{{ asset('admin/Javascript/recruiter-request.js') }}"></script>
 <script src="{{ asset('admin/javascript/toast.js') }}"></script>
 </body>
 
