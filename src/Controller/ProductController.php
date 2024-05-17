@@ -10,16 +10,40 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProductController extends AbstractController
 {
-    #[Route('/product', name: 'app_product')]
-    public function index(EntityManagerInterface $entityManager): Response
+    #[Route('/product/{category?}/{brand?}', name: 'app_product_category_brand')]
+    public function categoryBrand(?string $category, ?string $brand, EntityManagerInterface $entityManager): Response
     {
-        // Récupérer tous les produits de la base de données
         $products = $entityManager->getRepository(product::class)->findAll();
+        $repository = $entityManager->getRepository(Product::class);
+        $brands = $repository->findBrandsByCategory($category);
 
-        // Passer les produits au template Twig
+        $categories = ['Men', 'Women', 'Unisex']; // Les catégories disponibles
+
+        // Récupérer les marques pour chaque catégorie à partir de la base de données
+        $brandLists = [];
+        foreach ($categories as $cat) {
+            $brandLists[$cat] = $entityManager->getRepository(Product::class)->findBrandsByCategory($cat);
+        }
+
+        $products = [];
+        if ($brand) {
+            $products = $entityManager->getRepository(Product::class)->findBy([
+                'category' => $category,
+                'brand' => str_replace('-', ' ', $brand)  // Convertir les tirets en espaces
+            ]);
+        } else {
+            $products = $entityManager->getRepository(Product::class)->findBy(['category' => $category]);
+        }
+
         return $this->render('product.html.twig', [
+            'category' => $category,
+            'brand' => $brand,
+            'categories' => $categories,
+            'brandLists' => $brandLists,
             'products' => $products
         ]);
     }
+
+
 
 }

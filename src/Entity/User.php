@@ -3,8 +3,6 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -24,6 +22,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(nullable: true)]
     private ?string $genre;
+
+    #[ORM\Column(nullable: true)]
+    private ?string $status;
 
     #[ORM\Column(nullable: true)]
     private ?string $address;
@@ -99,7 +100,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
+        $roles[] = 'user';
 
         return array_unique($roles);
     }
@@ -134,6 +135,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setGenre(?string $genre): static
     {
         $this->genre = $genre;
+        return $this;
+    }
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
+
+    public function setStatus(?string $status): static
+    {
+        $this->status = $status;
         return $this;
     }
 
@@ -216,4 +227,5 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+
 }

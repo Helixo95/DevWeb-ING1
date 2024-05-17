@@ -26,6 +26,8 @@ class __TwigTemplate_65f9288e85913d639114f410a1804ecc extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
+            'stylesheets' => [$this, 'block_stylesheets'],
+            'javascripts' => [$this, 'block_javascripts'],
             'content' => [$this, 'block_content'],
         ];
     }
@@ -75,6 +77,52 @@ class __TwigTemplate_65f9288e85913d639114f410a1804ecc extends Template
     }
 
     // line 5
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 6
+        echo "    <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/login.css"), "html", null, true);
+        echo "\" />
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 9
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 10
+        echo "    <script src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("profil/script.js"), "html", null, true);
+        echo "\"></script>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 13
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,110 +132,68 @@ class __TwigTemplate_65f9288e85913d639114f410a1804ecc extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 6
-        echo "<head>
-    <meta charset=\"UTF-8\" />
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />
-    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\" />
-    <title>Material Design for Bootstrap</title>
-    <!-- Font Awesome -->
-    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v6.0.0/css/all.css\" />
-    <!-- Google Fonts Roboto -->
-    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap\" />
-    <!-- MDB -->
-    <link rel=\"stylesheet\" href=\"";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/mdb.min.css"), "html", null, true);
-        echo "\" />
-</head>
-
-<style>
-    #intro {
-      background-image: url(";
-        // line 21
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/008.jpg"), "html", null, true);
-        echo ");
-      height: 100vh;
-    }
-
-    /* Height for devices larger than 576px */
-    @media (min-width: 992px) {
-      #intro {
-        margin-top: -58.59px;
-      }
-    }
-
-    .navbar .nav-link {
-      color: #fff !important;
-    }
-</style>
-
-<br>
-
-
-<div id=\"intro\" class=\"bg-image shadow-2-strong\">
-    <div class=\"mask d-flex align-items-center h-100\" style=\"background-color: rgba(0, 0, 0, 0.8);\">
-      <div class=\"container\">
-        <div class=\"row justify-content-center\">
-          <div class=\"col-xl-5 col-md-8\">
-            <h2 class=\"text-center mb-4\" style=\"color: antiquewhite;\">Connexion</h2>
-    <form method=\"post\" class=\"bg-white rounded shadow-5-strong p-3\">
-        ";
-        // line 47
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 47, $this->source); })())) {
-            // line 48
-            echo "            <div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 48, $this->source); })()), "messageKey", [], "any", false, false, false, 48), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 48, $this->source); })()), "messageData", [], "any", false, false, false, 48), "security"), "html", null, true);
+        // line 14
+        echo "<div id=\"intro\">
+    <div style=\"background-color: rgba(0, 0, 0, 0.8);\">
+        <div>
+            <div class=\"row justify-content-center\">
+                <div class=\"col-xl-5 col-md-8\">
+                    <h2 class=\"text-center mb-4\" style=\"color: antiquewhite;\">Connexion</h2>
+                    ";
+        // line 20
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 20, $this->source); })())) {
+            // line 21
+            echo "                        <div class=\"alert alert-danger\">";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 21, $this->source); })()), "messageKey", [], "any", false, false, false, 21), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 21, $this->source); })()), "messageData", [], "any", false, false, false, 21), "security"), "html", null, true);
             echo "</div>
-        ";
+                    ";
         }
-        // line 50
+        // line 23
         echo "
-        ";
-        // line 51
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 51, $this->source); })()), "user", [], "any", false, false, false, 51)) {
-            // line 52
-            echo "            <div class=\"mb-3\">
-                You are logged in as ";
-            // line 53
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 53, $this->source); })()), "user", [], "any", false, false, false, 53), "userIdentifier", [], "any", false, false, false, 53), "html", null, true);
+                    ";
+        // line 24
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 24, $this->source); })()), "user", [], "any", false, false, false, 24)) {
+            // line 25
+            echo "                        <div class=\"mb-3\">
+                            You are logged in as ";
+            // line 26
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26), "userIdentifier", [], "any", false, false, false, 26), "html", null, true);
             echo ", <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Logout</a>
-            </div>
-        ";
+                        </div>
+                    ";
         }
-        // line 56
+        // line 29
         echo "
-       <div class=\"form-group\">
-            <label for=\"inputEmail\">Email</label>
-            <input type=\"email\" value=\"";
-        // line 59
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 59, $this->source); })()), "html", null, true);
+                    <form method=\"post\" class=\"bg-white rounded shadow-5-strong p-5\">
+                        <div class=\"form-group\">
+                            <label for=\"inputEmail\">Email</label>
+                            <input type=\"email\" value=\"";
+        // line 33
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 33, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control form-control-sm\" autocomplete=\"email\" required autofocus>
-        </div>
-        <div class=\"form-group\">
-            <label for=\"inputPassword\">Password</label>
-            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control form-control-sm\" autocomplete=\"current-password\" required>
-        </div>
-        <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 65
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"inputPassword\">Password</label>
+                            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control form-control-sm\" autocomplete=\"current-password\" required>
+                        </div>
+                        <input type=\"hidden\" name=\"_csrf_token\" value=\"";
+        // line 39
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
-        <button class=\"btn btn-primary btn-block\" type=\"submit\">Valider</button>
-        <a href=\"";
-        // line 67
+                        <button class=\"btn btn-primary btn-block\" type=\"submit\">Valider</button>
+                        <a href=\"";
+        // line 41
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         echo "\" class=\"lien-connexion\">Pas encore inscrit? Cliquez ici.</a>
-    </form>
-</div>
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-</div>
+                    </form>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 ";
         
@@ -219,7 +225,7 @@ class __TwigTemplate_65f9288e85913d639114f410a1804ecc extends Template
      */
     public function getDebugInfo()
     {
-        return array (  180 => 67,  175 => 65,  166 => 59,  161 => 56,  153 => 53,  150 => 52,  148 => 51,  145 => 50,  139 => 48,  137 => 47,  108 => 21,  100 => 16,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  188 => 41,  183 => 39,  174 => 33,  168 => 29,  160 => 26,  157 => 25,  155 => 24,  152 => 23,  146 => 21,  144 => 20,  136 => 14,  126 => 13,  113 => 10,  103 => 9,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -228,80 +234,52 @@ class __TwigTemplate_65f9288e85913d639114f410a1804ecc extends Template
 
 {% block title %}Connexion{% endblock %}
 
+{% block stylesheets %}
+    <link rel=\"stylesheet\" href=\"{{ asset('login/login.css') }}\" />
+{% endblock %}
+
+{% block javascripts %}
+    <script src=\"{{ asset('profil/script.js') }}\"></script>
+{% endblock %}
+
 {% block content %}
-<head>
-    <meta charset=\"UTF-8\" />
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />
-    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\" />
-    <title>Material Design for Bootstrap</title>
-    <!-- Font Awesome -->
-    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v6.0.0/css/all.css\" />
-    <!-- Google Fonts Roboto -->
-    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap\" />
-    <!-- MDB -->
-    <link rel=\"stylesheet\" href=\"{{asset('login/mdb.min.css')}}\" />
-</head>
+<div id=\"intro\">
+    <div style=\"background-color: rgba(0, 0, 0, 0.8);\">
+        <div>
+            <div class=\"row justify-content-center\">
+                <div class=\"col-xl-5 col-md-8\">
+                    <h2 class=\"text-center mb-4\" style=\"color: antiquewhite;\">Connexion</h2>
+                    {% if error %}
+                        <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    {% endif %}
 
-<style>
-    #intro {
-      background-image: url({{asset('login/img/008.jpg')}});
-      height: 100vh;
-    }
+                    {% if app.user %}
+                        <div class=\"mb-3\">
+                            You are logged in as {{ app.user.userIdentifier }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
+                        </div>
+                    {% endif %}
 
-    /* Height for devices larger than 576px */
-    @media (min-width: 992px) {
-      #intro {
-        margin-top: -58.59px;
-      }
-    }
-
-    .navbar .nav-link {
-      color: #fff !important;
-    }
-</style>
-
-<br>
-
-
-<div id=\"intro\" class=\"bg-image shadow-2-strong\">
-    <div class=\"mask d-flex align-items-center h-100\" style=\"background-color: rgba(0, 0, 0, 0.8);\">
-      <div class=\"container\">
-        <div class=\"row justify-content-center\">
-          <div class=\"col-xl-5 col-md-8\">
-            <h2 class=\"text-center mb-4\" style=\"color: antiquewhite;\">Connexion</h2>
-    <form method=\"post\" class=\"bg-white rounded shadow-5-strong p-3\">
-        {% if error %}
-            <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-        {% endif %}
-
-        {% if app.user %}
-            <div class=\"mb-3\">
-                You are logged in as {{ app.user.userIdentifier }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
+                    <form method=\"post\" class=\"bg-white rounded shadow-5-strong p-5\">
+                        <div class=\"form-group\">
+                            <label for=\"inputEmail\">Email</label>
+                            <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control form-control-sm\" autocomplete=\"email\" required autofocus>
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"inputPassword\">Password</label>
+                            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control form-control-sm\" autocomplete=\"current-password\" required>
+                        </div>
+                        <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\">
+                        <button class=\"btn btn-primary btn-block\" type=\"submit\">Valider</button>
+                        <a href=\"{{ path('app_register') }}\" class=\"lien-connexion\">Pas encore inscrit? Cliquez ici.</a>
+                    </form>
+                    <br>
+                    <br>
+                </div>
             </div>
-        {% endif %}
-
-       <div class=\"form-group\">
-            <label for=\"inputEmail\">Email</label>
-            <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control form-control-sm\" autocomplete=\"email\" required autofocus>
         </div>
-        <div class=\"form-group\">
-            <label for=\"inputPassword\">Password</label>
-            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control form-control-sm\" autocomplete=\"current-password\" required>
-        </div>
-        <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\">
-        <button class=\"btn btn-primary btn-block\" type=\"submit\">Valider</button>
-        <a href=\"{{ path('app_register') }}\" class=\"lien-connexion\">Pas encore inscrit? Cliquez ici.</a>
-    </form>
-</div>
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-</div>
+    </div>
 </div>
 {% endblock %}
-", "security/login.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\security\\login.html.twig");
     }
 }
