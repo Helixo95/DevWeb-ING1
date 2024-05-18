@@ -27,6 +27,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         $this->blocks = [
             'title' => [$this, 'block_title'],
             'stylesheets' => [$this, 'block_stylesheets'],
+            'header' => [$this, 'block_header'],
             'content' => [$this, 'block_content'],
             'footer' => [$this, 'block_footer'],
         ];
@@ -106,7 +107,30 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
 
     }
 
-    // line 14
+    // line 12
+    public function block_header($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+
+        // line 13
+        echo "    ";
+        $this->displayParentBlock("header", $context, $blocks);
+        echo "
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 16
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -116,7 +140,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 15
+        // line 17
         echo "    <div class=\"product_section\">
     <div class=\"product_area product_area_two mb-65\">
         <div class=\"container\">
@@ -127,20 +151,20 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                         <div class=\"product_tab_btn\">
                             <ul class=\"nav\" role=\"tablist\">
                                 <li class=\"nav-item\"><a href=\"/product/men\" class=\"nav-link ";
-        // line 24
-        if (((isset($context["category"]) || array_key_exists("category", $context) ? $context["category"] : (function () { throw new RuntimeError('Variable "category" does not exist.', 24, $this->source); })()) == "men")) {
+        // line 26
+        if (((isset($context["category"]) || array_key_exists("category", $context) ? $context["category"] : (function () { throw new RuntimeError('Variable "category" does not exist.', 26, $this->source); })()) == "men")) {
             echo "active";
         }
         echo "\">Men</a></li>
                                 <li class=\"nav-item\"><a href=\"/product/women\" class=\"nav-link ";
-        // line 25
-        if (((isset($context["category"]) || array_key_exists("category", $context) ? $context["category"] : (function () { throw new RuntimeError('Variable "category" does not exist.', 25, $this->source); })()) == "women")) {
+        // line 27
+        if (((isset($context["category"]) || array_key_exists("category", $context) ? $context["category"] : (function () { throw new RuntimeError('Variable "category" does not exist.', 27, $this->source); })()) == "women")) {
             echo "active";
         }
         echo "\">Women</a></li>
                                 <li class=\"nav-item\"><a href=\"/product/unisex\" class=\"nav-link ";
-        // line 26
-        if (((isset($context["category"]) || array_key_exists("category", $context) ? $context["category"] : (function () { throw new RuntimeError('Variable "category" does not exist.', 26, $this->source); })()) == "unisex")) {
+        // line 28
+        if (((isset($context["category"]) || array_key_exists("category", $context) ? $context["category"] : (function () { throw new RuntimeError('Variable "category" does not exist.', 28, $this->source); })()) == "unisex")) {
             echo "active";
         }
         echo "\">Unisex</a></li>
@@ -148,55 +172,60 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                         </div>
                     </div>
                 </div>
+
+
             </div>
             <div class=\"tab-content\">
                 ";
-        // line 33
+        // line 37
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) || array_key_exists("categories", $context) ? $context["categories"] : (function () { throw new RuntimeError('Variable "categories" does not exist.', 33, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) || array_key_exists("categories", $context) ? $context["categories"] : (function () { throw new RuntimeError('Variable "categories" does not exist.', 37, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-            // line 34
+            // line 38
             echo "                    <div class=\"tab-pane fade show active\" id=\"";
             echo twig_escape_filter($this->env, $context["category"], "html", null, true);
             echo "\" role=\"tabpanel\">
                         <div class=\"row\">
                             <div class=\"product_grid\">
                                 ";
-            // line 37
+            // line 41
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 37, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 41, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-                // line 38
+                // line 42
                 echo "                                    ";
-                if ((twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 38) == $context["category"])) {
-                    // line 39
+                if (((twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 42) == $context["category"]) && (twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 42) > 0))) {
+                    // line 43
                     echo "                                        <div class=\"col-md-3 col-sm-6\">
                                             <article class=\"single_product\">
                                                 <figure>
                                                     <div class=\"product_thumb\">
                                                         <a href=\"#\" class=\"primary_img\">
                                                             <img src=\"";
-                    // line 44
-                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "primaryImageUrl", [], "any", false, false, false, 44)), "html", null, true);
+                    // line 48
+                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "primaryImageUrl", [], "any", false, false, false, 48)), "html", null, true);
                     echo "\" >
                                                         </a>
                                                         <a href=\"#\" class=\"secondary_img\">
                                                             <img src=\"";
-                    // line 47
-                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "secondaryImageUrl", [], "any", false, false, false, 47)), "html", null, true);
+                    // line 51
+                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "secondaryImageUrl", [], "any", false, false, false, 51)), "html", null, true);
                     echo "\" >
                                                         </a>
                                                         <div class=\"action_links\">
                                                             <ul>
                                                                 <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
+                                                                    <a href=\"";
+                    // line 56
+                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cart_Add", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 56)]), "html", null, true);
+                    echo "\" title=\"Add to Cart\">
                                                                         <i class=\"fa fa-shopping-cart\"></i>
                                                                     </a>
                                                                 </li>
                                                                 <li class=\"quick_button\">
                                                                     <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box_";
-                    // line 57
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 57), "html", null, true);
+                    // line 61
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 61), "html", null, true);
                     echo "\" title=\"Quick View\">
                                                                         <i class=\"fa fa-eye\"></i>
                                                                     </a>
@@ -206,34 +235,34 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                     </div>
                                                     <figcaption class=\"product_content\">
                                                         <h4 class=\"product_name\"><a href=\"#\">";
-                    // line 65
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 65), "html", null, true);
+                    // line 69
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 69), "html", null, true);
                     echo "</a></h4>
                                                         <div class=\"price_box\">
                                                             <span class=\"old_price\">";
-                    // line 67
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getOldPrice", [], "any", false, false, false, 67), "html", null, true);
+                    // line 71
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getOldPrice", [], "any", false, false, false, 71), "html", null, true);
                     echo "€</span>
                                                             <span class=\"current_price\">";
-                    // line 68
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "any", false, false, false, 68), "html", null, true);
+                    // line 72
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "any", false, false, false, 72), "html", null, true);
                     echo "€</span>
                                                         </div>
                                                         <div class=\"product_rating\">
                                                             <ul>
                                                                 ";
-                    // line 72
+                    // line 76
                     $context['_parent'] = $context;
-                    $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, $context["product"], "rating", [], "any", false, false, false, 72)));
+                    $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, $context["product"], "rating", [], "any", false, false, false, 76)));
                     foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                        // line 73
+                        // line 77
                         echo "                                                                    <li><a href=\"#\"><i class=\"fa fa-star\" aria-hidden=\"true\"></i></a></li>
                                                                 ";
                     }
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 75
+                    // line 79
                     echo "                                                            </ul>
                                                         </div>
                                                     </figcaption>
@@ -242,13 +271,13 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                         </div>
                                     ";
                 }
-                // line 82
+                // line 86
                 echo "                                ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 83
+            // line 87
             echo "                            </div>
                         </div>
                     </div>
@@ -257,19 +286,19 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 87
+        // line 91
         echo "            </div>
 
         </div>
     </div>
     ";
-        // line 91
+        // line 95
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 91, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 95, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 92
+            // line 96
             echo "        <div class=\"modal fade\" id=\"modal_box_";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 92), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 96), "html", null, true);
             echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
             <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">
                 <div class=\"modal-content\">
@@ -283,24 +312,24 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                     <div class=\"modal_tab\">
                                         <div class=\"tab-content product-details-large\">
                                             <div class=\"tab-pane fade show active\" id=\"tab1_";
-            // line 104
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 104), "html", null, true);
+            // line 108
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 108), "html", null, true);
             echo "\" role=\"tabpanel\">
                                                 <div class=\"modal_tab_img\">
                                                     <a href=\"#\"><img src=\"";
-            // line 106
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "primaryImageUrl", [], "any", false, false, false, 106)), "html", null, true);
+            // line 110
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "primaryImageUrl", [], "any", false, false, false, 110)), "html", null, true);
             echo "\" alt=\"\"></a>
                                                 </div>
                                             </div>
                                             <div class=\"tab-pane fade\" id=\"tab2_";
-            // line 109
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 109), "html", null, true);
+            // line 113
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 113), "html", null, true);
             echo "\" role=\"tabpanel\">
                                                 <div class=\"modal_tab_img\">
                                                     <a href=\"#\"><img src=\"";
-            // line 111
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "secondaryImageUrl", [], "any", false, false, false, 111)), "html", null, true);
+            // line 115
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "secondaryImageUrl", [], "any", false, false, false, 115)), "html", null, true);
             echo "\" alt=\"\"></a>
                                                 </div>
                                             </div>
@@ -309,31 +338,31 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                             <ul class=\"nav product_navactive owl-carousel\" role=\"tablist\">
                                                 <li>
                                                     <a href=\"#tab1_";
-            // line 118
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 118), "html", null, true);
+            // line 122
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 122), "html", null, true);
             echo "\" class=\"nav-link active\" data-toggle=\"tab\" role=\"tab\"
                                                        aria-controls=\"tab1_";
-            // line 119
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 119), "html", null, true);
+            // line 123
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 123), "html", null, true);
             echo "\" aria-selected=\"false\">
                                                         <img src=\"";
-            // line 120
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "primaryImageUrl", [], "any", false, false, false, 120)), "html", null, true);
+            // line 124
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "primaryImageUrl", [], "any", false, false, false, 124)), "html", null, true);
             echo "\" alt=\"\">
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href=\"#tab2_";
-            // line 124
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 124), "html", null, true);
+            // line 128
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 128), "html", null, true);
             echo "\" class=\"nav-link\" data-toggle=\"tab\" role=\"tab\"
                                                        aria-controls=\"tab2_";
-            // line 125
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 125), "html", null, true);
+            // line 129
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 129), "html", null, true);
             echo "\" aria-selected=\"false\">
                                                         <img src=\"";
-            // line 126
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "secondaryImageUrl", [], "any", false, false, false, 126)), "html", null, true);
+            // line 130
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "secondaryImageUrl", [], "any", false, false, false, 130)), "html", null, true);
             echo "\" alt=\"\">
                                                     </a>
                                                 </li>
@@ -345,24 +374,24 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                     <div class=\"modal_right\">
                                         <div class=\"modal_title mb-10\">
                                             <h2>";
-            // line 136
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getname", [], "any", false, false, false, 136), "html", null, true);
+            // line 140
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getname", [], "any", false, false, false, 140), "html", null, true);
             echo "</h2>
                                         </div>
                                         <div class=\"modal_price mb-10\">
                                             <span class=\"new_price\">";
-            // line 139
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "any", false, false, false, 139), "html", null, true);
+            // line 143
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "any", false, false, false, 143), "html", null, true);
             echo "</span>
                                             <span class=\"old_price\">";
-            // line 140
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getOldPrice", [], "any", false, false, false, 140), "html", null, true);
+            // line 144
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getOldPrice", [], "any", false, false, false, 144), "html", null, true);
             echo "</span>
                                         </div>
                                         <div class=\"modal_description mb-15\">
                                             <p>";
-            // line 143
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "description", [], "any", false, false, false, 143), "html", null, true);
+            // line 147
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "description", [], "any", false, false, false, 147), "html", null, true);
             echo "</p>
                                         </div>
                                         <div class=\"variants_selects\">
@@ -377,18 +406,23 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                 </select>
                                             </div>
                                             <div class=\"modal_add_to_cart\">
-                                                <form action=\"#\">
+                                                <form action=\"";
+            // line 161
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_cart2", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 161)]), "html", null, true);
+            echo "\" method=\"POST\">
                                                     <div class=\"quantity-selector\">
                                                         <button type=\"button\" class=\"quantity-btn decrease\">−</button>
-                                                        <input type=\"number\" id=\"quantity_";
-            // line 160
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 160), "html", null, true);
-            echo "\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"100\">
+                                                        <input type=\"number\" name=\"qty\" id=\"quantity_";
+            // line 164
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 164), "html", null, true);
+            echo "\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getQuantity", [], "any", false, false, false, 164), "html", null, true);
+            echo "\">
                                                         <button type=\"button\" class=\"quantity-btn increase\">+</button>
                                                     </div>
                                                     <button type=\"button\" class=\"stock-btn\">Stock : ";
-            // line 163
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getQuantity", [], "any", false, false, false, 163), "html", null, true);
+            // line 167
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getQuantity", [], "any", false, false, false, 167), "html", null, true);
             echo "</button>
                                                     <button type=\"submit\">Add to cart</button>
                                                 </form>
@@ -409,7 +443,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 179
+        // line 183
         echo "
 
 ";
@@ -421,7 +455,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
 
     }
 
-    // line 183
+    // line 187
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -431,7 +465,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 184
+        // line 188
         echo "    ";
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
@@ -465,7 +499,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
      */
     public function getDebugInfo()
     {
-        return array (  435 => 184,  425 => 183,  413 => 179,  391 => 163,  385 => 160,  365 => 143,  359 => 140,  355 => 139,  349 => 136,  336 => 126,  332 => 125,  328 => 124,  321 => 120,  317 => 119,  313 => 118,  303 => 111,  298 => 109,  292 => 106,  287 => 104,  271 => 92,  267 => 91,  261 => 87,  252 => 83,  246 => 82,  237 => 75,  230 => 73,  226 => 72,  219 => 68,  215 => 67,  210 => 65,  199 => 57,  186 => 47,  180 => 44,  173 => 39,  170 => 38,  166 => 37,  159 => 34,  155 => 33,  143 => 26,  137 => 25,  131 => 24,  120 => 15,  110 => 14,  95 => 6,  90 => 5,  80 => 4,  61 => 2,  38 => 1,);
+        return array (  469 => 188,  459 => 187,  447 => 183,  425 => 167,  417 => 164,  411 => 161,  394 => 147,  388 => 144,  384 => 143,  378 => 140,  365 => 130,  361 => 129,  357 => 128,  350 => 124,  346 => 123,  342 => 122,  332 => 115,  327 => 113,  321 => 110,  316 => 108,  300 => 96,  296 => 95,  290 => 91,  281 => 87,  275 => 86,  266 => 79,  259 => 77,  255 => 76,  248 => 72,  244 => 71,  239 => 69,  228 => 61,  220 => 56,  212 => 51,  206 => 48,  199 => 43,  196 => 42,  192 => 41,  185 => 38,  181 => 37,  167 => 28,  161 => 27,  155 => 26,  144 => 17,  134 => 16,  121 => 13,  111 => 12,  96 => 6,  91 => 5,  81 => 4,  62 => 2,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -481,7 +515,9 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
 
 {% endblock %}
 
-
+{% block header %}
+    {{ parent() }}
+{% endblock %}
 
 {% block content %}
     <div class=\"product_section\">
@@ -500,6 +536,8 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                         </div>
                     </div>
                 </div>
+
+
             </div>
             <div class=\"tab-content\">
                 {% for category in categories %}
@@ -507,7 +545,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                         <div class=\"row\">
                             <div class=\"product_grid\">
                                 {% for product in products %}
-                                    {% if product.category == category %}
+                                    {% if (product.category == category) and (product.quantity > 0)  %}
                                         <div class=\"col-md-3 col-sm-6\">
                                             <article class=\"single_product\">
                                                 <figure>
@@ -521,7 +559,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                         <div class=\"action_links\">
                                                             <ul>
                                                                 <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
+                                                                    <a href=\"{{ path('cart_Add', {'id': product.id_prod}) }}\" title=\"Add to Cart\">
                                                                         <i class=\"fa fa-shopping-cart\"></i>
                                                                     </a>
                                                                 </li>
@@ -626,10 +664,10 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                 </select>
                                             </div>
                                             <div class=\"modal_add_to_cart\">
-                                                <form action=\"#\">
+                                                <form action=\"{{ path('add_cart2', {'id': product.id_prod})}}\" method=\"POST\">
                                                     <div class=\"quantity-selector\">
                                                         <button type=\"button\" class=\"quantity-btn decrease\">−</button>
-                                                        <input type=\"number\" id=\"quantity_{{ product.id_prod }}\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"100\">
+                                                        <input type=\"number\" name=\"qty\" id=\"quantity_{{ product.id_prod }}\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"{{ product.getQuantity }}\">
                                                         <button type=\"button\" class=\"quantity-btn increase\">+</button>
                                                     </div>
                                                     <button type=\"button\" class=\"stock-btn\">Stock : {{ product.getQuantity }}</button>

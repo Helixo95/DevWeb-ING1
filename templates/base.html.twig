@@ -244,6 +244,7 @@
                                                 </form>
                                             </div>
                                         </li>
+                                        {% if app.user %}
                                         <li class="mini_cart_wrapper">
                                             <a href="javascript:void(0)">
                                                 <i class="fa fa-shopping-cart"></i>
@@ -303,6 +304,7 @@
                                             </div>
                                             <!-- mini cart ends -->
                                         </li>
+                                        {% endif %}
                                     </ul>
                                 </div>
                                 {% if app.user %}

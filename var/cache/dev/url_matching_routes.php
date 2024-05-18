@@ -18,6 +18,8 @@ return [
         '/admin/product/create' => [[['_route' => 'app_admin_product_create', '_controller' => 'App\\Controller\\Admin\\AdminCreateController::createProduct'], null, null, null, false, false, null]],
         '/admin/products' => [[['_route' => 'app_admin_products', '_controller' => 'App\\Controller\\Admin\\AdminProductsController::index'], null, null, null, false, false, null]],
         '/admin/users' => [[['_route' => 'app_admin_users', '_controller' => 'App\\Controller\\Admin\\AdminUsersController::index'], null, null, null, false, false, null]],
+        '/cart' => [[['_route' => 'app_cart', '_controller' => 'App\\Controller\\CartController::index'], null, null, null, false, false, null]],
+        '/cart/register' => [[['_route' => 'cart_register', '_controller' => 'App\\Controller\\CartController::cart_register'], null, null, null, false, false, null]],
         '/contact' => [[['_route' => 'app_contact', '_controller' => 'App\\Controller\\ContactController::index'], null, null, null, false, false, null]],
         '/guidlines' => [[['_route' => 'app_guidlines', '_controller' => 'App\\Controller\\HomeController::guidlines'], null, null, null, false, false, null]],
         '/home' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::home'], null, null, null, false, false, null]],
@@ -26,7 +28,7 @@ return [
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'app_homepage', '_controller' => 'App\\Controller\\ProductController::categoryBrand'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'app_homepage', '_controller' => 'App\\Controller\\HomeController::home'], null, null, null, false, false, null]],
         '/modif_profile' => [[['_route' => 'profile_edit', '_controller' => 'App\\Controller\\ProfileModifController::edit'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
@@ -56,7 +58,18 @@ return [
                         .')'
                     .')'
                 .')'
-                .'|/product(?:/([^/]++)(?:/([^/]++))?)?(*:318)'
+                .'|/cart/(?'
+                    .'|add/([^/]++)(*:303)'
+                    .'|min/([^/]++)(*:323)'
+                    .'|remove/([^/]++)(*:346)'
+                .')'
+                .'|/product(?'
+                    .'|(?:/([^/]++)(?:/([^/]++))?)?(*:394)'
+                    .'|/add(?'
+                        .'|/([^/]++)(*:418)'
+                        .'|2/([^/]++)(*:436)'
+                    .')'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -71,8 +84,13 @@ return [
         216 => [[['_route' => 'app_admin_user', '_controller' => 'App\\Controller\\Admin\\AdminUserController::index'], ['id'], null, null, false, true, null]],
         248 => [[['_route' => 'change_role', '_controller' => 'App\\Controller\\Admin\\AdminUserController::changeRole'], ['id'], ['POST' => 0], null, false, true, null]],
         271 => [[['_route' => 'change_status', '_controller' => 'App\\Controller\\Admin\\AdminUserController::changeStatus'], ['id'], ['POST' => 0], null, false, true, null]],
-        318 => [
-            [['_route' => 'app_product_category_brand', 'category' => null, 'brand' => null, '_controller' => 'App\\Controller\\ProductController::categoryBrand'], ['category', 'brand'], null, null, false, true, null],
+        303 => [[['_route' => 'cart_Add', '_controller' => 'App\\Controller\\CartController::cart_Add'], ['id'], null, null, false, true, null]],
+        323 => [[['_route' => 'cart_Min', '_controller' => 'App\\Controller\\CartController::cart_Min'], ['id'], null, null, false, true, null]],
+        346 => [[['_route' => 'cart_remove', '_controller' => 'App\\Controller\\CartController::cart_remove'], ['id'], null, null, false, true, null]],
+        394 => [[['_route' => 'app_product_category_brand', 'category' => null, 'brand' => null, '_controller' => 'App\\Controller\\ProductController::categoryBrand'], ['category', 'brand'], null, null, false, true, null]],
+        418 => [[['_route' => 'add_cart', '_controller' => 'App\\Controller\\ProductController::add_cart'], ['id'], null, null, false, true, null]],
+        436 => [
+            [['_route' => 'add_cart2', '_controller' => 'App\\Controller\\ProductController::add_cart2'], ['id'], ['POST' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

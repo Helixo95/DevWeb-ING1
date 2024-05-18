@@ -182,7 +182,7 @@ class __TwigTemplate_65f9288e85913d639114f410a1804ecc extends Template
         // line 39
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
-                        <button class=\"btn btn-primary btn-block\" type=\"submit\">Valider</button>
+                        <button class=\"btn btn-primary btn-block\" type=\"submit\">Login</button>
                         <a href=\"";
         // line 41
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
@@ -269,7 +269,7 @@ class __TwigTemplate_65f9288e85913d639114f410a1804ecc extends Template
                             <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control form-control-sm\" autocomplete=\"current-password\" required>
                         </div>
                         <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\">
-                        <button class=\"btn btn-primary btn-block\" type=\"submit\">Valider</button>
+                        <button class=\"btn btn-primary btn-block\" type=\"submit\">Login</button>
                         <a href=\"{{ path('app_register') }}\" class=\"lien-connexion\">Pas encore inscrit? Cliquez ici.</a>
                     </form>
                     <br>

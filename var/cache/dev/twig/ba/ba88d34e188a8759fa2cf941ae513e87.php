@@ -138,7 +138,7 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
         <div>
             <div class=\"row justify-content-center\">
                 <div class=\"col-xl-5 col-md-8\">
-                    <h2 class=\"text-center mb-4\" style=\"color: antiquewhite;\">Inscription</h2>
+                    <h2 class=\"text-center mb-4\" style=\"color: antiquewhite;\">Registration</h2>
                     ";
         // line 20
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 20, $this->source); })()), 'errors', ["attr" => ["class" => "error-message"]]);
@@ -152,7 +152,7 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
                         <div class=\"col\">
                             ";
         // line 25
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 25, $this->source); })()), "nom", [], "any", false, false, false, 25), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Nom"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 25, $this->source); })()), "nom", [], "any", false, false, false, 25), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Last Name"]);
         echo "
                             ";
         // line 26
@@ -162,7 +162,7 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
                         <div class=\"col\">
                             ";
         // line 29
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 29, $this->source); })()), "prenom", [], "any", false, false, false, 29), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Prénom"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 29, $this->source); })()), "prenom", [], "any", false, false, false, 29), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "First Name"]);
         echo "
                             ";
         // line 30
@@ -205,7 +205,7 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
                     <div class=\"form-group\">
                         ";
         // line 51
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 51, $this->source); })()), "genre", [], "any", false, false, false, 51), 'label', ["label" => "Genre"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 51, $this->source); })()), "genre", [], "any", false, false, false, 51), 'label', ["label" => "Gender"]);
         echo "
                         ";
         // line 52
@@ -221,7 +221,7 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
                     <div class=\"form-group\">
                         ";
         // line 58
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 58, $this->source); })()), "address", [], "any", false, false, false, 58), 'label', ["label" => "Adresse"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 58, $this->source); })()), "address", [], "any", false, false, false, 58), 'label', ["label" => "Adress"]);
         echo "
                         ";
         // line 59
@@ -232,7 +232,7 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
                     <div class=\"form-group\">
                         ";
         // line 63
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 63, $this->source); })()), "phoneNumber", [], "any", false, false, false, 63), 'label', ["label" => "Numéro de téléphone"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 63, $this->source); })()), "phoneNumber", [], "any", false, false, false, 63), 'label', ["label" => "Phone Number"]);
         echo "
                         <div id=\"phone-number-field\">
                             ";
@@ -259,7 +259,7 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
         echo "
                     </div>
 
-                    <button type=\"submit\" class=\"btn btn-primary btn-block\">S'inscrire</button>
+                    <button type=\"submit\" class=\"btn btn-primary btn-block\">Register</button>
                     ";
         // line 78
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 78, $this->source); })()), 'form_end');
@@ -323,17 +323,17 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
         <div>
             <div class=\"row justify-content-center\">
                 <div class=\"col-xl-5 col-md-8\">
-                    <h2 class=\"text-center mb-4\" style=\"color: antiquewhite;\">Inscription</h2>
+                    <h2 class=\"text-center mb-4\" style=\"color: antiquewhite;\">Registration</h2>
                     {{ form_errors(registrationForm, {'attr': {'class': 'error-message'}}) }}
                     {{ form_start(registrationForm, {'attr': {'class': 'form bg-white rounded shadow-5-strong p-5'}}) }}
                     
                     <div class=\"form-group row\">
                         <div class=\"col\">
-                            {{ form_label(registrationForm.nom, 'Nom', {'label_attr': {'class': 'col-form-label'}}) }}
+                            {{ form_label(registrationForm.nom, 'Last Name', {'label_attr': {'class': 'col-form-label'}}) }}
                             {{ form_widget(registrationForm.nom, {'attr': {'class': 'form-control'}}) }}
                         </div>
                         <div class=\"col\">
-                            {{ form_label(registrationForm.prenom, 'Prénom', {'label_attr': {'class': 'col-form-label'}}) }}
+                            {{ form_label(registrationForm.prenom, 'First Name', {'label_attr': {'class': 'col-form-label'}}) }}
                             {{ form_widget(registrationForm.prenom, {'attr': {'class': 'form-control'}}) }}
                         </div>
                     </div>
@@ -355,19 +355,19 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
                     </div>
 
                     <div class=\"form-group\">
-                        {{ form_label(registrationForm.genre, 'Genre') }}
+                        {{ form_label(registrationForm.genre, 'Gender') }}
                         {{ form_widget(registrationForm.genre, {'attr': {'class': 'form-control-radio'}}) }}
                         {{ form_errors(registrationForm.genre) }}
                     </div>
                     
 
                     <div class=\"form-group\">
-                        {{ form_label(registrationForm.address, 'Adresse') }}
+                        {{ form_label(registrationForm.address, 'Adress') }}
                         {{ form_widget(registrationForm.address, {'attr': {'class': 'form-control'}}) }}
                     </div>
 
                     <div class=\"form-group\">
-                        {{ form_label(registrationForm.phoneNumber, 'Numéro de téléphone') }}
+                        {{ form_label(registrationForm.phoneNumber, 'Phone Number') }}
                         <div id=\"phone-number-field\">
                             {{ form_widget(registrationForm.phoneNumber, {'attr': {'class': 'form-control'}}) }}
                             <div class=\"error-message\" id=\"phone-error-message\">
@@ -381,7 +381,7 @@ class __TwigTemplate_4d9ae8b2d9f268eb6b2b6bb5ff64b95f extends Template
                         {{ form_label(registrationForm.agreeTerms, 'Agree to terms', {'label_attr': {'class': 'form-check-label'}}) }}
                     </div>
 
-                    <button type=\"submit\" class=\"btn btn-primary btn-block\">S'inscrire</button>
+                    <button type=\"submit\" class=\"btn btn-primary btn-block\">Register</button>
                     {{ form_end(registrationForm) }}
                     <br><br>
                 </div>

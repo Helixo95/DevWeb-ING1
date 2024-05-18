@@ -17,7 +17,11 @@ class HomeController extends AbstractController
     #[Route('/home', name: 'app_home')]
     public function  home(): Response
     {
-        return $this->render('home.html.twig', []);
+        $brandLists = $this->brandService->getBrandLists();
+        
+        return $this->render('home.html.twig', [
+            'brandLists' => $brandLists
+        ]);
     }
     
     #[Route('/login', name: 'app_login')]

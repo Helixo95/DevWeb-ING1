@@ -16,17 +16,17 @@
         <div>
             <div class="row justify-content-center">
                 <div class="col-xl-5 col-md-8">
-                    <h2 class="text-center mb-4" style="color: antiquewhite;">Inscription</h2>
+                    <h2 class="text-center mb-4" style="color: antiquewhite;">Registration</h2>
                     {{ form_errors(registrationForm, {'attr': {'class': 'error-message'}}) }}
                     {{ form_start(registrationForm, {'attr': {'class': 'form bg-white rounded shadow-5-strong p-5'}}) }}
                     
                     <div class="form-group row">
                         <div class="col">
-                            {{ form_label(registrationForm.nom, 'Nom', {'label_attr': {'class': 'col-form-label'}}) }}
+                            {{ form_label(registrationForm.nom, 'Last Name', {'label_attr': {'class': 'col-form-label'}}) }}
                             {{ form_widget(registrationForm.nom, {'attr': {'class': 'form-control'}}) }}
                         </div>
                         <div class="col">
-                            {{ form_label(registrationForm.prenom, 'Prénom', {'label_attr': {'class': 'col-form-label'}}) }}
+                            {{ form_label(registrationForm.prenom, 'First Name', {'label_attr': {'class': 'col-form-label'}}) }}
                             {{ form_widget(registrationForm.prenom, {'attr': {'class': 'form-control'}}) }}
                         </div>
                     </div>
@@ -48,19 +48,19 @@
                     </div>
 
                     <div class="form-group">
-                        {{ form_label(registrationForm.genre, 'Genre') }}
+                        {{ form_label(registrationForm.genre, 'Gender') }}
                         {{ form_widget(registrationForm.genre, {'attr': {'class': 'form-control-radio'}}) }}
                         {{ form_errors(registrationForm.genre) }}
                     </div>
                     
 
                     <div class="form-group">
-                        {{ form_label(registrationForm.address, 'Adresse') }}
+                        {{ form_label(registrationForm.address, 'Adress') }}
                         {{ form_widget(registrationForm.address, {'attr': {'class': 'form-control'}}) }}
                     </div>
 
                     <div class="form-group">
-                        {{ form_label(registrationForm.phoneNumber, 'Numéro de téléphone') }}
+                        {{ form_label(registrationForm.phoneNumber, 'Phone Number') }}
                         <div id="phone-number-field">
                             {{ form_widget(registrationForm.phoneNumber, {'attr': {'class': 'form-control'}}) }}
                             <div class="error-message" id="phone-error-message">
@@ -74,7 +74,7 @@
                         {{ form_label(registrationForm.agreeTerms, 'Agree to terms', {'label_attr': {'class': 'form-check-label'}}) }}
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
                     {{ form_end(registrationForm) }}
                     <br><br>
                 </div>

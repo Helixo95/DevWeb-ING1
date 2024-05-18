@@ -1,0 +1,130 @@
+/* Ajouter de l'espace en haut de la section principale */
+.h-custom {
+    min-height: calc(100vh - 50px); /* Adjust to fit within the viewport height */
+    margin-top: 50px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+    margin-bottom: 0; /* Remove extra bottom margin */
+    background-color: #343a40; /* Couleur de fond sombre */
+}
+
+/* Styles pour la section de panier */
+#shopping-cart {
+    padding: 2rem;
+    margin-top: 20px; /* Espace supplémentaire en haut de la section panier */
+    margin-bottom: 0; /* Remove extra bottom margin */
+}
+
+/* Assurez-vous que les cartes ont de la marge */
+.card-registration {
+    margin-top: 30px; /* Espace supplémentaire en haut de la carte */
+    margin-bottom: 0; /* Remove extra bottom margin */
+}
+
+/* Autres styles */
+.card-registration-2 .card-body {
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Autres styles de la carte */
+.card-registration {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-top-left-radius: 10px; /* Applique une bordure arrondie en haut à gauche */
+    border-radius: 15px 15px 15px 10px; /* Bordures arrondies pour les autres coins */
+}
+
+#shopping-cart h1 {
+    font-size: 2rem;
+    color: #343a40;
+}
+
+/* Styles pour les éléments du panier */
+.cart-item {
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem 0;
+}
+
+.cart-item img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.cart-item .item-details h6 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cart-item .item-details h6.text-muted {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Styles des boutons */
+.cart-item .btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cart-item .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Styles pour le récapitulatif */
+.bg-grey {
+    background-color: #f8f9fa;
+}
+
+.summary h3 {
+    font-size: 1.75rem;
+    color: #343a40;
+}
+
+.summary hr {
+    margin: 1.5rem 0;
+    border-color: #dee2e6;
+}
+
+.summary .form-outline input {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.summary .form-outline label {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.summary .btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+}
+
+.summary .btn-dark:hover {
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+/* Adjust quantity display */
+.quantity-display {
+    width: 50px; /* Ensure enough space for larger numbers */
+    text-align: center; /* Center the text */
+    font-size: 1rem; /* Adjust font size if necessary */
+}
+
+/* Adjust the buttons and quantity container */
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-container .btn-link {
+    padding: 0 10px; /* Adjust padding */
+}

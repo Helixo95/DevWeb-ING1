@@ -93,7 +93,7 @@ class ContactFormType extends AbstractType
             ])
             ->add('BirthDate', DateType::class, [
                 'widget' => 'single_text',
-                'label' => 'Date de naissance :',
+                'label' => 'Birthdate :',
                 'html5' => false,
                 'required' => true,
                 'label_attr' => [
@@ -133,7 +133,7 @@ class ContactFormType extends AbstractType
                 'attr' => [
                     'class' => 'btn btn-primary mt-4'
                 ],
-                'label' => 'Soumettre ma demande',
+                'label' => 'Submit',
             ]);
     }
 
