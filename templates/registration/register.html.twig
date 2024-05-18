@@ -33,7 +33,13 @@
 
                     <div class="form-group">
                         {{ form_label(registrationForm.email, 'Email') }}
-                        {{ form_widget(registrationForm.email, {'attr': {'class': 'form-control'}}) }}
+                        <div id="email">
+                            {{ form_widget(registrationForm.email, {'attr': {'class': 'form-control'}}) }}
+                            <div class="email-error-message" id="email-error-message">
+                                {{ form_errors(registrationForm.email) }}
+                            </div>
+                        </div>
+                        
                     </div>
 
                     <div class="form-group">
@@ -43,8 +49,10 @@
 
                     <div class="form-group">
                         {{ form_label(registrationForm.genre, 'Genre') }}
-                        {{ form_widget(registrationForm.genre, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_widget(registrationForm.genre, {'attr': {'class': 'form-control-radio'}}) }}
+                        {{ form_errors(registrationForm.genre) }}
                     </div>
+                    
 
                     <div class="form-group">
                         {{ form_label(registrationForm.address, 'Adresse') }}

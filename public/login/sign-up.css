@@ -1,13 +1,13 @@
 #intro {
     min-height: 100vh; /* Utilisez min-height au lieu de height */
-    margin-top: 0; /* Assurez-vous que la marge supérieure est à 0 pour éviter les conflits */
+    margin-top: 0; 
     padding-top: 0px; /* Ajustez cette valeur pour tester la visibilité */
     padding-bottom: 0px; /* Ajoutez un padding inférieur pour éviter le chevauchement */
 }
 
 @media (min-width: 992px) {
     #intro {
-        padding-top: 100px; /* Assurez-vous que cette valeur est également ajustée pour les écrans larges */
+        padding-top: 50px; /* Assurez-vous que cette valeur est également ajustée pour les écrans larges */
         padding-bottom: 0px; /* Assurez-vous que cette valeur est également ajustée pour éviter le chevauchement */
     }
 }
@@ -62,6 +62,30 @@
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.form-control-radio {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-radio input[type="radio"] {
+    margin-right: 5px; /* Espace entre le bouton radio et le label */
+    margin-left: 8px;
+}
+
+.form-control-radio label {
+    margin-bottom: 0; /* Réinitialise le margin-bottom des labels pour aligner correctement */
+}
+
 
 .form-control:focus {
     color: #495057;

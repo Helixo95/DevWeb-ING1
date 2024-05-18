@@ -262,7 +262,10 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
             <div id=\"menu\" class=\"text-left\">
                 <ul class=\"offcanvas_main_menu\">
                     <li class=\"menu-item-has-children active\">
-                        <a href=\"contact\" style=\"text-decoration: none;\">Home</a>
+                        <a href=\"";
+        // line 108
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo "\" style=\"text-decoration: none;\">Home</a>
                     </li>
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\" style=\"text-decoration: none;\">Brands</a>
@@ -364,7 +367,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                         <li>
                                             <a href=\"";
         // line 186
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
         echo "\" class=\"active\" style=\"text-decoration: none;\">Home </a>
 
                                         </li>
@@ -426,7 +429,10 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
                                         </li>
 
-                                        <li><a href=\"#\" style=\"text-decoration: none;\">Contact Us</a></li>
+                                        <li><a href=\"";
+        // line 211
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
+        echo "\" style=\"text-decoration: none;\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\" style=\"text-decoration: none;\">User <i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
@@ -621,7 +627,12 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                     <div class=\"col-lg-4 col-md-6 col-sm-7\">
                         <div class=\"widgets_container contact_us\">
                             <div class=\"footer_logo\">
-                                <a href=\"#\"><img src=\"logo.png\" alt=\"Logo\"></a>
+                                <a href=\"";
+        // line 341
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/logo.png"), "html", null, true);
+        echo "\" style=\"max-height: 50px;\"  alt=\"\"></a>
                             </div>
                             <div class=\"footer_desc\">
                                 <p>At our store, you'll find an array of perfumes to match every mood and occasion. Can't find the fragrance you're dreaming of in our selection? Simply email us. We are dedicated to tracking down exclusive and elusive scents to elevate your perfume experience. Discover your new favorite fragrance with us today!</p>
@@ -743,7 +754,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  708 => 404,  689 => 386,  685 => 385,  681 => 384,  677 => 383,  673 => 382,  669 => 381,  644 => 359,  617 => 334,  607 => 333,  596 => 330,  586 => 329,  568 => 319,  558 => 312,  553 => 309,  551 => 308,  510 => 270,  495 => 258,  457 => 222,  452 => 220,  447 => 219,  442 => 217,  437 => 216,  435 => 215,  424 => 206,  417 => 204,  413 => 202,  400 => 200,  396 => 199,  393 => 198,  391 => 197,  385 => 196,  382 => 195,  378 => 194,  367 => 186,  352 => 176,  334 => 160,  329 => 158,  324 => 157,  319 => 155,  314 => 154,  312 => 153,  222 => 66,  207 => 54,  169 => 18,  159 => 17,  141 => 14,  122 => 6,  110 => 405,  108 => 404,  104 => 403,  100 => 402,  91 => 395,  89 => 333,  86 => 332,  84 => 329,  81 => 328,  79 => 17,  75 => 15,  73 => 14,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
+        return array (  719 => 404,  700 => 386,  696 => 385,  692 => 384,  688 => 383,  684 => 382,  680 => 381,  655 => 359,  632 => 341,  623 => 334,  613 => 333,  602 => 330,  592 => 329,  574 => 319,  564 => 312,  559 => 309,  557 => 308,  516 => 270,  501 => 258,  463 => 222,  458 => 220,  453 => 219,  448 => 217,  443 => 216,  441 => 215,  434 => 211,  427 => 206,  420 => 204,  416 => 202,  403 => 200,  399 => 199,  396 => 198,  394 => 197,  388 => 196,  385 => 195,  381 => 194,  370 => 186,  355 => 176,  337 => 160,  332 => 158,  327 => 157,  322 => 155,  317 => 154,  315 => 153,  267 => 108,  222 => 66,  207 => 54,  169 => 18,  159 => 17,  141 => 14,  122 => 6,  110 => 405,  108 => 404,  104 => 403,  100 => 402,  91 => 395,  89 => 333,  86 => 332,  84 => 329,  81 => 328,  79 => 17,  75 => 15,  73 => 14,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -855,7 +866,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
             <div id=\"menu\" class=\"text-left\">
                 <ul class=\"offcanvas_main_menu\">
                     <li class=\"menu-item-has-children active\">
-                        <a href=\"contact\" style=\"text-decoration: none;\">Home</a>
+                        <a href=\"{{ path('app_product_category_brand') }}\" style=\"text-decoration: none;\">Home</a>
                     </li>
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\" style=\"text-decoration: none;\">Brands</a>
@@ -933,7 +944,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href=\"{{ path('app_home') }}\" class=\"active\" style=\"text-decoration: none;\">Home </a>
+                                            <a href=\"{{ path('app_product_category_brand') }}\" class=\"active\" style=\"text-decoration: none;\">Home </a>
 
                                         </li>
 
@@ -958,7 +969,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
 
                                         </li>
 
-                                        <li><a href=\"#\" style=\"text-decoration: none;\">Contact Us</a></li>
+                                        <li><a href=\"{{ path('app_contact') }}\" style=\"text-decoration: none;\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\" style=\"text-decoration: none;\">User <i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
@@ -1088,7 +1099,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                     <div class=\"col-lg-4 col-md-6 col-sm-7\">
                         <div class=\"widgets_container contact_us\">
                             <div class=\"footer_logo\">
-                                <a href=\"#\"><img src=\"logo.png\" alt=\"Logo\"></a>
+                                <a href=\"{{ path('app_product_category_brand') }}\"><img src=\"{{ asset('base/logo.png') }}\" style=\"max-height: 50px;\"  alt=\"\"></a>
                             </div>
                             <div class=\"footer_desc\">
                                 <p>At our store, you'll find an array of perfumes to match every mood and occasion. Can't find the fragrance you're dreaming of in our selection? Simply email us. We are dedicated to tracking down exclusive and elusive scents to elevate your perfume experience. Discover your new favorite fragrance with us today!</p>

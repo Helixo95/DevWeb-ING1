@@ -34,11 +34,13 @@ class RegistrationFormType extends AbstractType
             ])
             ->add('genre', ChoiceType::class, [
                 'choices' => [
-                    'Homme' => 'homme',
-                    'Femme' => 'femme',
-                    'Autre' => 'Autre',
+                    'Homme ' => 'homme',
+                    'Femme ' => 'femme',
+                    'Autre ' => 'Autre',
                 ],
                 'placeholder' => 'Genre',
+                'expanded' => true,
+                'attr' => ['class' => 'form-control-radio-group'],
             ])
             ->add('address', TextType::class)
             ->add('nom', TextType::class)
