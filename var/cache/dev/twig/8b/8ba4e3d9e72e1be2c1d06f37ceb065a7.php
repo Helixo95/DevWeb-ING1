@@ -95,7 +95,11 @@ class __TwigTemplate_bf5ef16d239f82f40b948c8ffb9a550e extends Template
         // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/css/style.css"), "html", null, true);
         echo "\">
-    ";
+    <link rel=\"stylesheet\" href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/contact.css"), "html", null, true);
+        echo "\">
+";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -367,7 +371,7 @@ class __TwigTemplate_bf5ef16d239f82f40b948c8ffb9a550e extends Template
      */
     public function getDebugInfo()
     {
-        return array (  337 => 152,  327 => 151,  305 => 138,  263 => 98,  259 => 96,  251 => 91,  243 => 86,  233 => 79,  228 => 77,  223 => 75,  215 => 70,  211 => 69,  203 => 64,  199 => 63,  191 => 58,  183 => 53,  175 => 48,  141 => 16,  131 => 15,  118 => 12,  108 => 11,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
+        return array (  341 => 152,  331 => 151,  309 => 138,  267 => 98,  263 => 96,  255 => 91,  247 => 86,  237 => 79,  232 => 77,  227 => 75,  219 => 70,  215 => 69,  207 => 64,  203 => 63,  195 => 58,  187 => 53,  179 => 48,  145 => 16,  135 => 15,  122 => 12,  112 => 11,  100 => 8,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -379,7 +383,7 @@ class __TwigTemplate_bf5ef16d239f82f40b948c8ffb9a550e extends Template
 {% block stylesheets %}
     <link rel=\"stylesheet\" href=\"{{ asset('contact/css/animate.css') }}\">
     <link rel=\"stylesheet\" href=\"{{ asset('contact/css/style.css') }}\">
-    {# <link rel=\"stylesheet\" href=\"{{ asset('contact/contact.css') }}\"> #}
+    <link rel=\"stylesheet\" href=\"{{ asset('contact/contact.css') }}\">
 {% endblock %}
 
 {% block javascripts %}
