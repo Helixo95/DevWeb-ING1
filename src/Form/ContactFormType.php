@@ -102,12 +102,12 @@ class ContactFormType extends AbstractType
                     'class' => 'form-label  mt-4 text-white'
                 ],
                 'placeholder' => 'Date de naissance (jj-mm-aaaa)',
-                'constraints' => [
+                /*'constraints' => [
                     new Regex([
-                        'pattern' => '/^(0[1-9]|[1-2][0-9]|3[0-1])-(0[1-9]|1[0-2])-(19|20)\d{2}$/',
-                        'message' => 'La date de naissance doit être de type JJ-MM-AAAA',
+                        'pattern' => '/^(19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/',
+                        'message' => 'La date de naissance doit être de type AAAA-MM-JJ',
                     ]),
-                ],
+                ],*/
             ])
             ->add('subject', TextType::class, [
                 'attr' => [

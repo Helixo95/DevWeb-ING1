@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
         var birthDateValue = birthDateInput.value;
 
         // Définissez la regex pour la validation du numéro de téléphone
-        var birthDatePattern = /^(0[1-9]|[1-2][0-9]|3[0-1])-(0[1-9]|1[0-2])-(19|20)\d{2}$/;
+        var birthDatePattern = /^(19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/;
 
         // Vérifiez si la valeur correspond à la regex
         if (!birthDatePattern.test(birthDateValue)) {
             // Affichez un message d'erreur
-            errorMessage.textContent = 'Le numéro de téléphone doit commencer par 07 ou 06 et comporter un total de 10 chiffres.';
+            errorMessage.textContent = 'La date de naissance doit être de type AAAA-MM-JJ';
             // Ajoutez une classe CSS pour styliser le message d'erreur
             errorMessage.classList.add('error-message');
             return false; // Le numéro n'est pas valide
