@@ -23,8 +23,9 @@ class ContactController extends AbstractController
             $contact->setEmail($this->getUser()->getEmail())
             ->setGenre($this->getUser()->getGenre())
             ->setJob($this->getUser()->getJob())
-            ->setFullName($this->getUser()->getFullName());
-        }
+            ->setFirstName($this->getUser()->getFirstName())
+            ->setLastName($this->getUser()->getLastName())
+            ;}
 
         $form = $this->createForm(ContactFormType::class, $contact);
 
@@ -48,7 +49,7 @@ class ContactController extends AbstractController
             $mailer->send($email);*/
 
             $this->addFlash(
-                'success',
+                'form-message-success',
                 'Votre demande a été soumise avec succès !'
             );
 

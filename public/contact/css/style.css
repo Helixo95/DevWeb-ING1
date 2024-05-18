@@ -8309,3 +8309,18 @@ textarea.form-control {
   display: none;
   font-size: 16px;
   font-weight: 500; }
+
+
+
+
+
+.error-message {
+  color: white;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 4px;
+  background-color: rgba(255, 0, 0, 0.2);
+  font-weight: normal;
+}

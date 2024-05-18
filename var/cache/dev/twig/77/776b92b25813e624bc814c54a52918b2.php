@@ -191,9 +191,49 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         echo "\" class=\"active\">Home </a>
                                         </li>
 
-                                        <li> ";
-        // line 93
+                                        <li>
+                                            <a>Men <i class=\"fa fa-angle-down\"></i></a>
+                                                <ul class=\"sub_menu pages\">
+                                                    <ul>
+                                                        <li><a>Versace</a></li>
+                                                        <li><a>Hugo Boss</a></li>
+                                                        <li><a>Jaguar</a></li>
+                                                        <li><a>Armani</a></li>
+                                                        <li><a>Paco Rabbane</a></li>
+                                                        <li><a>Ralph Lauren</a></li>
+                                                    </ul>
+
+                                                    ";
+        // line 65
         echo "
+                                                </ul>
+                                        </li>
+
+                                        <li>
+                                            <a>Women<i class=\"fa fa-angle-down\"></i></a>
+                                            <ul class=\"sub_menu pages\">
+                                                <ul>
+                                                    <li><a>Bvlgari</a></li>
+                                                    <li><a>Coach</a></li>
+                                                    <li><a>Kenzo</a></li>
+                                                    <li><a>D&G</a></li>
+                                                    <li><a>Jean Paul Gaultier</a></li>
+                                                </ul>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a>Unisex<i class=\"fa fa-angle-down\"></i></a>
+                                            <ul class=\"sub_menu pages\">
+                                                <ul >
+                                                    <li><a>Ajmal</a></li>
+                                                    <li><a>Calvin Klein</a></li>
+                                                    <li><a>The Body Shop</a></li>
+                                                    <li><a>Lattafa</a></li>
+                                                </ul>
+                                            </ul>
+                                        </li>
+
                                         <li><a href=\"";
         // line 94
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
@@ -436,7 +476,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  401 => 281,  382 => 263,  378 => 262,  374 => 261,  370 => 260,  366 => 259,  362 => 258,  337 => 236,  310 => 211,  300 => 210,  289 => 207,  279 => 206,  249 => 184,  240 => 126,  210 => 99,  206 => 98,  199 => 94,  196 => 93,  190 => 37,  171 => 20,  161 => 19,  143 => 16,  124 => 6,  112 => 282,  110 => 281,  106 => 280,  102 => 279,  93 => 272,  91 => 210,  88 => 209,  86 => 206,  83 => 205,  81 => 19,  77 => 17,  75 => 16,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
+        return array (  441 => 281,  422 => 263,  418 => 262,  414 => 261,  410 => 260,  406 => 259,  402 => 258,  377 => 236,  350 => 211,  340 => 210,  329 => 207,  319 => 206,  289 => 184,  280 => 126,  250 => 99,  246 => 98,  239 => 94,  208 => 65,  190 => 37,  171 => 20,  161 => 19,  143 => 16,  124 => 6,  112 => 282,  110 => 281,  106 => 280,  102 => 279,  93 => 272,  91 => 210,  88 => 209,  86 => 206,  83 => 205,  81 => 19,  77 => 17,  75 => 16,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -480,16 +520,16 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                             <a href=\"{{ path('app_home') }}\" class=\"active\">Home </a>
                                         </li>
 
-                                        <li> {#
-                                            <a href=\"{{ path('app_product_men') }}\">Men <i class=\"fa fa-angle-down\"></i></a>
+                                        <li>
+                                            <a>Men <i class=\"fa fa-angle-down\"></i></a>
                                                 <ul class=\"sub_menu pages\">
-                                                    <ul >
-                                                        <li><a href=\"{{ path('app_product_men_versace') }}\">Versace</a></li>
-                                                        <li><a href=\"{{ path('app_product_men_hugo boss') }}\">Hugo Boss</a></li>
-                                                        <li><a href=\"{{ path('app_product_men_jaguar') }}\">Jaguar</a></li>
-                                                        <li><a href=\"{{ path('app_product_men_armani') }}\">Armani</a></li>
-                                                        <li><a href=\"{{ path('app_product_men_paco rabbane') }}\">Paco Rabbane</a></li>
-                                                        <li><a href=\"{{ path('app_product_men_ralph lauren') }}\">Ralph Lauren</a></li>
+                                                    <ul>
+                                                        <li><a>Versace</a></li>
+                                                        <li><a>Hugo Boss</a></li>
+                                                        <li><a>Jaguar</a></li>
+                                                        <li><a>Armani</a></li>
+                                                        <li><a>Paco Rabbane</a></li>
+                                                        <li><a>Ralph Lauren</a></li>
                                                     </ul>
 
                                                     {#
@@ -504,35 +544,35 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                                 </ul>
                                                             {% endif %}
                                                         </li>
-                                                    {% endfor %}
+                                                    {% endfor %} #}
 
                                                 </ul>
                                         </li>
 
                                         <li>
-                                            <a href=\"{{ path('app_product_women') }}\">Women<i class=\"fa fa-angle-down\"></i></a>
+                                            <a>Women<i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
                                                 <ul>
-                                                    <li><a href=\"{{ path('app_product_women_bvlgari') }}\">Bvlgari</a></li>
-                                                    <li><a href=\"{{ path('app_product_women_coach') }}\">Coach</a></li>
-                                                    <li><a href=\"{{ path('app_product_women_kenzo') }}\">Kenzo</a></li>
-                                                    <li><a href=\"{{ path('app_product_women_d&g') }}\">D&G</a></li>
-                                                    <li><a href=\"{{ path('app_product_women_jean paul gaultier') }}\">Jean Paul Gaultier</a></li>
+                                                    <li><a>Bvlgari</a></li>
+                                                    <li><a>Coach</a></li>
+                                                    <li><a>Kenzo</a></li>
+                                                    <li><a>D&G</a></li>
+                                                    <li><a>Jean Paul Gaultier</a></li>
                                                 </ul>
                                             </ul>
                                         </li>
 
                                         <li>
-                                            <a href=\"{{ path('app_product_unisex') }}\">Unisex<i class=\"fa fa-angle-down\"></i></a>
+                                            <a>Unisex<i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
                                                 <ul >
-                                                    <li><a href=\"{{ path('app_product_unisex_ajmal') }}\">Ajmal</a></li>
-                                                    <li><a href=\"{{ path('app_product_unisex_calvin klein') }}\">Calvin Klein</a></li>
-                                                    <li><a href=\"{{ path('app_product_unisex_the body shop') }}\">The Body Shop</a></li>
-                                                    <li><a href=\"{{ path('app_product_unisex_lattafa') }}\">Lattafa</a></li>
+                                                    <li><a>Ajmal</a></li>
+                                                    <li><a>Calvin Klein</a></li>
+                                                    <li><a>The Body Shop</a></li>
+                                                    <li><a>Lattafa</a></li>
                                                 </ul>
                                             </ul>
-                                        </li> #}
+                                        </li>
 
                                         <li><a href=\"{{ path('app_contact') }}\">Contact Us</a></li>
                                         <li>

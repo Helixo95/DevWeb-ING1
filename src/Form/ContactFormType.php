@@ -12,6 +12,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\Regex;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -20,14 +21,29 @@ class ContactFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('fullName', TextType::class, [
+            ->add('lastName', TextType::class, [
                 'attr' => [
                     'class' => 'form-control',
                     'minlenght' => '1',
                     'maxlenght' => '255',
-                    'placeholder' => 'Last Name / First Name',
+                    'placeholder' => 'Last Name',
                 ],
-                'label' => 'fullName',
+                'label' => 'lastName',
+                'label_attr' => [
+                    'class' => 'form-label  mt-4 text-white'
+                ],
+                'constraints' => [
+                    new Assert\NotBlank(),
+                ]
+            ])
+            ->add('firstName', TextType::class, [
+                'attr' => [
+                    'class' => 'form-control',
+                    'minlenght' => '1',
+                    'maxlenght' => '255',
+                    'placeholder' => 'First Name',
+                ],
+                'label' => 'firstName',
                 'label_attr' => [
                     'class' => 'form-label  mt-4 text-white'
                 ],
@@ -81,12 +97,17 @@ class ContactFormType extends AbstractType
                 'widget' => 'single_text',
                 'label' => 'Date de naissance :',
                 'html5' => false, // Désactive le rendu HTML5 pour la compatibilité avec les navigateurs plus anciens
-                'format' => 'dd-MM-yyyy', // Format de la date à afficher
                 'required' => true,
                 'label_attr' => [
                     'class' => 'form-label  mt-4 text-white'
                 ],
                 'placeholder' => 'Date de naissance (jj-mm-aaaa)',
+                'constraints' => [
+                    new Regex([
+                        'pattern' => '/^(0[1-9]|[1-2][0-9]|3[0-1])-(0[1-9]|1[0-2])-(19|20)\d{2}$/',
+                        'message' => 'La date de naissance doit être de type JJ-MM-AAAA',
+                    ]),
+                ],
             ])
             ->add('subject', TextType::class, [
                 'attr' => [
