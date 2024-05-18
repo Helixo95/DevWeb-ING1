@@ -27,7 +27,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $this->blocks = [
             'title' => [$this, 'block_title'],
             'stylesheets' => [$this, 'block_stylesheets'],
-            'header' => [$this, 'block_header'],
+            'javascripts' => [$this, 'block_javascripts'],
             'content' => [$this, 'block_content'],
             'footer' => [$this, 'block_footer'],
         ];
@@ -58,7 +58,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 5
+    // line 3
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -77,7 +77,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 7
+    // line 5
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -87,13 +87,17 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 8
+        // line 6
         echo "    <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/css/animate.css"), "html", null, true);
+        echo "\">
+    <link rel=\"stylesheet\" href=\"";
+        // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/css/style.css"), "html", null, true);
         echo "\">
     <link rel=\"stylesheet\" href=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/css/animate.css"), "html", null, true);
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/contact.css"), "html", null, true);
         echo "\">
 ";
         
@@ -104,20 +108,20 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 13
-    public function block_header($context, array $blocks = [])
+    // line 11
+    public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 14
-        echo "    ";
-        $this->displayParentBlock("header", $context, $blocks);
-        echo "
+        // line 12
+        echo "    <script src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/script.js"), "html", null, true);
+        echo "\"></script>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -127,7 +131,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 17
+    // line 15
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -137,50 +141,130 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 18
-        echo "    <section class=\"ftco-section\">
+        // line 16
+        echo "    <style>
+        .form-group input[type=\"radio\"] {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        ::placeholder{
+            color: white;
+        }
+    </style>
+    <section class=\"ftco-section\">
         <div class=\"container\">
             <div class=\"row justify-content-center\">
                 <div class=\"col-md-6 text-center mb-5\">
                 </div>
             </div>
             <div class=\"row justify-content-center\">
+                <div id=\"form-message-warning\" class=\"mb-4\" style=\"color: red;\">
+                    There is a problem with your message, please try again later.
+                </div>
+                <div id=\"form-message-success\" class=\"mb-4\" style=\"color: green\">
+                    Your message was sent, thank you!
+                </div>
                 <div class=\"col-lg-10\">
                     <div class=\"wrapper\">
                         <div class=\"row no-gutters\">
                             <div class=\"col-md-6 d-flex align-items-stretch\">
                                 <div class=\"contact-wrap w-100 p-md-5 p-4 py-5\">
                                     <h3 class=\"mb-4\">Write us</h3>
-                                    <div id=\"form-message-warning\" class=\"mb-4\"></div>
-                                    <div id=\"form-message-success\" class=\"mb-4\">
-                                        Your message was sent, thank you!
-                                    </div>
                                     <form method=\"POST\" id=\"contactForm\" name=\"contactForm\" class=\"contactForm\">
                                         <div class=\"row\">
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\" placeholder=\"Name\">
+                                                    ";
+        // line 48
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 48, $this->source); })()), "firstName", [], "any", false, false, false, 48), 'widget');
+        echo "
                                                 </div>
                                             </div>
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"Email\">
+                                                    ";
+        // line 53
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 53, $this->source); })()), "lastName", [], "any", false, false, false, 53), 'widget');
+        echo "
                                                 </div>
                                             </div>
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <input type=\"text\" class=\"form-control\" name=\"subject\" id=\"subject\" placeholder=\"Subject\">
+                                                    ";
+        // line 58
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 58, $this->source); })()), "email", [], "any", false, false, false, 58), 'widget');
+        echo "
                                                 </div>
                                             </div>
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <textarea name=\"message\" class=\"form-control\" id=\"message\" cols=\"30\" rows=\"6\" placeholder=\"Message\"></textarea>
+                                                    ";
+        // line 63
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 63, $this->source); })()), "genre", [], "any", false, false, false, 63), 'label');
+        echo "
+                                                    ";
+        // line 64
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 64, $this->source); })()), "genre", [], "any", false, false, false, 64), 'widget');
+        echo "
                                                 </div>
                                             </div>
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <input type=\"submit\" value=\"Send Message\" class=\"btn btn-primary\">
-                                                    <div class=\"submitting\"></div>
+                                                    ";
+        // line 69
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 69, $this->source); })()), "job", [], "any", false, false, false, 69), 'label');
+        echo "
+                                                    ";
+        // line 70
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 70, $this->source); })()), "job", [], "any", false, false, false, 70), 'widget');
+        echo "
+                                                </div>
+                                            </div>
+                                            <div class=\"col-md-12\">
+                                                <div class=\"form-group\">
+                                                    ";
+        // line 75
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 75, $this->source); })()), "BirthDate", [], "any", false, false, false, 75), 'label');
+        echo "
+                                                    <div id=\"birthDate-field\">
+                                                        ";
+        // line 77
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 77, $this->source); })()), "BirthDate", [], "any", false, false, false, 77), 'widget', ["attr" => ["class" => "form-control"]]);
+        echo "
+                                                        <div class=\"message\" id=\"birthDate-error-message\">
+                                                            ";
+        // line 79
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 79, $this->source); })()), "BirthDate", [], "any", false, false, false, 79), 'errors');
+        echo "
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=\"col-md-12\">
+                                                <div class=\"form-group\">
+                                                    ";
+        // line 86
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 86, $this->source); })()), "subject", [], "any", false, false, false, 86), 'widget');
+        echo "
+                                                </div>
+                                            </div>
+                                            <div class=\"col-md-12\">
+                                                <div class=\"form-group\">
+                                                    ";
+        // line 91
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 91, $this->source); })()), "message", [], "any", false, false, false, 91), 'widget');
+        echo "
+                                                </div>
+                                            </div>
+                                            <div class=\"col-md-12\">
+                                                <div class=\"form-group\">
+                                                    ";
+        // line 96
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 96, $this->source); })()), "submit", [], "any", false, false, false, 96), 'widget');
+        echo "
+                                                    ";
+        // line 98
+        echo "                                                    <div class=\"submitting\"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,7 +296,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
                                             <span class=\"fa fa-paper-plane\"></span>
                                         </div>
                                         <div class=\"text pl-3\">
-                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">info@yoursite.com</a></p>
+                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">contact.exotik95@gmail.com</a></p>
                                         </div>
                                     </div>
                                     <div class=\"dbox w-100 d-flex align-items-center\">
@@ -220,7 +304,10 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
                                             <span class=\"fa fa-globe\"></span>
                                         </div>
                                         <div class=\"text pl-3\">
-                                            <p><span>Website</span> <a href=\"#\">yoursite.com</a></p>
+                                            <p><span>Website</span> <a href=\"";
+        // line 138
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
+        echo "\">exotik.com</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +327,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 113
+    // line 151
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -250,7 +337,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 114
+        // line 152
         echo "    ";
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
@@ -284,28 +371,35 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  254 => 114,  244 => 113,  141 => 18,  131 => 17,  118 => 14,  108 => 13,  96 => 9,  91 => 8,  81 => 7,  62 => 5,  39 => 1,);
+        return array (  341 => 152,  331 => 151,  309 => 138,  267 => 98,  263 => 96,  255 => 91,  247 => 86,  237 => 79,  232 => 77,  227 => 75,  219 => 70,  215 => 69,  207 => 64,  203 => 63,  195 => 58,  187 => 53,  179 => 48,  145 => 16,  135 => 15,  122 => 12,  112 => 11,  100 => 8,  96 => 7,  91 => 6,  81 => 5,  62 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-
-
 {% block title %}Page de Contact{% endblock %}
 
 {% block stylesheets %}
-    <link rel=\"stylesheet\" href=\"{{ asset('contact/css/style.css') }}\">
     <link rel=\"stylesheet\" href=\"{{ asset('contact/css/animate.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('contact/css/style.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('contact/contact.css') }}\">
 {% endblock %}
 
-
-{% block header %}
-    {{ parent() }}
+{% block javascripts %}
+    <script src=\"{{ asset('contact/script.js') }}\"></script>
 {% endblock %}
 
 {% block content %}
+    <style>
+        .form-group input[type=\"radio\"] {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        ::placeholder{
+            color: white;
+        }
+    </style>
     <section class=\"ftco-section\">
         <div class=\"container\">
             <div class=\"row justify-content-center\">
@@ -313,41 +407,72 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
                 </div>
             </div>
             <div class=\"row justify-content-center\">
+                <div id=\"form-message-warning\" class=\"mb-4\" style=\"color: red;\">
+                    There is a problem with your message, please try again later.
+                </div>
+                <div id=\"form-message-success\" class=\"mb-4\" style=\"color: green\">
+                    Your message was sent, thank you!
+                </div>
                 <div class=\"col-lg-10\">
                     <div class=\"wrapper\">
                         <div class=\"row no-gutters\">
                             <div class=\"col-md-6 d-flex align-items-stretch\">
                                 <div class=\"contact-wrap w-100 p-md-5 p-4 py-5\">
                                     <h3 class=\"mb-4\">Write us</h3>
-                                    <div id=\"form-message-warning\" class=\"mb-4\"></div>
-                                    <div id=\"form-message-success\" class=\"mb-4\">
-                                        Your message was sent, thank you!
-                                    </div>
                                     <form method=\"POST\" id=\"contactForm\" name=\"contactForm\" class=\"contactForm\">
                                         <div class=\"row\">
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\" placeholder=\"Name\">
+                                                    {{ form_widget(contactForm.firstName) }}
                                                 </div>
                                             </div>
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"Email\">
+                                                    {{ form_widget(contactForm.lastName) }}
                                                 </div>
                                             </div>
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <input type=\"text\" class=\"form-control\" name=\"subject\" id=\"subject\" placeholder=\"Subject\">
+                                                    {{ form_widget(contactForm.email) }}
                                                 </div>
                                             </div>
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <textarea name=\"message\" class=\"form-control\" id=\"message\" cols=\"30\" rows=\"6\" placeholder=\"Message\"></textarea>
+                                                    {{ form_label(contactForm.genre) }}
+                                                    {{ form_widget(contactForm.genre) }}
                                                 </div>
                                             </div>
                                             <div class=\"col-md-12\">
                                                 <div class=\"form-group\">
-                                                    <input type=\"submit\" value=\"Send Message\" class=\"btn btn-primary\">
+                                                    {{ form_label(contactForm.job) }}
+                                                    {{ form_widget(contactForm.job) }}
+                                                </div>
+                                            </div>
+                                            <div class=\"col-md-12\">
+                                                <div class=\"form-group\">
+                                                    {{ form_label(contactForm.BirthDate) }}
+                                                    <div id=\"birthDate-field\">
+                                                        {{ form_widget(contactForm.BirthDate, {'attr': {'class': 'form-control'}}) }}
+                                                        <div class=\"message\" id=\"birthDate-error-message\">
+                                                            {{ form_errors(contactForm.BirthDate) }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=\"col-md-12\">
+                                                <div class=\"form-group\">
+                                                    {{ form_widget(contactForm.subject) }}
+                                                </div>
+                                            </div>
+                                            <div class=\"col-md-12\">
+                                                <div class=\"form-group\">
+                                                    {{ form_widget(contactForm.message) }}
+                                                </div>
+                                            </div>
+                                            <div class=\"col-md-12\">
+                                                <div class=\"form-group\">
+                                                    {{ form_widget(contactForm.submit) }}
+                                                    {# <input type=\"submit\" value=\"Send Message\" class=\"btn btn-primary\"> #}
                                                     <div class=\"submitting\"></div>
                                                 </div>
                                             </div>
@@ -380,7 +505,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
                                             <span class=\"fa fa-paper-plane\"></span>
                                         </div>
                                         <div class=\"text pl-3\">
-                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">info@yoursite.com</a></p>
+                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">contact.exotik95@gmail.com</a></p>
                                         </div>
                                     </div>
                                     <div class=\"dbox w-100 d-flex align-items-center\">
@@ -388,7 +513,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
                                             <span class=\"fa fa-globe\"></span>
                                         </div>
                                         <div class=\"text pl-3\">
-                                            <p><span>Website</span> <a href=\"#\">yoursite.com</a></p>
+                                            <p><span>Website</span> <a href=\"{{ path('app_home') }}\">exotik.com</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -403,7 +528,6 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
 {% block footer %}
     {{ parent() }}
-{% endblock %}
-", "contact.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\contact.html.twig");
+{% endblock %}", "contact.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\contact.html.twig");
     }
 }
