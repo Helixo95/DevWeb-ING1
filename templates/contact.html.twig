@@ -3,17 +3,13 @@
 {% block title %}Page de Contact{% endblock %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('contact/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('contact/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('contact/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('contact/contact.css') }}">
 {% endblock %}
 
 {% block javascripts %}
     <script src="{{ asset('contact/script.js') }}"></script>
-{% endblock %}
-
-
-{% block header %}
-    {{ parent() }}
 {% endblock %}
 
 {% block content %}
@@ -79,7 +75,7 @@
                                                     {{ form_label(contactForm.BirthDate) }}
                                                     <div id="birthDate-field">
                                                         {{ form_widget(contactForm.BirthDate, {'attr': {'class': 'form-control'}}) }}
-                                                        <div class="error-message" id="birthDate-error-message">
+                                                        <div class="message" id="birthDate-error-message">
                                                             {{ form_errors(contactForm.BirthDate) }}
                                                         </div>
                                                     </div>

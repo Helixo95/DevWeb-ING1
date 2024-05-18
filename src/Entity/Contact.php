@@ -45,7 +45,7 @@ class Contact
     private ?string $Job = null;
 
     #[ORM\Column(type: Types::DATE_IMMUTABLE)]
-    private ?\DateTimeInterface $BirthDate = null;
+    private ?\DateTimeImmutable $BirthDate = null;
 
     #[ORM\Column(length: 255)]
     private ?string $fullName = null;
