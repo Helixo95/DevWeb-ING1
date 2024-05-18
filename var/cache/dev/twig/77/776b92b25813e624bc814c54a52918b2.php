@@ -79,17 +79,17 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 ";
         // line 19
         $this->displayBlock('header', $context, $blocks);
-        // line 256
+        // line 205
         echo "
 ";
-        // line 257
+        // line 206
         $this->displayBlock('content', $context, $blocks);
-        // line 260
+        // line 209
         echo "
 ";
-        // line 261
+        // line 210
         $this->displayBlock('footer', $context, $blocks);
-        // line 323
+        // line 272
         echo "
 
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
@@ -98,17 +98,17 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js\"></script>
 <script src=\"";
-        // line 330
+        // line 279
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/countdown.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 331
+        // line 280
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/main.js"), "html", null, true);
         echo "\"></script>
 ";
-        // line 332
+        // line 281
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 333
+        // line 282
         echo "</body>
 </html>
 ";
@@ -191,73 +191,22 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         echo "\" class=\"active\">Home </a>
                                         </li>
 
-                                        <li>
-                                            <a href=\"#\">Men <i class=\"fa fa-angle-down\"></i></a>
-                                                <ul class=\"sub_menu pages\">
-                                                    <ul >
-                                                        <li><a href=\"#\">Versace</a></li>
-                                                        <li><a href=\"#\">Hugo Boss</a></li>
-                                                        <li><a href=\"#\">Jaguar</a></li>
-                                                        <li><a href=\"#\">Armani</a></li>
-                                                        <li><a href=\"#\">Paco Rabbane</a></li>
-                                                        <li><a href=\"#\">Ralph Lauren</a></li>
-                                                    </ul>
-
-                                                    ";
-        // line 66
-        echo "                                                </ul>
-                                        </li>
-
-
-                                        <li>
-                                            <a href=\"#\">Women<i class=\"fa fa-angle-down\"></i></a>
-                                            <ul class=\"sub_menu pages\">
-                                                <ul>
-                                                    <li><a href=\"#\">Bvlgari</a></li>
-                                                    <li><a href=\"#\">Coach</a></li>
-                                                    <li><a href=\"#\">Kenzo</a></li>
-                                                    <li><a href=\"#\">D&G</a></li>
-                                                    <li><a href=\"#\">Jean Paul Gaultier</a></li>
-                                                </ul>
-                                            </ul>
-                                        </li>
-
-                                        <li>
-                                            <a href=\"#\">Unisex<i class=\"fa fa-angle-down\"></i></a>
-                                            <ul class=\"sub_menu pages\">
-                                                <ul >
-                                                    <li><a href=\"#\">Ajmal</a></li>
-                                                    <li><a href=\"#\">Calvin Klein</a></li>
-                                                    <li><a href=\"#\">The Body Shop</a></li>
-                                                    <li><a href=\"#\">Lattafa</a></li>
-                                                </ul>
-                                            </ul>
-                                        </li>
-
-
-
-
-
-                                        ";
-        // line 140
+                                        <li> ";
+        // line 93
         echo "
-
-
-
-
                                         <li><a href=\"";
-        // line 145
+        // line 94
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
         echo "\">Contact Us</a></li>
                                         <li>
                                             <a href=\"#\">User <i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
                                                 <li><a href=\"";
-        // line 149
+        // line 98
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">Login In</a></li>
                                                 <li><a href=\"";
-        // line 150
+        // line 99
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         echo "\">Sign Up</a></li>
                                             </ul>
@@ -287,7 +236,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                         </li>
                                         <li class=\"mini_cart_wrapper\">
                                             <a href=\"";
-        // line 177
+        // line 126
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_cart");
         echo "\">
                                                 <i class=\"fa fa-shopping-cart\"></i>
@@ -296,7 +245,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
                                             <!-- mini cart  -->
                                             ";
-        // line 235
+        // line 184
         echo "                                            <!-- mini cart ends -->
                                         </li>
                                     </ul>
@@ -326,7 +275,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 257
+    // line 206
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -336,7 +285,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 258
+        // line 207
         echo "    <!-- Contenu spécifique à chaque page -->
 ";
         
@@ -347,7 +296,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 261
+    // line 210
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -357,7 +306,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 262
+        // line 211
         echo "    <footer class=\"footer_widgets color_two\">
         <div class=\"footer_top\">
             <div class=\"container\">
@@ -384,7 +333,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                 <ul>
                                     <li><a href=\"#\">New Products</a></li>
                                     <li><a href=\"";
-        // line 287
+        // line 236
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_guidlines");
         echo "\">Terms & Conditions</a></li>
                                 </ul>
@@ -409,27 +358,27 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                         <div class=\"footer_payment text-right\">
                             <ul>
                                 <li><a href=\"#\"><img src=\"";
-        // line 309
+        // line 258
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 310
+        // line 259
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal1.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 311
+        // line 260
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal2.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 312
+        // line 261
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal3.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 313
+        // line 262
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal4.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                                 <li><a href=\"#\"><img src=\"";
-        // line 314
+        // line 263
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/icon/paypal5.jpg"), "html", null, true);
         echo "\" alt=\"\"></a></li>
                             </ul>
@@ -448,7 +397,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
 
     }
 
-    // line 332
+    // line 281
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -487,7 +436,7 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  452 => 332,  433 => 314,  429 => 313,  425 => 312,  421 => 311,  417 => 310,  413 => 309,  388 => 287,  361 => 262,  351 => 261,  340 => 258,  330 => 257,  300 => 235,  291 => 177,  261 => 150,  257 => 149,  250 => 145,  243 => 140,  208 => 66,  190 => 37,  171 => 20,  161 => 19,  143 => 16,  124 => 6,  112 => 333,  110 => 332,  106 => 331,  102 => 330,  93 => 323,  91 => 261,  88 => 260,  86 => 257,  83 => 256,  81 => 19,  77 => 17,  75 => 16,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
+        return array (  401 => 281,  382 => 263,  378 => 262,  374 => 261,  370 => 260,  366 => 259,  362 => 258,  337 => 236,  310 => 211,  300 => 210,  289 => 207,  279 => 206,  249 => 184,  240 => 126,  210 => 99,  206 => 98,  199 => 94,  196 => 93,  190 => 37,  171 => 20,  161 => 19,  143 => 16,  124 => 6,  112 => 282,  110 => 281,  106 => 280,  102 => 279,  93 => 272,  91 => 210,  88 => 209,  86 => 206,  83 => 205,  81 => 19,  77 => 17,  75 => 16,  64 => 8,  60 => 7,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -531,16 +480,16 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                             <a href=\"{{ path('app_home') }}\" class=\"active\">Home </a>
                                         </li>
 
-                                        <li>
-                                            <a href=\"#\">Men <i class=\"fa fa-angle-down\"></i></a>
+                                        <li> {#
+                                            <a href=\"{{ path('app_product_men') }}\">Men <i class=\"fa fa-angle-down\"></i></a>
                                                 <ul class=\"sub_menu pages\">
                                                     <ul >
-                                                        <li><a href=\"#\">Versace</a></li>
-                                                        <li><a href=\"#\">Hugo Boss</a></li>
-                                                        <li><a href=\"#\">Jaguar</a></li>
-                                                        <li><a href=\"#\">Armani</a></li>
-                                                        <li><a href=\"#\">Paco Rabbane</a></li>
-                                                        <li><a href=\"#\">Ralph Lauren</a></li>
+                                                        <li><a href=\"{{ path('app_product_men_versace') }}\">Versace</a></li>
+                                                        <li><a href=\"{{ path('app_product_men_hugo boss') }}\">Hugo Boss</a></li>
+                                                        <li><a href=\"{{ path('app_product_men_jaguar') }}\">Jaguar</a></li>
+                                                        <li><a href=\"{{ path('app_product_men_armani') }}\">Armani</a></li>
+                                                        <li><a href=\"{{ path('app_product_men_paco rabbane') }}\">Paco Rabbane</a></li>
+                                                        <li><a href=\"{{ path('app_product_men_ralph lauren') }}\">Ralph Lauren</a></li>
                                                     </ul>
 
                                                     {#
@@ -556,85 +505,34 @@ class __TwigTemplate_ec24391078b223b6b388bdbf1174daa8 extends Template
                                                             {% endif %}
                                                         </li>
                                                     {% endfor %}
-                                                    #}
+
                                                 </ul>
                                         </li>
 
-
                                         <li>
-                                            <a href=\"#\">Women<i class=\"fa fa-angle-down\"></i></a>
+                                            <a href=\"{{ path('app_product_women') }}\">Women<i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
                                                 <ul>
-                                                    <li><a href=\"#\">Bvlgari</a></li>
-                                                    <li><a href=\"#\">Coach</a></li>
-                                                    <li><a href=\"#\">Kenzo</a></li>
-                                                    <li><a href=\"#\">D&G</a></li>
-                                                    <li><a href=\"#\">Jean Paul Gaultier</a></li>
+                                                    <li><a href=\"{{ path('app_product_women_bvlgari') }}\">Bvlgari</a></li>
+                                                    <li><a href=\"{{ path('app_product_women_coach') }}\">Coach</a></li>
+                                                    <li><a href=\"{{ path('app_product_women_kenzo') }}\">Kenzo</a></li>
+                                                    <li><a href=\"{{ path('app_product_women_d&g') }}\">D&G</a></li>
+                                                    <li><a href=\"{{ path('app_product_women_jean paul gaultier') }}\">Jean Paul Gaultier</a></li>
                                                 </ul>
                                             </ul>
                                         </li>
 
                                         <li>
-                                            <a href=\"#\">Unisex<i class=\"fa fa-angle-down\"></i></a>
+                                            <a href=\"{{ path('app_product_unisex') }}\">Unisex<i class=\"fa fa-angle-down\"></i></a>
                                             <ul class=\"sub_menu pages\">
                                                 <ul >
-                                                    <li><a href=\"#\">Ajmal</a></li>
-                                                    <li><a href=\"#\">Calvin Klein</a></li>
-                                                    <li><a href=\"#\">The Body Shop</a></li>
-                                                    <li><a href=\"#\">Lattafa</a></li>
+                                                    <li><a href=\"{{ path('app_product_unisex_ajmal') }}\">Ajmal</a></li>
+                                                    <li><a href=\"{{ path('app_product_unisex_calvin klein') }}\">Calvin Klein</a></li>
+                                                    <li><a href=\"{{ path('app_product_unisex_the body shop') }}\">The Body Shop</a></li>
+                                                    <li><a href=\"{{ path('app_product_unisex_lattafa') }}\">Lattafa</a></li>
                                                 </ul>
                                             </ul>
-                                        </li>
-
-
-
-
-
-                                        {# <li class=\"nav-item dropdown\">
-                                            <a class=\"nav-link dropdown-toggle\" href=\"\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-                                                Products
-                                            </a>
-                                            <ul class=\"dropdown-menu\">
-                                                <li class=\"nav-item dropend\">
-                                                    <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-                                                        Men
-                                                    </a>
-                                                    <ul class=\"dropdown-menu\">
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_men_brand') }} #}{#\">Versace Men</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_men_brand') }} #}{#\">Hugo Boss</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_men_brand') }} #}{#\">Louis Vuitton</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_men_brand') }} #}{#\">Prada</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class=\"nav-item dropend\">
-                                                    <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-                                                        Women
-                                                    </a>
-                                                    <ul class=\"dropdown-menu\">
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_women_brand') }}  #}{#\">Versace Women</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_women_brand') }}  #}{#\">Hugo Boss</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_women_brand') }}  #}{#\">Louis Vuitton</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_women_brand') }}  #}{#\">Prada</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class=\"nav-item dropend\">
-                                                    <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-                                                        Unisex
-                                                    </a>
-                                                    <ul class=\"dropdown-menu\">
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_unisex_brand') }}  #}{#\">Versace Unisex</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_unisex_brand') }}  #}{#\">Hugo Boss</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_unisex_brand') }}  #}{#\">Louis Vuitton</a></li>
-                                                        <li><a class=\"dropdown-item\" href=\"{# {{ path('app_product_unisex_brand') }}  #}{#\">Prada</a></li>
-                                                    </ul>
-                                                </li>
-
-                                            </ul>
-                                        </li>  #}
-
-
-
-
+                                        </li> #}
 
                                         <li><a href=\"{{ path('app_contact') }}\">Contact Us</a></li>
                                         <li>

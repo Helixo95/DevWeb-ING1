@@ -37,10 +37,10 @@
                                             <a href="{{ path('app_home') }}" class="active">Home </a>
                                         </li>
 
-                                        <li>
-                                            <a href="{{ path('app_product_men') }}">Men <i class="fa fa-angle-down"></i></a>
+                                        <li> {#
+                                            <a>Men <i class="fa fa-angle-down"></i></a>
                                                 <ul class="sub_menu pages">
-                                                    <ul >
+                                                    <ul>
                                                         <li><a href="{{ path('app_product_men_versace') }}">Versace</a></li>
                                                         <li><a href="{{ path('app_product_men_hugo boss') }}">Hugo Boss</a></li>
                                                         <li><a href="{{ path('app_product_men_jaguar') }}">Jaguar</a></li>
@@ -62,7 +62,7 @@
                                                             {% endif %}
                                                         </li>
                                                     {% endfor %}
-                                                    #}
+
                                                 </ul>
                                         </li>
 
@@ -89,7 +89,7 @@
                                                     <li><a href="{{ path('app_product_unisex_lattafa') }}">Lattafa</a></li>
                                                 </ul>
                                             </ul>
-                                        </li>
+                                        </li> #}
 
                                         <li><a href="{{ path('app_contact') }}">Contact Us</a></li>
                                         <li>
