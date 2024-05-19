@@ -9,9 +9,7 @@ security:
             entity:
                 class: App\Entity\User
                 property: email
-    access_control:
-        # Ensure only authenticated users can access the cart
-        - { path: ^/cart, roles: ROLE_USER }
+
 
     firewalls:
         dev:

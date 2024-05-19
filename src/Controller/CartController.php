@@ -3,6 +3,7 @@
 namespace App\Controller;
 use App\Service\BrandService;
 use App\Entity\Product;
+use App\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -22,7 +23,6 @@ class CartController extends AbstractController
     }
 
     #[Route('/cart', name: 'app_cart')]
-    #[IsGranted('ROLE_USER')]
     public function index(EntityManagerInterface $entityManager, SessionInterface $session): Response
     {
         //get cart from session
@@ -46,18 +46,19 @@ class CartController extends AbstractController
         $success = $session->get('success', '');
         $session->remove('success');
 
-
+        $user = $this->getUser();
+        
         // Passer le cart au template Twig
         return $this->render('cart.html.twig', [
                 'items' => $productCart,
                 'total' => $total,
                 'messages' => $success,
-                'brandLists' => $brandLists
+                'brandLists' => $brandLists,
+                'user' => $user
             ]
         );
     }
     #[Route('/cart/add/{id}', name: 'cart_Add')]
-    #[IsGranted('ROLE_USER')]
     public function cart_Add($id, Request $request, EntityManagerInterface $entityManager): \Symfony\Component\HttpFoundation\RedirectResponse
 {
     $product = $entityManager->getRepository(Product::class)->find($id);
@@ -81,7 +82,6 @@ class CartController extends AbstractController
 }
 
     #[Route('/cart/min/{id}', name: 'cart_Min')]
-    #[IsGranted('ROLE_USER')]
     public function cart_Min($id, Request $request, EntityManagerInterface $entityManager): \Symfony\Component\HttpFoundation\RedirectResponse
     {
         $session = $request->getSession();
@@ -97,7 +97,6 @@ class CartController extends AbstractController
         return $this->redirectToRoute("app_cart");
     }
     #[Route('/cart/remove/{id}', name: 'cart_remove')]
-    #[IsGranted('ROLE_USER')]
     public function cart_remove($id, Request $request, EntityManagerInterface $entityManager): \Symfony\Component\HttpFoundation\RedirectResponse
     {
         $session = $request->getSession();
@@ -111,7 +110,6 @@ class CartController extends AbstractController
         return $this->redirectToRoute("app_cart");
     }
     #[Route('/cart/register', name: 'cart_register')]
-    #[IsGranted('ROLE_USER')]
     public function cart_register(Request $request,EntityManagerInterface $entityManager, MailerInterface $mailer){
         $session = $request->getSession();
         $cart = $session->get('cart',[]);
