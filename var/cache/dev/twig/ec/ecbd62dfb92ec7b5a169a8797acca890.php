@@ -264,7 +264,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                     <li class=\"menu-item-has-children active\">
                         <a href=\"";
         // line 108
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
         echo "\" style=\"text-decoration: none;\">Home</a>
                     </li>
                     <li class=\"menu-item-has-children\">
@@ -367,7 +367,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                         <li>
                                             <a href=\"";
         // line 186
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
         echo "\" class=\"active\" style=\"text-decoration: none;\">Home </a>
 
                                         </li>
@@ -873,7 +873,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
             <div id=\"menu\" class=\"text-left\">
                 <ul class=\"offcanvas_main_menu\">
                     <li class=\"menu-item-has-children active\">
-                        <a href=\"{{ path('app_product_category_brand') }}\" style=\"text-decoration: none;\">Home</a>
+                        <a href=\"{{ path('app_home') }}\" style=\"text-decoration: none;\">Home</a>
                     </li>
                     <li class=\"menu-item-has-children\">
                         <a href=\"#\" style=\"text-decoration: none;\">Brands</a>
@@ -951,7 +951,7 @@ class __TwigTemplate_8133e80150015eda2667d5dec5d0f1e9 extends Template
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href=\"{{ path('app_product_category_brand') }}\" class=\"active\" style=\"text-decoration: none;\">Home </a>
+                                            <a href=\"{{ path('app_home') }}\" class=\"active\" style=\"text-decoration: none;\">Home </a>
 
                                         </li>
 
