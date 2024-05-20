@@ -6,13 +6,15 @@ use App\Entity\Product;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ProductController extends AbstractController
 {
-    #[Route('/product/{category}/{brand?}', name: 'app_product_category_brand')]
-    public function categoryBrand(string $category, ?string $brand, EntityManagerInterface $entityManager): Response
+    #[Route('/product/{category?}/{brand?}', name: 'app_product_category_brand')]
+    public function categoryBrand(?string $category, ?string $brand, EntityManagerInterface $entityManager): Response
     {
+        $products = $entityManager->getRepository(product::class)->findAll();
         $repository = $entityManager->getRepository(Product::class);
         $brands = $repository->findBrandsByCategory($category);
 
@@ -43,6 +45,58 @@ class ProductController extends AbstractController
         ]);
     }
 
+    //add One product to cart
+    #[Route('/product/add/{id}', name: 'add_cart')]
+    public function add_cart($id, Request $request, EntityManagerInterface $entityManager): \Symfony\Component\HttpFoundation\RedirectResponse
+    {
+        $product = $entityManager->getRepository(Product::class)->find($id);
+        $session = $request->getSession();
+        $cart = $session->get('cart', []);
+        if(empty($cart[$id]) or $product->getQuantity() >= $cart[$id]){
 
+        if(!empty($cart[$id])){
+            $cart[$id]++;
+        }
+        else {
+            $cart[$id] = 1;
+        }
+        $session->set('cart', $cart);
+    }
+
+
+        return $this->redirectToRoute("app_product_category_brand", [
+            'category' => $product->getCategory()
+        ]);
+
+
+    }
+    //add multiple product to cart.
+    #[Route('/product/add2/{id}', name: 'add_cart2', methods:['POST'])]
+    public function add_cart2($id, Request $request,EntityManagerInterface $entityManager){
+        {
+            $product = $entityManager->getRepository(Product::class)->find($id);
+            $qty=$request->get('qty');
+            $session = $request->getSession();
+            $cart = $session->get('cart', []);
+            if((empty(($cart[$id])) and $product->getQuantity() >= $qty)or $product->getQuantity() >= $qty+$cart[$id]){
+
+
+                if(!empty($cart[$id])){
+                    $cart[$id]+=$qty;
+                }
+                else {
+                    $cart[$id] =$qty;
+                }
+                $session->set('cart', $cart);
+            }
+
+
+            return $this->redirectToRoute("app_product_category_brand", [
+                'category' => $product->getCategory()
+            ]);
+
+
+        }
+    }
 
 }

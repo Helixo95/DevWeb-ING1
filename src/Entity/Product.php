@@ -14,19 +14,21 @@ class Product
     #[ORM\Column]
     private ?int $id_prod = null;
 
-
     #[ORM\Column(type: Types::TEXT)]
     private ?string $primaryImageUrl = null;
 
     #[ORM\Column(type: Types::TEXT)]
     private ?string $secondaryImageUrl = null;
+
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $name = null;
 
     #[ORM\Column(type: Types::DECIMAL, precision: 5, scale: 2, nullable: true)]
     private ?string $old_price = null;
+
     #[ORM\Column(type: Types::DECIMAL, precision: 5, scale: 2, nullable: true)]
     private ?string $current_price = null;
+
     #[ORM\Column(nullable: true)]
     private ?int $quantity = null;
 
@@ -42,10 +44,17 @@ class Product
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $brand = null;
 
+    #[ORM\Column(length: 50, nullable: true)]
+    private ?string $status = null;
+
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    private ?\DateTimeInterface $creationDate = null;
+
     public function getId_prod(): ?int
     {
         return $this->id_prod;
     }
+
     public function getBrand(): ?string
     {
         return $this->brand;
@@ -57,6 +66,7 @@ class Product
 
         return $this;
     }
+
     public function getPrimaryImageUrl(): ?string
     {
         return $this->primaryImageUrl;
@@ -68,6 +78,7 @@ class Product
 
         return $this;
     }
+
     public function getSecondaryImageUrl(): ?string
     {
         return $this->secondaryImageUrl;
@@ -103,6 +114,7 @@ class Product
 
         return $this;
     }
+
     public function getCurrentPrice(): ?string
     {
         return $this->current_price;
@@ -114,6 +126,7 @@ class Product
 
         return $this;
     }
+
     public function getQuantity(): ?int
     {
         return $this->quantity;
@@ -162,5 +175,27 @@ class Product
         return $this;
     }
 
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
 
+    public function setStatus(?string $status): self
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    public function getCreationDate(): ?\DateTimeInterface
+    {
+        return $this->creationDate;
+    }
+
+    public function setCreationDate(?\DateTimeInterface $creationDate): self
+    {
+        $this->creationDate = $creationDate;
+
+        return $this;
+    }
 }

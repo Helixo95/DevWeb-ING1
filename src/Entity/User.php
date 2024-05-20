@@ -3,8 +3,6 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -26,6 +24,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $genre;
 
     #[ORM\Column(nullable: true)]
+    private ?string $status;
+
+    #[ORM\Column(nullable: true)]
     private ?string $address;
 
     #[ORM\Column(nullable: true)]
@@ -34,7 +35,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column]
     private array $roles = [];
-
     /**
      * @var string The hashed password
      */
@@ -47,14 +47,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $picture = null;
 
-    #[ORM\OneToMany(targetEntity: Contact::class, mappedBy: 'relation_user', orphanRemoval: true)]
-    private Collection $contacts;
+    #[ORM\Column(length: 20)]
+    private ?string $nom = null;
+
+    #[ORM\Column(length: 20)]
+    private ?string $prenom = null;
 
 
     public function __construct()
     {
         $this->created_at = new \DateTimeImmutable();
-        $this->contacts = new ArrayCollection();
+
+    }
+
+    public function __toString()
+    {
+        return $this->email;
     }
 
     public function getId(): ?int
@@ -87,11 +95,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @see UserInterface
      */
+
+
+
     public function getRoles(): array
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
+        if (in_array('', $roles)) {
+            $roles[]= 'user';
+        }
+
 
         return array_unique($roles);
     }
@@ -99,9 +113,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setRoles(array $roles): static
     {
         $this->roles = $roles;
-
         return $this;
     }
+
 
     /**
      * @see PasswordAuthenticatedUserInterface
@@ -126,6 +140,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setGenre(?string $genre): static
     {
         $this->genre = $genre;
+        return $this;
+    }
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
+
+    public function setStatus(?string $status): static
+    {
+        $this->status = $status;
         return $this;
     }
 
@@ -178,40 +202,35 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->picture;
     }
 
-    public function setPicture(?string $picture): static
+    public function setPicture(?string $picture): self
     {
         $this->picture = $picture;
 
         return $this;
     }
 
-    /**
-     * @return Collection<int, Contact>
-     */
-    public function getContacts(): Collection
+    public function getNom(): ?string
     {
-        return $this->contacts;
+        return $this->nom;
     }
 
-    public function addContact(Contact $contact): static
+    public function setNom(string $nom): static
     {
-        if (!$this->contacts->contains($contact)) {
-            $this->contacts->add($contact);
-            $contact->setRelationUser($this);
-        }
+        $this->nom = $nom;
 
         return $this;
     }
 
-    public function removeContact(Contact $contact): static
+    public function getPrenom(): ?string
     {
-        if ($this->contacts->removeElement($contact)) {
-            // set the owning side to null (unless already changed)
-            if ($contact->getRelationUser() === $this) {
-                $contact->setRelationUser(null);
-            }
-        }
+        return $this->prenom;
+    }
+
+    public function setPrenom(string $prenom): static
+    {
+        $this->prenom = $prenom;
 
         return $this;
     }
+
 }

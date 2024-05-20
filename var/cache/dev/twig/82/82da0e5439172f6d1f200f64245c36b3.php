@@ -194,7 +194,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
             foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
                 // line 42
                 echo "                                    ";
-                if ((twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 42) == $context["category"])) {
+                if (((twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 42) == $context["category"]) && (twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 42) > 0))) {
                     // line 43
                     echo "                                        <div class=\"col-md-3 col-sm-6\">
                                             <article class=\"single_product\">
@@ -215,7 +215,10 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                         <div class=\"action_links\">
                                                             <ul>
                                                                 <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
+                                                                    <a href=\"";
+                    // line 56
+                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cart_Add", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 56)]), "html", null, true);
+                    echo "\" title=\"Add to Cart\">
                                                                         <i class=\"fa fa-shopping-cart\"></i>
                                                                     </a>
                                                                 </li>
@@ -403,13 +406,18 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                 </select>
                                             </div>
                                             <div class=\"modal_add_to_cart\">
-                                                <form action=\"#\">
+                                                <form action=\"";
+            // line 161
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_cart2", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 161)]), "html", null, true);
+            echo "\" method=\"POST\">
                                                     <div class=\"quantity-selector\">
                                                         <button type=\"button\" class=\"quantity-btn decrease\">−</button>
-                                                        <input type=\"number\" id=\"quantity_";
+                                                        <input type=\"number\" name=\"qty\" id=\"quantity_";
             // line 164
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 164), "html", null, true);
-            echo "\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"100\">
+            echo "\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getQuantity", [], "any", false, false, false, 164), "html", null, true);
+            echo "\">
                                                         <button type=\"button\" class=\"quantity-btn increase\">+</button>
                                                     </div>
                                                     <button type=\"button\" class=\"stock-btn\">Stock : ";
@@ -491,7 +499,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
      */
     public function getDebugInfo()
     {
-        return array (  461 => 188,  451 => 187,  439 => 183,  417 => 167,  411 => 164,  391 => 147,  385 => 144,  381 => 143,  375 => 140,  362 => 130,  358 => 129,  354 => 128,  347 => 124,  343 => 123,  339 => 122,  329 => 115,  324 => 113,  318 => 110,  313 => 108,  297 => 96,  293 => 95,  287 => 91,  278 => 87,  272 => 86,  263 => 79,  256 => 77,  252 => 76,  245 => 72,  241 => 71,  236 => 69,  225 => 61,  212 => 51,  206 => 48,  199 => 43,  196 => 42,  192 => 41,  185 => 38,  181 => 37,  167 => 28,  161 => 27,  155 => 26,  144 => 17,  134 => 16,  121 => 13,  111 => 12,  96 => 6,  91 => 5,  81 => 4,  62 => 2,  39 => 1,);
+        return array (  469 => 188,  459 => 187,  447 => 183,  425 => 167,  417 => 164,  411 => 161,  394 => 147,  388 => 144,  384 => 143,  378 => 140,  365 => 130,  361 => 129,  357 => 128,  350 => 124,  346 => 123,  342 => 122,  332 => 115,  327 => 113,  321 => 110,  316 => 108,  300 => 96,  296 => 95,  290 => 91,  281 => 87,  275 => 86,  266 => 79,  259 => 77,  255 => 76,  248 => 72,  244 => 71,  239 => 69,  228 => 61,  220 => 56,  212 => 51,  206 => 48,  199 => 43,  196 => 42,  192 => 41,  185 => 38,  181 => 37,  167 => 28,  161 => 27,  155 => 26,  144 => 17,  134 => 16,  121 => 13,  111 => 12,  96 => 6,  91 => 5,  81 => 4,  62 => 2,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -537,7 +545,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                         <div class=\"row\">
                             <div class=\"product_grid\">
                                 {% for product in products %}
-                                    {% if product.category == category %}
+                                    {% if (product.category == category) and (product.quantity > 0)  %}
                                         <div class=\"col-md-3 col-sm-6\">
                                             <article class=\"single_product\">
                                                 <figure>
@@ -551,7 +559,7 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                         <div class=\"action_links\">
                                                             <ul>
                                                                 <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
+                                                                    <a href=\"{{ path('cart_Add', {'id': product.id_prod}) }}\" title=\"Add to Cart\">
                                                                         <i class=\"fa fa-shopping-cart\"></i>
                                                                     </a>
                                                                 </li>
@@ -656,10 +664,10 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
                                                 </select>
                                             </div>
                                             <div class=\"modal_add_to_cart\">
-                                                <form action=\"#\">
+                                                <form action=\"{{ path('add_cart2', {'id': product.id_prod})}}\" method=\"POST\">
                                                     <div class=\"quantity-selector\">
                                                         <button type=\"button\" class=\"quantity-btn decrease\">−</button>
-                                                        <input type=\"number\" id=\"quantity_{{ product.id_prod }}\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"100\">
+                                                        <input type=\"number\" name=\"qty\" id=\"quantity_{{ product.id_prod }}\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"{{ product.getQuantity }}\">
                                                         <button type=\"button\" class=\"quantity-btn increase\">+</button>
                                                     </div>
                                                     <button type=\"button\" class=\"stock-btn\">Stock : {{ product.getQuantity }}</button>
@@ -684,6 +692,6 @@ class __TwigTemplate_e9146e1b6908a73c02d0d509448e781a extends Template
 
 {% block footer %}
     {{ parent() }}
-{% endblock footer %}", "product.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\product.html.twig");
+{% endblock footer %}", "product.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\product.html.twig");
     }
 }

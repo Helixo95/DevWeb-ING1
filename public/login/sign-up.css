@@ -1,0 +1,138 @@
+#intro {
+    min-height: 100vh; /* Utilisez min-height au lieu de height */
+    margin-top: 0; 
+    padding-top: 0px; /* Ajustez cette valeur pour tester la visibilité */
+    padding-bottom: 0px; /* Ajoutez un padding inférieur pour éviter le chevauchement */
+}
+
+@media (min-width: 992px) {
+    #intro {
+        padding-top: 50px; /* Assurez-vous que cette valeur est également ajustée pour les écrans larges */
+        padding-bottom: 0px; /* Assurez-vous que cette valeur est également ajustée pour éviter le chevauchement */
+    }
+}
+
+.text-center {
+    text-align: center !important;
+    color: antiquewhite; /* Assurez-vous que le texte a suffisamment de contraste */
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.intro {
+    margin-top: 20px;
+}
+
+
+.error-message {
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background-color: rgba(255, 0, 0, 0.2);
+    font-weight: normal;
+}
+
+.form {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 2rem;
+    padding-bottom: 100px;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-radio {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-radio input[type="radio"] {
+    margin-right: 5px; /* Espace entre le bouton radio et le label */
+    margin-left: 8px;
+}
+
+.form-control-radio label {
+    margin-bottom: 0; /* Réinitialise le margin-bottom des labels pour aligner correctement */
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.3rem;
+    margin-left: 0;
+    vertical-align: middle;
+    position: relative;
+}
+
+.form-check-label {
+    margin-left: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    vertical-align: middle;
+    position: relative;
+}
+
+.form-check {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    margin-top: 1rem;
+}

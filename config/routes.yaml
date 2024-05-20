@@ -5,6 +5,9 @@ controllers:
 
 app_homepage:
     path: /
-    controller: App\Controller\HomeController::login
+    controller: App\Controller\HomeController::home
 
+profile_edit:
+    path: /modif_profile
+    controller: App\Controller\ProfileModifController::edit
 

@@ -3,16 +3,25 @@
 {% block title %}Page de Contact{% endblock %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('contact/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('contact/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('contact/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('contact/contact.css') }}">
 {% endblock %}
 
-
-{% block header %}
-    {{ parent() }}
+{% block javascripts %}
+    <script src="{{ asset('contact/script.js') }}"></script>
 {% endblock %}
 
 {% block content %}
+    <style>
+        .form-group input[type="radio"] {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        ::placeholder{
+            color: white;
+        }
+    </style>
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -20,41 +29,72 @@
                 </div>
             </div>
             <div class="row justify-content-center">
+                <div id="form-message-warning" class="mb-4" style="color: red;">
+                    There is a problem with your message, please try again later.
+                </div>
+                <div id="form-message-success" class="mb-4" style="color: green">
+                    Your message was sent, thank you!
+                </div>
                 <div class="col-lg-10">
                     <div class="wrapper">
                         <div class="row no-gutters">
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="contact-wrap w-100 p-md-5 p-4 py-5">
                                     <h3 class="mb-4">Write us</h3>
-                                    <div id="form-message-warning" class="mb-4"></div>
-                                    <div id="form-message-success" class="mb-4">
-                                        Your message was sent, thank you!
-                                    </div>
                                     <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                                    {{ form_widget(contactForm.firstName) }}
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                    {{ form_widget(contactForm.lastName) }}
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                    {{ form_widget(contactForm.email) }}
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                                                    {{ form_label(contactForm.genre) }}
+                                                    {{ form_widget(contactForm.genre) }}
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="submit" value="Send Message" class="btn btn-primary">
+                                                    {{ form_label(contactForm.job) }}
+                                                    {{ form_widget(contactForm.job) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    {{ form_label(contactForm.BirthDate) }}
+                                                    <div id="birthDate-field">
+                                                        {{ form_widget(contactForm.BirthDate, {'attr': {'class': 'form-control'}}) }}
+                                                        <div class="message" id="birthDate-error-message">
+                                                            {{ form_errors(contactForm.BirthDate) }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    {{ form_widget(contactForm.subject) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    {{ form_widget(contactForm.message) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    {{ form_widget(contactForm.submit) }}
+                                                    {# <input type="submit" value="Send Message" class="btn btn-primary"> #}
                                                     <div class="submitting"></div>
                                                 </div>
                                             </div>
@@ -87,7 +127,7 @@
                                             <span class="fa fa-paper-plane"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">contact.exotik95@gmail.com</a></p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
@@ -95,7 +135,7 @@
                                             <span class="fa fa-globe"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                                            <p><span>Website</span> <a href="{{ path('app_home') }}">exotik.com</a></p>
                                         </div>
                                     </div>
                                 </div>

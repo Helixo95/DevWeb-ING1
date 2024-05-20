@@ -25,7 +25,10 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
-            'body' => [$this, 'block_body'],
+            'title' => [$this, 'block_title'],
+            'stylesheets' => [$this, 'block_stylesheets'],
+            'javascripts' => [$this, 'block_javascripts'],
+            'content' => [$this, 'block_content'],
         ];
     }
 
@@ -55,78 +58,91 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
     }
 
     // line 3
-    public function block_body($context, array $blocks = [])
+    public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        // line 4
-        echo "<!DOCTYPE html>
-<html lang=\"fr\">
-<head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Exotik - Modifier le Profil</title>
-    <!-- Bootstrap CSS -->
+        echo "Modifier le Profil";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 5
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 6
+        echo "    <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/profile.css"), "html", null, true);
+        echo "\" />
     <link rel=\"stylesheet\" href=\"";
-        // line 11
+        // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"), "html", null, true);
         echo "\" />
-    <style>
-        .gradient-custom-2 {
-            /* fallback for old browsers */
-            background: #23376b;
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: -webkit-linear-gradient(to right, rgb(7, 7, 56), rgb(57, 68, 87));
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            background: linear-gradient(to right, rgb(3, 17, 29), rgb(57, 68, 87));
-        }
+    }
 
-        /* Set image height to 100% */
-        .user-profile-picture {
-            width: 150px;
-            z-index: 1;
-        }
+    // line 10
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        /* Style for the form */
-        .profile-form {
-            background-color: #e9edf0d1;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-        }
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        /* Style for the form fields */
-        .form-group label {
-            font-weight: bold;
-        }
+        // line 11
+        echo "    <script src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("profil/script.js"), "html", null, true);
+        echo "\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"), "html", null, true);
+        echo "\"></script>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
-        /* Style for the form buttons */
-        .form-buttons {
-            margin-top: 1.5rem;
-        }
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
-        /* Style for the edit button on profile picture */
-        .btn-edit-profile {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: none;
-        }
+    }
 
-        .user-profile-picture:hover + #profileImage,
-        #profileImage:hover,
-        .user-profile-picture:hover + .btn-edit-profile {
-            display: block;
-        }
-    </style>
-</head>
+    // line 15
+    public function block_content($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        // line 16
+        echo "
+
 <body>
     <section class=\"h-100 gradient-custom-2\">
         <div class=\"container py-5 h-100\">
@@ -135,54 +151,125 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
                     <div class=\"card\">
                         <div class=\"rounded-top text-white d-flex flex-row\" style=\"background-color: #14153c; height:200px;\">
                             <div class=\"ms-4 mt-5 d-flex flex-column position-relative\">
-                                <img src=\"";
-        // line 71
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/profil.png"), "html", null, true);
-        echo "\"
-                                    alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
-                                <label for=\"profileImage\" class=\"btn btn-outline-dark btn-edit-profile\">Modifier</label>
+                                ";
+        // line 26
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26), "picture", [], "any", false, false, false, 26)) {
+            // line 27
+            echo "                                    <img src=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("img_profil/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 27, $this->source); })()), "user", [], "any", false, false, false, 27), "picture", [], "any", false, false, false, 27))), "html", null, true);
+            echo "\"
+                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                ";
+        } else {
+            // line 30
+            echo "                                    <img src=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("login/img/profil.png"), "html", null, true);
+            echo "\"
+                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                ";
+        }
+        // line 33
+        echo "                                <label for=\"profileImage\" class=\"btn btn-outline-dark btn-edit-profile\">Modifier</label>
                                 <input type=\"file\" class=\"form-control-file mt-2\" id=\"profileImage\" style=\"display: none;\">
                             </div>
                             <div class=\"ms-3\" style=\"margin-top: 130px;\">
-                                <h5>MAAOUIA Ahmed</h5>
+                                <h5>";
+        // line 37
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 37, $this->source); })()), "user", [], "any", false, false, false, 37), "nom", [], "any", false, false, false, 37), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 37, $this->source); })()), "user", [], "any", false, false, false, 37), "prenom", [], "any", false, false, false, 37), "html", null, true);
+        echo "</h5>
                                 <p>Cergy</p>
                             </div>
                         </div>
                         <div class=\"card-body p-4 text-black\">
-                            <form class=\"profile-form\">
-                                <div class=\"mb-3\">
-                                    <label for=\"fullName\" class=\"form-label\">Nom complet</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"fullName\" value=\"MAAOUIA Ahmed\">
+                                ";
+        // line 42
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 42, $this->source); })()), 'form_start', ["attr" => ["enctype" => "multipart/form-data"]]);
+        echo "
+                                <div class=\"form-group row\">
+                                    <div class=\"col\">
+                                        ";
+        // line 45
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 45, $this->source); })()), "nom", [], "any", false, false, false, 45), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Nom"]);
+        echo "
+                                        ";
+        // line 46
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 46, $this->source); })()), "nom", [], "any", false, false, false, 46), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 46, $this->source); })()), "user", [], "any", false, false, false, 46), "nom", [], "any", false, false, false, 46)]]);
+        echo "
+                                    </div>
+                                    <div class=\"col\">
+                                        ";
+        // line 49
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 49, $this->source); })()), "prenom", [], "any", false, false, false, 49), 'label', ["label_attr" => ["class" => "col-form-label"], "label" => "Prénom"]);
+        echo "
+                                        ";
+        // line 50
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 50, $this->source); })()), "prenom", [], "any", false, false, false, 50), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50), "prenom", [], "any", false, false, false, 50)]]);
+        echo "
+                                    </div>
                                 </div>
-                                <div class=\"mb-3\">
-                                    <label for=\"phoneNumber\" class=\"form-label\">Numéro de téléphone</label>
-                                    <input type=\"tel\" class=\"form-control\" id=\"phoneNumber\" value=\"123-456-7890\">
+                                <div class=\"form-group\">
+                                    ";
+        // line 54
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 54, $this->source); })()), "phoneNumber", [], "any", false, false, false, 54), 'label', ["label" => "Numéro de téléphone"]);
+        echo "
+                                    <div id=\"phone-number-field\">
+                                        ";
+        // line 56
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 56, $this->source); })()), "phoneNumber", [], "any", false, false, false, 56), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 56, $this->source); })()), "user", [], "any", false, false, false, 56), "phoneNumber", [], "any", false, false, false, 56)]]);
+        echo "
+                                        <div class=\"error-message\" id=\"phone-error-message\">
+                                            ";
+        // line 58
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 58, $this->source); })()), "phoneNumber", [], "any", false, false, false, 58), 'errors');
+        echo "
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class=\"mb-3\">
-                                    <label for=\"address\" class=\"form-label\">Adresse</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"address\" value=\"1234 Street Name, City, Country\">
+                                                          
+                                <div class=\"form-group\">
+                                    ";
+        // line 64
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 64, $this->source); })()), "address", [], "any", false, false, false, 64), 'label', ["label" => "Adresse"]);
+        echo "
+                                    ";
+        // line 65
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 65, $this->source); })()), "address", [], "any", false, false, false, 65), 'widget', ["attr" => ["class" => "form-control", "value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 65, $this->source); })()), "user", [], "any", false, false, false, 65), "address", [], "any", false, false, false, 65)]]);
+        echo "
                                 </div>
-                                <div class=\"mb-3\">
-                                    <label for=\"profilePicture\" class=\"form-label\">Image de profil</label>
-                                    <br>
-                                    <input type=\"file\" class=\"form-control-file\" id=\"profilePicture\">
+                                
+                                <div class=\"form-group\">
+                                    ";
+        // line 69
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 69, $this->source); })()), "picture", [], "any", false, false, false, 69), 'label', ["label" => "Image de profil"]);
+        echo "
+                                    ";
+        // line 70
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 70, $this->source); })()), "picture", [], "any", false, false, false, 70), 'widget', ["attr" => ["class" => "form-control-file"]]);
+        echo "
                                 </div>
+                                
                                 <div class=\"form-buttons\">
                                     <button type=\"submit\" class=\"btn btn-primary\">Enregistrer</button>
-                                    <button type=\"button\" class=\"btn btn-secondary\">Annuler</button>
+                                    <a href=\"";
+        // line 75
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_profile");
+        echo "\" class=\"btn btn-secondary\">Annuler</a>
                                 </div>
-                            </form>
+                            ";
+        // line 77
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["profileModif"]) || array_key_exists("profileModif", $context) ? $context["profileModif"] : (function () { throw new RuntimeError('Variable "profileModif" does not exist.', 77, $this->source); })()), 'form_end');
+        echo "
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Bootstrap JS -->
-    <script type=\"text/javascript\" src=\"";
-        // line 113
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"), "html", null, true);
+    <script src=\"";
+        // line 84
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("profil/script.js"), "html", null, true);
         echo "\"></script>
 </body>
 </html>
@@ -217,73 +304,28 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  185 => 113,  140 => 71,  77 => 11,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  272 => 84,  262 => 77,  257 => 75,  249 => 70,  245 => 69,  238 => 65,  234 => 64,  225 => 58,  220 => 56,  215 => 54,  208 => 50,  204 => 49,  198 => 46,  194 => 45,  188 => 42,  178 => 37,  172 => 33,  165 => 30,  158 => 27,  156 => 26,  144 => 16,  134 => 15,  122 => 12,  117 => 11,  107 => 10,  95 => 7,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block body %}
-<!DOCTYPE html>
-<html lang=\"fr\">
-<head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Exotik - Modifier le Profil</title>
-    <!-- Bootstrap CSS -->
-    <link rel=\"stylesheet\" href=\"{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css')}}\" />
-    <style>
-        .gradient-custom-2 {
-            /* fallback for old browsers */
-            background: #23376b;
+{% block title %}Modifier le Profil{% endblock %}
 
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: -webkit-linear-gradient(to right, rgb(7, 7, 56), rgb(57, 68, 87));
+{% block stylesheets %}
+    <link rel=\"stylesheet\" href=\"{{ asset('login/profile.css') }}\" />
+    <link rel=\"stylesheet\" href=\"{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css') }}\" />
+{% endblock %}
 
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            background: linear-gradient(to right, rgb(3, 17, 29), rgb(57, 68, 87));
-        }
+{% block javascripts %}
+    <script src=\"{{ asset('profil/script.js') }}\"></script>
+    <script type=\"text/javascript\" src=\"{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js') }}\"></script>
+{% endblock %}
 
-        /* Set image height to 100% */
-        .user-profile-picture {
-            width: 150px;
-            z-index: 1;
-        }
+{% block content %}
 
-        /* Style for the form */
-        .profile-form {
-            background-color: #e9edf0d1;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-        }
 
-        /* Style for the form fields */
-        .form-group label {
-            font-weight: bold;
-        }
-
-        /* Style for the form buttons */
-        .form-buttons {
-            margin-top: 1.5rem;
-        }
-
-        /* Style for the edit button on profile picture */
-        .btn-edit-profile {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: none;
-        }
-
-        .user-profile-picture:hover + #profileImage,
-        #profileImage:hover,
-        .user-profile-picture:hover + .btn-edit-profile {
-            display: block;
-        }
-    </style>
-</head>
 <body>
     <section class=\"h-100 gradient-custom-2\">
         <div class=\"container py-5 h-100\">
@@ -292,52 +334,68 @@ class __TwigTemplate_0c19d5680301c81f1df1b1b16dfc6115 extends Template
                     <div class=\"card\">
                         <div class=\"rounded-top text-white d-flex flex-row\" style=\"background-color: #14153c; height:200px;\">
                             <div class=\"ms-4 mt-5 d-flex flex-column position-relative\">
-                                <img src=\"{{asset('login/img/profil.png')}}\"
-                                    alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                {% if app.user.picture %}
+                                    <img src=\"{{ asset('img_profil/'~app.user.picture) }}\"
+                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                {% else %}
+                                    <img src=\"{{ asset('login/img/profil.png') }}\"
+                                        alt=\"User Profile Picture\" class=\"img-fluid img-thumbnail user-profile-picture mt-4 mb-2\">
+                                {% endif %}
                                 <label for=\"profileImage\" class=\"btn btn-outline-dark btn-edit-profile\">Modifier</label>
                                 <input type=\"file\" class=\"form-control-file mt-2\" id=\"profileImage\" style=\"display: none;\">
                             </div>
                             <div class=\"ms-3\" style=\"margin-top: 130px;\">
-                                <h5>MAAOUIA Ahmed</h5>
+                                <h5>{{app.user.nom}} {{app.user.prenom}}</h5>
                                 <p>Cergy</p>
                             </div>
                         </div>
                         <div class=\"card-body p-4 text-black\">
-                            <form class=\"profile-form\">
-                                <div class=\"mb-3\">
-                                    <label for=\"fullName\" class=\"form-label\">Nom complet</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"fullName\" value=\"MAAOUIA Ahmed\">
+                                {{ form_start(profileModif, {'attr': {'enctype': 'multipart/form-data'}}) }}
+                                <div class=\"form-group row\">
+                                    <div class=\"col\">
+                                        {{ form_label(profileModif.nom, 'Nom', {'label_attr': {'class': 'col-form-label'}}) }}
+                                        {{ form_widget(profileModif.nom, {'attr': {'class': 'form-control', 'value' : app.user.nom}}) }}
+                                    </div>
+                                    <div class=\"col\">
+                                        {{ form_label(profileModif.prenom, 'Prénom', {'label_attr': {'class': 'col-form-label'}}) }}
+                                        {{ form_widget(profileModif.prenom, {'attr': {'class': 'form-control',  'value' : app.user.prenom}}) }}
+                                    </div>
                                 </div>
-                                <div class=\"mb-3\">
-                                    <label for=\"phoneNumber\" class=\"form-label\">Numéro de téléphone</label>
-                                    <input type=\"tel\" class=\"form-control\" id=\"phoneNumber\" value=\"123-456-7890\">
+                                <div class=\"form-group\">
+                                    {{ form_label(profileModif.phoneNumber, 'Numéro de téléphone') }}
+                                    <div id=\"phone-number-field\">
+                                        {{ form_widget(profileModif.phoneNumber, {'attr': {'class': 'form-control', 'value' : app.user.phoneNumber}}) }}
+                                        <div class=\"error-message\" id=\"phone-error-message\">
+                                            {{ form_errors(profileModif.phoneNumber) }}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class=\"mb-3\">
-                                    <label for=\"address\" class=\"form-label\">Adresse</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"address\" value=\"1234 Street Name, City, Country\">
+                                                          
+                                <div class=\"form-group\">
+                                    {{ form_label(profileModif.address, 'Adresse') }}
+                                    {{ form_widget(profileModif.address, {'attr': {'class': 'form-control', 'value' : app.user.address}}) }}
                                 </div>
-                                <div class=\"mb-3\">
-                                    <label for=\"profilePicture\" class=\"form-label\">Image de profil</label>
-                                    <br>
-                                    <input type=\"file\" class=\"form-control-file\" id=\"profilePicture\">
+                                
+                                <div class=\"form-group\">
+                                    {{ form_label(profileModif.picture, 'Image de profil') }}
+                                    {{ form_widget(profileModif.picture, {'attr': {'class': 'form-control-file'}}) }}
                                 </div>
+                                
                                 <div class=\"form-buttons\">
                                     <button type=\"submit\" class=\"btn btn-primary\">Enregistrer</button>
-                                    <button type=\"button\" class=\"btn btn-secondary\">Annuler</button>
+                                    <a href=\"{{ path('app_profile') }}\" class=\"btn btn-secondary\">Annuler</a>
                                 </div>
-                            </form>
+                            {{ form_end(profileModif) }}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Bootstrap JS -->
-    <script type=\"text/javascript\" src=\"{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js') }}\"></script>
+    <script src=\"{{ asset('profil/script.js') }}\"></script>
 </body>
 </html>
 
-{% endblock %}", "modif_profile.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\modif_profile.html.twig");
+{% endblock %}", "modif_profile.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\modif_profile.html.twig");
     }
 }
