@@ -14,8 +14,16 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
     \class_alias(\Container52qbUfV\App_KernelDevDebugContainer::class, App_KernelDevDebugContainer::class, false);
 }
 
+<<<<<<< HEAD
 return new \Container52qbUfV\App_KernelDevDebugContainer([
     'container.build_hash' => '52qbUfV',
     'container.build_id' => '11cdf7c8',
     'container.build_time' => 1716116839,
 ], __DIR__.\DIRECTORY_SEPARATOR.'Container52qbUfV');
+=======
+return new \ContainerXTAqN1E\App_KernelDevDebugContainer([
+    'container.build_hash' => 'XTAqN1E',
+    'container.build_id' => '0fa7d87e',
+    'container.build_time' => 1716134983,
+], __DIR__.\DIRECTORY_SEPARATOR.'ContainerXTAqN1E');
+>>>>>>> Yassine

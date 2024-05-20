@@ -308,6 +308,14 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
                     <span class=\"error submit-error d-none\">Une erreur est survenue.</span>
                 </div>
             </div>
+            <div class=\"form-section\">
+                <div class=\"form-group d-flex flex-row align-items-center\">
+                    <button type=\"button\" id=\"delete-product\" class=\"btn btn-danger\" >Supprimer</button>
+                    <span class=\"error submit-error d-none\">Une erreur est survenue.</span>
+                </div>
+            </div>
+
+
         </form>
     </div>
 </div>
@@ -318,11 +326,11 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
 <script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 193
+        // line 201
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/Javascript/dashboard.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 194
+        // line 202
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/Javascript/form-sender.js"), "html", null, true);
         echo "\"></script>
 </body>";
@@ -355,7 +363,7 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  326 => 194,  322 => 193,  293 => 169,  287 => 168,  281 => 167,  264 => 153,  254 => 146,  249 => 144,  238 => 136,  228 => 129,  218 => 122,  208 => 115,  198 => 108,  188 => 101,  178 => 94,  163 => 84,  157 => 81,  143 => 72,  126 => 58,  113 => 48,  104 => 42,  95 => 36,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
+        return array (  334 => 202,  330 => 201,  293 => 169,  287 => 168,  281 => 167,  264 => 153,  254 => 146,  249 => 144,  238 => 136,  228 => 129,  218 => 122,  208 => 115,  198 => 108,  188 => 101,  178 => 94,  163 => 84,  157 => 81,  143 => 72,  126 => 58,  113 => 48,  104 => 42,  95 => 36,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -543,6 +551,14 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
                     <span class=\"error submit-error d-none\">Une erreur est survenue.</span>
                 </div>
             </div>
+            <div class=\"form-section\">
+                <div class=\"form-group d-flex flex-row align-items-center\">
+                    <button type=\"button\" id=\"delete-product\" class=\"btn btn-danger\" >Supprimer</button>
+                    <span class=\"error submit-error d-none\">Une erreur est survenue.</span>
+                </div>
+            </div>
+
+
         </form>
     </div>
 </div>

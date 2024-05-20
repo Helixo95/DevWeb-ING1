@@ -15,7 +15,7 @@
     color: white;
     font-size: 0.8rem;
     font-weight: bold;
-    background-color: var(--dark-yellow);
+    background-color: var(--dark-orange);
     border: none;
     border-radius: 15px;
     width: 80px;
@@ -74,7 +74,7 @@ tbody .cell-name i {
     line-height: 35px;
     text-align: center;
     border-radius: 50%;
-    background-color: var(--dark-yellow);
+    background-color: var(--dark-orange);
     color: white;
 }
 
