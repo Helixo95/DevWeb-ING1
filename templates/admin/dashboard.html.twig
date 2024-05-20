@@ -167,7 +167,7 @@
             <!-- table header -->
             <div class="table-header d-flex flew-row justify-content-between align-items-center">
                 <h2 class="table-title">Derniers produits</h2>
-                <button><a href="" class="text-decoration-none">Voir plus</a></button>
+                <button><a href="{{ path('app_admin_products') }}" class="text-decoration-none">Voir plus</a></button>
             </div>
 
             <div class="overview-table">
@@ -202,7 +202,9 @@
                                 <span>{{ product.category }}</span>
                             </td>
                             <td class="cell-edit">
-                                <a href="{{ path('app_product_category_brand', {'id': product.id_prod}) }}"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a href="{{ path('app_admin_product', { id: product.id_prod }) }}">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </a>
                             </td>
                         </tr>
                     {% else %}

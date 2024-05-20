@@ -31,8 +31,6 @@ class AdminController extends AbstractController
             'users' => count($users),
             'products' => count($products),
         ];
-      
-     //   $id = $product->getId_prod();
 
         // Get the currently logged-in user
         $user = $this->security->getUser();
