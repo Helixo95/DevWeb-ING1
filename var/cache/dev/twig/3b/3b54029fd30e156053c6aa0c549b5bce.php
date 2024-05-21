@@ -149,6 +149,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
                     </p>
                 </div>
                 <div class=\"side\">
+
                     <p>
                         <input type=\"text\" placeholder=\"Your name\">
                     </p>
@@ -177,7 +178,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 50
+    // line 51
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -187,7 +188,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 51
+        // line 52
         echo "    ";
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
@@ -221,7 +222,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  191 => 51,  181 => 50,  141 => 18,  131 => 17,  118 => 12,  108 => 11,  96 => 8,  91 => 7,  81 => 6,  62 => 4,  39 => 1,);
+        return array (  192 => 52,  182 => 51,  141 => 18,  131 => 17,  118 => 12,  108 => 11,  96 => 8,  91 => 7,  81 => 6,  62 => 4,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -254,6 +255,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
                     </p>
                 </div>
                 <div class=\"side\">
+
                     <p>
                         <input type=\"text\" placeholder=\"Your name\">
                     </p>
