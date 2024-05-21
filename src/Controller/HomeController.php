@@ -1,7 +1,9 @@
 <?php
 // src/Controller/HomeController.php
 namespace App\Controller;
+use App\Entity\Product;
 use App\Service\BrandService;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,11 +17,12 @@ class HomeController extends AbstractController
     }
 
     #[Route('/home', name: 'app_home')]
-    public function  home(): Response
+    public function  home(EntityManagerInterface $entityManager): Response
     {
         $brandLists = $this->brandService->getBrandLists();
-        
+        $products = $entityManager->getRepository(product::class)->findAll();
         return $this->render('home.html.twig', [
+            'products' => $products,
             'brandLists' => $brandLists
         ]);
     }

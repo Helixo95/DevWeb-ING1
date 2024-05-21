@@ -20,3 +20,16 @@
 .quantity-selector .quantity-input[type=number] {
     -moz-appearance: textfield;
 }
+
+.product_content h4 > a {
+    color: black!important;
+}
+.product_content h4 > a:hover {
+    color:#f6692a!important;
+}
+.product_rating ul li a {
+    color: black!important;
+}
+.product_tab_btn ul li a {
+    color: black!important;
+}
