@@ -53,9 +53,15 @@
                                                         <div class="action_links">
                                                             <ul>
                                                                 <li class="add_to_cart">
+                                                                    {% if app.user %}
                                                                     <a href="{{ path('cart_Add', {'id': product.id_prod}) }}" title="Add to Cart">
                                                                         <i class="fa fa-shopping-cart"></i>
                                                                     </a>
+                                                                    {% else %}
+                                                                    <a href="{{ path('app_login') }}" title="Add to Cart">
+                                                                        <i class="fa fa-shopping-cart"></i>
+                                                                    </a>
+                                                                    {%endif%}
                                                                 </li>
                                                                 <li class="quick_button">
                                                                     <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
