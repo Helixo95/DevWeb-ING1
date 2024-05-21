@@ -7,7 +7,9 @@ body section {
   text-rendering: optimizeLegibility;
   font-weight: initial;
 }
-
+#delete-product{
+  margin-left: 20px;
+}
 .dark {
   background: #110f16;
 }

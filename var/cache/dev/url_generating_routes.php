@@ -19,6 +19,7 @@ return [
     'admin_dashboard' => [[], ['_controller' => 'App\\Controller\\Admin\\AdminController::dashboard'], [], [['text', '/admin']], [], [], []],
     'app_admin_product_create' => [[], ['_controller' => 'App\\Controller\\Admin\\AdminCreateController::createProduct'], [], [['text', '/admin/product/create']], [], [], []],
     'app_admin_product' => [['id'], ['_controller' => 'App\\Controller\\Admin\\AdminProductController::editProduct'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/admin/product']], [], [], []],
+    'app_admin_product_delete' => [['id'], ['_controller' => 'App\\Controller\\Admin\\AdminProductController::deleteProduct'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/admin/product/delete']], [], [], []],
     'app_admin_products' => [[], ['_controller' => 'App\\Controller\\Admin\\AdminProductsController::index'], [], [['text', '/admin/products']], [], [], []],
     'app_admin_user' => [['id'], ['_controller' => 'App\\Controller\\Admin\\AdminUserController::index'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/user']], [], [], []],
     'change_role' => [['id'], ['_controller' => 'App\\Controller\\Admin\\AdminUserController::changeRole'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/user/change-role']], [], [], []],
