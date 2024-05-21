@@ -27,8 +27,8 @@
 .product_content h4 > a:hover {
     color:#f6692a!important;
 }
-.product_rating ul li a {
-    color: black!important;
+ a {
+    color: black;
 }
 .product_tab_btn ul li a {
     color: black!important;
