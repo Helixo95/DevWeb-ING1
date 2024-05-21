@@ -47,16 +47,19 @@ return [
                     .')'
                 .')'
                 .'|/admin/(?'
-                    .'|product/(\\d+)(*:192)'
+                    .'|product/(?'
+                        .'|(\\d+)(*:195)'
+                        .'|delete/(\\d+)(*:215)'
+                    .')'
                     .'|user/(?'
-                        .'|([^/]++)(*:216)'
+                        .'|([^/]++)(*:240)'
                         .'|change\\-(?'
-                            .'|role/([^/]++)(*:248)'
-                            .'|status/([^/]++)(*:271)'
+                            .'|role/([^/]++)(*:272)'
+                            .'|status/([^/]++)(*:295)'
                         .')'
                     .')'
                 .')'
-                .'|/product(?:/([^/]++)(?:/([^/]++))?)?(*:318)'
+                .'|/product(?:/([^/]++)(?:/([^/]++))?)?(*:342)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -67,11 +70,12 @@ return [
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        192 => [[['_route' => 'app_admin_product', '_controller' => 'App\\Controller\\Admin\\AdminProductController::editProduct'], ['id'], null, null, false, true, null]],
-        216 => [[['_route' => 'app_admin_user', '_controller' => 'App\\Controller\\Admin\\AdminUserController::index'], ['id'], null, null, false, true, null]],
-        248 => [[['_route' => 'change_role', '_controller' => 'App\\Controller\\Admin\\AdminUserController::changeRole'], ['id'], ['POST' => 0], null, false, true, null]],
-        271 => [[['_route' => 'change_status', '_controller' => 'App\\Controller\\Admin\\AdminUserController::changeStatus'], ['id'], ['POST' => 0], null, false, true, null]],
-        318 => [
+        195 => [[['_route' => 'app_admin_product', '_controller' => 'App\\Controller\\Admin\\AdminProductController::editProduct'], ['id'], null, null, false, true, null]],
+        215 => [[['_route' => 'app_admin_product_delete', '_controller' => 'App\\Controller\\Admin\\AdminProductController::deleteProduct'], ['id'], ['DELETE' => 0], null, false, true, null]],
+        240 => [[['_route' => 'app_admin_user', '_controller' => 'App\\Controller\\Admin\\AdminUserController::index'], ['id'], null, null, false, true, null]],
+        272 => [[['_route' => 'change_role', '_controller' => 'App\\Controller\\Admin\\AdminUserController::changeRole'], ['id'], ['POST' => 0], null, false, true, null]],
+        295 => [[['_route' => 'change_status', '_controller' => 'App\\Controller\\Admin\\AdminUserController::changeStatus'], ['id'], ['POST' => 0], null, false, true, null]],
+        342 => [
             [['_route' => 'app_product_category_brand', 'category' => null, 'brand' => null, '_controller' => 'App\\Controller\\ProductController::categoryBrand'], ['category', 'brand'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

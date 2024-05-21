@@ -58,7 +58,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 5
+    // line 4
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -77,7 +77,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 7
+    // line 6
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -87,14 +87,14 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 8
+        // line 7
         echo "    <link rel=\"stylesheet\" href=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/css/style.css"), "html", null, true);
         echo "\">
-    <link rel=\"stylesheet\" href=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/css/animate.css"), "html", null, true);
-        echo "\">
+    <script src=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("contact/style.js"), "html", null, true);
+        echo "\"></script>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -104,7 +104,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 13
+    // line 11
     public function block_header($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -114,7 +114,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
 
-        // line 14
+        // line 12
         echo "    ";
         $this->displayParentBlock("header", $context, $blocks);
         echo "
@@ -138,99 +138,36 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 18
-        echo "    <section class=\"ftco-section\">
-        <div class=\"container\">
-            <div class=\"row justify-content-center\">
-                <div class=\"col-md-6 text-center mb-5\">
+        echo "<form method=\"POST\" id=\"contactForm\" name=\"contactForm\" class=\"contactForm\">
+    <div class=\"contact-page\" style=\"margin-top: 200px; margin-bottom: 450px;\">
+        <div class=\"wrapper centered\">
+            <article class=\"letter\">
+                <div class=\"side\">
+                    <h1>Contact us</h1>
+                    <p>
+                        <textarea placeholder=\"Your message\"></textarea>
+                    </p>
                 </div>
-            </div>
-            <div class=\"row justify-content-center\">
-                <div class=\"col-lg-10\">
-                    <div class=\"wrapper\">
-                        <div class=\"row no-gutters\">
-                            <div class=\"col-md-6 d-flex align-items-stretch\">
-                                <div class=\"contact-wrap w-100 p-md-5 p-4 py-5\">
-                                    <h3 class=\"mb-4\">Write us</h3>
-                                    <div id=\"form-message-warning\" class=\"mb-4\"></div>
-                                    <div id=\"form-message-success\" class=\"mb-4\">
-                                        Your message was sent, thank you!
-                                    </div>
-                                    <form method=\"POST\" id=\"contactForm\" name=\"contactForm\" class=\"contactForm\">
-                                        <div class=\"row\">
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\" placeholder=\"Name\">
-                                                </div>
-                                            </div>
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"Email\">
-                                                </div>
-                                            </div>
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <input type=\"text\" class=\"form-control\" name=\"subject\" id=\"subject\" placeholder=\"Subject\">
-                                                </div>
-                                            </div>
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <textarea name=\"message\" class=\"form-control\" id=\"message\" cols=\"30\" rows=\"6\" placeholder=\"Message\"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <input type=\"submit\" value=\"Send Message\" class=\"btn btn-primary\">
-                                                    <div class=\"submitting\"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class=\"col-md-6 d-flex align-items-stretch\">
-                                <div class=\"info-wrap w-100 p-md-5 p-4 py-5 img\">
-                                    <h3>Contact information</h3>
-                                    <p class=\"mb-4\">We're open for any suggestion or just to have a chat</p>
-                                    <div class=\"dbox w-100 d-flex align-items-start\">
-                                        <div class=\"icon d-flex align-items-center justify-content-center\">
-                                            <span class=\"fa fa-map-marker\"></span>
-                                        </div>
-                                        <div class=\"text pl-3\">
-                                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-                                        </div>
-                                    </div>
-                                    <div class=\"dbox w-100 d-flex align-items-center\">
-                                        <div class=\"icon d-flex align-items-center justify-content-center\">
-                                            <span class=\"fa fa-phone\"></span>
-                                        </div>
-                                        <div class=\"text pl-3\">
-                                            <p><span>Phone:</span> <a href=\"tel://1234567920\">+ 1235 2355 98</a></p>
-                                        </div>
-                                    </div>
-                                    <div class=\"dbox w-100 d-flex align-items-center\">
-                                        <div class=\"icon d-flex align-items-center justify-content-center\">
-                                            <span class=\"fa fa-paper-plane\"></span>
-                                        </div>
-                                        <div class=\"text pl-3\">
-                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">info@yoursite.com</a></p>
-                                        </div>
-                                    </div>
-                                    <div class=\"dbox w-100 d-flex align-items-center\">
-                                        <div class=\"icon d-flex align-items-center justify-content-center\">
-                                            <span class=\"fa fa-globe\"></span>
-                                        </div>
-                                        <div class=\"text pl-3\">
-                                            <p><span>Website</span> <a href=\"#\">yoursite.com</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class=\"side\">
+                    <p>
+                        <input type=\"text\" placeholder=\"Your name\">
+                    </p>
+                    <p>
+                        <input type=\"email\" id=\"email\" placeholder=\"Your email\">
+                        <span id=\"email-error\" style=\"color: red; display: none;\">Please enter a valid email address.</span>
+                    </p>
+                    <p>
+                        <button id=\"sendLetter\">Send</button>
+                    </p>
                 </div>
-            </div>
+            </article>
+            <div class=\"envelope front\"></div>
+            <div class=\"envelope back\"></div>
         </div>
-    </section>
+        <p class=\"result-message centered\">Thank you for your message</p>
+    </div>
+</form>
+
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -240,7 +177,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
 
     }
 
-    // line 113
+    // line 50
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -250,7 +187,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 114
+        // line 51
         echo "    ";
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
@@ -284,7 +221,7 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  254 => 114,  244 => 113,  141 => 18,  131 => 17,  118 => 14,  108 => 13,  96 => 9,  91 => 8,  81 => 7,  62 => 5,  39 => 1,);
+        return array (  191 => 51,  181 => 50,  141 => 18,  131 => 17,  118 => 12,  108 => 11,  96 => 8,  91 => 7,  81 => 6,  62 => 4,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -292,118 +229,55 @@ class __TwigTemplate_a0de1b1a887854369f1ce939c049d848 extends Template
         return new Source("{% extends 'base.html.twig' %}
 
 
-
 {% block title %}Page de Contact{% endblock %}
 
 {% block stylesheets %}
     <link rel=\"stylesheet\" href=\"{{ asset('contact/css/style.css') }}\">
-    <link rel=\"stylesheet\" href=\"{{ asset('contact/css/animate.css') }}\">
+    <script src=\"{{ asset('contact/style.js') }}\"></script>
 {% endblock %}
-
 
 {% block header %}
     {{ parent() }}
 {% endblock %}
 
+
+
 {% block content %}
-    <section class=\"ftco-section\">
-        <div class=\"container\">
-            <div class=\"row justify-content-center\">
-                <div class=\"col-md-6 text-center mb-5\">
+<form method=\"POST\" id=\"contactForm\" name=\"contactForm\" class=\"contactForm\">
+    <div class=\"contact-page\" style=\"margin-top: 200px; margin-bottom: 450px;\">
+        <div class=\"wrapper centered\">
+            <article class=\"letter\">
+                <div class=\"side\">
+                    <h1>Contact us</h1>
+                    <p>
+                        <textarea placeholder=\"Your message\"></textarea>
+                    </p>
                 </div>
-            </div>
-            <div class=\"row justify-content-center\">
-                <div class=\"col-lg-10\">
-                    <div class=\"wrapper\">
-                        <div class=\"row no-gutters\">
-                            <div class=\"col-md-6 d-flex align-items-stretch\">
-                                <div class=\"contact-wrap w-100 p-md-5 p-4 py-5\">
-                                    <h3 class=\"mb-4\">Write us</h3>
-                                    <div id=\"form-message-warning\" class=\"mb-4\"></div>
-                                    <div id=\"form-message-success\" class=\"mb-4\">
-                                        Your message was sent, thank you!
-                                    </div>
-                                    <form method=\"POST\" id=\"contactForm\" name=\"contactForm\" class=\"contactForm\">
-                                        <div class=\"row\">
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\" placeholder=\"Name\">
-                                                </div>
-                                            </div>
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"Email\">
-                                                </div>
-                                            </div>
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <input type=\"text\" class=\"form-control\" name=\"subject\" id=\"subject\" placeholder=\"Subject\">
-                                                </div>
-                                            </div>
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <textarea name=\"message\" class=\"form-control\" id=\"message\" cols=\"30\" rows=\"6\" placeholder=\"Message\"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class=\"col-md-12\">
-                                                <div class=\"form-group\">
-                                                    <input type=\"submit\" value=\"Send Message\" class=\"btn btn-primary\">
-                                                    <div class=\"submitting\"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class=\"col-md-6 d-flex align-items-stretch\">
-                                <div class=\"info-wrap w-100 p-md-5 p-4 py-5 img\">
-                                    <h3>Contact information</h3>
-                                    <p class=\"mb-4\">We're open for any suggestion or just to have a chat</p>
-                                    <div class=\"dbox w-100 d-flex align-items-start\">
-                                        <div class=\"icon d-flex align-items-center justify-content-center\">
-                                            <span class=\"fa fa-map-marker\"></span>
-                                        </div>
-                                        <div class=\"text pl-3\">
-                                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-                                        </div>
-                                    </div>
-                                    <div class=\"dbox w-100 d-flex align-items-center\">
-                                        <div class=\"icon d-flex align-items-center justify-content-center\">
-                                            <span class=\"fa fa-phone\"></span>
-                                        </div>
-                                        <div class=\"text pl-3\">
-                                            <p><span>Phone:</span> <a href=\"tel://1234567920\">+ 1235 2355 98</a></p>
-                                        </div>
-                                    </div>
-                                    <div class=\"dbox w-100 d-flex align-items-center\">
-                                        <div class=\"icon d-flex align-items-center justify-content-center\">
-                                            <span class=\"fa fa-paper-plane\"></span>
-                                        </div>
-                                        <div class=\"text pl-3\">
-                                            <p><span>Email:</span> <a href=\"mailto:info@yoursite.com\">info@yoursite.com</a></p>
-                                        </div>
-                                    </div>
-                                    <div class=\"dbox w-100 d-flex align-items-center\">
-                                        <div class=\"icon d-flex align-items-center justify-content-center\">
-                                            <span class=\"fa fa-globe\"></span>
-                                        </div>
-                                        <div class=\"text pl-3\">
-                                            <p><span>Website</span> <a href=\"#\">yoursite.com</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class=\"side\">
+                    <p>
+                        <input type=\"text\" placeholder=\"Your name\">
+                    </p>
+                    <p>
+                        <input type=\"email\" id=\"email\" placeholder=\"Your email\">
+                        <span id=\"email-error\" style=\"color: red; display: none;\">Please enter a valid email address.</span>
+                    </p>
+                    <p>
+                        <button id=\"sendLetter\">Send</button>
+                    </p>
                 </div>
-            </div>
+            </article>
+            <div class=\"envelope front\"></div>
+            <div class=\"envelope back\"></div>
         </div>
-    </section>
+        <p class=\"result-message centered\">Thank you for your message</p>
+    </div>
+</form>
+
 {% endblock %}
 
 {% block footer %}
     {{ parent() }}
-{% endblock %}
+{% endblock footer %}
 ", "contact.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\contact.html.twig");
     }
 }
