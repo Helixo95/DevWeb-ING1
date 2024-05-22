@@ -40,11 +40,7 @@ class __TwigTemplate_43043c74b27e85452093d7d9f2abf565 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/flash_messages.html.twig"));
 
         // line 5
-<<<<<<< HEAD
-        $context["__internal_dcb5f7a3c8a1fb700b627449f64128e21572bb8ca5af37d01ccc725d7e0eaa13"] = ((array_key_exists("ea", $context)) ? (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 5, $this->source); })()), "i18n", [], "any", false, false, false, 5), "translationDomain", [], "any", false, false, false, 5)) : (((array_key_exists("translation_domain", $context)) ? ((($context["translation_domain"]) ?? ("messages"))) : (""))));
-=======
-        $context["__internal_d1419e57e92b894b5f7519f383471f18333058e1cf6b385e5bf6b615a65f961d"] = ((array_key_exists("ea", $context)) ? (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 5, $this->source); })()), "i18n", [], "any", false, false, false, 5), "translationDomain", [], "any", false, false, false, 5)) : (((array_key_exists("translation_domain", $context)) ? ((($context["translation_domain"]) ?? ("messages"))) : (""))));
->>>>>>> Yassine
+        $context["__internal_eadb2df4d4b2f13dea9631a721fbd925ab070b2df8e4844cf5478a334be942ee"] = ((array_key_exists("ea", $context)) ? (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 5, $this->source); })()), "i18n", [], "any", false, false, false, 5), "translationDomain", [], "any", false, false, false, 5)) : (((array_key_exists("translation_domain", $context)) ? ((($context["translation_domain"]) ?? ("messages"))) : (""))));
         // line 6
         echo "
 ";
@@ -75,11 +71,7 @@ class __TwigTemplate_43043c74b27e85452093d7d9f2abf565 extends Template
                     ";
                     // line 15
                     echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans($context["message"], [],                     // line 5
-<<<<<<< HEAD
-(isset($context["__internal_dcb5f7a3c8a1fb700b627449f64128e21572bb8ca5af37d01ccc725d7e0eaa13"]) || array_key_exists("__internal_dcb5f7a3c8a1fb700b627449f64128e21572bb8ca5af37d01ccc725d7e0eaa13", $context) ? $context["__internal_dcb5f7a3c8a1fb700b627449f64128e21572bb8ca5af37d01ccc725d7e0eaa13"] : (function () { throw new RuntimeError('Variable "__internal_dcb5f7a3c8a1fb700b627449f64128e21572bb8ca5af37d01ccc725d7e0eaa13" does not exist.', 5, $this->source); })()));
-=======
-(isset($context["__internal_d1419e57e92b894b5f7519f383471f18333058e1cf6b385e5bf6b615a65f961d"]) || array_key_exists("__internal_d1419e57e92b894b5f7519f383471f18333058e1cf6b385e5bf6b615a65f961d", $context) ? $context["__internal_d1419e57e92b894b5f7519f383471f18333058e1cf6b385e5bf6b615a65f961d"] : (function () { throw new RuntimeError('Variable "__internal_d1419e57e92b894b5f7519f383471f18333058e1cf6b385e5bf6b615a65f961d" does not exist.', 5, $this->source); })()));
->>>>>>> Yassine
+(isset($context["__internal_eadb2df4d4b2f13dea9631a721fbd925ab070b2df8e4844cf5478a334be942ee"]) || array_key_exists("__internal_eadb2df4d4b2f13dea9631a721fbd925ab070b2df8e4844cf5478a334be942ee", $context) ? $context["__internal_eadb2df4d4b2f13dea9631a721fbd925ab070b2df8e4844cf5478a334be942ee"] : (function () { throw new RuntimeError('Variable "__internal_eadb2df4d4b2f13dea9631a721fbd925ab070b2df8e4844cf5478a334be942ee" does not exist.', 5, $this->source); })()));
                     // line 15
                     echo "
                 </div>
@@ -152,6 +144,6 @@ class __TwigTemplate_43043c74b27e85452093d7d9f2abf565 extends Template
         {% endfor %}
     </div>
 {% endif %}
-", "@EasyAdmin/flash_messages.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\flash_messages.html.twig");
+", "@EasyAdmin/flash_messages.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\flash_messages.html.twig");
     }
 }

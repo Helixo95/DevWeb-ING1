@@ -295,7 +295,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
             <div class=\"table-header d-flex flew-row justify-content-between align-items-center\">
                 <h2 class=\"table-title\">Derniers produits</h2>
                 <button><a href=\"";
-            // line 170
+            // line 171
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_products");
             echo "\" class=\"text-decoration-none\">Voir plus</a></button>
             </div>
@@ -351,31 +351,25 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
                             </td>
                             <td class=\"cell-edit\">
                                 <a href=\"";
-
-                // line 205
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_product", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 205)]), "html", null, true);
+                // line 206
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_product", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id_prod", [], "any", false, false, false, 206)]), "html", null, true);
                 echo "\">
                                     <i class=\"fa-solid fa-pen-to-square\"></i>
                                 </a>
-
                             </td>
                         </tr>
                     ";
                 $context['_iterated'] = true;
             }
             if (!$context['_iterated']) {
-
-                // line 211
-
+                // line 212
                 echo "                        <tr><td colspan=\"10\" class=\"text-center\">Aucun produit trouvé.</td></tr>
                     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-
-            // line 213
-
+            // line 214
             echo "                    </tbody>
                 </table>
             </div>
@@ -384,17 +378,13 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
 </div>
 ";
         } else {
-
-            // line 220
-
+            // line 221
             echo "    <div class=\"alert alert-danger\" role=\"alert\">
         Vous n'avez pas l'autorisation d'accéder à cette page.
     </div>
 ";
         }
-
-        // line 224
-
+        // line 225
         echo "<!-- toasts -->
 <div id=\"toast-container\" class=\"toast-container position-fixed\"></div>
 
@@ -403,13 +393,11 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
 <script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"";
-
-        // line 231
+        // line 232
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/javascript/dashboard.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 232
-
+        // line 233
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("admin/javascript/toast.js"), "html", null, true);
         echo "\"></script>
 </body>
@@ -445,9 +433,7 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
      */
     public function getDebugInfo()
     {
-
-        return array (  395 => 232,  391 => 231,  382 => 224,  376 => 220,  367 => 213,  360 => 211,  349 => 205,  343 => 202,  337 => 199,  330 => 195,  323 => 191,  317 => 187,  312 => 186,  293 => 170,  281 => 160,  274 => 158,  265 => 154,  259 => 151,  252 => 147,  248 => 146,  241 => 142,  237 => 141,  226 => 135,  220 => 131,  215 => 130,  196 => 114,  181 => 102,  167 => 91,  143 => 72,  126 => 58,  113 => 48,  104 => 42,  95 => 36,  81 => 24,  79 => 23,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
-
+        return array (  401 => 233,  397 => 232,  388 => 225,  382 => 221,  373 => 214,  366 => 212,  355 => 206,  349 => 203,  343 => 200,  336 => 196,  329 => 192,  323 => 188,  318 => 187,  299 => 171,  287 => 161,  280 => 159,  271 => 155,  265 => 152,  258 => 148,  254 => 147,  247 => 143,  243 => 142,  232 => 136,  226 => 132,  221 => 131,  202 => 115,  187 => 103,  173 => 92,  149 => 73,  132 => 59,  119 => 49,  110 => 43,  101 => 37,  87 => 28,  81 => 24,  79 => 23,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()

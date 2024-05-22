@@ -20,7 +20,13 @@ class HomeController extends AbstractController
     #[Route('/guidlines', name: 'app_guidlines')]
     public function guidlines(): Response
     {
-        return $this->render('terms.html.twig', []);
+        $brandLists = $this->brandService->getBrandLists();
+
+        return $this->render('terms.html.twig', [
+            'brandLists' => $brandLists,
+
+        ]);
+
     }
 
     #[Route('/home', name: 'app_home')]

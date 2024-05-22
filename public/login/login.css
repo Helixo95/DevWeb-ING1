@@ -1,23 +1,24 @@
 #intro {
-    background-image: url('../img/008.jpg');
-    min-height: 10vh; /* Utilisez min-height au lieu de height */
-    margin-top: 0; /* Assurez-vous que la marge supérieure est à 0 pour éviter les conflits */
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
 }
 
 @media (min-width: 992px) {
     #intro {
-        padding-top: 100px; /* Assurez-vous que cette valeur est également ajustée pour les écrans larges */
-        padding-bottom: 0px; /* Ajoutez un padding inférieur pour éviter le chevauchement avec le footer */
+        padding-top: 100px;
+        padding-bottom: 0;
     }
 }
 
 .text-center {
     text-align: center !important;
-    color: antiquewhite; /* Assurez-vous que le texte a suffisamment de contraste */
+    color: black;
 }
 
 .mb-4 {
-    margin-bottom: 0rem !important;
+    margin-bottom: 0 !important;
 }
 
 .intro {
@@ -43,7 +44,7 @@
 }
 
 .form-group {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 .form-control {
