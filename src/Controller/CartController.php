@@ -80,6 +80,30 @@ class CartController extends AbstractController
 
     return $this->redirectToRoute("app_cart");
 }
+    //add multiple product to cart.
+    #[Route('/cart/add2/{id}', name: 'add_cart2', methods:['POST'])]
+    public function add_cart2($id, Request $request,EntityManagerInterface $entityManager)
+        {
+            $product = $entityManager->getRepository(Product::class)->find($id);
+            $qty=$request->get('qty');
+            $session = $request->getSession();
+            $cart = $session->get('cart', []);
+            if((empty(($cart[$id])) and $product->getQuantity() >= $qty)or $product->getQuantity() >= $qty+$cart[$id]){
+
+
+                if(!empty($cart[$id])){
+                    $cart[$id]+=$qty;
+                }
+                else {
+                    $cart[$id] =$qty;
+                }
+                $session->set('cart', $cart);
+            }
+
+
+            return $this->redirectToRoute("app_cart");
+
+        }
 
     #[Route('/cart/min/{id}', name: 'cart_Min')]
     public function cart_Min($id, Request $request, EntityManagerInterface $entityManager): \Symfony\Component\HttpFoundation\RedirectResponse
