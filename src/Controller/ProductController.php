@@ -72,9 +72,10 @@ class ProductController extends AbstractController
 
 
     }
+    /*
     //add multiple product to cart.
     #[Route('/product/add2/{id}', name: 'add_cart2', methods:['POST'])]
-    public function add_cart2($id, Request $request,EntityManagerInterface $entityManager){
+    public function add_cart2($id, Request $request,EntityManagerInterface $entityManager)
         {
             $product = $entityManager->getRepository(Product::class)->find($id);
             $qty=$request->get('qty');
@@ -98,7 +99,7 @@ class ProductController extends AbstractController
             ]);
 
 
-        }
-    }
+        }*/
+    
 
 }
