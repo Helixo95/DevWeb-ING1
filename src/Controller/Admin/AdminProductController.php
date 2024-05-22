@@ -52,4 +52,12 @@ public function editProduct(int $id, EntityManagerInterface $entityManager, Requ
         'product' => $product,
     ]);
     }
+    #[Route('/admin/product/delete/{id}', name: 'admin_product_delete', methods: ['POST'])]
+    public function delete(Product $product, EntityManagerInterface $entityManager): Response
+    {
+        $entityManager->remove($product);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('app_admin_products');
+    }
 }

@@ -667,6 +667,6 @@ class __TwigTemplate_88f8f0f3a8313c503d75b5033c0fade4 extends Template
 </body>
 
 </html>
-", "admin/dashboard.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\dashboard.html.twig");
+", "admin/dashboard.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\dashboard.html.twig");
     }
 }

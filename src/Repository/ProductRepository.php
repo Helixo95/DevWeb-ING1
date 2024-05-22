@@ -33,5 +33,4 @@ class ProductRepository extends ServiceEntityRepository
         }, $qb->getQuery()->getScalarResult());
     }
 
-
 }

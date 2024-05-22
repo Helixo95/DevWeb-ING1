@@ -232,6 +232,6 @@ class __TwigTemplate_1c400e27538592567c03653c7c8dfb7a extends Template
         </nav>
     {% endif %}
 </div>
-", "@EasyAdmin/crud/paginator.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\paginator.html.twig");
+", "@EasyAdmin/crud/paginator.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\paginator.html.twig");
     }
 }

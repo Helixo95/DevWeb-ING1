@@ -440,6 +440,6 @@ class __TwigTemplate_3bd557b16c593cc10092cbab77dbc30f extends Template
 {% block footer %}
     {{ parent() }}
 {% endblock %}
-", "cart.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\cart.html.twig");
+", "cart.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\cart.html.twig");
     }
 }

@@ -1,6 +1,7 @@
 <?php
 // src/Controller/HomeController.php
 namespace App\Controller;
+
 use App\Entity\Product;
 use App\Service\BrandService;
 use Doctrine\ORM\EntityManagerInterface;
@@ -10,25 +11,38 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
+    private BrandService $brandService;
+
+    public function __construct(BrandService $brandService) {
+        $this->brandService = $brandService;
+    }
+
     #[Route('/guidlines', name: 'app_guidlines')]
-    public function  guidlines(): Response
+    public function guidlines(): Response
     {
         return $this->render('terms.html.twig', []);
     }
 
     #[Route('/home', name: 'app_home')]
-    public function  home(EntityManagerInterface $entityManager): Response
+    public function home(EntityManagerInterface $entityManager): Response
     {
         $brandLists = $this->brandService->getBrandLists();
-        $products = $entityManager->getRepository(product::class)->findAll();
+        $products = $entityManager->getRepository(Product::class)->findAll();
+
+        // Fetch the latest 5 products
+        $latestProducts = $entityManager->getRepository(Product::class)->findBy([], ['creationDate' => 'DESC'], 5);
+
+
         return $this->render('home.html.twig', [
             'products' => $products,
-            'brandLists' => $brandLists
+            'brandLists' => $brandLists,
+            'latest_products' => $latestProducts,
+
         ]);
     }
-    
+
     #[Route('/login', name: 'app_login')]
-    public function  login(): Response
+    public function login(): Response
     {
         return $this->render('security/login.html.twig', []);
     }
@@ -39,21 +53,13 @@ class HomeController extends AbstractController
         return $this->render('register.html.twig');
     }
 
-    private BrandService $brandService;
-
-    public function __construct(BrandService $brandService) {
-        $this->brandService = $brandService;
-    }
-    
     #[Route('/profile', name: 'app_profile')]
     public function profile(): Response
     {
-
         $brandLists = $this->brandService->getBrandLists();
-        
+
         return $this->render('profile.html.twig', [
             'brandLists' => $brandLists
         ]);
     }
 }
-

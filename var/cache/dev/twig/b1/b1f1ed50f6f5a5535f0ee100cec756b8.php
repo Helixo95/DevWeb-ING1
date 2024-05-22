@@ -588,6 +588,6 @@ class __TwigTemplate_4232168a7517335500c58d320d2d90b1 extends Template
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Collector/http_client.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
+", "@WebProfiler/Collector/http_client.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
     }
 }

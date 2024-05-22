@@ -82,7 +82,12 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"#\"><img class=\"navbar-brand\" src=\"\" alt=\"logo\"></a>
+        <a href=\"";
+        // line 28
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_category_brand");
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/logo.png"), "html", null, true);
+        echo "\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -355,7 +360,7 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  326 => 194,  322 => 193,  293 => 169,  287 => 168,  281 => 167,  264 => 153,  254 => 146,  249 => 144,  238 => 136,  228 => 129,  218 => 122,  208 => 115,  198 => 108,  188 => 101,  178 => 94,  163 => 84,  157 => 81,  143 => 72,  126 => 58,  113 => 48,  104 => 42,  95 => 36,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
+        return array (  331 => 194,  327 => 193,  298 => 169,  292 => 168,  286 => 167,  269 => 153,  259 => 146,  254 => 144,  243 => 136,  233 => 129,  223 => 122,  213 => 115,  203 => 108,  193 => 101,  183 => 94,  168 => 84,  162 => 81,  148 => 72,  131 => 58,  118 => 48,  109 => 42,  100 => 36,  87 => 28,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -387,7 +392,7 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
 <div id=\"l-sidebar\" class=\"sidebar-active no-transition\">
     <!-- header -->
     <div id=\"sidebar-header\" class=\"d-flex align-items-center\">
-        <a href=\"#\"><img class=\"navbar-brand\" src=\"\" alt=\"logo\"></a>
+        <a href=\"{{ path('app_product_category_brand') }}\"><img src=\"{{ asset('base/logo.png') }}\" style=\"max-height: 50px;\"  alt=\"\"></a>
     </div>
 
     <!-- navigation links -->
@@ -554,6 +559,6 @@ class __TwigTemplate_a36b071c269bedc0c87346c37ecbab16 extends Template
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"{{ asset('admin/Javascript/dashboard.js') }}\"></script>
 <script src=\"{{ asset('admin/Javascript/form-sender.js') }}\"></script>
-</body>", "admin/product.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\product.html.twig");
+</body>", "admin/product.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\product.html.twig");
     }
 }

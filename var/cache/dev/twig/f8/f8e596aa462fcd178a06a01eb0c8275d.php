@@ -258,74 +258,7 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
             </div>
         </div>
 
-        ";
-        // line 138
-        echo "        ";
-        if ( !(null === (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 138, $this->source); })()))) {
-            // line 139
-            echo "            <div class=\"pagination-container d-flex align-items-center justify-content-center\">
-                <nav aria-label=\"pagination\">
-                    <ul class=\"pagination\">
-                        ";
-            // line 143
-            echo "                        <li class=\"page-item ";
-            echo ((twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 143, $this->source); })()), "previousURL", [], "any", false, false, false, 143))) ? ("disabled") : (""));
-            echo "\">
-                            <a class=\"page-link previous\" href=\"";
-            // line 144
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 144, $this->source); })()), "previousURL", [], "any", false, false, false, 144), "html", null, true);
-            echo "\">
-                                <i class=\"fa-solid fa-angle-left\"></i>
-                            </a>
-                        </li>
-
-                        ";
-            // line 150
-            echo "                        ";
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 150, $this->source); })()), "pagesURL", [], "any", false, false, false, 150));
-            foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 151
-                echo "                            <li class=\"page-item\">
-                                <a class=\"page-link ";
-                // line 152
-                echo (((twig_get_attribute($this->env, $this->source, $context["page"], "number", [], "any", false, false, false, 152) == twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 152, $this->source); })()), "current", [], "any", false, false, false, 152))) ? ("page-current") : (""));
-                echo "\" href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 152), "html", null, true);
-                echo "\">
-                                    ";
-                // line 153
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "number", [], "any", false, false, false, 153), "html", null, true);
-                echo "
-                                </a>
-                            </li>
-                        ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 157
-            echo "
-                        ";
-            // line 159
-            echo "                        <li class=\"page-item ";
-            echo ((twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 159, $this->source); })()), "nextURL", [], "any", false, false, false, 159))) ? ("disabled") : (""));
-            echo "\">
-                            <a class=\"page-link next\" href=\"";
-            // line 160
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 160, $this->source); })()), "nextURL", [], "any", false, false, false, 160), "html", null, true);
-            echo "\">
-                                <i class=\"fa-solid fa-angle-right\"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-        ";
-        }
-        // line 169
-        echo "    </div>
+    </div>
 </div>
 
 
@@ -333,7 +266,7 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
 <script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 176
+        // line 144
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/admin/Javascript/dashboard.js"), "html", null, true);
         echo "\"></script>
 </body>
@@ -368,7 +301,7 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
      */
     public function getDebugInfo()
     {
-        return array (  337 => 176,  328 => 169,  316 => 160,  311 => 159,  308 => 157,  298 => 153,  292 => 152,  289 => 151,  284 => 150,  276 => 144,  271 => 143,  266 => 139,  263 => 138,  256 => 132,  249 => 130,  247 => 129,  236 => 123,  229 => 119,  225 => 118,  219 => 115,  213 => 112,  207 => 109,  203 => 107,  198 => 106,  185 => 95,  177 => 89,  172 => 86,  168 => 83,  165 => 81,  159 => 76,  152 => 71,  146 => 70,  129 => 56,  116 => 46,  107 => 40,  98 => 34,  85 => 26,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
+        return array (  270 => 144,  256 => 132,  249 => 130,  247 => 129,  236 => 123,  229 => 119,  225 => 118,  219 => 115,  213 => 112,  207 => 109,  203 => 107,  198 => 106,  185 => 95,  177 => 89,  172 => 86,  168 => 83,  165 => 81,  159 => 76,  152 => 71,  146 => 70,  129 => 56,  116 => 46,  107 => 40,  98 => 34,  85 => 26,  73 => 17,  69 => 16,  65 => 15,  61 => 14,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -509,38 +442,6 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
             </div>
         </div>
 
-        {# pagination #}
-        {% if pagination is not null %}
-            <div class=\"pagination-container d-flex align-items-center justify-content-center\">
-                <nav aria-label=\"pagination\">
-                    <ul class=\"pagination\">
-                        {# previous #}
-                        <li class=\"page-item {{ pagination.previousURL is empty ? 'disabled' : '' }}\">
-                            <a class=\"page-link previous\" href=\"{{ pagination.previousURL }}\">
-                                <i class=\"fa-solid fa-angle-left\"></i>
-                            </a>
-                        </li>
-
-                        {# page numbers #}
-                        {% for page in pagination.pagesURL %}
-                            <li class=\"page-item\">
-                                <a class=\"page-link {{ page.number == pagination.current ? 'page-current' : '' }}\" href=\"{{ page.url }}\">
-                                    {{ page.number }}
-                                </a>
-                            </li>
-                        {% endfor %}
-
-                        {# next #}
-                        <li class=\"page-item {{ pagination.nextURL is empty ? 'disabled' : '' }}\">
-                            <a class=\"page-link next\" href=\"{{ pagination.nextURL }}\">
-                                <i class=\"fa-solid fa-angle-right\"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-        {% endif %}
     </div>
 </div>
 
@@ -551,6 +452,6 @@ class __TwigTemplate_b3c0c30dbd8b123206926f54424cf4fc extends Template
 <script src=\"{{asset('/admin/Javascript/dashboard.js') }}\"></script>
 </body>
 
-</html>", "admin/products.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\products.html.twig");
+</html>", "admin/products.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\products.html.twig");
     }
 }
