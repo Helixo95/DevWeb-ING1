@@ -24,7 +24,6 @@ class HomeController extends AbstractController
 
         return $this->render('terms.html.twig', [
             'brandLists' => $brandLists,
-
         ]);
 
     }
