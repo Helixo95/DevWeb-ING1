@@ -64,9 +64,16 @@
                                                                     {%endif%}
                                                                 </li>
                                                                 <li class="quick_button">
+                                                                    {% if app.user %}
                                                                     <a href="#" data-toggle="modal" data-target="#modal_box_{{ product.id_prod }}" title="Quick View">
                                                                         <i class="fa fa-eye"></i>
                                                                     </a>
+                                                                    {% else %}
+            
+                                                                    <a href="{{ path('app_login') }}" title="Quick View">
+                                                                        <i class="fa fa-eye"></i>
+                                                                    </a>
+                                                                    {%endif%}
                                                                 </li>
                                                             </ul>
                                                         </div>
