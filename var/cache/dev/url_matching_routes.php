@@ -85,7 +85,7 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         195 => [[['_route' => 'app_admin_product', '_controller' => 'App\\Controller\\Admin\\AdminProductController::editProduct'], ['id'], null, null, false, true, null]],
-        215 => [[['_route' => 'app_admin_product_delete', '_controller' => 'App\\Controller\\Admin\\AdminProductController::deleteProduct'], ['id'], ['DELETE' => 0], null, false, true, null]],
+        215 => [[['_route' => 'app_admin_product_delete', '_controller' => 'App\\Controller\\Admin\\AdminProductController::deleteProduct'], ['id'], ['POST' => 0], null, false, true, null]],
         240 => [[['_route' => 'app_admin_user', '_controller' => 'App\\Controller\\Admin\\AdminUserController::index'], ['id'], null, null, false, true, null]],
         272 => [[['_route' => 'change_role', '_controller' => 'App\\Controller\\Admin\\AdminUserController::changeRole'], ['id'], ['POST' => 0], null, false, true, null]],
         295 => [[['_route' => 'change_status', '_controller' => 'App\\Controller\\Admin\\AdminUserController::changeStatus'], ['id'], ['POST' => 0], null, false, true, null]],
