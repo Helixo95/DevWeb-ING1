@@ -319,6 +319,6 @@ class __TwigTemplate_47863890c670730289bef74494ceffce extends Template
     </div>
 </section>
 {% endblock %}
-", "profile.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\profile.html.twig");
+", "profile.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\profile.html.twig");
     }
 }

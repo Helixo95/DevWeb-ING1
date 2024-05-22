@@ -508,6 +508,6 @@ class __TwigTemplate_18a39a04a02c8e2306e67e8de13982ca extends Template
 <script src=\"{{ asset('admin/Javascript/form-sender.js') }}\"></script>
 </body>
 </html>
-", "admin/create_product.hmtl.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\create_product.hmtl.twig");
+", "admin/create_product.hmtl.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\create_product.hmtl.twig");
     }
 }

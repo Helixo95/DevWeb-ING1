@@ -49,5 +49,7 @@ class AdminController extends AbstractController
             'user' => $user, // Pass the authenticated user to the template
           //  'product'=>$product,
         ]);
+
     }
+
 }

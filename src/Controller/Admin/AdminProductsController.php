@@ -32,4 +32,5 @@ class AdminProductsController extends AbstractController
             'pagination' => $pagination,
         ]);
     }
+
 }

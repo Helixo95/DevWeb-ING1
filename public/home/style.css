@@ -1,3 +1,65 @@
+.quantity-selector .quantity-btn {
+    width: 48px;
+    height: 30px;
+    line-height: 25px;
+    padding: 0;
+    cursor: pointer !important;
+    font-size: 16px !important;
+}
+.quantity-selector .quantity-input {
+    width: 44px !important;
+    height: 69px !important;
+    text-align: center !important;
+    border: none;
+}
+.modal_add_to_cart {
+    margin-bottom: 25px;
+}
+
+.modal_add_to_cart form input {
+    width: 95px;
+    border: 1px solid #ebebeb;
+    background: none;
+    padding: 0 10px;
+    height: 45px;
+}
+
+@media only screen and (max-width: 767px) {
+    .modal_add_to_cart form input {
+        width: 75px;
+    }
+}
+
+.modal_add_to_cart form button {
+    background: none;
+    border: 1px solid #000000;
+    margin-left: 10px;
+    font-size: 12px;
+    height: 45px;
+    width: 230px;
+    line-height: 18px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    background: #000000;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .modal_add_to_cart form button {
+        width: 130px;
+    }
+}
+
+.modal_add_to_cart form button:hover {
+    background: #f6692a;
+    border-color: #f6692a;
+    color: #000000;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
 .stock-btn {
     width: auto;  /* Auto width based on content */
     height: 25px; /* Match height of quantity buttons */

@@ -548,6 +548,6 @@ class __TwigTemplate_ca3370b733d9b740f713c7c6a8089419 extends Template
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"{{asset('/admin/Javascript/dashboard.js') }}\"></script>
 
-", "admin/contacts.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\contacts.html.twig");
+", "admin/contacts.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\contacts.html.twig");
     }
 }

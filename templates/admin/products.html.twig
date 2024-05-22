@@ -134,38 +134,6 @@
             </div>
         </div>
 
-        {# pagination #}
-        {% if pagination is not null %}
-            <div class="pagination-container d-flex align-items-center justify-content-center">
-                <nav aria-label="pagination">
-                    <ul class="pagination">
-                        {# previous #}
-                        <li class="page-item {{ pagination.previousURL is empty ? 'disabled' : '' }}">
-                            <a class="page-link previous" href="{{ pagination.previousURL }}">
-                                <i class="fa-solid fa-angle-left"></i>
-                            </a>
-                        </li>
-
-                        {# page numbers #}
-                        {% for page in pagination.pagesURL %}
-                            <li class="page-item">
-                                <a class="page-link {{ page.number == pagination.current ? 'page-current' : '' }}" href="{{ page.url }}">
-                                    {{ page.number }}
-                                </a>
-                            </li>
-                        {% endfor %}
-
-                        {# next #}
-                        <li class="page-item {{ pagination.nextURL is empty ? 'disabled' : '' }}">
-                            <a class="page-link next" href="{{ pagination.nextURL }}">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-        {% endif %}
     </div>
 </div>
 
