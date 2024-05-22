@@ -114,13 +114,22 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
                     <span>Produits</span>
                 </a>
             </li>
+            <li class=\"nav-link\">
+                <a href=\"";
+        // line 50
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_contacts");
+        echo "\" class=\"text-decoration-none d-block\">
+                    <i class=\"fa-solid fa-users text-center\"></i>
+                    <span>Contacts</span>
+                </a>
+            </li>
         </div>
 
         <!-- bottom -->
         <div class=\"bottom\">
             <li class=\"nav-link\">
                 <a href=\"";
-        // line 54
+        // line 60
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
         echo "\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-right-from-bracket text-center\"></i>
@@ -137,10 +146,10 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
         <i id=\"toggler\" class=\"fa-solid fa-bars fa-xl clickable\"></i>
         <div class=\"account d-flex flex-row align-items-center\">
             <span>";
-        // line 68
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 68, $this->source); })()), "user", [], "any", false, false, false, 68), "nom", [], "any", false, false, false, 68), "html", null, true);
+        // line 74
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 74, $this->source); })()), "user", [], "any", false, false, false, 74), "nom", [], "any", false, false, false, 74), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 68, $this->source); })()), "user", [], "any", false, false, false, 68), "prenom", [], "any", false, false, false, 68), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 74, $this->source); })()), "user", [], "any", false, false, false, 74), "prenom", [], "any", false, false, false, 74), "html", null, true);
         echo "</span>
             <i class=\"fa-solid fa-user fa-xl clickable\"></i>
         </div>
@@ -174,63 +183,63 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
                     </thead>
                     <tbody>
                     ";
-        // line 100
+        // line 106
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["users"]) || array_key_exists("users", $context) ? $context["users"] : (function () { throw new RuntimeError('Variable "users" does not exist.', 100, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["users"]) || array_key_exists("users", $context) ? $context["users"] : (function () { throw new RuntimeError('Variable "users" does not exist.', 106, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
-            // line 101
+            // line 107
             echo "                    <tr scope=\"row\">
                         <td class=\"cell-name d-flex flex-row align-items-center\">
                             <div><i class=\"fa-solid fa-user\"></i></div>
                             <div class=\"info d-flex flex-column\">
                                 <span>";
-            // line 105
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "nom", [], "any", false, false, false, 105), "html", null, true);
+            // line 111
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "nom", [], "any", false, false, false, 111), "html", null, true);
             echo " ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "prenom", [], "any", false, false, false, 105), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "prenom", [], "any", false, false, false, 111), "html", null, true);
             echo "</span>
                                 <span>";
-            // line 106
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "createdAt", [], "any", false, false, false, 106), "d/m/Y"), "html", null, true);
+            // line 112
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "createdAt", [], "any", false, false, false, 112), "d/m/Y"), "html", null, true);
             echo "</span>
                             </div>
                         </td>
                         <td class=\"cell-phone\">
                             <div class=\"d-flex flex-column\">
                                 <span>";
-            // line 111
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "phoneNumber", [], "any", false, false, false, 111), "html", null, true);
+            // line 117
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "phoneNumber", [], "any", false, false, false, 117), "html", null, true);
             echo "</span>
                                 <span>";
-            // line 112
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "email", [], "any", false, false, false, 112), "html", null, true);
+            // line 118
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "email", [], "any", false, false, false, 118), "html", null, true);
             echo "</span>
                             </div>
                         </td>
                         <td class=\"cell-status\">
                                     <span class=\"status\" data-status=\"";
-            // line 116
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 116), "html", null, true);
+            // line 122
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 122), "html", null, true);
             echo "\">
                                         ";
-            // line 117
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 117), "html", null, true);
+            // line 123
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "status", [], "any", false, false, false, 123), "html", null, true);
             echo "
                                     </span>
                         </td>
                         <td class=\"cell-role\">
                                     <span>
                                         ";
-            // line 122
-            echo twig_escape_filter($this->env, twig_join_filter(twig_get_attribute($this->env, $this->source, $context["user"], "roles", [], "any", false, false, false, 122), ", "), "html", null, true);
+            // line 128
+            echo twig_escape_filter($this->env, twig_join_filter(twig_get_attribute($this->env, $this->source, $context["user"], "roles", [], "any", false, false, false, 128), ", "), "html", null, true);
             echo "
                                     </span>
                         </td>
                         <td class=\"cell-edit\">
                             <a href=\"";
-            // line 126
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_user", ["id" => twig_get_attribute($this->env, $this->source, $context["user"], "id", [], "any", false, false, false, 126)]), "html", null, true);
+            // line 132
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_user", ["id" => twig_get_attribute($this->env, $this->source, $context["user"], "id", [], "any", false, false, false, 132)]), "html", null, true);
             echo "\"><i class=\"fa-solid fa-pen-to-square\"></i></a>
                         </td>
                     </tr>
@@ -238,14 +247,14 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 130
+            // line 136
             echo "                        <tr><td colspan=\"10\" class=\"text-center\">Aucun utilisateur trouvé.</td></tr>
                     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 132
+        // line 138
         echo "                    </tbody>
                 </table>
             </div>
@@ -253,20 +262,20 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
 
         <!-- pagination -->
         ";
-        // line 138
+        // line 144
         if (array_key_exists("pagination", $context)) {
-            // line 139
+            // line 145
             echo "            <div class=\"pagination-container d-flex align-items-center justify-content-center\">
                 <nav aria-label=\"pagination\">
                     <ul class=\"pagination\">
                         <!-- previous -->
                         <li class=\"page-item ";
-            // line 143
-            echo (( !twig_get_attribute($this->env, $this->source, ($context["pagination"] ?? null), "previous", [], "any", true, true, false, 143)) ? ("disabled") : (""));
+            // line 149
+            echo (( !twig_get_attribute($this->env, $this->source, ($context["pagination"] ?? null), "previous", [], "any", true, true, false, 149)) ? ("disabled") : (""));
             echo "\">
                             <a class=\"page-link previous\" href=\"";
-            // line 144
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 144, $this->source); })()), "previousURL", [], "any", false, false, false, 144), "html", null, true);
+            // line 150
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 150, $this->source); })()), "previousURL", [], "any", false, false, false, 150), "html", null, true);
             echo "\">
                                 <i class=\"fa-solid fa-angle-left\"></i>
                             </a>
@@ -274,21 +283,21 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
 
                         <!-- page numbers -->
                         ";
-            // line 150
+            // line 156
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 150, $this->source); })()), "pagesURL", [], "any", false, false, false, 150));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 156, $this->source); })()), "pagesURL", [], "any", false, false, false, 156));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 151
+                // line 157
                 echo "                            <li class=\"page-item\">
                                 <a class=\"page-link ";
-                // line 152
-                echo (((twig_get_attribute($this->env, $this->source, $context["page"], "number", [], "any", false, false, false, 152) == twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 152, $this->source); })()), "current", [], "any", false, false, false, 152))) ? ("page-current") : (""));
+                // line 158
+                echo (((twig_get_attribute($this->env, $this->source, $context["page"], "number", [], "any", false, false, false, 158) == twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 158, $this->source); })()), "current", [], "any", false, false, false, 158))) ? ("page-current") : (""));
                 echo "\" href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 152), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 158), "html", null, true);
                 echo "\">
                                     ";
-                // line 153
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "number", [], "any", false, false, false, 153), "html", null, true);
+                // line 159
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "number", [], "any", false, false, false, 159), "html", null, true);
                 echo "
                                 </a>
                             </li>
@@ -297,16 +306,16 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 157
+            // line 163
             echo "
                         <!-- next -->
                         <li class=\"page-item ";
-            // line 159
-            echo (( !twig_get_attribute($this->env, $this->source, ($context["pagination"] ?? null), "next", [], "any", true, true, false, 159)) ? ("disabled") : (""));
+            // line 165
+            echo (( !twig_get_attribute($this->env, $this->source, ($context["pagination"] ?? null), "next", [], "any", true, true, false, 165)) ? ("disabled") : (""));
             echo "\">
                             <a class=\"page-link next\" href=\"";
-            // line 160
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 160, $this->source); })()), "nextURL", [], "any", false, false, false, 160), "html", null, true);
+            // line 166
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["pagination"]) || array_key_exists("pagination", $context) ? $context["pagination"] : (function () { throw new RuntimeError('Variable "pagination" does not exist.', 166, $this->source); })()), "nextURL", [], "any", false, false, false, 166), "html", null, true);
             echo "\">
                                 <i class=\"fa-solid fa-angle-right\"></i>
                             </a>
@@ -316,7 +325,7 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
             </div>
         ";
         }
-        // line 168
+        // line 174
         echo "    </div>
 </div>
 
@@ -325,7 +334,7 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
 <script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 175
+        // line 181
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/admin/Javascript/dashboard.js"), "html", null, true);
         echo "\"></script>
 
@@ -359,7 +368,7 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
      */
     public function getDebugInfo()
     {
-        return array (  329 => 175,  320 => 168,  309 => 160,  305 => 159,  301 => 157,  291 => 153,  285 => 152,  282 => 151,  278 => 150,  269 => 144,  265 => 143,  259 => 139,  257 => 138,  249 => 132,  242 => 130,  233 => 126,  226 => 122,  218 => 117,  214 => 116,  207 => 112,  203 => 111,  195 => 106,  189 => 105,  183 => 101,  178 => 100,  141 => 68,  124 => 54,  111 => 44,  102 => 38,  93 => 32,  80 => 24,  67 => 14,  63 => 13,  59 => 12,  55 => 11,  43 => 1,);
+        return array (  338 => 181,  329 => 174,  318 => 166,  314 => 165,  310 => 163,  300 => 159,  294 => 158,  291 => 157,  287 => 156,  278 => 150,  274 => 149,  268 => 145,  266 => 144,  258 => 138,  251 => 136,  242 => 132,  235 => 128,  227 => 123,  223 => 122,  216 => 118,  212 => 117,  204 => 112,  198 => 111,  192 => 107,  187 => 106,  150 => 74,  133 => 60,  120 => 50,  111 => 44,  102 => 38,  93 => 32,  80 => 24,  67 => 14,  63 => 13,  59 => 12,  55 => 11,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -410,6 +419,12 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
                 <a href=\"{{ path('app_admin_products') }}\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-boxes text-center\"></i>
                     <span>Produits</span>
+                </a>
+            </li>
+            <li class=\"nav-link\">
+                <a href=\"{{ path('app_admin_contacts') }}\" class=\"text-decoration-none d-block\">
+                    <i class=\"fa-solid fa-users text-center\"></i>
+                    <span>Contacts</span>
                 </a>
             </li>
         </div>
@@ -540,6 +555,6 @@ class __TwigTemplate_29b29c01b0450a508bf72db767c8cdee extends Template
 <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"></script>
 <script src=\"{{asset('/admin/Javascript/dashboard.js') }}\"></script>
 
-", "admin/users.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\templates\\admin\\users.html.twig");
+", "admin/users.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\templates\\admin\\users.html.twig");
     }
 }

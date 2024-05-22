@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('admin/stylesheets/dashboard.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/stylesheets/table.css') }}">
     <link rel="icon" href="{{ asset('admin/images/logo_left.png') }}">
-    <title>Comptes utilisateur</title>
+    <title>Contacts</title>
 </head>
 
 <body>
@@ -80,14 +80,13 @@
 <!-- content -->
 <div id="wrapper" class="body-padding no-transition">
     <div id="content">
-        <h1>Liste des comptes</h1>
+        <h1>Liste des Messages reçus</h1>
 
         <!-- user table -->
         <div class="table-overview">
             <!-- table header -->
             <div class="table-header d-flex flew-row justify-content-between align-items-center">
-                <h2 class="table-title">Comptes</h2>
-
+                <h2 class="table-title">Messages</h2>
             </div>
 
             <div class="overview-table">
@@ -96,10 +95,11 @@
                     <thead>
                     <tr>
                         <td>Email</td>
-                        <td>Contact</td>
-                        <td>Statut</td>
-                        <td>Role</td>
-                        <td></td>
+                        <td>Objet</td>
+                        <td>Message</td>
+                        <td>Date de naissance</td>
+                        <td>job</td>
+                        
                     </tr>
                     </thead>
                     <tbody>
@@ -113,23 +113,25 @@
                         </td>
                         <td class="cell-phone">
                             <div class="d-flex flex-column">
+                                <span>{{ contact.subject }}</span>
+                            </div>
+                        </td>
+                        <td class="cell-phone">
+                            <div class="d-flex flex-column">
                                 <span>{{ contact.message }}</span>
-                                <span>{{ contact.genre }}</span>
                             </div>
                         </td>
                         <td class="cell-status">
-                                    <span class="status" data-status="{{ contact.genre }}">
-                                        {{ contact.genre }}
-                                    </span>
+                            <span class="status" data-status="{{ contact.BirthDate|date('Y-m-d') }}">
+                                {{ contact.BirthDate|date('Y-m-d') }}
+                            </span>                          
                         </td>
-                        <td class="cell-role">
-                                    <span>
-                                        {{ user.roles|join(', ') }}
-                                    </span>
+                        <td class="cell-status">
+                            <span class="status" data-status="{{ contact.job }}">
+                                {{ contact.job }}
+                            </span>
                         </td>
-                        <td class="cell-edit">
-                            <a href="{{ path('app_admin_contacts', {'id': user.id}) }}"><i class="fa-solid fa-pen-to-square"></i></a>
-                        </td>
+                        
                     </tr>
                     {% else %}
                         <tr><td colspan="10" class="text-center">Aucun utilisateur trouvé.</td></tr>

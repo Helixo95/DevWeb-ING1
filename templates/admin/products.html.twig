@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>Administrateur - Tableau de bord</title>
+    
     <link rel="icon" href="#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="{{ asset('admin/stylesheets/card.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/stylesheets/table.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/stylesheets/products.css') }}">
-
+    <link rel="icon" href="{{ asset('admin/images/logo_left.png') }}">
+    <title>Produits</title>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
     <ul class="list-unstyled d-flex flex-column justify-content-between">
         <!-- top -->
         <div class="top">
-            <li class="nav-link link-active">
+            <li class="nav-link">
                 <a href="{{ path('admin_dashboard') }}" class="text-decoration-none d-block">
                     <i class="fa-solid fa-gauge text-center"></i>
                     <span>Tableau de bord</span>
@@ -42,10 +43,16 @@
                     <span>Comptes</span>
                 </a>
             </li>
-            <li class="nav-link">
+            <li class="nav-link link-active">
                 <a href="{{ path('app_admin_products') }}" class="text-decoration-none d-block">
                     <i class="fa-solid fa-boxes text-center"></i>
                     <span>Produits</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="{{ path('app_admin_contacts') }}" class="text-decoration-none d-block">
+                    <i class="fa-solid fa-users text-center"></i>
+                    <span>Contacts</span>
                 </a>
             </li>
         </div>
