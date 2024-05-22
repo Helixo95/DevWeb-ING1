@@ -52,11 +52,22 @@ public function editProduct(int $id, EntityManagerInterface $entityManager, Requ
         'product' => $product,
     ]);
     }
-    #[Route('/admin/product/delete/{id}', name: 'admin_product_delete', methods: ['POST'])]
-    public function delete(Product $product, EntityManagerInterface $entityManager): Response
+    #[Route('/admin/product/delete/{id}', name: 'app_admin_product_delete', requirements: ['id' => '\d+'], methods: ['DELETE'])]
+    public function deleteProduct(int $id, EntityManagerInterface $entityManager, Request $request): Response
     {
-        $entityManager->remove($product);
-        $entityManager->flush();
+        // Récupérer le produit par son id
+        $product = $entityManager->getRepository(Product::class)->find($id);
+
+        if (!$product) {
+            throw $this->createNotFoundException('Le produit n\'existe pas.');
+        }
+
+        if ($this->isCsrfTokenValid('delete'.$product->getId_prod(), $request->request->get('_token'))) {
+            $entityManager->remove($product);
+            $entityManager->flush();
+
+            $this->addFlash('success', 'Product deleted successfully');
+        }
 
         return $this->redirectToRoute('app_admin_products');
     }

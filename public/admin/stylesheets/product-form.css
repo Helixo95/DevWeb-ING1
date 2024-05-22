@@ -32,7 +32,7 @@
     color: var(--red);
 }
 
-#product-form #form-submit {
+#product-form #form-submit #delete-product{
     background-color: var(--orange);
     color: var(--white);
     border: none;
@@ -43,7 +43,7 @@
     width: 150px;
 }
 
-#product-form #form-submit:hover {
+#product-form #form-submit #delete-product:hover {
     opacity: 0.9;
 }
 

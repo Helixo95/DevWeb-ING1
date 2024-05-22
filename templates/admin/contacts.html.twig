@@ -34,7 +34,7 @@
                     <span>Tableau de bord</span>
                 </a>
             </li>
-            <li class="nav-link link-active">
+            <li class="nav-link">
                 <a href="{{ path('app_admin_users') }}" class="text-decoration-none d-block">
                     <i class="fa-solid fa-users text-center"></i>
                     <span>Comptes</span>
@@ -49,7 +49,7 @@
             <li class="nav-link link-active">
                 <a href="{{ path('app_admin_contacts') }}" class="text-decoration-none d-block">
                     <i class="fa-solid fa-users text-center"></i>
-                    <span>Comptes</span>
+                    <span>Contacts</span>
                 </a>
             </li>
         </div>
@@ -108,7 +108,7 @@
                         <td class="cell-name d-flex flex-row align-items-center">
                             <div><i class="fa-solid fa-user"></i></div>
                             <div class="info d-flex flex-column">
-                                <span>{{ contact.message }}</span>
+                                <span>{{ contact.email }}</span>
                             </div>
                         </td>
                         <td class="cell-phone">

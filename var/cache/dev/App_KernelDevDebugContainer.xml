@@ -7149,12 +7149,13 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.z4Xr5HJ" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.4jZCgLf" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Admin\AdminContactsController::index" type="service_closure" id=".service_locator.FYlrq_N"/>
         <argument key="App\Controller\Admin\AdminController::dashboard" type="service_closure" id=".service_locator.HIhw834"/>
         <argument key="App\Controller\Admin\AdminCreateController::createProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
+        <argument key="App\Controller\Admin\AdminProductController::deleteProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\Admin\AdminProductController::editProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\Admin\AdminProductsController::index" type="service_closure" id=".service_locator.0Fb1YCW"/>
         <argument key="App\Controller\Admin\AdminUserController::changeRole" type="service_closure" id=".service_locator.S.D1AES"/>
@@ -7181,6 +7182,7 @@
         <argument key="App\Controller\Admin\AdminContactsController:index" type="service_closure" id=".service_locator.FYlrq_N"/>
         <argument key="App\Controller\Admin\AdminController:dashboard" type="service_closure" id=".service_locator.HIhw834"/>
         <argument key="App\Controller\Admin\AdminCreateController:createProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
+        <argument key="App\Controller\Admin\AdminProductController:deleteProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\Admin\AdminProductController:editProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\Admin\AdminProductsController:index" type="service_closure" id=".service_locator.0Fb1YCW"/>
         <argument key="App\Controller\Admin\AdminUserController:changeRole" type="service_closure" id=".service_locator.S.D1AES"/>
@@ -8121,12 +8123,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.z4Xr5HJ"/>
+      <argument type="service" id=".service_locator.4jZCgLf"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.z4Xr5HJ"/>
+      <argument type="service" id=".service_locator.4jZCgLf"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -9182,7 +9184,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Contracts\Orm\EntityPaginatorInterface" alias="EasyCorp\Bundle\EasyAdminBundle\Orm\EntityPaginator"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.z4Xr5HJ"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.4jZCgLf"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
@@ -9209,7 +9211,7 @@
     <service id=".service_locator.4UFIY6Q" alias=".service_locator.S.D1AES"/>
     <service id=".service_locator.lDrzDEv" alias=".service_locator.RLfR8Ds"/>
     <service id=".service_locator.riGN6sa" alias=".service_locator.YU8H6ve"/>
-    <service id=".service_locator.6fxQqLV" alias=".service_locator.z4Xr5HJ"/>
+    <service id=".service_locator.X0T_.iS" alias=".service_locator.4jZCgLf"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.Oimi2cR" alias=".service_locator.NLznpKt"/>
     <service id=".service_locator.uwh6Rke" alias=".service_locator.cgfzwmn"/>
