@@ -252,92 +252,11 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
             <div class=\"row\">
                 <div class=\"col-lg-3 col-md-12\">
                     <div class=\"home_section_left\">
-                        <!-- deals product area starts -->
-
-                        <div class=\"deals_product_area mb-68\">
-                            <div class=\"section_title section_title_style2\">
-                                <h2>Hot Deals</h2>
-                            </div>
-                            <div class=\"row\">
-                                <div class=\"deals_carousel product_column1 owl-carousel\">
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"/";
-        // line 126
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/Deals/D1-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"";
-        // line 129
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/Deals/D1-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <!-- for deals timing -->
-                                                    <div class=\"product_timing\">
-                                                        <div data-countdown=\"2021/1/15\"></div>
-                                                    </div>
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Boss Men Bottled Infinte EAU</a>
-                                                    </h4>
-
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 9100</span>
-                                                        <span class=\"current_price\">Rs. 8650</span>
-                                                    </div>
-
-                                                </figcaption>
-                                            </figure>
-
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- deals product area ends -->
-
-                        <!-- Newsletter section starts -->
-
-                        <div class=\"newsletter_style2\">
-                            <div class=\"newsletter_container\">
-                                <div class=\"section_title section_title_style2\">
-                                    <h2>Newsletter</h2>
-                                </div>
-                                <div class=\"subscribe_form\">
-                                    <form>
-                                        <input type=\"email\" autocomplete=\"off\" placeholder=\"example@gmail.com\">
-                                        <button>
-                                            <i class=\"fa fa-envelope-o\"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class=\"newsletter_content\">
-                                    <p>Sign up to get news and get 25% off instantly.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Newsletter section ends -->
+                        <img src=\"";
+        // line 113
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/logo.png"), "html", null, true);
+        echo "\">
+                        <h2 class=\"text-center\">Exotik</h2>
                     </div>
                 </div>
                 <div class=\"col-lg-9 col-md-12\">
@@ -350,42 +269,35 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                             </div>
                             <div class=\"row\">
                                 <div class=\"product_carousel product_column3 owl-carousel\">
-                                    <div class=\"col-lg-3\">
+                                    ";
+        // line 127
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 127, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
+            // line 128
+            echo "                                    <div class=\"col-lg-3\">
                                         <article class=\"single_product\">
                                             <figure>
                                                 <div class=\"product_thumb\">
                                                     <a href=\"#\" class=\"primary_img\">
                                                         <img src=\"";
-        // line 210
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N1-1.png"), "html", null, true);
-        echo "\" alt=\"\">
+            // line 133
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "primaryImageUrl", [], "any", false, false, false, 133)), "html", null, true);
+            echo "\" alt=\"\">
                                                     </a>
                                                     <a href=\"#\" class=\"secondary_img\">
                                                         <img src=\"";
-        // line 213
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N2-1.png"), "html", null, true);
-        echo "\" alt=\"\">
+            // line 136
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "secondaryImageUrl", [], "any", false, false, false, 136)), "html", null, true);
+            echo "\" alt=\"\">
                                                     </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
                                                 </div>
                                                 <figcaption class=\"product_content\">
                                                     <h4 class=\"product_name\">
-                                                        <a href=\"#\">Bvlgari Women Splendid </a>
+                                                        <a>";
+            // line 141
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 141), "html", null, true);
+            echo "</a>
                                                     </h4>
                                                     <div class=\"product_rating\">
                                                         <ul>
@@ -417,385 +329,26 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                         </ul>
                                                     </div>
                                                     <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 7499</span>
-                                                        <span class=\"current_price\">Rs. 7200</span>
+                                                        <span class=\"old_price\">";
+            // line 173
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getOldPrice", [], "any", false, false, false, 173), "html", null, true);
+            echo "€</span>
+                                                        <span class=\"current_price\">";
+            // line 174
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "any", false, false, false, 174), "html", null, true);
+            echo "€</span>
                                                     </div>
                                                 </figcaption>
                                             </figure>
                                         </article>
                                     </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"";
-        // line 278
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N2-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"";
-        // line 281
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N2-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Coach Women Floral Blush</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 6999</span>
-                                                        <span class=\"current_price\">Rs. 6350</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"";
-        // line 346
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N3.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"";
-        // line 349
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N3.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Versace Women Eros</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 6500</span>
-                                                        <span class=\"current_price\">Rs. 6200</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"";
-        // line 414
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N4-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"";
-        // line 417
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N4-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Salvatore Ferragamo Women Signorina</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 7500</span>
-                                                        <span class=\"current_price\">Rs. 6150</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"";
-        // line 483
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N5-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"";
-        // line 486
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Kenzo Women World</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 5999</span>
-                                                        <span class=\"current_price\">Rs. 5900</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"";
-        // line 551
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N6-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"";
-        // line 554
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N6-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Kenzo Women World</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 5999</span>
-                                                        <span class=\"current_price\">Rs. 5900</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                </div>
+                                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 181
+        echo "                                </div>
                             </div>
                         </div>
 
@@ -807,7 +360,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                 <div class=\"banner_thumb\">
                                     <a href=\"#\">
                                         <img src=\"";
-        // line 625
+        // line 192
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/banner/banner4.png"), "html", null, true);
         echo "\" alt=\"\">
 
@@ -829,43 +382,37 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                             </div>
                             <div class=\"row\">
                                 <div class=\"product_carousel product_column3 owl-carousel\">
-                                    <div class=\"col-lg-3\">
+                                    ";
+        // line 212
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 212, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
+            // line 213
+            echo "                                    <div class=\"col-lg-3\">
                                         <div class=\"product_items\">
                                             <article class=\"single_product\">
                                                 <figure>
                                                     <div class=\"product_thumb\">
                                                         <a href=\"#\" class=\"primary_img\">
                                                             <img src=\"";
-        // line 651
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D1-1.png"), "html", null, true);
-        echo "\" alt=\"\">
+            // line 219
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "primaryImageUrl", [], "any", false, false, false, 219)), "html", null, true);
+            echo "\" alt=\"\">
                                                         </a>
                                                         <a href=\"#\" class=\"secondary_img\">
                                                             <img src=\"";
-        // line 654
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D1-2.png"), "html", null, true);
-        echo "\" alt=\"\">
+            // line 222
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["product"], "secondaryImageUrl", [], "any", false, false, false, 222)), "html", null, true);
+            echo "\" alt=\"\">
                                                         </a>
 
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
                                                     </div>
                                                     <figcaption class=\"product_content\">
                                                         <h4 class=\"product_name\">
-                                                            <a href=\"#\">Paco Rabbane Pure XS for Her</a>
+                                                            <a href=\"#\">";
+            // line 228
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 228), "html", null, true);
+            echo "</a>
                                                         </h4>
                                                         <div class=\"product_rating\">
                                                             <ul>
@@ -897,886 +444,27 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                             </ul>
                                                         </div>
                                                         <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 6550</span>
-                                                            <span class=\"current_price\">Rs. 5240</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 717
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D2-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 720
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D2-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Paco Rabanne Women Olympea</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 5999</span>
-                                                            <span class=\"current_price\">Rs. 5100</span>
+                                                            <span class=\"old_price\">";
+            // line 260
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getOldPrice", [], "any", false, false, false, 260), "html", null, true);
+            echo "€</span>
+                                                            <span class=\"current_price\">";
+            // line 261
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getCurrentPrice", [], "any", false, false, false, 261), "html", null, true);
+            echo "€</span>
                                                         </div>
                                                     </figcaption>
                                                 </figure>
                                             </article>
                                         </div>
                                     </div>
-
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 790
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D3-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 793
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D3-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Issey Miyake Women L'Eau
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 5999</span>
-                                                                    <span class=\"current_price\">Rs. 5100</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-                                                    </figcaption>
-
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 865
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D4-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 868
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D4-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Paco Rabanne Million</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 5999</span>
-                                                            <span class=\"current_price\">Rs. 5100</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 938
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D5-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 941
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D5-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Lacoste Women
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 6000</span>
-                                                                    <span class=\"current_price\">Rs. 5000</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 1012
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D6-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 1015
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D6-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Narciso Rodiguez For Him</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 5500</span>
-                                                            <span class=\"current_price\">Rs. 5000</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 1084
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D7-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 1087
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D7-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Nina Ricci Women
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 5500</span>
-                                                                    <span class=\"current_price\">Rs. 5000</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 1158
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D8-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 1161
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D8-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Mercedes Benz Women</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 5900</span>
-                                                            <span class=\"current_price\">Rs. 4838</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 1230
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D9-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 1233
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D9-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Chopard Women Wish
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 5500</span>
-                                                                    <span class=\"current_price\">Rs. 4950</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 1305
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D10-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 1308
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D10-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Mont Blanc Lady Emblem</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 4999</span>
-                                                            <span class=\"current_price\">Rs. 4500</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 1378
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D11-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 1381
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D11-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Jimmy Choo Illicit Flower
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 4999</span>
-                                                                    <span class=\"current_price\">Rs. 4200</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"";
-        // line 1453
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D12-1.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"";
-        // line 1456
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/onsale/D12-2.png"), "html", null, true);
-        echo "\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Bvlgari Women Goldea</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 3999</span>
-                                                            <span class=\"current_price\">Rs. 3700</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                </div>
+                                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 269
+        echo "                                </div>
                             </div>
                         </div>
 
@@ -1802,7 +490,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                         <div class=\"tab-pane fade show active\" id=\"tab1\" role=\"tabpanel\">
                                             <div class=\"modal_tab_img\">
                                                 <a href=\"#\"><img src=\"";
-        // line 1545
+        // line 294
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N1-1.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                                             </div>
@@ -1810,7 +498,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                         <div class=\"tab-pane fade\" id=\"tab2\" role=\"tabpanel\">
                                             <div class=\"modal_tab_img\">
                                                 <a href=\"#\"><img src=\"";
-        // line 1550
+        // line 299
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N2-1.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                                             </div>
@@ -1818,7 +506,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                         <div class=\"tab-pane fade\" id=\"tab3\" role=\"tabpanel\">
                                             <div class=\"modal_tab_img\">
                                                 <a href=\"#\"><img src=\"";
-        // line 1555
+        // line 304
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N3.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                                             </div>
@@ -1826,7 +514,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                         <div class=\"tab-pane fade\" id=\"tab4\" role=\"tabpanel\">
                                             <div class=\"modal_tab_img\">
                                                 <a href=\"#\"><img src=\"";
-        // line 1560
+        // line 309
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N4-1.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                                             </div>
@@ -1838,7 +526,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                 <a href=\"#tab1\" class=\"nav-link active\" data-toggle=\"tab\" role=\"tab\"
                                                    aria-controls=\"tab1\" aria-selected=\"false\">
                                                     <img src=\"";
-        // line 1569
+        // line 318
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N1-1.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -1847,7 +535,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                 <a href=\"#tab2\" class=\"nav-link\" data-toggle=\"tab\" role=\"tab\"
                                                    aria-controls=\"tab2\" aria-selected=\"false\">
                                                     <img src=\"";
-        // line 1575
+        // line 324
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N2-1.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -1856,7 +544,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                 <a href=\"#tab3\" class=\"nav-link\" data-toggle=\"tab\" role=\"tab\"
                                                    aria-controls=\"tab3\" aria-selected=\"false\">
                                                     <img src=\"";
-        // line 1581
+        // line 330
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N3.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
@@ -1865,53 +553,12 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                 <a href=\"#tab4\" class=\"nav-link\" data-toggle=\"tab\" role=\"tab\"
                                                    aria-controls=\"tab4\" aria-selected=\"false\">
                                                     <img src=\"";
-        // line 1587
+        // line 336
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("base/new-product/N4-1.png"), "html", null, true);
         echo "\" alt=\"\">
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=\"col-lg-7 col-md-7 col-sm-12\">
-                                <div class=\"modal_right\">
-                                    <div class=\"modal_title mb-10\">
-                                        <h2>Paco Rabbane Men Invictus</h2>
-                                    </div>
-                                    <div class=\"modal_price mb-10\">
-                                        <span class=\"new_price\">76€</span>
-                                        <span class=\"old_price\">81€</span>
-                                    </div>
-                                    <div class=\"modal_description mb-15\">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis earum
-                                            nesciunt consequatur deleniti nam dicta eligendi iusto quaerat dolores
-                                            debitis, est natus omnis consequuntur sequi. Ipsam sint rerum minus eos?</p>
-                                    </div>
-                                    <div class=\"variants_selects\">
-                                        <div class=\"variants_size\">
-                                            <h2>Size</h2>
-                                            <select class=\"select_option\">
-                                                <option value=\"1\" selected>10ml</option>
-                                                <option value=\"1\">25ml</option>
-                                                <option value=\"1\">50ml</option>
-                                                <option value=\"1\">100ml</option>
-                                                <option value=\"1\">250ml</option>
-                                            </select>
-                                        </div>
-                                        <div class=\"modal_add_to_cart\">
-                                            <form action=\"#\">
-                                                <div class=\"quantity-selector \">
-                                                    <button type=\"button\" class=\"quantity-btn\" onclick=\"changeQuantity(-1)\">−</button>
-                                                    <input type=\"number\" id=\"quantity\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"100\">
-                                                    <button type=\"button\" class=\"quantity-btn\" onclick=\"changeQuantity(1)\">+</button>
-                                                </div>
-                                                <button type=\"button\" class=\"stock-btn\">Stock : 20</button>
-                                                <button type=\"submit\">Add to cart</button>
-
-                                            </form>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1932,7 +579,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
 
     }
 
-    // line 1645
+    // line 353
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -1942,7 +589,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 1646
+        // line 354
         echo "    ";
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
@@ -1976,7 +623,7 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  1946 => 1646,  1936 => 1645,  1869 => 1587,  1860 => 1581,  1851 => 1575,  1842 => 1569,  1830 => 1560,  1822 => 1555,  1814 => 1550,  1806 => 1545,  1714 => 1456,  1708 => 1453,  1633 => 1381,  1627 => 1378,  1554 => 1308,  1548 => 1305,  1473 => 1233,  1467 => 1230,  1395 => 1161,  1389 => 1158,  1315 => 1087,  1309 => 1084,  1237 => 1015,  1231 => 1012,  1157 => 941,  1151 => 938,  1078 => 868,  1072 => 865,  997 => 793,  991 => 790,  918 => 720,  912 => 717,  846 => 654,  840 => 651,  811 => 625,  737 => 554,  731 => 551,  663 => 486,  657 => 483,  588 => 417,  582 => 414,  514 => 349,  508 => 346,  440 => 281,  434 => 278,  366 => 213,  360 => 210,  276 => 129,  270 => 126,  233 => 92,  216 => 78,  199 => 64,  167 => 35,  147 => 18,  141 => 14,  131 => 13,  118 => 10,  108 => 9,  96 => 6,  91 => 5,  81 => 4,  62 => 2,  39 => 1,);
+        return array (  593 => 354,  583 => 353,  557 => 336,  548 => 330,  539 => 324,  530 => 318,  518 => 309,  510 => 304,  502 => 299,  494 => 294,  467 => 269,  453 => 261,  449 => 260,  414 => 228,  405 => 222,  399 => 219,  391 => 213,  387 => 212,  364 => 192,  351 => 181,  338 => 174,  334 => 173,  299 => 141,  291 => 136,  285 => 133,  278 => 128,  274 => 127,  257 => 113,  233 => 92,  216 => 78,  199 => 64,  167 => 35,  147 => 18,  141 => 14,  131 => 13,  118 => 10,  108 => 9,  96 => 6,  91 => 5,  81 => 4,  62 => 2,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -2093,86 +740,8 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
             <div class=\"row\">
                 <div class=\"col-lg-3 col-md-12\">
                     <div class=\"home_section_left\">
-                        <!-- deals product area starts -->
-
-                        <div class=\"deals_product_area mb-68\">
-                            <div class=\"section_title section_title_style2\">
-                                <h2>Hot Deals</h2>
-                            </div>
-                            <div class=\"row\">
-                                <div class=\"deals_carousel product_column1 owl-carousel\">
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"/{{ asset('base/Deals/D1-1.png') }}\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"{{ asset('base/Deals/D1-2.png') }}\" alt=\"\">
-                                                    </a>
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <!-- for deals timing -->
-                                                    <div class=\"product_timing\">
-                                                        <div data-countdown=\"2021/1/15\"></div>
-                                                    </div>
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Boss Men Bottled Infinte EAU</a>
-                                                    </h4>
-
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 9100</span>
-                                                        <span class=\"current_price\">Rs. 8650</span>
-                                                    </div>
-
-                                                </figcaption>
-                                            </figure>
-
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- deals product area ends -->
-
-                        <!-- Newsletter section starts -->
-
-                        <div class=\"newsletter_style2\">
-                            <div class=\"newsletter_container\">
-                                <div class=\"section_title section_title_style2\">
-                                    <h2>Newsletter</h2>
-                                </div>
-                                <div class=\"subscribe_form\">
-                                    <form>
-                                        <input type=\"email\" autocomplete=\"off\" placeholder=\"example@gmail.com\">
-                                        <button>
-                                            <i class=\"fa fa-envelope-o\"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class=\"newsletter_content\">
-                                    <p>Sign up to get news and get 25% off instantly.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Newsletter section ends -->
+                        <img src=\"{{ asset('base/logo.png') }}\">
+                        <h2 class=\"text-center\">Exotik</h2>
                     </div>
                 </div>
                 <div class=\"col-lg-9 col-md-12\">
@@ -2185,36 +754,21 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                             </div>
                             <div class=\"row\">
                                 <div class=\"product_carousel product_column3 owl-carousel\">
+                                    {% for product in products %}
                                     <div class=\"col-lg-3\">
                                         <article class=\"single_product\">
                                             <figure>
                                                 <div class=\"product_thumb\">
                                                     <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N1-1.png') }}\" alt=\"\">
+                                                        <img src=\"{{ asset(product.primaryImageUrl) }}\" alt=\"\">
                                                     </a>
                                                     <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N2-1.png') }}\" alt=\"\">
+                                                        <img src=\"{{ asset(product.secondaryImageUrl) }}\" alt=\"\">
                                                     </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
                                                 </div>
                                                 <figcaption class=\"product_content\">
                                                     <h4 class=\"product_name\">
-                                                        <a href=\"#\">Bvlgari Women Splendid </a>
+                                                        <a>{{ product.name }}</a>
                                                     </h4>
                                                     <div class=\"product_rating\">
                                                         <ul>
@@ -2246,354 +800,14 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                         </ul>
                                                     </div>
                                                     <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 7499</span>
-                                                        <span class=\"current_price\">Rs. 7200</span>
+                                                        <span class=\"old_price\">{{ product.getOldPrice }}€</span>
+                                                        <span class=\"current_price\">{{ product.getCurrentPrice }}€</span>
                                                     </div>
                                                 </figcaption>
                                             </figure>
                                         </article>
                                     </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N2-1.png') }}\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N2-2.png') }}\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Coach Women Floral Blush</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 6999</span>
-                                                        <span class=\"current_price\">Rs. 6350</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N3.png') }}\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N3.png') }}\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Versace Women Eros</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 6500</span>
-                                                        <span class=\"current_price\">Rs. 6200</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N4-1.png') }}\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N4-2.png') }}\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Salvatore Ferragamo Women Signorina</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 7500</span>
-                                                        <span class=\"current_price\">Rs. 6150</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N5-1.png') }}\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N5-2.png') }}\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Kenzo Women World</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 5999</span>
-                                                        <span class=\"current_price\">Rs. 5900</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <article class=\"single_product\">
-                                            <figure>
-                                                <div class=\"product_thumb\">
-                                                    <a href=\"#\" class=\"primary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N6-1.png') }}\" alt=\"\">
-                                                    </a>
-                                                    <a href=\"#\" class=\"secondary_img\">
-                                                        <img src=\"{{ asset('base/new-product/N6-2.png') }}\" alt=\"\">
-                                                    </a>
-
-                                                    <div class=\"action_links\">
-                                                        <ul>
-                                                            <li class=\"add_to_cart\">
-                                                                <a href=\"#\" title=\"Add to Cart\">
-                                                                    <i class=\"fa fa-shopping-cart\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class=\"quick_button\">
-                                                                <a href=\"#\" data-toggle=\"modal\" data-target=\"#modal_box\"
-                                                                   title=\"Quick View\">
-                                                                    <i class=\"fa fa-eye\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class=\"product_content\">
-                                                    <h4 class=\"product_name\">
-                                                        <a href=\"#\">Kenzo Women World</a>
-                                                    </h4>
-                                                    <div class=\"product_rating\">
-                                                        <ul>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href=\"#\">
-                                                                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class=\"price_box\">
-                                                        <span class=\"old_price\">Rs. 5999</span>
-                                                        <span class=\"current_price\">Rs. 5900</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
+                                    {% endfor %}
                                 </div>
                             </div>
                         </div>
@@ -2625,37 +839,23 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                             </div>
                             <div class=\"row\">
                                 <div class=\"product_carousel product_column3 owl-carousel\">
+                                    {% for product in products %}
                                     <div class=\"col-lg-3\">
                                         <div class=\"product_items\">
                                             <article class=\"single_product\">
                                                 <figure>
                                                     <div class=\"product_thumb\">
                                                         <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D1-1.png') }}\" alt=\"\">
+                                                            <img src=\"{{ asset(product.primaryImageUrl) }}\" alt=\"\">
                                                         </a>
                                                         <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D1-2.png') }}\" alt=\"\">
+                                                            <img src=\"{{ asset(product.secondaryImageUrl) }}\" alt=\"\">
                                                         </a>
 
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
                                                     </div>
                                                     <figcaption class=\"product_content\">
                                                         <h4 class=\"product_name\">
-                                                            <a href=\"#\">Paco Rabbane Pure XS for Her</a>
+                                                            <a href=\"#\">{{ product.name }}</a>
                                                         </h4>
                                                         <div class=\"product_rating\">
                                                             <ul>
@@ -2687,819 +887,15 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                             </ul>
                                                         </div>
                                                         <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 6550</span>
-                                                            <span class=\"current_price\">Rs. 5240</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D2-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D2-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Paco Rabanne Women Olympea</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 5999</span>
-                                                            <span class=\"current_price\">Rs. 5100</span>
+                                                            <span class=\"old_price\">{{ product.getOldPrice }}€</span>
+                                                            <span class=\"current_price\">{{ product.getCurrentPrice }}€</span>
                                                         </div>
                                                     </figcaption>
                                                 </figure>
                                             </article>
                                         </div>
                                     </div>
-
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D3-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D3-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Issey Miyake Women L'Eau
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 5999</span>
-                                                                    <span class=\"current_price\">Rs. 5100</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-                                                    </figcaption>
-
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D4-2.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D4-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Paco Rabanne Million</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 5999</span>
-                                                            <span class=\"current_price\">Rs. 5100</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D5-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D5-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Lacoste Women
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 6000</span>
-                                                                    <span class=\"current_price\">Rs. 5000</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D6-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D6-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Narciso Rodiguez For Him</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 5500</span>
-                                                            <span class=\"current_price\">Rs. 5000</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D7-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D7-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Nina Ricci Women
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 5500</span>
-                                                                    <span class=\"current_price\">Rs. 5000</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D8-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D8-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Mercedes Benz Women</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 5900</span>
-                                                            <span class=\"current_price\">Rs. 4838</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D9-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D9-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Chopard Women Wish
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 5500</span>
-                                                                    <span class=\"current_price\">Rs. 4950</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D10-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D10-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Mont Blanc Lady Emblem</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 4999</span>
-                                                            <span class=\"current_price\">Rs. 4500</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class=\"col-lg-3\">
-                                        <div class=\"product_items\">
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D11-2.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D11-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Jimmy Choo Illicit Flower
-                                                                <div class=\"product_rating\">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href=\"#\">
-                                                                                <i class=\"fa fa-star\"
-                                                                                   aria-hidden=\"true\"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class=\"price_box\">
-                                                                    <span class=\"old_price\">Rs. 4999</span>
-                                                                    <span class=\"current_price\">Rs. 4200</span>
-                                                                </div>
-                                                            </a>
-                                                        </h4>
-
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                            <article class=\"single_product\">
-                                                <figure>
-                                                    <div class=\"product_thumb\">
-                                                        <a href=\"#\" class=\"primary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D12-1.png') }}\" alt=\"\">
-                                                        </a>
-                                                        <a href=\"#\" class=\"secondary_img\">
-                                                            <img src=\"{{ asset('base/onsale/D12-2.png') }}\" alt=\"\">
-                                                        </a>
-
-                                                        <div class=\"action_links\">
-                                                            <ul>
-                                                                <li class=\"add_to_cart\">
-                                                                    <a href=\"#\" title=\"Add to Cart\">
-                                                                        <i class=\"fa fa-shopping-cart\"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li class=\"quick_button\">
-                                                                    <a href=\"#\" data-toggle=\"modal\"
-                                                                       data-target=\"#modal_box\" title=\"Quick View\">
-                                                                        <i class=\"fa fa-eye\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figcaption class=\"product_content\">
-                                                        <h4 class=\"product_name\">
-                                                            <a href=\"#\">Bvlgari Women Goldea</a>
-                                                        </h4>
-                                                        <div class=\"product_rating\">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href=\"#\">
-                                                                        <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class=\"price_box\">
-                                                            <span class=\"old_price\">Rs. 3999</span>
-                                                            <span class=\"current_price\">Rs. 3700</span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-
+                                    {% endfor %}
                                 </div>
                             </div>
                         </div>
@@ -3571,47 +967,6 @@ class __TwigTemplate_09bc7733730121d1aac91bb4dfbc9a14 extends Template
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=\"col-lg-7 col-md-7 col-sm-12\">
-                                <div class=\"modal_right\">
-                                    <div class=\"modal_title mb-10\">
-                                        <h2>Paco Rabbane Men Invictus</h2>
-                                    </div>
-                                    <div class=\"modal_price mb-10\">
-                                        <span class=\"new_price\">76€</span>
-                                        <span class=\"old_price\">81€</span>
-                                    </div>
-                                    <div class=\"modal_description mb-15\">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis earum
-                                            nesciunt consequatur deleniti nam dicta eligendi iusto quaerat dolores
-                                            debitis, est natus omnis consequuntur sequi. Ipsam sint rerum minus eos?</p>
-                                    </div>
-                                    <div class=\"variants_selects\">
-                                        <div class=\"variants_size\">
-                                            <h2>Size</h2>
-                                            <select class=\"select_option\">
-                                                <option value=\"1\" selected>10ml</option>
-                                                <option value=\"1\">25ml</option>
-                                                <option value=\"1\">50ml</option>
-                                                <option value=\"1\">100ml</option>
-                                                <option value=\"1\">250ml</option>
-                                            </select>
-                                        </div>
-                                        <div class=\"modal_add_to_cart\">
-                                            <form action=\"#\">
-                                                <div class=\"quantity-selector \">
-                                                    <button type=\"button\" class=\"quantity-btn\" onclick=\"changeQuantity(-1)\">−</button>
-                                                    <input type=\"number\" id=\"quantity\" class=\"quantity-input\" value=\"0\" min=\"0\" max=\"100\">
-                                                    <button type=\"button\" class=\"quantity-btn\" onclick=\"changeQuantity(1)\">+</button>
-                                                </div>
-                                                <button type=\"button\" class=\"stock-btn\">Stock : 20</button>
-                                                <button type=\"submit\">Add to cart</button>
-
-                                            </form>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -16,6 +16,7 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
+    'app_admin_contacts' => [[], ['_controller' => 'App\\Controller\\Admin\\AdminContactsController::index'], [], [['text', '/admin/contacts']], [], [], []],
     'admin_dashboard' => [[], ['_controller' => 'App\\Controller\\Admin\\AdminController::dashboard'], [], [['text', '/admin']], [], [], []],
     'app_admin_product_create' => [[], ['_controller' => 'App\\Controller\\Admin\\AdminCreateController::createProduct'], [], [['text', '/admin/product/create']], [], [], []],
     'app_admin_product' => [['id'], ['_controller' => 'App\\Controller\\Admin\\AdminProductController::editProduct'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/admin/product']], [], [], []],
