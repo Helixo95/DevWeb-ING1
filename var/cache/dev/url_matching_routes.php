@@ -14,6 +14,7 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+        '/admin/contacts' => [[['_route' => 'app_admin_contacts', '_controller' => 'App\\Controller\\Admin\\AdminContactsController::index'], null, null, null, false, false, null]],
         '/admin' => [[['_route' => 'admin_dashboard', '_controller' => 'App\\Controller\\Admin\\AdminController::dashboard'], null, null, null, false, false, null]],
         '/admin/product/create' => [[['_route' => 'app_admin_product_create', '_controller' => 'App\\Controller\\Admin\\AdminCreateController::createProduct'], null, null, null, false, false, null]],
         '/admin/products' => [[['_route' => 'app_admin_products', '_controller' => 'App\\Controller\\Admin\\AdminProductsController::index'], null, null, null, false, false, null]],

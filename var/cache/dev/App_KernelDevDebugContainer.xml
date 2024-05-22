@@ -354,6 +354,13 @@
       <tag name="controller.service_arguments"/>
       <tag name="routing.route_loader"/>
     </service>
+    <service id="App\Controller\Admin\AdminContactsController" class="App\Controller\Admin\AdminContactsController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.jIxfAsi.App\Controller\Admin\AdminContactsController"/>
+      </call>
+    </service>
     <service id="App\Controller\Admin\AdminController" class="App\Controller\Admin\AdminController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -476,6 +483,7 @@
     </service>
     <service id="App\Security\UserAuthenticator" class="App\Security\UserAuthenticator" autowire="true" autoconfigure="true">
       <argument type="service" id="router.default"/>
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
     </service>
     <service id="App\Service\BrandService" class="App\Service\BrandService" autowire="true" autoconfigure="true">
       <argument type="service" id="doctrine.orm.default_entity_manager"/>
@@ -6570,6 +6578,9 @@
       <tag name="assets.package" package="easyadmin.assets.package"/>
       <argument type="service" id="request_stack"/>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminContactsController" class="App\Controller\Admin\AdminContactsController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminContactsController" class="App\Controller\Admin\AdminContactsController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\AdminContactsController" class="App\Controller\Admin\AdminContactsController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminController" class="App\Controller\Admin\AdminController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminController" class="App\Controller\Admin\AdminController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Admin\AdminController" class="App\Controller\Admin\AdminController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -7065,6 +7076,13 @@
         <argument key="loader" type="service_closure" id=".errored..service_locator.xUrKPVU.Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
+    <service id=".service_locator.FYlrq_N" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="contactRepository" type="service_closure" id="App\Repository\ContactRepository"/>
+        <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
     <service id=".service_locator.HIhw834" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -7131,9 +7149,10 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.KtkdfL." class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.z4Xr5HJ" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Controller\Admin\AdminContactsController::index" type="service_closure" id=".service_locator.FYlrq_N"/>
         <argument key="App\Controller\Admin\AdminController::dashboard" type="service_closure" id=".service_locator.HIhw834"/>
         <argument key="App\Controller\Admin\AdminCreateController::createProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\Admin\AdminProductController::editProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
@@ -7148,6 +7167,7 @@
         <argument key="App\Controller\CartController::cart_remove" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\CartController::index" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ContactController::index" type="service_closure" id=".service_locator.RLfR8Ds"/>
+        <argument key="App\Controller\HomeController::home" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProductController::add_cart" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProductController::add_cart2" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProductController::categoryBrand" type="service_closure" id=".service_locator.aKM6MDa"/>
@@ -7158,6 +7178,7 @@
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
+        <argument key="App\Controller\Admin\AdminContactsController:index" type="service_closure" id=".service_locator.FYlrq_N"/>
         <argument key="App\Controller\Admin\AdminController:dashboard" type="service_closure" id=".service_locator.HIhw834"/>
         <argument key="App\Controller\Admin\AdminCreateController:createProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\Admin\AdminProductController:editProduct" type="service_closure" id=".service_locator.aKM6MDa"/>
@@ -7172,6 +7193,7 @@
         <argument key="App\Controller\CartController:cart_remove" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\CartController:index" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ContactController:index" type="service_closure" id=".service_locator.RLfR8Ds"/>
+        <argument key="App\Controller\HomeController:home" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProductController:add_cart" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProductController:add_cart2" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\ProductController:categoryBrand" type="service_closure" id=".service_locator.aKM6MDa"/>
@@ -7740,6 +7762,12 @@
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
+    <service id=".service_locator.jIxfAsi.App\Controller\Admin\AdminContactsController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\AdminContactsController"/>
+      <argument>App\Controller\Admin\AdminContactsController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.jIxfAsi" method="withContext"/>
+    </service>
     <service id=".service_locator.jIxfAsi.App\Controller\Admin\AdminController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\Admin\AdminController"/>
       <argument>App\Controller\Admin\AdminController</argument>
@@ -8093,12 +8121,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.KtkdfL."/>
+      <argument type="service" id=".service_locator.z4Xr5HJ"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.KtkdfL."/>
+      <argument type="service" id=".service_locator.z4Xr5HJ"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -9154,7 +9182,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Contracts\Orm\EntityPaginatorInterface" alias="EasyCorp\Bundle\EasyAdminBundle\Orm\EntityPaginator"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.KtkdfL."/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.z4Xr5HJ"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
@@ -9181,7 +9209,7 @@
     <service id=".service_locator.4UFIY6Q" alias=".service_locator.S.D1AES"/>
     <service id=".service_locator.lDrzDEv" alias=".service_locator.RLfR8Ds"/>
     <service id=".service_locator.riGN6sa" alias=".service_locator.YU8H6ve"/>
-    <service id=".service_locator.8IwXPF." alias=".service_locator.KtkdfL."/>
+    <service id=".service_locator.6fxQqLV" alias=".service_locator.z4Xr5HJ"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.Oimi2cR" alias=".service_locator.NLznpKt"/>
     <service id=".service_locator.uwh6Rke" alias=".service_locator.cgfzwmn"/>
@@ -9235,6 +9263,7 @@
     <service id="messenger.bus.default" alias="debug.traced.messenger.bus.default"/>
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
     <service id=".service_locator.uo5c0SP" alias=".service_locator.xUrKPVU"/>
+    <service id=".service_locator.Pm.1Ukm" alias=".service_locator.FYlrq_N"/>
     <service id=".service_locator.7e0hmM2" alias=".service_locator.HIhw834"/>
     <service id=".service_locator.bInR.ll" alias=".service_locator.aKM6MDa"/>
     <service id=".service_locator.sa.k_vl" alias=".service_locator.0Fb1YCW"/>
