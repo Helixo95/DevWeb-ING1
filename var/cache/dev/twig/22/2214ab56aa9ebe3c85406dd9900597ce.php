@@ -96,7 +96,7 @@ class __TwigTemplate_ca3370b733d9b740f713c7c6a8089419 extends Template
                     <span>Tableau de bord</span>
                 </a>
             </li>
-            <li class=\"nav-link link-active\">
+            <li class=\"nav-link\">
                 <a href=\"";
         // line 38
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_users");
@@ -120,7 +120,7 @@ class __TwigTemplate_ca3370b733d9b740f713c7c6a8089419 extends Template
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_contacts");
         echo "\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-users text-center\"></i>
-                    <span>Comptes</span>
+                    <span>Contacts</span>
                 </a>
             </li>
         </div>
@@ -195,7 +195,7 @@ class __TwigTemplate_ca3370b733d9b740f713c7c6a8089419 extends Template
                             <div class=\"info d-flex flex-column\">
                                 <span>";
             // line 111
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contact"], "message", [], "any", false, false, false, 111), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contact"], "email", [], "any", false, false, false, 111), "html", null, true);
             echo "</span>
                             </div>
                         </td>
@@ -403,7 +403,7 @@ class __TwigTemplate_ca3370b733d9b740f713c7c6a8089419 extends Template
                     <span>Tableau de bord</span>
                 </a>
             </li>
-            <li class=\"nav-link link-active\">
+            <li class=\"nav-link\">
                 <a href=\"{{ path('app_admin_users') }}\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-users text-center\"></i>
                     <span>Comptes</span>
@@ -418,7 +418,7 @@ class __TwigTemplate_ca3370b733d9b740f713c7c6a8089419 extends Template
             <li class=\"nav-link link-active\">
                 <a href=\"{{ path('app_admin_contacts') }}\" class=\"text-decoration-none d-block\">
                     <i class=\"fa-solid fa-users text-center\"></i>
-                    <span>Comptes</span>
+                    <span>Contacts</span>
                 </a>
             </li>
         </div>
@@ -477,7 +477,7 @@ class __TwigTemplate_ca3370b733d9b740f713c7c6a8089419 extends Template
                         <td class=\"cell-name d-flex flex-row align-items-center\">
                             <div><i class=\"fa-solid fa-user\"></i></div>
                             <div class=\"info d-flex flex-column\">
-                                <span>{{ contact.message }}</span>
+                                <span>{{ contact.email }}</span>
                             </div>
                         </td>
                         <td class=\"cell-phone\">
