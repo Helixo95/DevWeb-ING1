@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controller;
 
 use App\Entity\Product;
@@ -14,7 +13,10 @@ class ProductController extends AbstractController
     #[Route('/product/{category?}/{brand?}', name: 'app_product_category_brand')]
     public function categoryBrand(?string $category, ?string $brand, EntityManagerInterface $entityManager): Response
     {
-        $products = $entityManager->getRepository(product::class)->findAll();
+        if (!$category) {
+            return $this->redirectToRoute('app_product_category_brand', ['category' => 'men']);
+        }
+
         $repository = $entityManager->getRepository(Product::class);
         $brands = $repository->findBrandsByCategory($category);
 
@@ -54,14 +56,14 @@ class ProductController extends AbstractController
         $cart = $session->get('cart', []);
         if(empty($cart[$id]) or $product->getQuantity() >= $cart[$id]){
 
-        if(!empty($cart[$id])){
-            $cart[$id]++;
+            if(!empty($cart[$id])){
+                $cart[$id]++;
+            }
+            else {
+                $cart[$id] = 1;
+            }
+            $session->set('cart', $cart);
         }
-        else {
-            $cart[$id] = 1;
-        }
-        $session->set('cart', $cart);
-    }
 
 
         return $this->redirectToRoute("app_product_category_brand", [

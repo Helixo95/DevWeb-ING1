@@ -1,20 +1,20 @@
 #intro {
-    min-height: 100vh; /* Utilisez min-height au lieu de height */
-    margin-top: 0; 
-    padding-top: 0px; /* Ajustez cette valeur pour tester la visibilité */
-    padding-bottom: 0px; /* Ajoutez un padding inférieur pour éviter le chevauchement */
+    min-height: 100vh;
+    margin-top: 120px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 @media (min-width: 992px) {
     #intro {
-        padding-top: 50px; /* Assurez-vous que cette valeur est également ajustée pour les écrans larges */
-        padding-bottom: 0px; /* Assurez-vous que cette valeur est également ajustée pour éviter le chevauchement */
+        padding-top: 50px;
+        padding-bottom: 0;
     }
 }
 
 .text-center {
     text-align: center !important;
-    color: antiquewhite; /* Assurez-vous que le texte a suffisamment de contraste */
+    color: black;
 }
 
 .mb-4 {

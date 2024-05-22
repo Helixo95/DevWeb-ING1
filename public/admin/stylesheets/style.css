@@ -1,11 +1,11 @@
 :root {
-  --dark-orange: #9B3922;
-  --light-yellow: #A0153E;
-  --orange: #F2613F;
+  --dark-yellow: #FFD200;
+  --light-yellow: rgb(255, 255, 125);
+  --orange: #E9AB2E;
   --light-orange: #FBCE75;
   --white: white;
-  --dark-blue: #0C0C0C;
-  --light-blue: #00224D;
+  --dark-blue: #28373E;
+  --light-blue: #425863;
   --dark-grey: #53585c;
   --light-grey: lightgrey;
   --light-light-grey: rgb(228, 226, 226);
@@ -90,6 +90,33 @@ body {
 .form-control:valid, .form-control:invalid {
   background-image: none !important;
   padding: .375rem .75rem !important;
+}
+
+/* filters */
+
+.filter-modal .modal-header {
+  color: white;
+  background-color: var(--orange);
+}
+
+.filter-modal .modal-body .form-group {
+  margin-bottom: 10px;
+}
+
+.filter-modal .modal-body .form-group label {
+  display: block;
+}
+
+.filter-modal .modal-footer button {
+  background-color: var(--orange);
+  border: none;
+  color: white;
+  width: 100px;
+  height: 30px;
+}
+
+.filter-modal .modal-footer button:hover {
+  opacity: 0.8;
 }
 
 /* error */

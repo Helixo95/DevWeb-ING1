@@ -1,10 +1,12 @@
+
+
 :root {
     --navbar-height: 55px;
 }
 
 body {
     min-height: 100vh;
-    font-family: 'Poppins', serif !important;
+    font-family: 'Poppins' !important;
     background-color: var(--light-light-grey);
 }
 
@@ -58,7 +60,7 @@ body {
 #sidebar-header {
     height: var(--navbar-height);
     background-color: white;
-    border-bottom: var(--dark-orange) 5px solid;
+    border-bottom: var(--dark-yellow) 5px solid;
     box-sizing: border-box;
 }
 
@@ -129,7 +131,7 @@ body {
     box-sizing: border-box;
     color: var(--dark-blue);
     background-color: var(--white);
-    border-bottom: var(--dark-orange) 5px solid;
+    border-bottom: var(--dark-yellow) 5px solid;
     transition: 0.5s ease;
 }
 

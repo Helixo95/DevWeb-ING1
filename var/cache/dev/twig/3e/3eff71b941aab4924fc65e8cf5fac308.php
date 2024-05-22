@@ -85,11 +85,7 @@ class __TwigTemplate_d6eedd37b134068c9502b05e843b5f07 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/layout.html.twig"));
 
         // line 2
-<<<<<<< HEAD
-        $context["__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 2, $this->source); })()), "i18n", [], "any", false, false, false, 2), "translationDomain", [], "any", false, false, false, 2);
-=======
-        $context["__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 2, $this->source); })()), "i18n", [], "any", false, false, false, 2), "translationDomain", [], "any", false, false, false, 2);
->>>>>>> Yassine
+        $context["__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 2, $this->source); })()), "i18n", [], "any", false, false, false, 2), "translationDomain", [], "any", false, false, false, 2);
         // line 3
         echo "
 <!DOCTYPE html>
@@ -871,11 +867,7 @@ $context["item"], "isMenuSection", [], "any", false, false, false, 107)) {
                     // line 112
                     echo "                                        ";
                     echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, $context["item"], "label", [], "any", false, false, false, 112), [],                     // line 2
-<<<<<<< HEAD
-(isset($context["__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11"]) || array_key_exists("__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11", $context) ? $context["__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11"] : (function () { throw new RuntimeError('Variable "__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11" does not exist.', 2, $this->source); })())), "html", null, true);
-=======
-(isset($context["__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac"]) || array_key_exists("__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac", $context) ? $context["__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac"] : (function () { throw new RuntimeError('Variable "__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac" does not exist.', 2, $this->source); })())), "html", null, true);
->>>>>>> Yassine
+(isset($context["__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe"]) || array_key_exists("__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe", $context) ? $context["__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe"] : (function () { throw new RuntimeError('Variable "__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe" does not exist.', 2, $this->source); })())), "html", null, true);
                     // line 112
                     echo "
                                     </a>
@@ -1331,11 +1323,7 @@ $context["item"], "isMenuSection", [], "any", false, false, false, 107)) {
         (((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 288), "get", ["query"], "method", true, true, false, 288) &&  !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 288), "get", ["query"], "method", false, false, false, 288)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 288), "get", ["query"], "method", false, false, false, 288), "html", null, true))) : (print ("")));
         echo "\" placeholder=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->createTranslatable("action.search", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 288, $this->source); })()), "i18n", [], "any", false, false, false, 288), "translationParameters", [], "any", false, false, false, 288), "EasyAdminBundle"), [],         // line 2
-<<<<<<< HEAD
-(isset($context["__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11"]) || array_key_exists("__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11", $context) ? $context["__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11"] : (function () { throw new RuntimeError('Variable "__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11" does not exist.', 2, $this->source); })())), "html", null, true);
-=======
-(isset($context["__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac"]) || array_key_exists("__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac", $context) ? $context["__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac"] : (function () { throw new RuntimeError('Variable "__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac" does not exist.', 2, $this->source); })())), "html", null, true);
->>>>>>> Yassine
+(isset($context["__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe"]) || array_key_exists("__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe", $context) ? $context["__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe"] : (function () { throw new RuntimeError('Variable "__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe" does not exist.', 2, $this->source); })())), "html", null, true);
         // line 288
         echo "\" spellcheck=\"false\" autocorrect=\"off\" onInput=\"this.parentNode.dataset.value=this.value\"";
         if (((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 288, $this->source); })()), "crud", [], "any", false, false, false, 288), "currentAction", [], "any", false, false, false, 288) == "index") && (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 288, $this->source); })()), "crud", [], "any", false, false, false, 288), "autofocusSearch", [], "any", false, false, false, 288) == true))) {
@@ -1727,11 +1715,7 @@ $context["item"], "isMenuSection", [], "any", false, false, false, 107)) {
             // line 341
             echo "                                                            <a tabindex=\"0\" class=\"content-header-help\" data-bs-toggle=\"popover\" data-bs-custom-class=\"ea-content-help-popover\" data-bs-animation=\"true\" data-bs-html=\"true\" data-bs-placement=\"bottom\" data-bs-trigger=\"focus\" data-bs-content=\"";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 341, $this->source); })()), "crud", [], "any", false, false, false, 341), "helpMessage", [], "any", false, false, false, 341), [],             // line 2
-<<<<<<< HEAD
-(isset($context["__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11"]) || array_key_exists("__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11", $context) ? $context["__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11"] : (function () { throw new RuntimeError('Variable "__internal_0f707d16ef1e567463a207ff766c3a24123889c23cde7e0532b71a3ea13afa11" does not exist.', 2, $this->source); })())), "html_attr");
-=======
-(isset($context["__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac"]) || array_key_exists("__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac", $context) ? $context["__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac"] : (function () { throw new RuntimeError('Variable "__internal_4d15b5d2ee43061fd84b9f160cc08e5d5f538d06881937b21896ea9ffe72dbac" does not exist.', 2, $this->source); })())), "html_attr");
->>>>>>> Yassine
+(isset($context["__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe"]) || array_key_exists("__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe", $context) ? $context["__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe"] : (function () { throw new RuntimeError('Variable "__internal_7ea31bcc1a1c6e68376e1d47a6cc0c50a28e45825cc53efe5d030501cd572afe" does not exist.', 2, $this->source); })())), "html_attr");
             // line 341
             echo "\">
                                                                 <i class=\"far fa-question-circle\"></i>
@@ -2306,6 +2290,6 @@ $context["item"], "isMenuSection", [], "any", false, false, false, 107)) {
     </body>
 {% endblock body %}
 </html>
-", "@EasyAdmin/layout.html.twig", "C:\\laragon\\www\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\layout.html.twig");
+", "@EasyAdmin/layout.html.twig", "H:\\Desktop\\Website\\DevWeb-ING1\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\layout.html.twig");
     }
 }
